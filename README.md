@@ -25,7 +25,7 @@ MaraCorreia (Mara Correia 1825257)
 ```
 
 ```
-(Smith Maniar 2010365)
+Smith-16 (Smit Maniar 2010365)
 ```
 
 ```
