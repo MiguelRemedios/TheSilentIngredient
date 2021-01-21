@@ -1,7 +1,19 @@
 # TheSilentIngredient :four_leaf_clover: (Group 43)
 
 ## Project
-Our project is based on a recipe search engine, the website simply allows people who have spare/left over ingredients in their household who do not know what to prepare with it. They can use the website to input the left over ingredients and instead of throwing the ingredients away, the website will be able to provide a recipe according to the users diet be it halal, vegan or vegetarian. We aim to work towards 4 Sustainable Development Goals mainly: 1) Zero Hunger (2), make sure every last bit of ingredient can be used. 2)Good health and well being (3), be able to provide healthy diet recipes with coinceiding calorie counts to help health enthusiats/users be able to stay on track when controlling their calorie intake. 3) Responsible consumption and prodution (12), making sure users do not throw away the purchased ingredients when in excess, instead use the website to try prepare something out of the excess ingredients, finally be able create an equilibrium between human needs and products leading us to not worry about scarcity. 4)Climate action (13), In the long run if less ingredients and food is wasted we will be able to decrease gloabl pollution and make the world a better more eco friendly place to live. Our project aims to educate users that every every left over/spare ingredient can be used and it should not be wasted, and make sure we fight againest pollution and global warming by reducing waste.
+
+<img src="images/logo1.png" align="right" />
+The Silent Ingredient is a project based on a recipe search engine, the website simply allows people who have spare/left over ingredients in their household who do not know what to prepare with it. They can use the website to input the left over ingredients and instead of throwing the ingredients away, the website will be able to provide a recipe according to the users diet be it halal, vegan or vegetarian. 
+We aim to work towards 4 Sustainable Development Goals mainly : <br />
+
+* Zero Hunger (2), make sure every last bit of ingredient can be used. 
+
+* Good health and well being (3), be able to provide healthy diet recipes with coinceiding calorie counts to help health enthusiats/users be able to stay on track when controlling their calorie intake. 
+
+* Responsible consumption and prodution (12), making sure users do not throw away the purchased ingredients when in excess, instead use the website to try prepare something out of the excess ingredients, finally be able create an equilibrium between human needs and products leading us to not worry about scarcity. 
+
+* Climate action (13), In the long run if less ingredients and food is wasted we will be able to decrease gloabl pollution and make the world a better more eco friendly place to live. Our project aims to educate users that every every left over/spare ingredient can be used and it should not be wasted, and make sure we fight againest pollution and global warming by reducing waste.
+
 
 ## Contributors
 ```
