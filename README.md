@@ -8,7 +8,7 @@ We aim to work towards 4 Sustainable Development Goals mainly : <br />
 
 * Zero Hunger (2), make sure every last bit of ingredient can be used. 
 
-* Good health and well being (3), be able to provide healthy diet recipes with coinceiding calorie counts to help health enthusiats/users be able to stay on track when controlling their calorie intake. 
+* Good health and well being (3), be able to provide healthy diet recipes with coinceiding calorie counts to help health enthusiasts/users be able to stay on track when controlling their calorie intake. 
 
 * Responsible consumption and prodution (12), making sure users do not throw away the purchased ingredients when in excess, instead use the website to try prepare something out of the excess ingredients, finally be able create an equilibrium between human needs and products leading us to not worry about scarcity. 
 
