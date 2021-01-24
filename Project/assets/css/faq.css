@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container{
+  width: 100%;
+  max-width: 100rem;
+  margin: 0;
+  padding: 0;
+}
+
+.silentingredient-item{
+  background-color: rgba(102, 92, 92, 0.175);
+  border-radius: .4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: .5rem 2px .5rem rgba(0, 0, 0, 0.1);
+}
+
+.silentingredient-link{
+  font-size: 1.6rem;
+  color: #313131;
+  text-decoration: none;
+  background-color: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#remove{
+  display: none;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #7f888f;
+  transition: max-height 650ms;
+}
+
+.answer::before{
+  content: "";
+  position: absolute;
+  width: .3rem;
+  height: 100%;
+  background-color: #f56a6a;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.answer p{
+  color: white;
+  padding: 1.5rem;
+}
+
+.silentingredient-item:target .answer{
+  max-height: 20rem;
+}
+
+.silentingredient-item:target .silentingredient-link #add{
+  display: none;
+}
+
+.silentingredient-item:target .silentingredient-link #remove{
+  display: block;
+}
