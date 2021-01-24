@@ -2,7 +2,7 @@
 
 ## Project
 
-<img src="images/logo1.png" align="right" />
+<img src="img/logo1.png" align="right" />
 The Silent Ingredient is a project based on a recipe search engine, the website simply allows people who have spare/left over ingredients in their household who do not know what to prepare with it. They can use the website to input the left over ingredients and instead of throwing the ingredients away, the website will be able to provide a recipe according to the users diet be it halal, vegan or vegetarian. 
 We aim to work towards 4 Sustainable Development Goals mainly : <br />
 

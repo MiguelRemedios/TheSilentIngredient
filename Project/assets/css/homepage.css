@@ -1,0 +1,21 @@
+.features article img {
+    height: 130px;
+    width: 130px;
+    left: 100px;
+   } 
+   
+.posts article .image img {
+   display: block;
+   width: 220px;
+   height: 220px; }
+
+#banner .image {
+   height:300px ;
+   width: 300px;  }
+
+@media screen and (orientation: portrait) and (max-width: 480px){
+    #banner .image{
+        height: auto;
+        width: 90%;
+    }
+}
