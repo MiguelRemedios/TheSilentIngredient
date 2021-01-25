@@ -1,0 +1,33 @@
+.recipeImage{
+    display:inline-block; 
+  }
+  
+  .smallRecipeImage img{
+  
+    max-height: 15vh;
+    max-width: 100%;
+    margin: -15px;
+    cursor: pointer;
+    display: block;
+    opacity: .6;
+    padding: 10px;
+  }
+  .smallRecipeImage{
+   float: inherit;
+   float: right;
+  }
+  .smallRecipeImage img:hover{
+    opacity: 1;
+  }
+  .mainRecipeImage img{
+    
+    max-height: 75vh;
+    max-width: 75%;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+  }
+  .mainRecipeImage{
+    float: right;
+    padding: 10px;
+  }
