@@ -1,10 +1,10 @@
-package group43.demo;
+package group43.thesilentingredient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TheSilentIngredientApplicationTests {
+class ThesilentingredientApplicationTests {
 
 	@Test
 	void contextLoads() {
