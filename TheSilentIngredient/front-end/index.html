@@ -147,12 +147,34 @@
 					<h3> Only A Button Click Away !<br>
 						<br> ZERO WASTE <br> STAY HEALTHY <br> CONSUME RESPONSIBLY
 					</h3>
-					<br>
+					
+					<div class="slideshow-container">
+						<div class="mySlides1">
+							<img class="slidesone" src="images/pic21.jpg" style="width: 35%">
+							<div class="text">Select Variety of Ingredients</div>
+
+						</div>
+
+						<div class="mySlides1">
+							<img class="slidesone" src="images/pic22.jpg" style="width: 35%">
+							<div class="text">Enjoy All Together</div>
+
+						</div>
+
+						<div class="mySlides1">
+							<img class="slidesone" src="images/pic23.jpg" style="width: 35%">
+							<div class="text">Your Diet Matters</div>
+
+						</div>
+
+					</div>
+
+
 					<br>
 					<a href="generic.html" target="_blank" button class="btn"> LETS INVOLVE THE INGREDIENT >>>
 					</button></a>
 
-					<p> <br> <br>  Developed by Group 43 <br /> For second year group project<br /> Team: Abbasali, Mara, Miguel,
+					<p> <br> Developed by Group 43 <br /> For second year group project<br /> Team: Abbasali, Mara, Miguel,
 						Smith,
 						Viktor, Mathew & Meli </p>
 
@@ -166,7 +188,22 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
-
+				<script>
+					var slideIndex = 0;
+					function showSlides1() {
+						var i;
+						var slides = document.getElementsByClassName("mySlides1");
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						slideIndex++;
+						if (slideIndex > slides.length) { slideIndex = 1 }
+						slides[slideIndex - 1].style.display = "block";
+						setTimeout(showSlides1, 2000); // Change image every 2 seconds
+					}
+		
+					showSlides1();
+				</script>
 </body>
 
 </html>
