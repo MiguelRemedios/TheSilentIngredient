@@ -151,7 +151,9 @@
 
 					<h3> Only A Button Click Away !</h3>
 
-					<p>We believe with you on our side, we can join <br> hands and fight againest the enviromental <br> challenges. <br> For the next step please click the button below <br> and induldge into our variety of ingredients. <br> <strong>Enjoy Your Experience</strong></p>
+					<p>We believe with you on our side, we can join <br> hands and fight againest the enviromental <br>
+						challenges. <br> For the next step please click the button below <br> and induldge into our
+						variety of ingredients. <br> <strong>Enjoy Your Experience</strong></p>
 
 
 					<div class="slideshow-container">
@@ -195,7 +197,7 @@
 
 					</div>
 
-			<br>
+					<br>
 
 					<a href="generic.html" target="_blank" button class="btn"> LETS INVOLVE THE INGREDIENT >>>
 						</button></a>
@@ -207,46 +209,73 @@
 
 				</section>
 
+				<button onclick="topFunction()" id="myBtn" title="Go to top"> <b>Top</b> </button>
+
+			</div>
+
+		</div>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			var slideIndex = 0;
+			function showSlides1() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides1");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) { slideIndex = 1 }
+				slides[slideIndex - 1].style.display = "block";
+				setTimeout(showSlides1, 2000); // Change image every 2 seconds
+			}
+
+			showSlides1();
+		</script>
+
+		<script>
+			var slideIndex = 0;
+			function showSlides2() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides2");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) { slideIndex = 1 }
+				slides[slideIndex - 1].style.display = "block";
+				setTimeout(showSlides2, 2000); // Change image every 2 seconds
+			}
+			showSlides2();
+		</script>
+
+		<script>
+
+			mybutton = document.getElementById("myBtn");
 
 
-				<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-				<script>
-					var slideIndex = 0;
-					function showSlides1() {
-						var i;
-						var slides = document.getElementsByClassName("mySlides1");
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none";
-						}
-						slideIndex++;
-						if (slideIndex > slides.length) { slideIndex = 1 }
-						slides[slideIndex - 1].style.display = "block";
-						setTimeout(showSlides1, 2000); // Change image every 2 seconds
-					}
+			window.onscroll = function () { scrollFunction() };
 
-					showSlides1();
-				</script>
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
 
-				<script>
-					var slideIndex = 0;
-					function showSlides2() {
-						var i;
-						var slides = document.getElementsByClassName("mySlides2");
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none";
-						}
-						slideIndex++;
-						if (slideIndex > slides.length) { slideIndex = 1 }
-						slides[slideIndex - 1].style.display = "block";
-						setTimeout(showSlides2, 2000); // Change image every 2 seconds
-					}
-					showSlides2();
-				</script>
+
+			function topFunction() {
+				document.body.scrollTop = 0; // For Safari
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+
+	</div>
 
 </body>
 
