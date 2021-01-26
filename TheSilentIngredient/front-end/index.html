@@ -60,7 +60,8 @@
 								<h3>We care about your health</h3>
 								<p>We introduce to you a healthy diet filter ! Resulting in only healthy recipes, to
 									make it more interesting for our well being enthusiasts, our website displays the
-									calorie intake for each recipe! <br> Never lose count & Stay <strong>FIT</strong> .</p>
+									calorie intake for each recipe! <br> Never lose count & Stay <strong>FIT</strong> .
+								</p>
 							</div>
 						</article>
 						<article>
@@ -104,7 +105,8 @@
 					<br>
 					<div class="posts">
 						<article>
-							<a href="https://sdgs.un.org/goals/goal2" target="_blank" class="image"><img src="images/pic14.png" alt="" /></a>
+							<a href="https://sdgs.un.org/goals/goal2" target="_blank" class="image"><img
+									src="images/pic14.png" alt="" /></a>
 							<h3>Zero Hunger</h3>
 							<p>We make sure to include majority of ingredients, hence when you have any leftover
 								ingredients with the help of our website you can make it worthwhile <br> use it rather
@@ -112,7 +114,8 @@
 
 						</article>
 						<article>
-							<a href="https://sdgs.un.org/goals/goal3" target="_blank" class="image"><img src="images/pic15.png" alt="" /></a>
+							<a href="https://sdgs.un.org/goals/goal3" target="_blank" class="image"><img
+									src="images/pic15.png" alt="" /></a>
 							<h3>Good Health and Well Being</h3>
 							<p>Our healthy recipe filter advocates well being, by allowing you to stay fit and maintain
 								your healthy diet with an additional calorie intake count per recipe. We happily help
@@ -120,7 +123,8 @@
 
 						</article>
 						<article>
-							<a href="https://sdgs.un.org/goals/goal12" target="_blank" class="image"><img src="images/pic13.png" alt="" /></a>
+							<a href="https://sdgs.un.org/goals/goal12" target="_blank" class="image"><img
+									src="images/pic13.png" alt="" /></a>
 							<h3>Responsible Consumption and Production</h3>
 							<p>Ingredients that you did not know where to use, can now be used with the help of our
 								website. This controls the client to not waste ingredients and also do not buy more when
@@ -129,7 +133,8 @@
 
 						</article>
 						<article>
-							<a href="https://sdgs.un.org/goals/goal13" target="_blank" class="image"><img src="images/pic16.png" alt="" /></a>
+							<a href="https://sdgs.un.org/goals/goal13" target="_blank" class="image"><img
+									src="images/pic16.png" alt="" /></a>
 							<h3>Climate Action</h3>
 							<p>In overall reduction of food waste and only purchasing an understanble amount of
 								ingredients, your positive impact on the enviroment is significant!. <br> The fight
@@ -144,37 +149,59 @@
 						<h2>Your Adventure Begins here !</h2>
 					</header>
 
-					<h3> Only A Button Click Away !<br>
-						<br> ZERO WASTE <br> STAY HEALTHY <br> CONSUME RESPONSIBLY
-					</h3>
-					
+					<h3> Only A Button Click Away !</h3>
+
+					<p>We believe with you on our side, we can join <br> hands and fight againest the enviromental <br> challenges. <br> For the next step please click the button below <br> and induldge into our variety of ingredients. <br> <strong>Enjoy Your Experience</strong></p>
+
+
 					<div class="slideshow-container">
 						<div class="mySlides1">
-							<img class="slidesone" src="images/pic21.jpg" style="width: 35%">
-							<div class="text">Select Variety of Ingredients</div>
+							<img class="slidesone" src="images/pic32.jpg" style="width: 40%">
 
 						</div>
 
 						<div class="mySlides1">
-							<img class="slidesone" src="images/pic22.jpg" style="width: 35%">
-							<div class="text">Enjoy All Together</div>
+							<img class="slidesone" src="images/pic33.jpg" style="width: 40%">
 
 						</div>
 
 						<div class="mySlides1">
-							<img class="slidesone" src="images/pic23.jpg" style="width: 35%">
-							<div class="text">Your Diet Matters</div>
+							<img class="slidesone" src="images/pic34.jpg" style="width: 40%">
 
 						</div>
+
 
 					</div>
 
-
 					<br>
-					<a href="generic.html" target="_blank" button class="btn"> LETS INVOLVE THE INGREDIENT >>>
-					</button></a>
+					<br>
 
-					<p> <br> Developed by Group 43 <br /> For second year group project<br /> Team: Abbasali, Mara, Miguel,
+					<div class="slideshow-container">
+						<div class="mySlides2">
+							<img class="slidestwo" src="images/pic31.jpg" style="width: 60%">
+
+						</div>
+
+						<div class="mySlides2">
+							<img class="slidestwo" src="images/pic29.jpg" style="width: 60%;">
+
+						</div>
+
+						<div class="mySlides2">
+							<img class="slidestwo" src="images/pic30.jpg" style="width: 60%" ;>
+
+						</div>
+
+
+					</div>
+
+			<br>
+
+					<a href="generic.html" target="_blank" button class="btn"> LETS INVOLVE THE INGREDIENT >>>
+						</button></a>
+
+					<p> <br> Developed by Group 43 <br /> For second year group project<br /> Team: Abbasali, Mara,
+						Miguel,
 						Smith,
 						Viktor, Mathew & Meli </p>
 
@@ -201,9 +228,26 @@
 						slides[slideIndex - 1].style.display = "block";
 						setTimeout(showSlides1, 2000); // Change image every 2 seconds
 					}
-		
+
 					showSlides1();
 				</script>
+
+				<script>
+					var slideIndex = 0;
+					function showSlides2() {
+						var i;
+						var slides = document.getElementsByClassName("mySlides2");
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						slideIndex++;
+						if (slideIndex > slides.length) { slideIndex = 1 }
+						slides[slideIndex - 1].style.display = "block";
+						setTimeout(showSlides2, 2000); // Change image every 2 seconds
+					}
+					showSlides2();
+				</script>
+
 </body>
 
 </html>

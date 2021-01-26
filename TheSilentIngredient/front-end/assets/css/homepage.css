@@ -14,9 +14,9 @@
    width: 300px;  }
 
 @media screen and (orientation: portrait) and (max-width: 480px){
-    #banner .image{
-        height: auto;
-        width: 90%;
+#banner .image{
+    height: auto;
+     width: 90%;
     }
 }
 
@@ -24,9 +24,9 @@
 .btn {
     border: 2px solid black;
     background-color: inherit;
-    margin-left: 27.6%;
+    margin-left: 30%;
     margin-right:25%;
-    width: 45%;
+    width: 43%;
     padding: 15px;
     font-size: 20px;
     cursor: pointer;
@@ -47,39 +47,28 @@
     position: relative;
   }
   
-  .slidesone {
+.slidesone {
     margin-left: 33%;
     margin-right:25%;
-    width: 400px; 
-    margin-top: -135px;
+    margin-top: -214px;
   }
-  .text {
-    color: #f56a6a;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: -24px;
-    width: 50%;
-    text-align: center;
-    margin-left: 25%;
-    margin-right:25%;
-    font-weight: bold ;
-    cursor: default; 
+  
+.slidestwo{
+    margin-left: 24%;
+    margin-right:29%;
+    margin-top: -100px;
   }
 
-  @media screen and (orientation: portrait) and (max-width: 480px){
-  .slidesone{
-      width: 100%;
-      height: 100%;
+@media screen and (orientation: portrait) and (max-width: 480px){
+.slidesone{
+     width: 100%;
+     height: 100%;
   }
-  .text{
-    bottom: auto;
-  } 
 }
 
 @media screen and (orientation: portrait) and (min-width: 1900px){
-    .posts{
-        width: auto;
-        height: auto;
+.posts{
+    width: auto;
+    height: auto;
     }
 }
