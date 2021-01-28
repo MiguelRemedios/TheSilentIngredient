@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .features article img {
     height: 130px;
     width: 130px;
@@ -11,7 +16,8 @@
 
 #banner .image {
    height:300px ;
-   width: 300px;  }
+   width: 300px;
+   border-radius: 10px;   }
 
 @media screen and (orientation: portrait) and (max-width: 480px){
 #banner .image{
@@ -24,7 +30,7 @@
 .btn {
     border: 2px solid black;
     background-color: inherit;
-    margin-left: 30%;
+    margin-left: 31%;
     margin-right:25%;
     width: 43%;
     padding: 15px;
@@ -43,6 +49,15 @@
 /* On mouse-over */
 .btn:hover {background: black;}  
 
+@media screen and (orientation: portrait) and (max-width: 480px){
+.btn{
+  height: 10%;
+  width: 90%;
+  margin-left: 25px;
+  
+}
+}
+
 .slideshow-container{
     position: relative;
   }
@@ -51,18 +66,22 @@
     margin-left: 33%;
     margin-right:25%;
     margin-top: -214px;
+    border-radius: 10px; 
   }
   
 .slidestwo{
     margin-left: 24%;
     margin-right:29%;
     margin-top: -100px;
+    
   }
 
 @media screen and (orientation: portrait) and (max-width: 480px){
 .slidesone{
      width: 100%;
      height: 100%;
+     margin-top: 1.5%;
+
   }
 }
 
@@ -93,3 +112,64 @@
 #myBtn:hover {
   background-color: #f45c5c; 
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f45c5c;
+  position: fixed;
+  top: 0;
+  margin-top: 10px;
+  width: 89.2%;
+  z-index: 9999;
+  display: flex;
+  justify-content:center;
+  border-radius: 10px; 
+
+ 
+}
+
+li {
+  float: left;
+  
+}
+
+li a{
+  display: block;
+  padding: 14px 0px;
+  padding-right: 150px;
+  
+}
+
+li:last-child > a { 
+  padding-right: 0 !important;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color:white!important;
+  
+}
+
+@media screen and (max-width: 749px) {
+li a{
+  padding-right:10px;
+  }
+li:last-child > a { 
+  padding-right: 10px !important;
+  }
+}
+
+@media  screen and (min-width: 1440px) {
+#header ul{
+  width: 90%;
+}
+}
+
+
+
+
+
+
