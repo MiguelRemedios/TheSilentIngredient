@@ -1,6 +1,7 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .features article img {
@@ -105,8 +106,7 @@ html, body {
   cursor: pointer; 
   padding: 15px; 
   border-radius: 10px; 
-  font-size: 18px; 
-  
+  font-size: 18px;
 }
 
 #myBtn:hover {
