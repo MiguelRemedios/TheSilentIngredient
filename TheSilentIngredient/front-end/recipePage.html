@@ -25,16 +25,11 @@
 
 				<!-- Header -->
 				<header id="header">
-					<a href="index.html" class="logo"><strong>The Silent Ingredient</strong></a>
-					<a href="generic.html"class="logo"><strong>Recipe</strong></a>
-					<a href="elements.html"class="logo"><strong>Elements</strong></a>
-					<a href="#Faq" class="logo"><strong>FAQ</strong></a>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
-						</li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<ul>
+
+						<li><a href="index.html" class="logo"><strong>The Silent Ingredient</strong></a></li>
+						<li><a href="generic.html" class="logo"><strong>Recipe</strong></a></li>
+						<li><a href="faq.html" class="logo"><strong>FAQ</strong></a></li>
 
 					</ul>
 					
@@ -45,6 +40,8 @@
 					<header class="main">
 						<h1>Recipe Name</h1>
 						<p>Author: Name</p>
+						<p1>Serving: -----</p1>
+						<p1 style="margin: 0 0 1em 10em;">Cooking Time: -----</p1>
 					</header>
 				</section>
 				<section>
@@ -195,7 +192,7 @@
 
 		</div>
 
-
+		<button onclick="topFunction()" id="myBtn" title="Go to top"> <b>Top</b> </button>
 		
 
 	</div>
@@ -207,6 +204,27 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/enlargeImage.js"></script>
+		<script>
+
+			mybutton = document.getElementById("myBtn");
+
+
+			window.onscroll = function () { scrollFunction() };
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+
+			function topFunction() {
+				document.body.scrollTop = 0; // For Safari
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
 
 </body>
 
