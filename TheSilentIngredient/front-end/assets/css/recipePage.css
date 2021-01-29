@@ -126,5 +126,66 @@
     width: 90%;
   }
   }
+          @media  screen and (min-width: 425px) {
+            .main{
+              width: auto;
+              height: auto;
+              margin-top:-20px;
+              }
+              }
 
+              @media  screen and (max-width: 425px) { /* Modern phone screen scaling*/
+                .mainRecipeImage{
+                  margin-left: -90%;
+                  margin-right: 60%;
+                  }
+                  }
+            
+                  @media  screen and (max-width: 425px) {
+                    .smallRecipeImage{
+                      margin-left: -80%;
+                      margin-right: -10%;
+                      }
+                      }
+                
+                      @media  screen and (min-width: 430px) and (max-device-width: 768px) { /* Tablet window scaling */
+                        .mainRecipeImage{
+                          margin-left: -40%;
+                          margin-right: 70%;
+                          }
+                          }
+                    
+                          @media  screen and (min-width: 430px) and (max-device-width: 768px) {
+                            .smallRecipeImage{
+                              margin-left: -80%;
+                              margin-right: 0%;
+                              }
+                              }
 
+                              @media  screen and (min-width: 770px) and (max-device-width: 1024px) { /* Laptop window scaling */
+                                .mainRecipeImage{
+                                  margin-left: -30%;
+                                  margin-right: 70%;
+                                  }
+                                  }
+                            
+                                  @media  screen and (min-width: 770px) and (max-device-width: 1024px) {
+                                    .smallRecipeImage{
+                                      margin-left: -80%;
+                                      margin-right: 0%;
+                                      }
+                                      }
+        
+                                      @media  screen and (min-width: 1025px) and (max-device-width: 1440px) { /*Large laptop/desktop window scaling */
+                                        .mainRecipeImage{
+                                          margin-left: -20%;
+                                          margin-right: 70%;
+                                          }
+                                          }
+                                    
+                                          @media  screen and (min-width: 1025px) and (max-device-width: 1440px) {
+                                            .smallRecipeImage{
+                                              margin-left: -80%;
+                                              }
+                                              }
+    
