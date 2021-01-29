@@ -1,29 +1,27 @@
 package group43.thesilentingredient.recipe;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
 @Service
 public class RecipeService {
 
 	private final RecipeRepository recipeRepository;
-	
+
 	@Autowired
 	public RecipeService(RecipeRepository recipeRepository) {
 		this.recipeRepository = recipeRepository;
 	}
-	
-	
+
+
 	public List<Recipe> getRecipes() {
 		return recipeRepository.findAll();
 	}
-	
-	
+
+
 	public void addNewRecipe(Recipe recipe) {
 		Optional<Recipe> recipeOptional = recipeRepository.findRecipeByName(recipe.getName());
 
@@ -45,6 +43,4 @@ public class RecipeService {
 
 		recipeRepository.deleteById(recipeId);
 	}
-
-
 }
