@@ -19,17 +19,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class RecipeController {
 
 	private final RecipeService recipeService;
-	
+
 	@Autowired
 	public RecipeController(RecipeService recipeService) {
 		this.recipeService = recipeService;
 	}
-	
+
 	@GetMapping
 	public List<Recipe> getRecipes() {
 		return recipeService.getRecipes();		
 	}
-	
+
 	@PostMapping
 	public void registerRecipe(@RequestBody Recipe recipe) {
 		recipeService.addNewRecipe(recipe);
@@ -39,5 +39,11 @@ public class RecipeController {
 	public void deleteRecipe(@PathVariable("recipeId") Long recipeId) {
 		recipeService.deleteRecipe(recipeId);
 	}
-	
+
+	@PutMapping(path = "{recipeId}")
+	public void updateRecipe(@PathVariable("recipeId") Long recipeId,
+			@RequestParam(required = false) String recipeName,
+			@RequestParam(required = false) String recipeDesc) {
+		recipeService.updateRecipe(recipeId, recipeName, recipeDesc);
+	}
 }
