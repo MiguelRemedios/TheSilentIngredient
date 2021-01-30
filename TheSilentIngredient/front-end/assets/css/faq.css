@@ -27,12 +27,12 @@ h3 {
   background-color: rgba(231, 231, 231, 0.651);
   color: #111;
   margin: 1.2rem 0;
-  border-radius: 0.5rem;
+  border-radius: 1.2rem;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 }
 .accordion-item-header {
   padding: 0.5rem 3rem 0.5rem 1rem;
-  min-height: 3.5rem;
+  min-height: 3.6rem;
   line-height: 1.25rem;
   font-weight: bold;
   display: flex;
@@ -45,6 +45,7 @@ h3 {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
+  color: #111;
 }
 .accordion-item-header.active::after {
   content: "\2212";
@@ -58,7 +59,7 @@ h3 {
   padding: 1rem;
   line-height: 1.5rem;
   border-top: 1px solid;
-  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  border-image: linear-gradient(to right, transparent, #f56a6a, transparent) 1;
 }
 
 @media(max-width:767px) {
