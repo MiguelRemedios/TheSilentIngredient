@@ -22,7 +22,10 @@ public class RecipeService {
 	public List<Recipe> getRecipes() {
 		return recipeRepository.findAll();
 	}
-
+	
+	public Optional<Recipe> retrieveRecipe(Long recipeId) {
+		return recipeRepository.findById(recipeId);
+	}
 
 	public void addNewRecipe(Recipe recipe) {
 		Optional<Recipe> recipeOptional = recipeRepository.findRecipeByName(recipe.getName());
