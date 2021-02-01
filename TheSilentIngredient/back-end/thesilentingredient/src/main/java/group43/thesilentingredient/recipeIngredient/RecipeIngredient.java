@@ -13,14 +13,14 @@ public class RecipeIngredient{
 	
 	@Id
 	@SequenceGenerator(
-			name="recipe_ingredient_id",
-			sequenceName = "recipe_ingredient_id",
+			name="recipe_ingredient_sequence",
+			sequenceName = "recipe_ingredient_sequence",
 			allocationSize = 1
 			)
 	
 	@GeneratedValue(
 			strategy = GenerationType.SEQUENCE,
-			generator = "recipe_ingredient_id"
+			generator = "recipe_ingredient_sequence"
 			)
 			
 	

@@ -4,6 +4,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.List;
+
 @Configuration
 public class RecipeIngredientConfig {
 
@@ -17,6 +19,8 @@ public class RecipeIngredientConfig {
 			RecipeIngredient ing1 = new RecipeIngredient(4,2,8.0,"quantity");
 			RecipeIngredient ing2 = new RecipeIngredient(2,2,400,"g");
 			RecipeIngredient ing3 = new RecipeIngredient(3,2,150,"ml");
+			
+			repository.saveAll(List.of(chickenmasala1, chickenmasala2, chickenmasala3, ing1, ing2, ing3));
 		};
 	}
 }
