@@ -1,4 +1,4 @@
-package group43.thesilentingredient.recipeIngredients;
+package group43.thesilentingredient.recipeIngredient;
 
 import java.util.Optional;
 
@@ -10,7 +10,7 @@ import group43.thesilentingredient.recipe.Recipe;
 
 
 @Repository
-public interface RecipeIngredientsRepository extends JpaRepository<RecipeIngredients, Long>{
+public interface RecipeIngredientRepository extends JpaRepository<RecipeIngredient, Long>{
 	
 //	//SELECT * FROM recipe WHERE name = ?
 //	@Query("SELECT r FROM Recipe r WHERE r.name = ?1")

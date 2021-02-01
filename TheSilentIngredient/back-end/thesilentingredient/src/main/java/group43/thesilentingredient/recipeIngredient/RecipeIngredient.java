@@ -1,4 +1,4 @@
-package group43.thesilentingredient.recipeIngredients;
+package group43.thesilentingredient.recipeIngredient;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class RecipeIngredients {
+public class RecipeIngredient{
 	
 	@Id
 	@SequenceGenerator(
@@ -32,10 +32,10 @@ public class RecipeIngredients {
 	private double quantity;
 	private String measurement;
 	
-	public RecipeIngredients() {
+	public RecipeIngredient() {
 	}
 	
-	public RecipeIngredients(Long id, int ingredient_id, int recipe_id, double quantity, String measurement) {
+	public RecipeIngredient(Long id, int ingredient_id, int recipe_id, double quantity, String measurement) {
 		this.id = id;
 		this.ingredient_id = ingredient_id;
 		this.recipe_id = recipe_id;
@@ -43,7 +43,7 @@ public class RecipeIngredients {
 		this.measurement = measurement;
 	}
 	
-	public RecipeIngredients(int ingredient_id, int recipe_id, double quantity, String measurement) {
+	public RecipeIngredient(int ingredient_id, int recipe_id, double quantity, String measurement) {
 		this.ingredient_id = ingredient_id;
 		this.recipe_id = recipe_id;
 		this.quantity = quantity;
