@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -30,6 +31,11 @@ public class RecipeController {
 	@GetMapping
 	public List<Recipe> getRecipes() {
 		return recipeService.getRecipes();		
+	}
+	
+	@GetMapping(path = "{recipeId}")
+	public Optional<Recipe> retrieveRecipe(@PathVariable("recipeId") Long recipeId){
+		return recipeService.retrieveRecipe(recipeId);
 	}
 
 	@PostMapping
