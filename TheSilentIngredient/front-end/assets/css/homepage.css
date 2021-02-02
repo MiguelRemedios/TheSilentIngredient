@@ -4,16 +4,35 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.content{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .features article img {
     height: 130px;
     width: 130px;
-    left: 100px;
-   } 
-   
+    margin-right: 42px;
+   }
+
+.features article{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.features{
+  margin-left: -53px;
+}
+
 .posts article .image img {
    display: block;
    width: 220px;
    height: 220px; }
+
+.posts article {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 #banner .image {
    height:300px ;
