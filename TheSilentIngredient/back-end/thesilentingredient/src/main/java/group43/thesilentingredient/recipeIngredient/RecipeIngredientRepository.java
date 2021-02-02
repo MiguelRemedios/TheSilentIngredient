@@ -6,18 +6,17 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import group43.thesilentingredient.recipe.Recipe;
-
-
 @Repository
 public interface RecipeIngredientRepository extends JpaRepository<RecipeIngredient, Long>{
+
+	//SELECT * FROM recipe WHERE name = ?
+	//SELECT * FROM recipe_ingredient WHERE recipe_id = 1;
 	
-//	//SELECT * FROM recipe WHERE name = ?
-//	@Query("SELECT r FROM Recipe r WHERE r.name = ?1")
-//	Optional<Recipe> findRecipeByName(String name);
-//	
+//	@Query("SELECT x FROM recipe_ingredient x WHERE x.recipe_id = ?1")
+//	Optional<RecipeIngredient> findRecipeByIngredients(int recipe_id);
+
 //	//SELECT * FROM recipe WHERE description = ?
-//	@Query("SELECT d FROM Recipe d WHERE d.description = ?1")
-//	Optional<Recipe> findRecipeByDescription(String description);
-	
+//	@Query("SELECT m FROM Recipe_Ingredient m WHERE m.measurement = ?1")
+//	Optional<RecipeIngredient> findRecipeByDescription(String measurement);
+
 }
