@@ -1,14 +1,11 @@
-const getBtn = document.getElementById('get-btn');
-const postBtn = document.getElementById('post-btn');
-const deleteBtn = document.getElementById('delete-btn');
-const putBtn = document.getElementById('put-btn');
-
+//FUNCTION FOR THE HTTP GET REQUEST
 const getData = () => {
   axios.get('http://localhost:8080/api/v1/recipe').then(response => {
     console.log(response);
   });
 };
 
+//FUNCTION FOR THE HTTP PUT REQUEST
 const sendData = () => {
   axios
     .post(
@@ -31,12 +28,14 @@ const sendData = () => {
     });
 };
 
+//FUNCTION FOR THE HTTP DELETE REQUEST
 const deleteData = () => {
   axios.delete('http://localhost:8080/api/v1/recipe/4').then(response => {
     console.log(response);
   });
 };
 
+//FUNCTION FOR THE HTTP POST REQUEST
 const updateData = () => {
   axios
     .put(
@@ -55,7 +54,4 @@ const updateData = () => {
     });
 };
 
-getBtn.addEventListener('click', getData);
-postBtn.addEventListener('click', sendData);
-deleteBtn.addEventListener('click', deleteData);
-putBtn.addEventListener('click', updateData);
+getData();
