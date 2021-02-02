@@ -4,8 +4,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping(path= "api/v1/recipe")
+@CrossOrigin(origins = "*")
 
 public class RecipeController {
 
@@ -28,6 +31,11 @@ public class RecipeController {
 	@GetMapping
 	public List<Recipe> getRecipes() {
 		return recipeService.getRecipes();		
+	}
+	
+	@GetMapping(path = "{recipeId}")
+	public Optional<Recipe> retrieveRecipe(@PathVariable("recipeId") Long recipeId){
+		return recipeService.retrieveRecipe(recipeId);
 	}
 
 	@PostMapping
