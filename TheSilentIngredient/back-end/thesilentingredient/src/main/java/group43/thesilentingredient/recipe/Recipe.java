@@ -1,14 +1,16 @@
 package group43.thesilentingredient.recipe;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
-@Entity
-@Table
+@Entity(name = "Recipe")
+@Table(name = "recipe", uniqueConstraints = {@UniqueConstraint(name = "recipe_name_unique", columnNames = "name")})
 public class Recipe {
 
 	@Id
@@ -23,8 +25,13 @@ public class Recipe {
 			generator = "recipe_sequence"
 			)
 	
+	@Column(name = "id", updatable = false)
 	private Long id;
+	
+	@Column(name = "name", nullable = false)
 	private String name;
+	
+	@Column(name = "description", nullable = false)
 	private String description;
 	
 	public Recipe() {
