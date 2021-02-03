@@ -1,6 +1,5 @@
-package group43.thesilentingredient.diet;
+package group43.thesilentingredient.ingredient;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,35 +9,34 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Diet {
+public class Ingredient {
 
 	@Id
-	@SequenceGenerator(name = "diet_sequence", sequenceName = "diet_sequence", allocationSize = 1)
-
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "diet_sequence")
+	@SequenceGenerator(
+			name = "ingredient_sequence",
+			sequenceName = "ingredient_sequence",
+			allocationSize = 1
+			)
 	
-	@Column(name = "id", updatable = false)
+	@GeneratedValue(
+			strategy = GenerationType.SEQUENCE,
+			generator = "ingredient_sequence"
+			)
+	
 	private Long id;
-	
-	@Column(name = "name", updatable = false)
 	private String name;
-	
-	
-	@Column(name = "description", updatable = false)
 	private String description;
 	
-
-
-	public Diet() {
+	public Ingredient() {
 	}
 
-	public Diet(Long id, String name, String description) {
+	public Ingredient(Long id, String name, String description) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
 	}
-
-	public Diet(String name, String description) {
+	
+	public Ingredient(String name, String description) {
 		this.name = name;
 		this.description = description;
 	}
@@ -66,9 +64,11 @@ public class Diet {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
+	
 	public String toString() {
-		return "Diet{" + "id=" + id + ", name='" + name + ", description='" + description + "'}";
+		return "Recipe{" +
+				"id=" + id + 
+				", name='" + name +
+				", description='" + description + "'}";
 	}
-
 }
