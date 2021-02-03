@@ -17,9 +17,11 @@ public class RecipeIngredientConfig {
 			RecipeIngredient ing3 = new RecipeIngredient(3,1,150,"ml");
 			RecipeIngredient ing4 = new RecipeIngredient(4,2,8.0,"quantity");
 			RecipeIngredient ing5 = new RecipeIngredient(2,2,400,"g");
-			RecipeIngredient ing6 = new RecipeIngredient(3,2,150,"ml");
+			RecipeIngredient ing6 = new RecipeIngredient(3,2,9000,"ml");
+			RecipeIngredient ing7 = new RecipeIngredient(3,2,9000,"ml");
+			RecipeIngredient ing8 = new RecipeIngredient(3,2,9000,"ml");
 			
-			repository.saveAll(List.of(ing1, ing2, ing3, ing4, ing5, ing6));
+			repository.saveAll(List.of(ing1, ing2, ing3, ing4, ing5, ing6, ing7, ing8));
 		};
 	}
 }
