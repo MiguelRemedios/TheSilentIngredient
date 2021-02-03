@@ -3,6 +3,7 @@ package group43.thesilentingredient.recipe;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -32,9 +33,9 @@ public class RecipeController {
 	public List<Recipe> getRecipes() {
 		return recipeService.getRecipes();		
 	}
-	
-	@GetMapping(path = "{recipeId}")
-	public Optional<Recipe> retrieveRecipe(@PathVariable("recipeId") Long recipeId){
+
+	@GetMapping(path = "{id}")
+	public Optional<Recipe> retrieveRecipe(@PathVariable("id") Long recipeId){
 		return recipeService.retrieveRecipe(recipeId);
 	}
 
@@ -51,7 +52,9 @@ public class RecipeController {
 	@PutMapping(path = "{recipeId}")
 	public void updateRecipe(@PathVariable("recipeId") Long recipeId,
 			@RequestParam(required = false) String recipeName,
-			@RequestParam(required = false) String recipeDesc) {
-		recipeService.updateRecipe(recipeId, recipeName, recipeDesc);
+			@RequestParam(required = false) String recipeDesc,
+			@RequestParam(required = false) int serving,
+			@RequestParam(required = false) String cooktime) {
+		recipeService.updateRecipe(recipeId, recipeName, recipeDesc, serving, cooktime);
 	}
 }
