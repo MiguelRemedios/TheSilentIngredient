@@ -28,7 +28,7 @@ public class RecipeImageService {
 	}
 
 	public void addNewRecipeImage(RecipeImage recipeImage) {
-		Optional<RecipeImage> recipeimgOptional = recipeimgRepository.findRecipeImageByNr(recipeImage.getRecipeNr());
+		Optional<RecipeImage> recipeimgOptional = recipeimgRepository.findRecipeImageById(recipeImage.getRecipeId());
 
 		if (recipeimgOptional.isPresent()) {
 			throw new IllegalStateException("Recipe Image taken!");
@@ -58,14 +58,14 @@ public class RecipeImageService {
 
 		if (recipeNr != 0 && 
 				recipeNr > 0 &&
-				!Objects.equals(recipeImg.getRecipeNr(), recipeNr)) { //If the name is not the same as the current
+				!Objects.equals(recipeImg.getRecipeId(), recipeNr)) { //If the name is not the same as the current
 			
-			Optional<RecipeImage> recipeimgOptional = recipeimgRepository.findRecipeImageByNr(recipeNr);
+			Optional<RecipeImage> recipeimgOptional = recipeimgRepository.findRecipeImageById(recipeNr);
 			
 			if (recipeimgOptional.isPresent()) {
 				throw new IllegalStateException("Recipe Image taken!");
 			}
-			recipeImg.setRecipeNr(recipeNr);
+			recipeImg.setRecipeId(recipeNr);
 		}
 
 		if (path != null &&
