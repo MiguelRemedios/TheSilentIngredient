@@ -27,18 +27,18 @@ public class RecipeIngredient{
 	@Column(name = "id", updatable = false)
 	private Long id;
 	@Column(name = "ingredient_id", updatable = false)
-	private int ingredient_id;
+	private Integer ingredient_id;
 	@Column(name = "recipe_id", updatable = false)
-	private int recipe_id;
+	private Integer recipe_id;
 	@Column(name = "quantity", nullable = false)
-	private double quantity;
+	private Double quantity;
 	@Column(name = "measurement", nullable = false)
 	private String measurement;
 	
 	public RecipeIngredient() {
 	}
 	
-	public RecipeIngredient(Long id, int ingredient_id, int recipe_id, double quantity, String measurement) {
+	public RecipeIngredient(Long id, Integer ingredient_id, Integer recipe_id, Double quantity, String measurement) {
 		this.id = id;
 		this.ingredient_id = ingredient_id;
 		this.recipe_id = recipe_id;
@@ -46,7 +46,7 @@ public class RecipeIngredient{
 		this.measurement = measurement;
 	}
 	
-	public RecipeIngredient(int ingredient_id, int recipe_id, double quantity, String measurement) {
+	public RecipeIngredient(Integer ingredient_id, Integer recipe_id, Double quantity, String measurement) {
 		this.ingredient_id = ingredient_id;
 		this.recipe_id = recipe_id;
 		this.quantity = quantity;
@@ -61,27 +61,27 @@ public class RecipeIngredient{
 		this.id = id;
 	}
 
-	public int getIngredient_id() {
+	public Integer getIngredient_id() {
 		return ingredient_id;
 	}
 
-	public void setIngredient_id(int ingredient_id) {
+	public void setIngredient_id(Integer ingredient_id) {
 		this.ingredient_id = ingredient_id;
 	}
 
-	public int getRecipe_id() {
+	public Integer getRecipe_id() {
 		return recipe_id;
 	}
 
-	public void setRecipe_id(int recipe_id) {
+	public void setRecipe_id(Integer recipe_id) {
 		this.recipe_id = recipe_id;
 	}
 
-	public double getQuantity() {
+	public Double getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(double quantity) {
+	public void setQuantity(Double quantity) {
 		this.quantity = quantity;
 	}
 
