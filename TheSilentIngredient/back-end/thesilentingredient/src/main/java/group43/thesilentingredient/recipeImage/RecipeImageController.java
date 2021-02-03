@@ -1,6 +1,7 @@
 package group43.thesilentingredient.recipeImage;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -30,6 +31,11 @@ public class RecipeImageController {
 	@GetMapping
 	public List<RecipeImage> getRecipeImages() {
 		return recipeImageService.getRecipeImages();		
+	}
+	
+	@GetMapping(path = "{id}")
+	public Optional<RecipeImage> retrieveRecipeImage(@PathVariable("id") Long recipeImageId){
+		return recipeImageService.retrieveRecipeImage(recipeImageId);
 	}
 
 	@PostMapping
