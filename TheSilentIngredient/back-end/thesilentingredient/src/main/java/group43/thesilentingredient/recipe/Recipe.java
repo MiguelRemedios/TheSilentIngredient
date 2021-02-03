@@ -19,33 +19,44 @@ public class Recipe {
 			sequenceName = "recipe_sequence",
 			allocationSize = 1
 			)
-	
+
 	@GeneratedValue(
 			strategy = GenerationType.SEQUENCE,
 			generator = "recipe_sequence"
 			)
-	
+
 	@Column(name = "id", updatable = false)
 	private Long id;
-	
+
 	@Column(name = "name", nullable = false)
 	private String name;
-	
+
 	@Column(name = "description", nullable = false)
 	private String description;
+	
+	@Column(name = "serving", nullable = false)
+	private Integer serving;
+	
+	@Column(name = "cooktime", nullable = false)
+	private String cooktime;
+	
 	
 	public Recipe() {
 	}
 
-	public Recipe(Long id, String name, String description) {
+	public Recipe(Long id, String name, String description, int serving, String cooktime) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
+		this.serving = serving;
+		this.cooktime = cooktime;
 	}
 	
-	public Recipe(String name, String description) {
+	public Recipe(String name, String description, int serving, String cooktime) {
 		this.name = name;
 		this.description = description;
+		this.serving = serving;
+		this.cooktime = cooktime;
 	}
 
 	public Long getId() {
@@ -71,11 +82,31 @@ public class Recipe {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
+	public int getServing() {
+		return serving;
+	}
+
+	public void setServing(int serving) {
+		this.serving = serving;
+	}
+
+	public String getCooktime() {
+		return cooktime;
+	}
+
+	public void setCooktime(String cooktime) {
+		this.cooktime = cooktime;
+	}
+
 	public String toString() {
-		return "Recipe{" +
+		return "RecipeImage{" +
 				"id=" + id + 
 				", name='" + name +
-				", description='" + description + "'}";
+				", description='" + description +
+				", serving(s)='" + serving + 
+				". cookingtime='" + cooktime +  "'}";
 	}
+	
+	
 }

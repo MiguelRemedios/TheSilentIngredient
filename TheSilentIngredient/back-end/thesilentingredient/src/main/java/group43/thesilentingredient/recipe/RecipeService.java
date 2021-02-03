@@ -51,7 +51,7 @@ public class RecipeService {
 
 
 	@Transactional
-	public void updateRecipe(Long recipeId, String recipeName, String recipeDesc) {
+	public void updateRecipe(Long recipeId, String recipeName, String recipeDesc, Integer serving, String cooktime) {
 		Recipe recipe = recipeRepository.findById(recipeId)
 				.orElseThrow(() -> new IllegalStateException("Recipe with ID " + 
 						recipeId + 
@@ -80,7 +80,20 @@ public class RecipeService {
 			}
 			recipe.setDescription(recipeDesc);
 		}
-		
+
+		if (serving != null &&
+				serving > 0 &&
+				!Objects.equals(recipe.getServing(), serving)) { //If the name is not the same as the current
+
+			recipe.setServing(serving);
+		}
+
+		if (cooktime != null &&
+				cooktime.length() > 0 &&
+				!Objects.equals(recipe.getCooktime(), cooktime)) { //If the name is not the same as the current
+
+			recipe.setCooktime(cooktime);
+		}
 	}
 
 }
