@@ -40,10 +40,10 @@ public class RecipeIngredientController {
 	public void registerRecipeIngredient(@RequestBody RecipeIngredient recipeIngredient) {
 		recipeIngredientService.addIngredientToRecipe(recipeIngredient);
 	}
-//	
-//	@DeleteMapping(path = "{recipeId}")
-//	public void deleteRecipeIngredient(@PathVariable("recipeId") Long recipeId) {
-//		recipeIngredientService.deleteRecipeIngredient(recipeId);
-//	}
+	//Deletes all ingredients for recipe_id thats passed through
+    @DeleteMapping(path = "{recipe_id}")
+    public void deleteRecipeIngredient(@PathVariable("recipe_id") Long recipe_id) {
+        recipeIngredientService.deleteRecipeIngredient(recipe_id);
+    }
 
 }
