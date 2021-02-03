@@ -1,5 +1,6 @@
 package group43.thesilentingredient.recipeIngredient;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,8 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-@Entity
-@Table
+@Entity(name = "RecipeIngredient")
+@Table(name = "recipe_ingredient")
 public class RecipeIngredient{
 	
 	@Id
@@ -21,15 +22,17 @@ public class RecipeIngredient{
 	@GeneratedValue(
 			strategy = GenerationType.SEQUENCE,
 			generator = "recipe_ingredient_sequence"
-			)
-			
+			)	
 	
-	
-	
+	@Column(name = "id", updatable = false)
 	private Long id;
+	@Column(name = "ingredient_id", updatable = false)
 	private int ingredient_id;
+	@Column(name = "recipe_id", updatable = false)
 	private int recipe_id;
+	@Column(name = "quantity", nullable = false)
 	private double quantity;
+	@Column(name = "measurement", nullable = false)
 	private String measurement;
 	
 	public RecipeIngredient() {
@@ -90,6 +93,13 @@ public class RecipeIngredient{
 		this.measurement = measurement;
 	}
 	
+	public String toString() {
+		return "RecipeIngredient{" +
+				"ingredient_id=" + ingredient_id + 
+				", recipe_id='" + recipe_id +
+				", quantity='" + quantity +
+				", measurement='" + measurement + "'}";
+	}
 	
 	
 }
