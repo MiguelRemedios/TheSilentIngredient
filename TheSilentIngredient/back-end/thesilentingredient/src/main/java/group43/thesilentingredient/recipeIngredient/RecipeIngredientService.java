@@ -33,10 +33,14 @@ public class RecipeIngredientService {
 		recipeIngredientRepository.save(recipeIngredient);
 		
 	}
-//
-//	public void deleteRecipeIngredient(Long recipeId) {
-//		// TODO Auto-generated method stub
-//		
-//	}
+	//Deletes all ingredients for recipe_id thats passed through
+    public void deleteRecipeIngredient(Long recipe_id) {
+        boolean exists = recipeIngredientRepository.existsById(recipe_id);
+        if(!exists) {
+            throw new IllegalStateException("Recipe with ID " + recipe_id + " does not exist!");
+        }
+        
+        recipeIngredientRepository.deleteById(recipe_id);
+    }
 
 }
