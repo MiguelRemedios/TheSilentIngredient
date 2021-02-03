@@ -32,7 +32,7 @@ public class RecipeIngredientController {
 	}
 	
 	@GetMapping(path = "{recipe_id}")
-	public List<RecipeIngredient> retrieveRecipeIngredient(@PathVariable("recipe_id") int recipe_id){
+	public List<RecipeIngredient> retrieveRecipeIngredient(@PathVariable("recipe_id") Integer recipe_id){
 		return recipeIngredientService.retrieveRecipeIngredient(recipe_id);
 	}
 	
@@ -48,9 +48,9 @@ public class RecipeIngredientController {
     
     @PutMapping(path = "{recipeId}")
     public void updateRecipe(@PathVariable("recipeId") Long id,
-            @RequestParam(required = false) int ingredient_id,
-            @RequestParam(required = false) int recipe_id,
-            @RequestParam(required = false) double quantity,
+            @RequestParam(required = false) Integer ingredient_id,
+            @RequestParam(required = false) Integer recipe_id,
+            @RequestParam(required = false) Double quantity,
             @RequestParam(required = false) String measurement) {
         recipeIngredientService.updateRecipeIngredient(id, ingredient_id, recipe_id, quantity, measurement);
     }
