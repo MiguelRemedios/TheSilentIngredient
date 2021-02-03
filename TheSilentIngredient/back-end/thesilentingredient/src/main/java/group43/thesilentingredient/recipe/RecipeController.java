@@ -3,9 +3,12 @@ package group43.thesilentingredient.recipe;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping(path= "api/v1/recipe")
+@CrossOrigin(origins = "*")
 
 public class RecipeController {
 
@@ -30,6 +34,11 @@ public class RecipeController {
 		return recipeService.getRecipes();		
 	}
 
+	@GetMapping(path = "{id}")
+	public Optional<Recipe> retrieveRecipe(@PathVariable("id") Long recipeId){
+		return recipeService.retrieveRecipe(recipeId);
+	}
+
 	@PostMapping
 	public void registerRecipe(@RequestBody Recipe recipe) {
 		recipeService.addNewRecipe(recipe);
@@ -43,7 +52,9 @@ public class RecipeController {
 	@PutMapping(path = "{recipeId}")
 	public void updateRecipe(@PathVariable("recipeId") Long recipeId,
 			@RequestParam(required = false) String recipeName,
-			@RequestParam(required = false) String recipeDesc) {
-		recipeService.updateRecipe(recipeId, recipeName, recipeDesc);
+			@RequestParam(required = false) String recipeDesc,
+			@RequestParam(required = false) int serving,
+			@RequestParam(required = false) String cooktime) {
+		recipeService.updateRecipe(recipeId, recipeName, recipeDesc, serving, cooktime);
 	}
 }

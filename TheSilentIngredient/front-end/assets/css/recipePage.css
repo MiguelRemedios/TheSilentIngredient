@@ -111,6 +111,10 @@
     color:white!important;
     
   }
+
+  #piechart{
+    margin-left: -50px;
+  }
   
   @media screen and (max-width: 749px) {
   li a{
