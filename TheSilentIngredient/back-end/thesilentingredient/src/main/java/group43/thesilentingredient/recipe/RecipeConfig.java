@@ -14,17 +14,23 @@ public class RecipeConfig {
 		return args -> {
 			Recipe chickenmasala = new Recipe(
 					"Chicken Masala",
-					"Chicken with sauce"
+					"Chicken with sauce",
+					10,
+					"45min"
 					);
 			
 			Recipe lasagna = new Recipe(
 					"Lasagna",
-					"Pasta with meat"
+					"Pasta with meat",
+					12,
+					"1:30hrs"
 					);
 			
 			Recipe pizza = new Recipe(
 					"Pizza",
-					"Bread with sauce"
+					"Bread with sauce",
+					4,
+					"30min"
 					);
 			
 			repository.saveAll(List.of(chickenmasala,
@@ -32,6 +38,6 @@ public class RecipeConfig {
 					pizza)
 					);
 		};
-		
+
 	}
 }
