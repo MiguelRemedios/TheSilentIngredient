@@ -22,7 +22,7 @@ public class RecipeIngredientService {
 		return recipeIngredientRepository.findAll();
 	}
 	
-	public List<RecipeIngredient> retrieveRecipeIngredient(int recipe_id) {
+	public List<RecipeIngredient> retrieveRecipeIngredient(Integer recipe_id) {
 		return recipeIngredientRepository.findIngredientsByRecipe_id(recipe_id);
 	}
 
