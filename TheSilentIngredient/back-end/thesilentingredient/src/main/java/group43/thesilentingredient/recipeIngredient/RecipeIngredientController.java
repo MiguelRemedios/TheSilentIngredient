@@ -32,7 +32,7 @@ public class RecipeIngredientController {
 	}
 	
 	@GetMapping(path = "{recipe_id}")
-	public List<RecipeIngredient> retrieveRecipeIngredient(@PathVariable("recipe_id") int recipe_id){
+	public List<RecipeIngredient> retrieveRecipeIngredient(@PathVariable("recipe_id") Integer recipe_id){
 		return recipeIngredientService.retrieveRecipeIngredient(recipe_id);
 	}
 	
@@ -40,10 +40,18 @@ public class RecipeIngredientController {
 	public void registerRecipeIngredient(@RequestBody RecipeIngredient recipeIngredient) {
 		recipeIngredientService.addIngredientToRecipe(recipeIngredient);
 	}
-//	
-//	@DeleteMapping(path = "{recipeId}")
-//	public void deleteRecipeIngredient(@PathVariable("recipeId") Long recipeId) {
-//		recipeIngredientService.deleteRecipeIngredient(recipeId);
-//	}
-
+	//Deletes all ingredients for recipe_id thats passed through
+    @DeleteMapping(path = "{recipe_id}")
+    public void deleteRecipeIngredient(@PathVariable("recipe_id") Long recipe_id) {
+        recipeIngredientService.deleteRecipeIngredient(recipe_id);
+    }
+    
+    @PutMapping(path = "{recipeId}")
+    public void updateRecipe(@PathVariable("recipeId") Long id,
+            @RequestParam(required = false) Integer ingredient_id,
+            @RequestParam(required = false) Integer recipe_id,
+            @RequestParam(required = false) Double quantity,
+            @RequestParam(required = false) String measurement) {
+        recipeIngredientService.updateRecipeIngredient(id, ingredient_id, recipe_id, quantity, measurement);
+    }
 }
