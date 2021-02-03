@@ -18,8 +18,7 @@ public class ThesilentingredientApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/v1/recipe").allowedOrigins("*")
-				.allowedMethods("GET", "POST", "DELETE", "PUT");
+				registry.addMapping("/api/v1/recipe").allowedOrigins("*").allowedMethods("GET", "POST", "DELETE", "PUT");
 			}
 		};
 
