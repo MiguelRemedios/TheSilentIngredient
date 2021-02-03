@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import group43.thesilentingredient.recipe.Recipe;
 
 @Repository
 public interface RecipeIngredientRepository extends JpaRepository<RecipeIngredient, Long>{
@@ -19,6 +18,10 @@ public interface RecipeIngredientRepository extends JpaRepository<RecipeIngredie
 	//SELECT count(recipe_id) FROM recipe_ingredient;
 	@Query("SELECT count(*) FROM RecipeIngredient WHERE recipe_id = ?1")
 	List<RecipeIngredient> countIngredients(int recipe_id);
+	
+	@Query("SELECT i FROM RecipeIngredient i WHERE i.recipe_id = ?1 AND i.ingredient_id = ?2")
+	Optional<RecipeIngredient> repeatIngredient(int recipe_id, int ingredient_id);
+
 
 		
 

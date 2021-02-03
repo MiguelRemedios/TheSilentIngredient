@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import group43.thesilentingredient.recipe.Recipe;
 
 @RestController
 @RequestMapping(path = "api/v1/recipe-ingredient")
@@ -37,10 +36,10 @@ public class RecipeIngredientController {
 		return recipeIngredientService.retrieveRecipeIngredient(recipe_id);
 	}
 	
-//	@PostMapping
-//	public void registerRecipeIngredient(@RequestBody RecipeIngredient recipeIngredient) {
-//		recipeIngredientService.addIngredientToRecipe(recipeIngredient);
-//	}
+	@PostMapping
+	public void registerRecipeIngredient(@RequestBody RecipeIngredient recipeIngredient) {
+		recipeIngredientService.addIngredientToRecipe(recipeIngredient);
+	}
 //	
 //	@DeleteMapping(path = "{recipeId}")
 //	public void deleteRecipeIngredient(@PathVariable("recipeId") Long recipeId) {
