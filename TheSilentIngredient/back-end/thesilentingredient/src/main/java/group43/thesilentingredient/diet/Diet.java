@@ -8,8 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-@Entity
-@Table
+@Entity(name = "Diet")
+@Table(name = "diet")
+
 public class Diet {
 
 	@Id
@@ -20,11 +21,11 @@ public class Diet {
 	@Column(name = "id", updatable = false)
 	private Long id;
 	
-	@Column(name = "name", updatable = false)
+	@Column(name = "name", nullable = false)
 	private String name;
 	
 	
-	@Column(name = "description", updatable = false)
+	@Column(name = "description", nullable = false)
 	private String description;
 	
 
