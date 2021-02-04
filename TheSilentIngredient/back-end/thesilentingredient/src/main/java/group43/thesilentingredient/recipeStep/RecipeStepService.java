@@ -20,10 +20,8 @@ public class RecipeStepService {
 		return recipeStepRepository.findAll();
 	}
 	
-	
-	public List<RecipeStep> retrieveRecipeStep(String step) {
-		return recipeStepRepository.findStepsByRecipe_id(step);
+	public Optional<RecipeStep> retrieveRecipeStep(Long stepId) {
+		return recipeStepRepository.findById(stepId);
 	}
-
 	
 }
