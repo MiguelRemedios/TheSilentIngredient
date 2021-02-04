@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-@Entity
+/*@Entity
 @Table
 public class Ingredient {
 
@@ -71,4 +71,4 @@ public class Ingredient {
 				", name='" + name +
 				", description='" + description + "'}";
 	}
-}
+}*/
