@@ -22,6 +22,10 @@ public class DietService {
 	public List<Diet> getDiet() {
 		return dietRepository.findAll();
 	}
+	
+	public Optional<Diet> retrieveDiet(Long dietId) {
+        return dietRepository.findById(dietId);
+    }
 
 	public void addNewDiet(Diet diet) {
 		Optional<Diet> recipeOptional = dietRepository.findDietByName(diet.getName());

@@ -10,8 +10,8 @@ import org.springframework.stereotype.Repository;
 public interface RecipeImageRepository extends JpaRepository<RecipeImage, Long>{
 	
 	//SELECT * FROM recipe_image WHERE recipeNr = ?
-	@Query("SELECT n FROM RecipeImage n WHERE n.recipeNr = ?1")
-	Optional<RecipeImage> findRecipeImageByNr(int recipeNr);
+	@Query("SELECT n FROM RecipeImage n WHERE n.recipeId = ?1")
+	Optional<RecipeImage> findRecipeImageById(int recipeId);
 	
 	//SELECT * FROM recipeimage_sequence WHERE path = ?
 	@Query("SELECT p FROM RecipeImage p WHERE p.path = ?1")
