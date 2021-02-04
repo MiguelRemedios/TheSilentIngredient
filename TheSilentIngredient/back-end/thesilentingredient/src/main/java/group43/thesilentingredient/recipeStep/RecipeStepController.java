@@ -26,9 +26,9 @@ public class RecipeStepController {
 		return recipeStepService.getRecipeStep();		
 	}
 	
-	@GetMapping(path = "{step}")
-	public List<RecipeStep> retrieveRecipeStep(@PathVariable("step") String step){
-		return recipeStepService.retrieveRecipeStep(step);
+	@GetMapping(path = "{id}")
+	public Optional<RecipeStep> retrieveStep(@PathVariable("id") Long stepId){
+		return recipeStepService.retrieveRecipeStep(stepId);
 	}
 	
 }
