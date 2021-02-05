@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-/*@RestController
+@RestController
 @RequestMapping(path= "api/v1/recipe")
 @CrossOrigin(origins = "*")
 
