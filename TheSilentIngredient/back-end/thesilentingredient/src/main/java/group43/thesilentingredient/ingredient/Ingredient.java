@@ -1,4 +1,4 @@
-package group43.thesilentingredient.ingredient;
+package com.example.demo.ingredient;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,9 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-
-@Entity
-@Table
+  
+@Entity(name = "Ingredient")
+@Table(name = "ingredient")
 public class Ingredient {
 
 	@Id
@@ -25,20 +25,29 @@ public class Ingredient {
 	
 	private Long id;
 	private String name;
-	private String description;
+	private Integer calories;
+	private Integer protein;
+	private Integer carbohydrate;
+	private Integer fat;
 	
 	public Ingredient() {
 	}
 
-	public Ingredient(Long id, String name, String description) {
+	public Ingredient(Long id, String name, int calories, int protein, int carbohydrate, int fat) {
 		this.id = id;
 		this.name = name;
-		this.description = description;
+		this.calories = calories;
+		this.protein = protein;
+		this.carbohydrate = carbohydrate;
+		this.fat = fat;
 	}
 	
-	public Ingredient(String name, String description) {
+	public Ingredient(String name, int calories, int protein, int carbohydrate, int fat) {
 		this.name = name;
-		this.description = description;
+		this.calories = calories;
+		this.protein = protein;
+		this.carbohydrate = carbohydrate;
+		this.fat = fat;
 	}
 
 	public Long getId() {
@@ -57,18 +66,43 @@ public class Ingredient {
 		this.name = name;
 	}
 
-	public String getDescription() {
-		return description;
+	public int getCalories() {
+		return calories;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setCalories(int calories) {
+		this.calories = calories;
+	}
+	
+	public int getProtein() {
+		return protein;
+	}
+
+	public void setProtein(int protein) {
+		this.protein = protein;
+	}
+	public int getCarbohydrate() {
+		return carbohydrate;
+	}
+
+	public void setCarbohydrate(int carbohydrate) {
+		this.carbohydrate = carbohydrate;
+	}
+	public int getFat() {
+		return fat;
+	}
+
+	public void setFat(int fat) {
+		this.fat = fat;
 	}
 	
 	public String toString() {
-		return "Recipe{" +
+		return "Ingredient{" +
 				"id=" + id + 
 				", name='" + name +
-				", description='" + description + "'}";
+				", calories='" + calories +
+				", protein='"+ protein +
+				", carbohydrate='"+carbohydrate +
+				", fat='"+fat+"'}";
 	}
 }

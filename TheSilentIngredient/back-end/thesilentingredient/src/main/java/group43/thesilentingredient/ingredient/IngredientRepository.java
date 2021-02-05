@@ -1,4 +1,4 @@
-package group43.thesilentingredient.ingredient;
+package com.example.demo.ingredient;
 
 import java.util.Optional;
 
@@ -11,11 +11,7 @@ public interface IngredientRepository extends JpaRepository<Ingredient, Long>{
 	
 	//SELECT * FROM ingredient WHERE name = ?
 	@Query("SELECT r FROM Ingredient r WHERE r.name = ?1")
-	Optional<Recipe> findIngredientByName(String name);
-	
-	//SELECT * FROM ingredient WHERE description = ?
-	@Query("SELECT d FROM Ingredient d WHERE d.description = ?1")
-	Optional<Ingredient> findIngredientByDescription(String description);
+	Optional<Ingredient> findIngredientByName(String name);
 	
 }
 

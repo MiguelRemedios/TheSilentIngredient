@@ -50,8 +50,8 @@ public class RecipeImageController {
 
 	@PutMapping(path = "{recipeImageId}")
 	public void updateRecipeImage(@PathVariable("recipeImageId") Long recipeImageId,
-			@RequestParam(required = false) int recipeId,
+			@RequestParam(required = false) int recipeNr,
 			@RequestParam(required = false) String path) {
-		recipeImageService.updateRecipeImage(recipeImageId, recipeId, path);
+		recipeImageService.updateRecipeImage(recipeImageId, recipeNr, path);
 	}
 }
