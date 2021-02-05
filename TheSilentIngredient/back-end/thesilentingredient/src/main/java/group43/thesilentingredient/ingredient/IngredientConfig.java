@@ -1,4 +1,4 @@
-package group43.thesilentingredient.recipe;
+package com.example.demo.ingredient;
 
 import java.util.List;
 
@@ -10,14 +10,14 @@ import org.springframework.context.annotation.Configuration;
 public class IngredientConfig {    
 
 	@Bean
-	CommandLineRunner commandLineRunner(IngredientRepository repository) {
+	CommandLineRunner commandLineRunner10(IngredientRepository repository) {
 		return args -> {
 			Ingredient egg = new Ingredient(
 					"egg",
-					8
-					10,
+					8,
 					5,
-					7
+					7,
+					11
 					);
 			
 			Ingredient milk = new Ingredient(
