@@ -34,9 +34,9 @@ public class RecipeIngredientController {
 	}
 	
 	@GetMapping(path = "{recipe_id}")
-	public List<RecipeIngredient> retrieveRecipeIngredient(@PathVariable("recipe_id") Integer recipe_id){
-		return recipeIngredientService.retrieveRecipeIngredient(recipe_id);
-	}
+    public Optional<RecipeIngredient> retrieveRecipeIngredient(@PathVariable("recipe_id") Long recipe_id){
+        return recipeIngredientService.retrieveRecipeIngredient(recipe_id);
+    }
 	
 	@PostMapping
 	public void registerRecipeIngredient(@RequestBody RecipeIngredient recipeIngredient) {
