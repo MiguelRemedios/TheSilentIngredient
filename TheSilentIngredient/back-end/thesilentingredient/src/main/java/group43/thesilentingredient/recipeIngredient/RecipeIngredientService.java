@@ -22,9 +22,9 @@ public class RecipeIngredientService {
 		return recipeIngredientRepository.findAll();
 	}
 	
-	public List<RecipeIngredient> retrieveRecipeIngredient(Integer recipe_id) {
-		return recipeIngredientRepository.findIngredientsByRecipe_id(recipe_id);
-	}
+	public Optional<RecipeIngredient> retrieveRecipeIngredient(Long recipe_id) {
+        return recipeIngredientRepository.findById(recipe_id);
+    }
 
 	public void addIngredientToRecipe(RecipeIngredient recipeIngredient) {
 		Optional<RecipeIngredient> recipeIngredientOptional = recipeIngredientRepository.repeatIngredient(recipeIngredient.getRecipe_id(), recipeIngredient.getIngredient_id());
