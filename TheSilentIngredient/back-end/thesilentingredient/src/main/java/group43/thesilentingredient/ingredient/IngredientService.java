@@ -61,14 +61,13 @@ public class IngredientService {
 				ingredientName.length() > 0 &&
 				!Objects.equals(ingredient.getName(), ingredientName)) { //If the name is not the same as the current
 			
-			Optional<Ingredient> ingredientOptional = ingredientRepository.findngredientByName(ingredientName);
+			Optional<Ingredient> ingredientOptional = ingredientRepository.findIngredientByName(ingredientName);
 			
 			if (ingredientOptional.isPresent()) {
 				throw new IllegalStateException("Ingredient taken!");
 			}
 			ingredient.setName(ingredientName);
 		}
-
 
 		if (ingredientCalories >= 0 &&
 				!Objects.equals(ingredient.getCalories(), ingredientCalories)) { //If the name is not the same as the current

@@ -7,8 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
   
-/*@Entity
-@Table
+@Entity(name = "Ingredient")
+@Table(name = "ingredient")
 public class Ingredient {
 
 	@Id
@@ -25,10 +25,10 @@ public class Ingredient {
 	
 	private Long id;
 	private String name;
-	private int calories;
-	private int protein;
-	private int carbohydrate;
-	private int fat;
+	private Integer calories;
+	private Integer protein;
+	private Integer carbohydrate;
+	private Integer fat;
 	
 	public Ingredient() {
 	}
@@ -105,4 +105,4 @@ public class Ingredient {
 				", carbohydrate='"+carbohydrate +
 				", fat='"+fat+"'}";
 	}
-}*/
+}
