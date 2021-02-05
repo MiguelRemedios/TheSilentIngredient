@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-/*@RestController
+@RestController
 @RequestMapping(path= "api/v1/recipe")
 @CrossOrigin(origins = "*")
 
@@ -48,7 +48,7 @@ public class IngredientController {
 	public void deleteIngredient(@PathVariable("ingredientId") Long ingredientId) {
 		ingredientService.deleteIngredient(ingredientId);
 	}
-
+    
 	@PutMapping(path = "{ingredientId}")
 	public void updateIngredient(@PathVariable("ingredientId") Long ingredientId,
 			@RequestParam(required = false) String name,
