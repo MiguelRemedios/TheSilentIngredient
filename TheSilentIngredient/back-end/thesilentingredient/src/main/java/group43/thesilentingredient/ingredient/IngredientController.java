@@ -48,7 +48,7 @@ public class IngredientController {
 	public void deleteIngredient(@PathVariable("ingredientId") Long ingredientId) {
 		ingredientService.deleteIngredient(ingredientId);
 	}
-
+    
 	@PutMapping(path = "{ingredientId}")
 	public void updateIngredient(@PathVariable("ingredientId") Long ingredientId,
 			@RequestParam(required = false) String name,
