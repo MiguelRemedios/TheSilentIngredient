@@ -1,4 +1,4 @@
-package com.example.demo.ingredient;
+package group43.thesilentingredient.ingredient;
 
 import java.util.Optional;
 
