@@ -32,7 +32,7 @@
 						<li><a href="faq.html" class="logo"><strong>FAQ</strong></a></li>
 
 					</ul>
-					
+
 				</header>
 
 				<!-- Content -->
@@ -52,9 +52,9 @@
 						</div>
 						<div class="smallRecipeImage">
 							<img src="images/misty1.jpg" onclick="enlargeImage(this)"">
-							<img src="images/misty2.jpg" onclick="enlargeImage(this)">
-							<img src="images/misty3.jpg" onclick="enlargeImage(this)" >
-							<img src="images/misty4.jpg" onclick="enlargeImage(this)" >
+							<img src=" images/misty2.jpg" onclick="enlargeImage(this)">
+							<img src="images/misty3.jpg" onclick="enlargeImage(this)">
+							<img src="images/misty4.jpg" onclick="enlargeImage(this)">
 							<img src="images/misty5.jpg" onclick="enlargeImage(this)">
 						</div>
 					</div>
@@ -193,7 +193,7 @@
 		</div>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to top"> <b>Top</b> </button>
-		
+
 
 	</div>
 
@@ -203,28 +203,27 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/enlargeImage.js"></script>
-		<script>
+	<script>
 
-			mybutton = document.getElementById("myBtn");
+		mybutton = document.getElementById("myBtn");
 
 
-			window.onscroll = function () { scrollFunction() };
+		window.onscroll = function () { scrollFunction() };
 
-			function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					mybutton.style.display = "block";
-				} else {
-					mybutton.style.display = "none";
-				}
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
 			}
+		}
 
 
-			function topFunction() {
-				document.body.scrollTop = 0; // For Safari
-				document.documentElement.scrollTop = 0;
-			}
-		</script>
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 
 </body>
 

@@ -22,11 +22,15 @@ public class DietService {
 	public List<Diet> getDiet() {
 		return dietRepository.findAll();
 	}
+	
+	public Optional<Diet> retrieveDiet(Long dietId) {
+        return dietRepository.findById(dietId);
+    }
 
 	public void addNewDiet(Diet diet) {
-		Optional<Diet> recipeOptional = dietRepository.findDietByName(diet.getName());
+		Optional<Diet> dietOptional = dietRepository.findDietByName(diet.getName());
 
-		if (recipeOptional.isPresent()) {
+		if (dietOptional.isPresent()) {
 			throw new IllegalStateException("Diet taken!");
 		}
 
@@ -38,34 +42,38 @@ public class DietService {
 		boolean exists = dietRepository.existsById(dietId);
 
 		if (!exists) {
-			throw new IllegalStateException("Recipe with ID " + dietId + " does not exist!");
 		}
 
 		dietRepository.deleteById(dietId);
 	}
 
 	@Transactional
-	void updateDiet(Long dietId, String dietName, String dietDesc) {
+	public void updateDiet(Long dietId, String dietName, String dietDesc) {
 		Diet diet = dietRepository.findById(dietId)
-				.orElseThrow(() -> new IllegalStateException("Recipe with ID " + dietId + " does not exist!"));
+				.orElseThrow(() -> new IllegalStateException("Diet with ID " + 
+						dietId + 
+						" does not exist!"));
 
-		if (dietName != null && dietName.length() > 0 && !Objects.equals(diet.getName(), dietName)) { // If the name is not the same as the current *post mapping*
-																									
-
+		if (dietName != null && 
+				dietName.length() > 0 &&
+				!Objects.equals(diet.getName(), dietName)) { //If the name is not the same as the current
+			
 			Optional<Diet> dietOptional = dietRepository.findDietByName(dietName);
-
+			
 			if (dietOptional.isPresent()) {
 				throw new IllegalStateException("Diet taken!");
 			}
 			diet.setName(dietName);
 		}
 
-		if (dietDesc != null && dietDesc.length() > 0 && !Objects.equals(diet.getDescription(), dietDesc)) { // If the name is not the same as the current
-																												
-			Optional<Diet> dietOptional = dietRepository.findDietByName(dietDesc);
+		if (dietDesc != null &&
+				dietDesc.length() > 0 &&
+				!Objects.equals(diet.getDescription(), dietDesc)) { //If the name is not the same as the current
+
+			Optional<Diet> dietOptional = dietRepository.findDietByDescription(dietDesc);
 
 			if (dietOptional.isPresent()) {
-				throw new IllegalStateException("Recipe description taken!");
+				throw new IllegalStateException("Diet description taken!");
 			}
 			diet.setDescription(dietDesc);
 		}
