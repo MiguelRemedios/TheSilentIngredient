@@ -20,8 +20,34 @@ public class RecipeStepService {
 		return recipeStepRepository.findAll();
 	}
 	
+	
 	public Optional<RecipeStep> retrieveRecipeStep(Long stepId) {
 		return recipeStepRepository.findById(stepId);
 	}
+	
+	public void addNewStep(RecipeStep recipe_step) {
+		Optional<RecipeStep> recipeStepOptional = recipeStepRepository.findStep(recipe_step.getStep_id());
+
+		if (recipeStepOptional.isPresent()) {
+			throw new IllegalStateException("Step taken!");
+		}
+
+		recipeStepRepository.save(recipe_step);
+	}
+
+
+	public void deleteStep(Long stepId) {
+
+		boolean exists = recipeStepRepository.existsById(stepId);
+
+		if(!exists) {
+			throw new IllegalStateException("Recipe with ID " + stepId + " does not exist!");
+		}
+
+		recipeStepRepository.deleteById(stepId);
+	}
+
+
+	
 	
 }
