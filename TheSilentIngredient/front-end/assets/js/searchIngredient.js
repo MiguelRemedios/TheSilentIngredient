@@ -104,11 +104,16 @@ let dataObject;
 fetch('http://localhost:8080/api/v1/ingredient').then(data => data.json())
 .then (data => {
 
-  dataObject = data;
-  console.log(data);
+  	dataObject = data;
+  	//console.log(data);
+	var ingredients=[];
+	for (var i = 0; i < dataObject.length; i++) {
+		ingredients.push(dataObject[i].name);
+	}
 
-  var ingredients = [dataObject[0].name, dataObject[1].name, dataObject[2].name, dataObject[3].name];
-  console.log(ingredients);
+	//var ingredients = [dataObject[0].name, dataObject[1].name, dataObject[2].name, dataObject[3].name];
+
+  	console.log(ingredients);
 
   autocomplete(document.getElementById("myInput"), ingredients);
 });
