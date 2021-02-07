@@ -72,7 +72,7 @@ public class RecipeImage {
 	}
 
 	public String toString() {
-		return "Recipe{" +
+		return "Recipe Image {" +
 				"id=" + id + 
 				", recipe number='" + recipeNr +
 				", description='" + path + "'}";

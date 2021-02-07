@@ -12,30 +12,50 @@ public class RecipeConfig {
 	@Bean
 	CommandLineRunner commandLineRunner(RecipeRepository repository) {
 		return args -> {
-			Recipe chickenmasala = new Recipe(
-					"Chicken Masala",
-					"Chicken with sauce",
-					10,
-					"45min"
+			
+			//PREFIXES MEANING :
+			// DE - DIET VEGAN
+			// DEG - DIET VEGETARIAN
+			// DH - DIET HALAL
+			// DL - DIET LACTOSE FREE
+			// DG - DIET GLUTEN FREE
+
+			
+			
+			//HALAL RECIPES
+			
+			Recipe DHSandwich = new Recipe(
+					"Sandwich",
+					"Delicious chicken/beef sandwich",
+					1,
+					"5 mins"
 					);
 			
-			Recipe lasagna = new Recipe(
-					"Lasagna",
-					"Pasta with meat",
-					12,
-					"1:30hrs"
+			Recipe DHChickenTKM = new Recipe(
+					"Chicken Tikka Masala",
+					"Amazing Chicken Masala dish",
+					2,
+					"20 mins"
 					);
 			
-			Recipe pizza = new Recipe(
-					"Pizza",
-					"Bread with sauce",
-					4,
-					"30min"
+			Recipe DHMeatball = new Recipe(
+					"2 in 1 Meatball",
+					"Meatballs with flavoured sauce",
+					2,
+					"15 mins"
 					);
 			
-			repository.saveAll(List.of(chickenmasala,
-					lasagna,
-					pizza)
+			Recipe DHChickenFlatbread = new Recipe(
+					"Chicken Flatbread",
+					"Delicious stuffed Chicken Flatbread",
+					1,
+					"10 mins"
+					);
+			
+			repository.saveAll(List.of(DHSandwich,
+					DHChickenTKM,
+					DHMeatball,
+					DHChickenFlatbread)
 					);
 		};
 
