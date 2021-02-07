@@ -119,13 +119,11 @@
 	}
 
 	/*An array containing all the country names in the world:*/
-	var ingredients = ["Bread", "Milk", "Almond milk", "Soya milk", "Butter", "Carrot", "Salt", "Pepper", "Olive oil", "Egg", "Sugar", "Flour", "Potatoe", "Beetroot", "Cinnamon", "Wheat", "Watermelon", "Straberry", "Banana", "Pumpkin", "Pear", "Apple", "Chicken", "Chocolate", "Green Pepper", "Red Pepper"];
+	//var ingredients = ["Bread", "Milk", "Almond milk", "Soya milk", "Butter", "Carrot", "Salt", "Pepper", "Olive oil", "Egg", "Sugar", "Flour", "Potatoe", "Beetroot", "Cinnamon", "Wheat", "Watermelon", "Straberry", "Banana", "Pumpkin", "Pear", "Apple", "Chicken", "Chocolate", "Green Pepper", "Red Pepper"];
 
 	/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 	autocomplete(document.getElementById("myInput"), ingredients);
-    
 
-/*An array containing all the country names in the world:
 let dataObject;
 fetch('http://localhost:8080/api/v1/ingredient').then(data => data.json())
 .then (data => {
@@ -140,4 +138,4 @@ fetch('http://localhost:8080/api/v1/ingredient').then(data => data.json())
   console.log(ingredients);
 
   autocomplete(document.getElementById("myInput"), ingredients);
-});*/
+});
