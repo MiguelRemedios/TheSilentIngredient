@@ -124,15 +124,15 @@
 	/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 	//autocomplete(document.getElementById("myInput"), ingredients);
 
-let dataObject;
-fetch('http://localhost:8080/api/v1/ingredient').then(data => data.json())
-.then (data => {
-  dataObject = data;
-  console.log(data);
-	var ingredients=[];
-	for (var i = 0; i < dataObject.length; i++) {
-		ingredients.push(dataObject[i].name);
-	}
-  console.log(ingredients);
-  autocomplete(document.getElementById("myInput"), ingredients);
-});
+	let dataObject;
+	fetch('http://localhost:8080/api/v1/ingredient').then(data => data.json())
+	.then (data => {
+  		dataObject = data;
+  		//console.log(data);
+		var ingredients=[];
+			for (var i = 0; i < dataObject.length; i++) {
+			ingredients.push(dataObject[i].name);
+		}
+  		console.log(ingredients);
+  		autocomplete(document.getElementById("myInput"), ingredients);
+	});
