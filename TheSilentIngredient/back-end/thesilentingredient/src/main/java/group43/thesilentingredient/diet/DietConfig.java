@@ -17,8 +17,12 @@ public class DietConfig {
 			Diet Vegan = new Diet("Vegan", "Abstaining from use of animal products");
 
 			Diet Vegetarian = new Diet("Vegetarian", "Abstaining from consumption of meat");
+			
+			Diet lactoseFree = new Diet ("Lactose Free", "Requires no diary produts");
+			
+			Diet glutenFree = new Diet ("Gluten Free", "Strictly exclude Gluten");
 
-			repository.saveAll(List.of(halal, Vegan, Vegetarian));
+			repository.saveAll(List.of(halal, Vegan, Vegetarian, lactoseFree, glutenFree));
 		};
 
 	}
