@@ -181,12 +181,12 @@ public class RecipeConfig {
 					"1 hr 10 mins"
 					);
 			
-			repository.saveAll(List.of(DHSandwich, DHChickenTKM, DHMeatball, DHChickenFlatbread, //DH
-									   	DGPancakes, DGHummus, DGBread, //DG
-									   	DVSpicyPickle, DVChickpeaCurry, DVChocolateBrownies, //DV
-									   	NDWhiteRice, NDSpaghetti, NDChickenBagel, NDBurger, //DN
+			repository.saveAll(List.of(NDWhiteRice, NDSpaghetti, NDChickenBagel, NDBurger, //ND
+										DVSpicyPickle, DVChickpeaCurry, DVChocolateBrownies, //DV
+										DVGFajitaRoll, DVGSpicyRice, DVGPasta,//DVG
+										DHSandwich, DHChickenTKM, DHMeatball, DHChickenFlatbread, //DH
 									   	DLPasta, DLShakshuka, DLCassoulet, DLBananaPancakes, DLChickpeaTagine, //DL
-									   	DVGFajitaRoll, DVGSpicyRice, DVGPasta )); //DVG
+									   	DGPancakes, DGHummus, DGBread));  //DG
 		};
 
 	}
