@@ -12,25 +12,24 @@ public class RecipeImageConfig {
 	@Bean
 	CommandLineRunner commandLineRunner3(RecipeImageRepository repository) {
 		return args -> {
-			RecipeImage chickenmasala = new RecipeImage(
-					1,
-					"/images/pic1.png"
-					);
 			
-			RecipeImage lasagna = new RecipeImage(
-					2,
-					"/images/pic2.png"
-					);
+			//PREFIXES MEANING :
+			// ND - NO DIET 
+			// DV - DIET VEGAN 
+			// DVG - DIET VEGETARIAN 
+			// DH - DIET HALAL 
+			// DL - DIET LACTOSE FREE 
+			// DG - DIET GLUTEN FREE 
 			
-			RecipeImage pizza = new RecipeImage(
-					3,
-					"/images/pic3.png"
-					);
+			// NO DIET RECIPE IMAGES
+			RecipeImage NDWhiteRice1 = new RecipeImage(1,"/images/recipe/nodiet/NDWhiteRice1.png");
+			RecipeImage NDWhiteRice2 = new RecipeImage(1,"/images/recipe/nodiet/NDWhiteRice2.png");
+			RecipeImage NDWhiteRice3 = new RecipeImage(1,"/images/recipe/nodiet/NDWhiteRice3.png");
+			RecipeImage NDWhiteRice4 = new RecipeImage(1,"/images/recipe/nodiet/NDWhiteRice4.png");
+			RecipeImage NDWhiteRice5 = new RecipeImage(1,"/images/recipe/nodiet/NDWhiteRice5.png");
 			
-			repository.saveAll(List.of(chickenmasala,
-					lasagna,
-					pizza)
-					);
+			
+			repository.saveAll(List.of(NDWhiteRice1,NDWhiteRice2,NDWhiteRice3,NDWhiteRice4,NDWhiteRice5));
 		};
 
 	}
