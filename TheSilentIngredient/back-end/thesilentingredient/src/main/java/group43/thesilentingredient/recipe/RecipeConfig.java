@@ -14,12 +14,12 @@ public class RecipeConfig {
 		return args -> {
 			
 			//PREFIXES MEANING :
-			// ND - NO DIET !
-			// DV - DIET VEGAN !
-			// DVG - DIET VEGETARIAN !
-			// DH - DIET HALAL !
-			// DL - DIET LACTOSE FREE !
-			// DG - DIET GLUTEN FREE !
+			// ND - NO DIET 
+			// DV - DIET VEGAN 
+			// DVG - DIET VEGETARIAN 
+			// DH - DIET HALAL 
+			// DL - DIET LACTOSE FREE 
+			// DG - DIET GLUTEN FREE 
 		
 			//NO DIET (GENERAL) RECIPES
 			Recipe NDWhiteRice = new Recipe(
@@ -72,6 +72,27 @@ public class RecipeConfig {
 					"5 mins"
 					);
 			
+			//VEGETARIAN RECIPES
+			Recipe DVGFajitaRoll = new Recipe(
+					"Fajita Roll",
+					"Simple and tasty fajita roll",
+					2,
+					"15 mins"
+					);
+
+			Recipe DVGSpicyRice = new Recipe(
+					"Spicy Mexican Rice",
+					"Delicious and easy spicy rice dish",
+					6,
+					"10 mins"
+					);
+			
+			Recipe DVGPasta = new Recipe(
+					"Pasta Salad with Bocconcini, Capers and Tomatoes",
+					"Outstanding pasta reached in delicious vegetables",
+					2,
+					"20 mins"
+					);
 			
 			//HALAL RECIPES
 			Recipe DHSandwich = new Recipe(
@@ -160,13 +181,12 @@ public class RecipeConfig {
 					"1 hr 10 mins"
 					);
 			
-			
 			repository.saveAll(List.of(DHSandwich, DHChickenTKM, DHMeatball, DHChickenFlatbread, //DH
 									   	DGPancakes, DGHummus, DGBread, //DG
 									   	DVSpicyPickle, DVChickpeaCurry, DVChocolateBrownies, //DV
 									   	NDWhiteRice, NDSpaghetti, NDChickenBagel, NDBurger, //DN
-									   	DLPasta, DLShakshuka, DLCassoulet, DLBananaPancakes, DLChickpeaTagine //DL
-									   	)); 
+									   	DLPasta, DLShakshuka, DLCassoulet, DLBananaPancakes, DLChickpeaTagine, //DL
+									   	DVGFajitaRoll, DVGSpicyRice, DVGPasta )); //DVG
 		};
 
 	}
