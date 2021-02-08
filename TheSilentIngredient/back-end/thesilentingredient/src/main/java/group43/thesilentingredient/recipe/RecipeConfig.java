@@ -14,16 +14,35 @@ public class RecipeConfig {
 		return args -> {
 			
 			//PREFIXES MEANING :
-			// DE - DIET VEGAN
-			// DEG - DIET VEGETARIAN
+			// DV - DIET VEGAN
+			// DVG - DIET VEGETARIAN
 			// DH - DIET HALAL
 			// DL - DIET LACTOSE FREE
 			// DG - DIET GLUTEN FREE
-
 			
+			//VEGAN RECIPES
+			Recipe DVSpicyPickle = new Recipe(
+					"Spicy Cucumber Pickles",
+					"Special spicy flavoured cucumber pickles",
+					2,
+					"15 mins"
+					);
+			
+			Recipe DVChickpeaCurry = new Recipe(
+					"Chickpea Curry",
+					"Delicious chickpea vegan curry",
+					4,
+					"40 mins"
+					);
+			
+			Recipe DVChocolateBrownies = new Recipe(
+					"Chocolate Brownies",
+					"Simple and tasty vegan chocolate brownies",
+					1,
+					"5 mins"
+					);
 			
 			//HALAL RECIPES
-			
 			Recipe DHSandwich = new Recipe(
 					"Sandwich",
 					"Delicious chicken/beef sandwich",
@@ -52,11 +71,32 @@ public class RecipeConfig {
 					"10 mins"
 					);
 			
-			repository.saveAll(List.of(DHSandwich,
-					DHChickenTKM,
-					DHMeatball,
-					DHChickenFlatbread)
+			//GLUTEN FREE RECIPES
+			Recipe DGPancakes = new Recipe(
+					"Pancakes",
+					"Delicious pancakes",
+					6,
+					"30 mins"
 					);
+			
+			Recipe DGHummus = new Recipe(
+					"Hummus",
+					"Wonderful and amazing hummus",
+					6,
+					"15 mins"
+					);
+			
+			Recipe DGBread = new Recipe(
+					"Bread",
+					"Gluten free bread",
+					10,
+					"1 hr 10 mins"
+					);
+			
+			
+			repository.saveAll(List.of(DHSandwich, DHChickenTKM, DHMeatball, DHChickenFlatbread,
+									   	DGPancakes, DGHummus, DGBread,
+									   	DVSpicyPickle, DVChickpeaCurry, DVChocolateBrownies));
 		};
 
 	}
