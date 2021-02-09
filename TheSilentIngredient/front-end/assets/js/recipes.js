@@ -1,4 +1,4 @@
-//<-------------------------------------------------- RECIPES SCRIPT -------------------------------------------------->
+//<-------------------------------------------------- RECIPE'S SCRIPT -------------------------------------------------->
 
 //Display Recipe Name and Info
 function recipeInfo(recipeid){
@@ -13,7 +13,7 @@ function recipeInfo(recipeid){
       document.getElementById("r2").innerHTML = `${recipe1.description}`;
       document.getElementById("r3").innerHTML = `Serving: ${recipe1.serving}`;
       document.getElementById("r4").innerHTML = `Cooking Time: ${recipe1.cooktime}`;
-      }
+    }
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe', true);
   xmlhttp.send();
@@ -38,7 +38,7 @@ function recipeImages(image1, image2, image3, image4, image5){
       $("#image3").attr("src",`${img3.path}`);
       $("#image4").attr("src",`${img4.path}`);
       $("#image5").attr("src",`${img5.path}`);
-      }
+    }
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipeimage', true);
   xmlhttp.send();
@@ -79,12 +79,12 @@ function recipeingredients(ing1, ing2 = 0, ing3 = 0 , ing4 = 0, ing5 = 0, ing6 =
   xmlhttp.send();
 }
 
-//Display Ingredient's Amount in Table
+//Display Ingredient's Amount
 function recipeingredientsamount(amount1, amount2 = 0, amount3 = 0, amount4 = 0, amount5 = 0, amount6 = 0, amount7 = 0, amount8 = 0, amount9 = 0, amount10 = 0){
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-    
+
           var amount = JSON.parse(this.responseText);
     
           let amt1 = amount.find(({id}) => id == amount1);
@@ -113,6 +113,70 @@ function recipeingredientsamount(amount1, amount2 = 0, amount3 = 0, amount4 = 0,
       xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient', true);
       xmlhttp.send();
     }
+
+//Display Recipe Steps
+function recipesteps(stp1, stp2 = 0, stp3 = 0, stp4 = 0, stp5 = 0, stp6 = 0, stp7 = 0, stp8 = 0, stp9 = 0, stp10 = 0){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+
+          var steps = JSON.parse(this.responseText);
+
+          let step1 = steps.find(({id}) => id == stp1);
+          let step2 = steps.find(({id}) => id == stp2);
+          let step3 = steps.find(({id}) => id == stp3);
+          let step4 = steps.find(({id}) => id == stp4);
+          let step5 = steps.find(({id}) => id == stp5);
+          let step6 = steps.find(({id}) => id == stp6);
+          let step7 = steps.find(({id}) => id == stp7);
+          let step8 = steps.find(({id}) => id == stp8);
+          let step9 = steps.find(({id}) => id == stp9);
+          let step10 = steps.find(({id}) => id == stp10);
+
+          $("#s1").html(step1.step);
+          $("#s2").html(step2.step);
+          $("#s3").html(step3.step);
+          $("#s4").html(step4.step);
+          $("#s5").html(step5.step);
+          $("#s6").html(step6.step);
+          $("#s7").html(step7.step);
+          $("#s8").html(step8.step);
+          $("#s9").html(step9.step);
+          $("#s10").html(step10.step);
+    }
+  };
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-step', true);
+  xmlhttp.send();
+}
+
+//Display Nutrition
+function recipenutrition(ing1, ing2 = 0, ing3 = 0 , ing4 = 0, ing5 = 0, ing6 = 0, ing7 = 0, ing8 = 0, ing9 = 0, ing10 = 0){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+  
+        var nutrition = JSON.parse(this.responseText);
+  
+        let ingredient1 = nutrition.find(({id}) => id == ing1);
+        let ingredient2 = nutrition.find(({id}) => id == ing2);
+        let ingredient3 = nutrition.find(({id}) => id == ing3);
+        let ingredient4 = nutrition.find(({id}) => id == ing4);
+        let ingredient5 = nutrition.find(({id}) => id == ing5);
+        let ingredient6 = nutrition.find(({id}) => id == ing6);
+        let ingredient7 = nutrition.find(({id}) => id == ing7);
+        let ingredient8 = nutrition.find(({id}) => id == ing8);
+        let ingredient9 = nutrition.find(({id}) => id == ing9);
+        let ingredient10 = nutrition.find(({id}) => id == ing10);
+
+        $("#calories").html(ingredient1.calories);
+        $("#fat").html(ingredient2.fat);
+        $("#protein").html(ingredient2.protein);
+        $("#carbo").html(ingredient3.carbohydrate);
+      }
+    };
+    xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient', true);
+    xmlhttp.send();
+  } 
 //<-------------------------------------------------- RECIPES SCRIPT -------------------------------------------------->
 
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
@@ -122,6 +186,8 @@ function recipe1(){
   recipeImages(1,2,3,4,5);
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
+  recipesteps(1,2);
+  recipenutrition(1,2,2);
 }
 
 recipe1();
