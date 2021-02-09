@@ -8,6 +8,7 @@ function recipeInfo(recipeid){
 
       var recipe = JSON.parse(this.responseText);
       let recipe1 = recipe.find(({id}) => id == recipeid);
+      document.getElementById("title").innerHTML = `TheSilentIngredient - ${recipe1.name}`;
       document.getElementById("r1").innerHTML = `${recipe1.name}`;
       document.getElementById("r2").innerHTML = `${recipe1.description}`;
       document.getElementById("r3").innerHTML = `Serving: ${recipe1.serving}`;
@@ -97,16 +98,16 @@ function recipeingredientsamount(amount1, amount2 = 0, amount3 = 0, amount4 = 0,
           let amt9 = amount.find(({id}) => id == amount9);
           let amt10 = amount.find(({id}) => id == amount10);
     
-          document.getElementById("t1").innerHTML = `${amt1.quantity}`;
-          document.getElementById("t3").innerHTML = `${amt2.quantity}`;
-          document.getElementById("t5").innerHTML = `${amt3.quantity}`;
-          document.getElementById("t7").innerHTML = `${amt4.quantity}`;
-          document.getElementById("t9").innerHTML = `${amt5.quantity}`;
-          document.getElementById("t11").innerHTML = `${amt6.quantity}`;
-          document.getElementById("t13").innerHTML = `${amt7.quantity}`;
-          document.getElementById("t15").innerHTML = `${amt8.quantity}`;
-          document.getElementById("t17").innerHTML = `${amt9.quantity}`;
-          document.getElementById("t19").innerHTML = `${amt10.quantity}`;
+          document.getElementById("t1").innerHTML = `${amt1.quantity}` + ` ${amt1.measurement}`;
+          document.getElementById("t3").innerHTML = `${amt2.quantity}` + ` ${amt2.measurement}`;
+          document.getElementById("t5").innerHTML = `${amt3.quantity}` + ` ${amt3.measurement}`;
+          document.getElementById("t7").innerHTML = `${amt4.quantity}` + ` ${amt4.measurement}`;
+          document.getElementById("t9").innerHTML = `${amt5.quantity}` + ` ${amt5.measurement}`;
+          document.getElementById("t11").innerHTML = `${amt6.quantity}` + ` ${amt6.measurement}`;
+          document.getElementById("t13").innerHTML = `${amt7.quantity}` + ` ${amt7.measurement}`;
+          document.getElementById("t15").innerHTML = `${amt8.quantity}` + ` ${amt8.measurement}`;
+          document.getElementById("t17").innerHTML = `${amt9.quantity}` + ` ${amt9.measurement}`;
+          document.getElementById("t19").innerHTML = `${amt10.quantity}` + ` ${amt10.measurement}`;
       }
       };
       xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient', true);
@@ -119,8 +120,8 @@ function recipeingredientsamount(amount1, amount2 = 0, amount3 = 0, amount4 = 0,
 function recipe1(){
   recipeInfo(1);
   recipeImages(1,2,3,4,5);
-  recipeingredients(1);
-  recipeingredientsamount(1);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
 }
 
 recipe1();
