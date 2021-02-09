@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
-@RequestMapping(path= "api/v1/recipe")
+@RequestMapping(path= "api/v1/ingredient")
 @CrossOrigin(origins = "*")
 
 public class IngredientController {
@@ -31,7 +31,7 @@ public class IngredientController {
 
 	@GetMapping
 	public List<Ingredient> getIngredient() {
-		return ingredientService.getIngredient();		
+		return ingredientService.getIngredients();		
 	}
 
 	@GetMapping(path = "{id}")
@@ -41,18 +41,21 @@ public class IngredientController {
 
 	@PostMapping
 	public void registerIngredient(@RequestBody Ingredient ingredient) {
-		recipeIngredeint.addNewIngredient(ingredient);
+		ingredientService.addNewIngredient(ingredient);
 	}
 
 	@DeleteMapping(path = "{ingredientId}")
 	public void deleteIngredient(@PathVariable("ingredientId") Long ingredientId) {
 		ingredientService.deleteIngredient(ingredientId);
 	}
-
+    
 	@PutMapping(path = "{ingredientId}")
 	public void updateIngredient(@PathVariable("ingredientId") Long ingredientId,
-			@RequestParam(required = false) String name,
-			@RequestParam(required = false) String description, {
-		ingredientService.updateIngredient(ingredientId, ingredientName, description);
+			@RequestParam(required = false) String ingredientName,
+			@RequestParam(required = false) int ingredientCalories,
+			@RequestParam(required = false) int ingredientProtein,
+			@RequestParam(required = false) int ingredientCarbohydrate,
+			@RequestParam(required = false) int ingredientFat){
+		ingredientService.updateIngredient(ingredientId, ingredientName, ingredientCalories, ingredientProtein, ingredientCarbohydrate, ingredientFat);
 	}
 }

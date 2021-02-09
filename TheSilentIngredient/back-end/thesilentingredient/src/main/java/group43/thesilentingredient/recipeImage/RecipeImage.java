@@ -28,7 +28,7 @@ public class RecipeImage {
 	private Long id;
 	
 	@Column(name = "recipeNr", nullable = false)
-	private int recipeId;
+	private Integer recipeNr;
 	
 	@Column(name = "path", nullable = false)
 	private String path;
@@ -36,14 +36,14 @@ public class RecipeImage {
 	public RecipeImage() {
 	}
 
-	public RecipeImage(Long id, int recipeId, String path) {
+	public RecipeImage(Long id, int recipeNr, String path) {
 		this.id = id;
-		this.recipeId = recipeId;
+		this.recipeNr = recipeNr;
 		this.path = path;
 	}
 	
-	public RecipeImage(int recipeId, String path) {
-		this.recipeId = recipeId;
+	public RecipeImage(int recipeNr, String path) {
+		this.recipeNr = recipeNr;
 		this.path = path;
 	}
 	
@@ -55,12 +55,12 @@ public class RecipeImage {
 		this.id = id;
 	}
 
-	public int getRecipeId() {
-		return recipeId;
+	public int getRecipeNr() {
+		return recipeNr;
 	}
 
-	public void setRecipeId(int recipeNr) {
-		this.recipeId = recipeNr;
+	public void setRecipeNr(int recipeNr) {
+		this.recipeNr = recipeNr;
 	}
 
 	public String getPath() {
@@ -72,9 +72,9 @@ public class RecipeImage {
 	}
 
 	public String toString() {
-		return "Recipe{" +
+		return "Recipe Image {" +
 				"id=" + id + 
-				", recipe id='" + recipeId +
+				", recipe number='" + recipeNr +
 				", description='" + path + "'}";
 	}
 	
