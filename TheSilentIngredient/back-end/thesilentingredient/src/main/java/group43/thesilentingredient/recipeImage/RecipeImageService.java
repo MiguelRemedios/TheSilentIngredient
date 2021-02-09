@@ -7,7 +7,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 @Service
 public class RecipeImageService {
 
@@ -23,6 +22,9 @@ public class RecipeImageService {
 		return recipeimgRepository.findAll();
 	}
 
+	public Optional<RecipeImage> retrieveRecipeImage(Long recipeImageId) {
+		return recipeimgRepository.findById(recipeImageId);
+	}
 
 	public void addNewRecipeImage(RecipeImage recipeImage) {
 		Optional<RecipeImage> recipeimgOptional = recipeimgRepository.findRecipeImageByNr(recipeImage.getRecipeNr());
@@ -47,13 +49,13 @@ public class RecipeImageService {
 	}
 
 	@Transactional
-	public void updateRecipeImage(Long recipeImageId, int recipeNr, String path) {
+	public void updateRecipeImage(Long recipeImageId, Integer recipeNr, String path) {
 		RecipeImage recipeImg = recipeimgRepository.findById(recipeImageId)
 				.orElseThrow(() -> new IllegalStateException("Recipe Image with ID " + 
 						recipeImageId + 
 						" does not exist!"));
 
-		if (recipeNr != 0 && 
+		if (recipeNr != 0 &&
 				recipeNr > 0 &&
 				!Objects.equals(recipeImg.getRecipeNr(), recipeNr)) { //If the name is not the same as the current
 			

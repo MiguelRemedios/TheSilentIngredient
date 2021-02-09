@@ -1,5 +1,6 @@
 package group43.thesilentingredient.recipeImage;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,8 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-@Entity
-@Table
+@Entity(name = "RecipeImage")
+@Table(name = "recipe_image")
 public class RecipeImage {
 
 	@Id
@@ -23,8 +24,13 @@ public class RecipeImage {
 			generator = "recipeimage_sequence"
 			)
 	
+	@Column(name = "id", updatable = false)
 	private Long id;
-	private int recipeNr;
+	
+	@Column(name = "recipeNr", nullable = false)
+	private Integer recipeNr;
+	
+	@Column(name = "path", nullable = false)
 	private String path;
 	
 	public RecipeImage() {
@@ -66,7 +72,7 @@ public class RecipeImage {
 	}
 
 	public String toString() {
-		return "Recipe{" +
+		return "Recipe Image {" +
 				"id=" + id + 
 				", recipe number='" + recipeNr +
 				", description='" + path + "'}";

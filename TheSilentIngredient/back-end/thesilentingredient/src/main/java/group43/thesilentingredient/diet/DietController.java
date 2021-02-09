@@ -4,8 +4,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,10 +17,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping(path = "api/v1/diet")
+@CrossOrigin(origins = "*")
 
 public class DietController {
 
 	private final DietService dietService;
+	
 
 	@Autowired
 	public DietController(DietService dietService) {
@@ -29,6 +33,11 @@ public class DietController {
 	public List<Diet> getDiet() {
 		return dietService.getDiet();
 	}
+	
+	@GetMapping(path = "{id}")
+    public Optional<Diet> retrieveDiet(@PathVariable("id") Long dietId){
+        return dietService.retrieveDiet(dietId);
+    }
 
 	@PostMapping
 	public void registerDiet(@RequestBody Diet diet) {
@@ -41,7 +50,8 @@ public class DietController {
 	}
 
 	@PutMapping(path = "{dietId}")
-	public void updateRecipe(@PathVariable("recipeId") Long dietId, @RequestParam(required = false) String dietName,
+	public void updateDiet(@PathVariable("dietId") Long dietId, 
+			@RequestParam(required = false) String dietName,
 			@RequestParam(required = false) String dietDesc) {
 		dietService.updateDiet(dietId, dietName, dietDesc);
 	}

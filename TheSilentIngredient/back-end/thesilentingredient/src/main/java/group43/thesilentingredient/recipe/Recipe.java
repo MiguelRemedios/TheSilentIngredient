@@ -100,7 +100,7 @@ public class Recipe {
 	}
 
 	public String toString() {
-		return "RecipeImage{" +
+		return "Recipe {" +
 				"id=" + id + 
 				", name='" + name +
 				", description='" + description +

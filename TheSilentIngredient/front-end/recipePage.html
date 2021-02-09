@@ -1,13 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-
 <head>
-	<title>Generic - Editorial by HTML5 UP</title>
+	<title id="title">TheSilentIngredient</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -32,16 +26,16 @@
 						<li><a href="faq.html" class="logo"><strong>FAQ</strong></a></li>
 
 					</ul>
-					
+
 				</header>
 
 				<!-- Content -->
 				<section id="RecipeName">
 					<header class="main">
-						<h1>Recipe Name</h1>
-						<p>Author: Name</p>
-						<p1>Serving: -----</p1>
-						<p1 style="margin: 0 0 1em 10em;">Cooking Time: -----</p1>
+						<h1 id="r1">Recipe Name</h1>
+						<p id="r2">Description: </p>
+						<p1 id="r3">Serving: </p1>
+						<p1 id="r4" style="margin: 0 0 1em 10em;">Cooking Time: </p1>
 					</header>
 				</section>
 				<section>
@@ -51,11 +45,11 @@
 							<img id="imageBox" src="images/misty1.jpg" style="width: auto;">
 						</div>
 						<div class="smallRecipeImage">
-							<img src="images/misty1.jpg" onclick="enlargeImage(this)"">
-							<img src="images/misty2.jpg" onclick="enlargeImage(this)">
-							<img src="images/misty3.jpg" onclick="enlargeImage(this)" >
-							<img src="images/misty4.jpg" onclick="enlargeImage(this)" >
-							<img src="images/misty5.jpg" onclick="enlargeImage(this)">
+							<img id="image1" src="images/misty1.jpg" onclick="enlargeImage(this)">
+							<img id="image2"  src=" images/misty2.jpg" onclick="enlargeImage(this)">
+							<img id="image3"  src="images/misty3.jpg" onclick="enlargeImage(this)">
+							<img id="image4"  src="images/misty4.jpg" onclick="enlargeImage(this)">
+							<img id="image5"  src="images/misty5.jpg" onclick="enlargeImage(this)">
 						</div>
 					</div>
 					<script>
@@ -71,7 +65,7 @@
 						<div class="col-6 col-12-medium">
 							<div>
 
-								<h4>Default</h4>
+								<h4>Ingredients</h4>
 								<div class="table-wrapper">
 									<table>
 										<thead>
@@ -82,16 +76,44 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>200g</td>
-												<td>Plain flour</td>
+												<td id="t1"></td>
+												<td id="t2"></td>
 											</tr>
 											<tr>
-												<td>600ml</td>
-												<td>Milk</td>
+												<td id="t3"></td>
+												<td id="t4"></td>
 											</tr>
 											<tr>
-												<td>4</td>
-												<td>Eggs</td>
+												<td id="t5"></td>
+												<td id="t6"></td>
+											</tr>
+											<tr>
+												<td id="t7"></td>
+												<td id="t8"></td>
+											</tr>
+											<tr>
+												<td id="t9"></td>
+												<td id="t10"></td>
+											</tr>
+											<tr>
+												<td id="t11"></td>
+												<td id="t12"></td>
+											</tr>
+											<tr>
+												<td id="t13"></td>
+												<td id="t14"></td>
+											</tr>
+											<tr>
+												<td id="t15"></td>
+												<td id="t16"></td>
+											</tr>
+											<tr>
+												<td id="t17"></td>
+												<td id="t18"></td>
+											</tr>
+											<tr>
+												<td id="t19"></td>
+												<td id="t20"></td>
 											</tr>
 										</tbody>
 									</table>
@@ -112,10 +134,9 @@
 									function drawChart() {
 										var data = google.visualization.arrayToDataTable([
 											['Nutrition', 'Persentage Breakdown'],
-											['Fat', 10],
-											['Protein', 23],
-											['Carbohydrate', 54],
-											['Salt', 13]
+											['Fat', 1],
+											['Protein', 3],
+											['Carbohydrate', 5],
 
 										]);
 
@@ -133,20 +154,20 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>Fat</td>
-												<td>10%</td>
+												<td>Calories</td>
+												<td id="calories"></td>
 											</tr>
 											<tr>
 												<td>Protein</td>
-												<td>23%</td>
+												<td id="protein"></td>
 											</tr>
 											<tr>
 												<td>Carbohydrate</td>
-												<td>54%</td>
+												<td id="carbo"></td>
 											</tr>
 											<tr>
-												<td>Salt</td>
-												<td>13%</td>
+												<td>Fat</td>
+												<td  id="fat"></td>
 											</tr>
 										</tbody>
 									</table>
@@ -168,19 +189,34 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Step1</td>
+										<td id="s1"></td>
 									</tr>
 									<tr>
-										<td>Step2</td>
+										<td id="s2"></td>
 									</tr>
 									<tr>
-										<td>Step3</td>
+										<td id="s3"></td>
 									</tr>
 									<tr>
-										<td>Step4</td>
+										<td id="s4"></td>
 									</tr>
 									<tr>
-										<td>Step5</td>
+										<td id="s5"></td>
+									</tr>
+									<tr>
+										<td id="s6"></td>
+									</tr>
+									<tr>
+										<td id="s7"></td>
+									</tr>
+									<tr>
+										<td id="s8"></td>
+									</tr>
+									<tr>
+										<td id="s9"></td>
+									</tr>
+									<tr>
+										<td id="s10"></td>
 									</tr>
 								</tbody>
 							</table>
@@ -193,7 +229,7 @@
 		</div>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to top"> <b>Top</b> </button>
-		
+
 
 	</div>
 
@@ -203,28 +239,29 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/enlargeImage.js"></script>
-		<script>
+	<script src="assets/js/recipes.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
 
-			mybutton = document.getElementById("myBtn");
+		mybutton = document.getElementById("myBtn");
 
 
-			window.onscroll = function () { scrollFunction() };
+		window.onscroll = function () { scrollFunction() };
 
-			function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					mybutton.style.display = "block";
-				} else {
-					mybutton.style.display = "none";
-				}
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
 			}
+		}
 
 
-			function topFunction() {
-				document.body.scrollTop = 0; // For Safari
-				document.documentElement.scrollTop = 0;
-			}
-		</script>
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 
 </body>
 
