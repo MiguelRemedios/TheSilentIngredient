@@ -1,3 +1,9 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .recipeImage{
     display:flex; 
     padding-left: 150px;
@@ -45,14 +51,6 @@
   margin-left: -100px;
   margin-top: 29px;
 }
-
-@media  screen and (min-width: 1440px) {
-.smallRecipeImage{
-  width: auto;
-  height: auto;
-  margin-right: 100px;
-  }
-  }
   ul {
     list-style-type: none;
     margin: 0;
@@ -125,71 +123,96 @@
     }
   }
   
-  @media  screen and (min-width: 1440px) {
+   @media  screen and (min-width: 425px) {
+      .main{
+        width: auto;
+        height: auto;
+        margin-top:-20px;
+            }
+    }
+       
+@media  screen and (min-width: 1920px) {
+  .recipeImage{
+    width: auto;
+    height: auto;
+  }
+  .smallRecipeImage{
+    margin-left: -150px!important; 
+    margin-top: 10px!important;
+  }
+
+}
+
+@media  screen and (min-width: 768px) {
+  .smallRecipeImage{
+    padding-left: 50px;
+    width: auto;
+    height: auto;
+  }
+  .recipeImage{
+    padding-right: 150px;
+  }
   #header ul{
-    width: 90%;
+    width: 86.5%;
   }
+}
+
+@media  screen and (max-width: 425px) {
+.recipeImage{
+  padding-left: 4px;
+  padding-right: 30px;
+}
+.smallRecipeImage{
+  padding-left: 60px;
+}
+#piechart{
+  margin-left: -90px;
+}
+#header{
+  margin-bottom: 15px;
+}
+
+}
+@media  screen and (max-width: 320px){
+  #piechart{
+   margin-left: -130.5px;
+   
   }
-          @media  screen and (min-width: 425px) {
-            .main{
-              width: auto;
-              height: auto;
-              margin-top:-20px;
-              }
-              }
+}
 
-              @media  screen and (max-width: 425px) { /* Modern phone screen scaling*/
-                .mainRecipeImage{
-                  margin-left: -90%;
-                  margin-right: 60%;
-                  }
-                  }
-            
-                  @media  screen and (max-width: 425px) {
-                    .smallRecipeImage{
-                      margin-left: -80%;
-                      margin-right: -10%;
-                      }
-                      }
-                
-                      @media  screen and (min-width: 430px) and (max-device-width: 768px) { /* Tablet window scaling */
-                        .mainRecipeImage{
-                          margin-left: -40%;
-                          margin-right: 70%;
-                          }
-                          }
-                    
-                          @media  screen and (min-width: 430px) and (max-device-width: 768px) {
-                            .smallRecipeImage{
-                              margin-left: -80%;
-                              margin-right: 0%;
-                              }
-                              }
 
-                              @media  screen and (min-width: 770px) and (max-device-width: 1024px) { /* Laptop window scaling */
-                                .mainRecipeImage{
-                                  margin-left: -30%;
-                                  margin-right: 70%;
-                                  }
-                                  }
-                            
-                                  @media  screen and (min-width: 770px) and (max-device-width: 1024px) {
-                                    .smallRecipeImage{
-                                      margin-left: -80%;
-                                      margin-right: 0%;
-                                      }
-                                      }
-        
-                                      @media  screen and (min-width: 1025px) and (max-device-width: 1440px) { /*Large laptop/desktop window scaling */
-                                        .mainRecipeImage{
-                                          margin-left: -20%;
-                                          margin-right: 70%;
-                                          }
-                                          }
-                                    
-                                          @media  screen and (min-width: 1025px) and (max-device-width: 1440px) {
-                                            .smallRecipeImage{
-                                              margin-left: -80%;
-                                              }
-                                              }
+@media  screen and (min-width: 1440px) {
+  .smallRecipeImage{
+    width: auto;
+    height: auto;
+    margin-right: 180px;
+    margin-top: 15px!important;
+    }
+    #header ul{
+      width: 90%;
+    }
+    }
+
+    @media  screen and (min-width: 1920px) {
+      #header ul{
+        width: 88.9%;
+      }
+    }
+    @media  screen and (min-width: 1024px) {
+      #header ul{
+        width: 90%;
+      }
+    }
+
+    @media  screen and (min-width: 2560px) {
+      #header ul{
+        width: 66.5%;
+      }
+    }
+  
+
+
+
+
+
     
