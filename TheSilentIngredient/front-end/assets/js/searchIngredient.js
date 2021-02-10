@@ -36,7 +36,7 @@
 	   console.log(ingredient);
 		document.getElementById('myInput').value = "";
 		toList(ingredient);
-		b.removeActive();
+		//b.removeActive();
 		/*   var input = document.createElement('input');
 		   input.name = 'generated_input';*/
 	   
@@ -114,7 +114,7 @@
 			e.currentTarget.parentNode.remove();
 		});
 		x.appendChild(btnDelete);
-		//TODO: Adicionar ao x um elemento que seja algo que faça de botão e chame uma funcao que elimina este div
+		//TODO: Adicionar ao x um elemento que seja algo que faÃ§a de botÃ£o e chame uma funcao que elimina este div
 		document.getElementById('ing').appendChild(x);
 	}
 
@@ -122,20 +122,17 @@
 	//var ingredients = ["Bread", "Milk", "Almond milk", "Soya milk", "Butter", "Carrot", "Salt", "Pepper", "Olive oil", "Egg", "Sugar", "Flour", "Potatoe", "Beetroot", "Cinnamon", "Wheat", "Watermelon", "Straberry", "Banana", "Pumpkin", "Pear", "Apple", "Chicken", "Chocolate", "Green Pepper", "Red Pepper"];
 
 	/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-	autocomplete(document.getElementById("myInput"), ingredients);
+	//autocomplete(document.getElementById("myInput"), ingredients);
 
-let dataObject;
-fetch('http://localhost:8080/api/v1/ingredient').then(data => data.json())
-.then (data => {
-
-  dataObject = data;
-  console.log(data);
-	var ingredients=[];
-	for (var i = 0; i < dataObject.length(); i++) {
-		ingredients.push(dataObject[i].name);
-	}
-
-  console.log(ingredients);
-
-  autocomplete(document.getElementById("myInput"), ingredients);
-});
+	let dataObject;
+	fetch('http://localhost:8080/api/v1/ingredient').then(data => data.json())
+	.then (data => {
+  		dataObject = data;
+  		//console.log(data);
+		var ingredients=[];
+			for (var i = 0; i < dataObject.length; i++) {
+			ingredients.push(dataObject[i].name);
+		}
+  		console.log(ingredients);
+  		autocomplete(document.getElementById("myInput"), ingredients);
+	});
