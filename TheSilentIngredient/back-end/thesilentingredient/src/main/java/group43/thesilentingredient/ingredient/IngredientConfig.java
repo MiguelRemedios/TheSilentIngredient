@@ -179,6 +179,272 @@ public class IngredientConfig {
 					4,
 					0
 					);
+			Ingredient dry soya cream = new Ingredient(
+					"soya cream",
+					140,
+					2,
+					1,
+					14
+					);
+			Ingredient pasta = new Ingredient(
+					"pasta",
+					174,
+					8,
+					40,
+					1
+					);
+			Ingredient red chilli = new Ingredient(
+					"red chilli",
+					6,
+					0,
+					1,
+					0
+					);
+			Ingredient cherry tomatoes can = new Ingredient(
+					"cherry tomatoes can",
+					25,
+					1,
+					6,
+					1
+					);
+			Ingredient caster sugar = new Ingredient(
+					"caster sugar",
+					400,
+					0,
+					100,
+					0
+					);
+			Ingredient canned white bean = new Ingredient(
+					"canned white bean",
+					242,
+					17,
+					44,
+					0
+					);
+			Ingredient tempeh = new Ingredient(
+					"tempeh",
+					140,
+					16,
+					10,
+					5
+					);
+			Ingredient carrot = new Ingredient(
+					"carrot",
+					41,
+					1,
+					10,
+					0
+					);
+			Ingredient celery = new Ingredient(
+					"celery",
+					14,
+					0,
+					3,
+					0
+					);
+			Ingredient mushrooms = new Ingredient(
+					"mushrooms",
+					14,
+					0,
+					3,
+					0
+					);
+			Ingredient sage = new Ingredient(
+					"sage",
+					2,
+					0,
+					0,
+					0
+					);
+			Ingredient thyme = new Ingredient(
+					"thyme",
+					2,
+					0,
+					0,
+					0
+					);
+			Ingredient bay leaves = new Ingredient(
+					"bay leaves",
+					5,
+					0,
+					0,
+					0
+					);
+			Ingredient parsley = new Ingredient(
+					"parsley",
+					11,
+					1,
+					2,
+					0
+					);
+			Ingredient red wine = new Ingredient(
+					"red wine",
+					160,
+					0,
+					4,
+					0
+					);
+			Ingredient all purpose flour = new Ingredient(
+					"all purpose flour",
+					360,
+					10,
+					76,
+					1
+					);
+			Ingredient white sugar = new Ingredient(
+					"white sugar",
+					407,
+					0,
+					100,
+					0
+					);
+			Ingredient baking powder = new Ingredient(
+					"baking powder",
+					2,
+					0,
+					2,
+					0
+					);
+			Ingredient plant based milk = new Ingredient(
+					"plant based milk",
+					110,
+					5,
+					16,
+					5
+					);
+			Ingredient vegetable oil = new Ingredient(
+					"vegetable oil",
+					120,
+					0,
+					0,
+					14
+					);
+			Ingredient banana = new Ingredient(
+					"banana",
+					105,
+					1,
+					27,
+					0
+					);
+			Ingredient red onion = new Ingredient(
+					"red onion",
+					40,
+					1,
+					9,
+					0
+					);
+			Ingredient cumin = new Ingredient(
+					"cumin",
+					22,
+					1,
+					3,
+					1
+					);
+			Ingredient coriander = new Ingredient(
+					"coriander",
+					23,
+					2,
+					4,
+					0
+					);
+			Ingredient cinnamon = new Ingredient(
+					"cinnamon",
+					0,
+					0,
+					6,
+					0
+					);
+			Ingredient red pepper = new Ingredient(
+					"red pepper",
+					39,
+					1,
+					9,
+					0
+					);
+			Ingredient courgette = new Ingredient(
+					"courgette",
+					21,
+					1,
+					4,
+					0
+					);
+			Ingredient aubergine = new Ingredient(
+					"aubergine",
+					20,
+					2,
+					5,
+					0
+					);
+			Ingredient vine tomatoes = new Ingredient(
+					"vine tomatoes",
+					16,
+					1,
+					3,
+					0
+					);
+			Ingredient chickpeas = new Ingredient(
+					"chickpeas",
+					210,
+					10,
+					35,
+					4
+					);
+			Ingredient vegetable stock = new Ingredient(
+					"vegetable stock",
+					15,
+					1,
+					3,
+					0
+					);
+			Ingredient harrisa = new Ingredient(
+					"harrisa",
+					170,
+					1,
+					4,
+					17
+					);
+			Ingredient prunes = new Ingredient(
+					"prunes",
+					115,
+					1,
+					30,
+					0
+					);
+			Ingredient couscous = new Ingredient(
+					"couscous",
+					174,
+					6,
+					36,
+					0
+					);
+			Ingredient bread = new Ingredient(
+					"bread",
+					54,
+					2,
+					11,
+					0
+					);
+			Ingredient sauce = new Ingredient(
+					"sauce",
+					12,
+					0,
+					3,
+					2
+					);
+			Ingredient potatoes = new Ingredient(
+					"potatoes",
+					110,
+					3,
+					26,
+					0
+					);
+			Ingredient flatbread = new Ingredient(
+					"flatbread",
+					150,
+					4,
+					24,
+					3
+					);
 			
 			repository.saveAll(List.of(egg,
 					milk,
@@ -201,7 +467,46 @@ public class IngredientConfig {
 					garlic glove,
 					rosemary sprigs,
 					leek,
-					dry white wine,)
+					dry white wine,
+					soya cream,
+					pasta,
+					parsley,
+					red chilli,
+					cherry tomatoes can,
+					caster sugar,
+					canned white bean,
+					tempeh,
+					carrot,
+					celery,
+					mushrooms,
+					sage,
+					thyme,
+					bay leaves,
+					parsley,
+					red wine,
+					all purpose flour,
+					white sugar,
+					baking powder,
+					plant based milk,
+					vegetable oil,
+					banana,
+					red onion,
+					cumin,
+					coriander,
+					cinnamon,
+					red pepper,
+					courgette,
+					aubergine,
+					vine tomatoes,
+					chickpeas,
+					vegetable stock,
+					harissa,
+					prunes,
+					couscous,
+					bread,
+					sauce,
+					potatoes,
+					flatbread)
 					);
 		};
 
