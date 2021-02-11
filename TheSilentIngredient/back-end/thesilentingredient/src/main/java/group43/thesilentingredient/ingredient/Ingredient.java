@@ -25,15 +25,15 @@ public class Ingredient {
 	
 	private Long id;
 	private String name;
-	private Integer calories;
-	private Integer protein;
-	private Integer carbohydrate;
-	private Integer fat;
+	private Double calories;
+	private Double protein;
+	private Double carbohydrate;
+	private Double fat;
 	
 	public Ingredient() {
 	}
 
-	public Ingredient(Long id, String name, int calories, int protein, int carbohydrate, int fat) {
+	public Ingredient(Long id, String name, double calories, double protein, double carbohydrate, double fat) {
 		this.id = id;
 		this.name = name;
 		this.calories = calories;
@@ -42,7 +42,7 @@ public class Ingredient {
 		this.fat = fat;
 	}
 	
-	public Ingredient(String name, int calories, int protein, int carbohydrate, int fat) {
+	public Ingredient(String name, double calories, double protein, double carbohydrate, double fat) {
 		this.name = name;
 		this.calories = calories;
 		this.protein = protein;
@@ -66,33 +66,33 @@ public class Ingredient {
 		this.name = name;
 	}
 
-	public int getCalories() {
+	public double getCalories() {
 		return calories;
 	}
 
-	public void setCalories(int calories) {
+	public void setCalories(double calories) {
 		this.calories = calories;
 	}
 	
-	public int getProtein() {
+	public double getProtein() {
 		return protein;
 	}
 
-	public void setProtein(int protein) {
+	public void setProtein(double protein) {
 		this.protein = protein;
 	}
-	public int getCarbohydrate() {
+	public double getCarbohydrate() {
 		return carbohydrate;
 	}
 
-	public void setCarbohydrate(int carbohydrate) {
+	public void setCarbohydrate(double carbohydrate) {
 		this.carbohydrate = carbohydrate;
 	}
-	public int getFat() {
+	public double getFat() {
 		return fat;
 	}
 
-	public void setFat(int fat) {
+	public void setFat(double fat) {
 		this.fat = fat;
 	}
 	
