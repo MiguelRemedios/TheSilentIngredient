@@ -164,14 +164,14 @@ public class IngredientConfig {
 					12,
 					0
 					);
-			Ingredient dry white_wine = new Ingredient(
+			Ingredient dry_white_wine = new Ingredient(
 					"dry white_wine",
 					120,
 					0,
 					4,
 					0
 					);
-			Ingredient dry soya_cream = new Ingredient(
+			Ingredient dry_soya_cream = new Ingredient(
 					"soya_cream",
 					140,
 					2,
@@ -382,7 +382,7 @@ public class IngredientConfig {
 					3,
 					0
 					);
-			Ingredient harrisa = new Ingredient(
+			Ingredient harissa = new Ingredient(
 					"harrisa",
 					170,
 					1,
@@ -454,7 +454,7 @@ public class IngredientConfig {
 					rosemary_sprigs,
 					leek,
 					dry_white_wine,
-					soya_cream,
+					dry_soya_cream,
 					pasta,
 					parsley,
 					red_chilli,
