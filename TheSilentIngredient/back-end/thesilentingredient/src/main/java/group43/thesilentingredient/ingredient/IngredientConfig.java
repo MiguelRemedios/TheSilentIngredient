@@ -12,20 +12,267 @@ public class IngredientConfig {
 	@Bean
 	CommandLineRunner commandLineRunner10(IngredientRepository repository) {
 		return args -> {
+			Ingredient pickCucumber = new Ingredient(
+					"pickling cucumber",
+					11,
+					0.3,
+					2.3,
+					0.2
+					);
+			
+			Ingredient cucumber = new Ingredient(
+					"cucumber",
+					10,
+					0.6,
+					2.2,
+					0.2
+					);
+			
+			Ingredient shallots = new Ingredient(
+					"shallots",
+					75,
+					2.5,
+					17,
+					0
+					);
+			Ingredient mustardseeds = new Ingredient(
+					"mustard seeds",
+					469,
+					24.94,
+					34.94,
+					28.76
+					);
+			
+			Ingredient grdtumeric = new Ingredient(
+					"ground tumeric",
+					312,
+					9.7,
+					67,
+					3.3
+					);
+			
+			Ingredient stranise = new Ingredient(
+					"star anise",
+					337,
+					17.6,
+					50.02,
+					15.9
+					);
+			
+			Ingredient castersugar = new Ingredient(
+					"caster sugar",
+					400,
+					0,
+					100,
+					0
+					);
+			Ingredient vinegar = new Ingredient(
+					"vinegar",
+					21,
+					0,
+					0.9,
+					0
+					);
+			Ingredient onion = new Ingredient(
+					"onion",
+					40,
+					1.1,
+					9.3,
+					0.1
+					);
+			
+			Ingredient tinchickpeas = new Ingredient(
+					"tin chickpeas",
+					225,
+					7.2,
+					20,
+					14
+					);
+			
+			Ingredient greenchillies = new Ingredient(
+					"green chillies",
+					40,
+					2,
+					9.5,
+					0.2
+					);
+			Ingredient sunfloweroil = new Ingredient(
+					"sunflower oil",
+					884,
+					0,
+					0,
+					100
+					);
+			Ingredient sugar = new Ingredient(
+					"sugar",
+					380,
+					0.1,
+					98,
+					0
+					);
+			
+			Ingredient tintomatoe = new Ingredient(
+					"tin tomatoes",
+					32,
+					1.6,
+					7.3,
+					0.3
+					);
+			
+			Ingredient redchillipowder = new Ingredient(
+					"red chilli powder",
+					282,
+					13,
+					50,
+					14
+					);
+			Ingredient coriander = new Ingredient(
+					"coriander",
+					23,
+					2.1,
+					3.7,
+					0.5
+					);
+			Ingredient tinadukibeans = new Ingredient(
+					"tin aduki beans",
+					329,
+					20,
+					63,
+					0.5
+					);
+			
+			Ingredient brwnsugar = new Ingredient(
+					"brown sugar",
+					380,
+					0.1,
+					98,
+					0
+					);
+			
+			Ingredient cocoapowder = new Ingredient(
+					"cocoa powder",
+					228,
+					20,
+					58,
+					14
+					);
+			Ingredient almonds = new Ingredient(
+					"almonds",
+					579,
+					21,
+					22,
+					50
+					);
+			Ingredient vanillaextract = new Ingredient(
+					"vanilla extract",
+					288,
+					0.1,
+					13,
+					0.1
+					);
+			
+			Ingredient darkdairyfreechoc = new Ingredient(
+					"dark dairy-free chocolate",
+					598,
+					7.8,
+					46,
+					43
+					);
+			
+			Ingredient icingsgr = new Ingredient(
+					"icing sugar",
+					418,
+					0,
+					68,
+					16
+					);
 			Ingredient egg = new Ingredient(
 					"egg",
-					8,
-					5,
-					7,
-					11
+					143,
+					13,
+					0.7,
+					9.5
+					);
+			Ingredient glutenfreeflour = new Ingredient(
+					"gluten-free plain flour",
+					340,
+					13,
+					72,
+					2.5
 					);
 			
 			Ingredient milk = new Ingredient(
 					"milk",
-					4,
-					7,
+					34,
+					3.4,
+					5,
+					0.1
+					);
+			
+			Ingredient lemonjc = new Ingredient(
+					"lemon juice",
+					22,
+					0.4,
+					6.9,
+					0.2
+					);
+			Ingredient oliveoil = new Ingredient(
+					"olive oil",
+					884,
+					0,
+					0,
+					100
+					);
+			Ingredient cardamon = new Ingredient(
+					"cardamon",
+					311,
+					11,
+					68,
+					6.7
+					);
+			
+			Ingredient salt = new Ingredient(
+					"salt",
+					0,
+					0,
+					0,
+					0
+					);
+			
+			Ingredient driedyeast = new Ingredient(
+					"dried yeast",
+					325,
+					40,
+					41,
+					7.6
+					);
+			Ingredient buttermilk = new Ingredient(
+					"buttermilk",
+					62,
+					3.2,
+					4.9,
+					3.3
+					);
+			Ingredient blackbeanstin = new Ingredient(
+					"tin black beans",
+					91,
+					6,
+					17,
+					0.3
+					);
+			Ingredient avocado = new Ingredient(
+					"avocado",
+					160,
 					2,
-					9
+					8.5,
+					15
+					);
+			Ingredient garlic = new Ingredient(
+					"garlic",
+					149,
+					6.4,
+					33,
+					0.5
 					);
 			
 			Ingredient banana = new Ingredient(
@@ -34,13 +281,6 @@ public class IngredientConfig {
 					2,
 					1,
 					1
-					);
-			Ingredient cucumber = new Ingredient(
-					"cucumber",
-					1,
-					1,
-					3,
-					2
 					);
 			
 			Ingredient water = new Ingredient(
@@ -87,13 +327,7 @@ public class IngredientConfig {
 					20,
 					4
 					);
-			Ingredient onion = new Ingredient(
-					"onion",
-					40,
-					1,
-					9,
-					0
-					);
+
 			Ingredient chicken_breast = new Ingredient(
 					"chicken_breast",
 					284,
@@ -199,13 +433,7 @@ public class IngredientConfig {
 					6,
 					1
 					);
-			Ingredient caster_sugar = new Ingredient(
-					"caster_sugar",
-					400,
-					0,
-					100,
-					0
-					);
+		
 			Ingredient canned_white_bean = new Ingredient(
 					"canned_white_bean",
 					242,
@@ -326,13 +554,6 @@ public class IngredientConfig {
 					3,
 					1
 					);
-			Ingredient coriander = new Ingredient(
-					"coriander",
-					23,
-					2,
-					4,
-					0
-					);
 			Ingredient cinnamon = new Ingredient(
 					"cinnamon",
 					0,
@@ -432,17 +653,14 @@ public class IngredientConfig {
 					3
 					);
 			
-			repository.saveAll(List.of(egg,
-					milk,
+			repository.saveAll(List.of(
 					banana,
-					cucumber,
 					water,
 					white_rice,
 					olive_oil,
 					ground_beef,
 					spaghetti,
 					pasta_sauce,
-					onion,
 					chicken_breast,
 					bagel,
 					tomatoes,
@@ -459,7 +677,6 @@ public class IngredientConfig {
 					parsley,
 					red_chilli,
 					cherry_tomatoes_can,
-					caster_sugar,
 					canned_white_bean,
 					tempeh,
 					carrot,
@@ -477,7 +694,6 @@ public class IngredientConfig {
 					vegetable_oil,
 					red_onion,
 					cumin,
-					coriander,
 					cinnamon,
 					red_pepper,
 					courgette,
@@ -491,7 +707,42 @@ public class IngredientConfig {
 					bread,
 					sauce,
 					potatoes,
-					flatbread)
+					flatbread,
+					pickCucumber,
+					cucumber,
+					shallots,
+					mustardseeds,
+					grdtumeric,
+					stranise,
+					castersugar,
+					vinegar,
+					onion,
+					tinchickpeas,
+					greenchillies,
+					sunfloweroil,
+					sugar,
+					tintomatoe,
+					redchillipowder,
+					coriander,
+					tinadukibeans,
+					brwnsugar,
+					cocoapowder,
+					almonds,
+					vanillaextract,
+					darkdairyfreechoc,
+					icingsgr,
+					egg,
+					glutenfreeflour,
+					milk,
+					lemonjc,
+					oliveoil,
+					cardamon,
+					salt,
+					driedyeast,
+					buttermilk,
+					blackbeanstin,
+					avocado,
+					garlic)
 					);
 		};
 
