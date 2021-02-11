@@ -19,7 +19,7 @@ public class RecipeStepConfig {
 			RecipeStep stp4 = new RecipeStep(2,2,"While beef is cooking boil water for pasta and boil as per package directions.");
 			RecipeStep stp5 = new RecipeStep(3,2,"When beef is cooked through add pasta sauce. Add any desired herbs. Heat until warmed evenly through.");
 			RecipeStep stp6 = new RecipeStep(4,2,"Drain pasta and serve meat sauce over pasta. Enjoy!");
-			RecipeStep stp7 = new RecipeStep(1,3,"Slice the bagel in half, and if desired toast lightly.\r\n"
+			/*RecipeStep stp7 = new RecipeStep(1,3,"Slice the bagel in half, and if desired toast lightly.\r\n"
 					+ "Apply half of the mayonnaise to the cut-side of the top half of the bagel, \r\n"
 					+ "and the remaining half of the mayonnaise to the bottom-half of the bagel.");
 			RecipeStep stp8 = new RecipeStep(2,3,"To cook chicken, first pound out chicken breast a bit to the same thickness by carefully \r\n"
@@ -55,9 +55,9 @@ public class RecipeStepConfig {
 			RecipeStep stp20 = new RecipeStep(4,6,"Stir the chickpeas into the pan. Add 250ml water to make a thick sauce."+
 					" Place the lid on the pan, lower the heat and simmer for 5 to 7 minutes.");
 			RecipeStep stp21 = new RecipeStep(5,6,"Pick and finely chop the coriander, then"+
-					" sprinkle on top along with the garam masala and finely sliced green chillies, to serve.");
-			repository.saveAll(List.of(stp1, stp2, stp3, stp4, stp5, stp6, stp7, stp8, stp9,
-					stp10, stp11, stp12, stp13, stp14, stp15, stp16, stp17, stp18, stp19, stp20, stp21));
+					" sprinkle on top along with the garam masala and finely sliced green chillies, to serve.");*/
+			repository.saveAll(List.of(stp1, stp2, stp3, stp4, stp5, stp6/*, stp7, stp8, stp9,
+					stp10, stp11, stp12, stp13, stp14, stp15, stp16, stp17, stp18, stp19, stp20, stp21*/));
 		};
 		
 	}
