@@ -45,7 +45,7 @@ public class RecipeConfig {
 			
 			Recipe NDBurger = new Recipe(
 					"Burger",
-					"Excellent and well prepared burgerl",
+					"Excellent and well prepared burger",
 					4,
 					"15 mins"
 					);
