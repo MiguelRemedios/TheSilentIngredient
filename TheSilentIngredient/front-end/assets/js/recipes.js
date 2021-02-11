@@ -140,23 +140,18 @@ function recipenutrition(ing1, ing2 = 0, ing3 = 0 , ing4 = 0, ing5 = 0, ing6 = 0
 var card = localStorage.getItem("cardID");
 console.log(card);
 
-/*if (card == 1) {recipe1();}
+if (card == 1) {recipe1();}
 if (card == 2) {recipe2();}
 if (card == 3) {recipe3();}
-if (card == 4) {recipe4();}*/
-
-/*if (card) {
-  `recipe${card}`();
-}*/
-
+if (card == 4) {recipe4();}
 
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
 
 function recipe1(){
   recipeInfo(1);
   recipeImages(1,2,3,4,5);
-  recipeingredients(1,22,54,76,21);
-  recipeingredientsamount(1,2,3,4,5);
+  recipeingredients(2,3,83);
+  recipeingredientsamount();
   recipesteps(1,1,1,1,1,1);
   recipenutrition(1,2,2);
 }
