@@ -22,8 +22,8 @@ public class RecipeIngredientService {
 		return recipeIngredientRepository.findAll();
 	}
 	
-	public Optional<RecipeIngredient> retrieveRecipeIngredient(Long recipe_id) {
-        return recipeIngredientRepository.findById(recipe_id);
+	public List<RecipeIngredient> retrieveRecipeIngredient(Integer recipe_id) {
+        return recipeIngredientRepository.findIngredientsByRecipe_id(recipe_id);
     }
 
 	public void addIngredientToRecipe(RecipeIngredient recipeIngredient) {
