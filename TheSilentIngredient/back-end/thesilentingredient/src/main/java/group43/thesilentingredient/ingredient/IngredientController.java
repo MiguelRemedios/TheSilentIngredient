@@ -52,10 +52,10 @@ public class IngredientController {
 	@PutMapping(path = "{ingredientId}")
 	public void updateIngredient(@PathVariable("ingredientId") Long ingredientId,
 			@RequestParam(required = false) String ingredientName,
-			@RequestParam(required = false) int ingredientCalories,
-			@RequestParam(required = false) int ingredientProtein,
-			@RequestParam(required = false) int ingredientCarbohydrate,
-			@RequestParam(required = false) int ingredientFat){
+			@RequestParam(required = false) double ingredientCalories,
+			@RequestParam(required = false) double ingredientProtein,
+			@RequestParam(required = false) double ingredientCarbohydrate,
+			@RequestParam(required = false) double ingredientFat){
 		ingredientService.updateIngredient(ingredientId, ingredientName, ingredientCalories, ingredientProtein, ingredientCarbohydrate, ingredientFat);
 	}
 }
