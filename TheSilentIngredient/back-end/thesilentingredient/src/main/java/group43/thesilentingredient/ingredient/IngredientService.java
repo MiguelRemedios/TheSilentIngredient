@@ -51,7 +51,7 @@ public class IngredientService {
 
 
 	@Transactional
-	public void updateIngredient(Long ingredientId, String ingredientName, int ingredientCalories, int ingredientProtein, int ingredientCarbohydrate, int ingredientFat) {
+	public void updateIngredient(Long ingredientId, String ingredientName, double ingredientCalories, double ingredientProtein, double ingredientCarbohydrate, double ingredientFat) {
 		Ingredient ingredient = ingredientRepository.findById(ingredientId)
 				.orElseThrow(() -> new IllegalStateException("Ingredient with ID " + 
 						ingredientId + 
