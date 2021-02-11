@@ -43,14 +43,6 @@ public class IngredientConfig {
 					2
 					);
 			
-			Ingredient cucumber = new Ingredient(
-					"cucumber",
-					1,
-					1,
-					3,
-					2
-					);
-			
 			Ingredient water = new Ingredient(
 					"water",
 					0,
@@ -58,7 +50,7 @@ public class IngredientConfig {
 					0,
 					0
 					);
-			Ingredient white rice = new Ingredient(
+			Ingredient white_rice = new Ingredient(
 					"white rice",
 					68,
 					1,
@@ -66,16 +58,16 @@ public class IngredientConfig {
 					0
 					);
 			
-			Ingredient olive oil = new Ingredient(
-					"olive oil",
+			Ingredient olive_oil = new Ingredient(
+					"olive_oil",
 					119,
 					0,
 					0,
 					13
 					);
 			
-			Ingredient ground beef = new Ingredient(
-					"ground beef",
+			Ingredient ground_beef = new Ingredient(
+					"ground_beef",
 					218,
 					24,
 					0,
@@ -88,8 +80,8 @@ public class IngredientConfig {
 					40,
 					1
 					);
-			Ingredient pasta sauce = new Ingredient(
-					"pasta sauce",
+			Ingredient pasta_sauce = new Ingredient(
+					"pasta_sauce",
 					130,
 					4,
 					20,
@@ -102,8 +94,8 @@ public class IngredientConfig {
 					9,
 					0
 					);
-			Ingredient chicken breast = new Ingredient(
-					"chicken breast",
+			Ingredient chicken_breast = new Ingredient(
+					"chicken_breast",
 					284,
 					53,
 					0,
@@ -130,36 +122,36 @@ public class IngredientConfig {
 					2,
 					0
 					);
-			Ingredient light mayonnaise = new Ingredient(
-					"light mayonnaise",
+			Ingredient light_mayonnaise = new Ingredient(
+					"light_mayonnaise",
 					20,
 					0,
 					6,
 					1
 					);
-			Ingredient black pepper = new Ingredient(
-					"black pepper",
+			Ingredient black_pepper = new Ingredient(
+					"black_pepper",
 					4,
 					0,
 					1,
 					0
 					);
-			Ingredient bread crumbs = new Ingredient(
-					"bread crumbs",
+			Ingredient bread_crumbs = new Ingredient(
+					"bread_crumbs",
 					450,
 					17,
 					80,
 					6
 					);
-			Ingredient garlic glove = new Ingredient(
-					"garlic glove",
+			Ingredient garlic_glove = new Ingredient(
+					"garlic_glove",
 					13,
 					0,
 					3,
 					0
 					);
-			Ingredient rosemary sprigs = new Ingredient(
-					"rosemary sprigs",
+			Ingredient rosemary_sprigs = new Ingredient(
+					"rosemary_sprigs",
 					4,
 					0,
 					0,
@@ -172,15 +164,15 @@ public class IngredientConfig {
 					12,
 					0
 					);
-			Ingredient dry white wine = new Ingredient(
-					"dry white wine",
+			Ingredient dry white_wine = new Ingredient(
+					"dry white_wine",
 					120,
 					0,
 					4,
 					0
 					);
-			Ingredient dry soya cream = new Ingredient(
-					"soya cream",
+			Ingredient dry soya_cream = new Ingredient(
+					"soya_cream",
 					140,
 					2,
 					1,
@@ -193,29 +185,29 @@ public class IngredientConfig {
 					40,
 					1
 					);
-			Ingredient red chilli = new Ingredient(
-					"red chilli",
+			Ingredient red_chilli = new Ingredient(
+					"red_chilli",
 					6,
 					0,
 					1,
 					0
 					);
-			Ingredient cherry tomatoes can = new Ingredient(
-					"cherry tomatoes can",
+			Ingredient cherry_tomatoes_can = new Ingredient(
+					"cherry_tomatoes_can",
 					25,
 					1,
 					6,
 					1
 					);
-			Ingredient caster sugar = new Ingredient(
-					"caster sugar",
+			Ingredient caster_sugar = new Ingredient(
+					"caster_sugar",
 					400,
 					0,
 					100,
 					0
 					);
-			Ingredient canned white bean = new Ingredient(
-					"canned white bean",
+			Ingredient canned_white_bean = new Ingredient(
+					"canned_white_bean",
 					242,
 					17,
 					44,
@@ -263,8 +255,8 @@ public class IngredientConfig {
 					0,
 					0
 					);
-			Ingredient bay leaves = new Ingredient(
-					"bay leaves",
+			Ingredient bay_leaves = new Ingredient(
+					"bay_leaves",
 					5,
 					0,
 					0,
@@ -277,57 +269,51 @@ public class IngredientConfig {
 					2,
 					0
 					);
-			Ingredient red wine = new Ingredient(
-					"red wine",
+			Ingredient red_wine = new Ingredient(
+					"red_wine",
 					160,
 					0,
 					4,
 					0
 					);
-			Ingredient all purpose flour = new Ingredient(
-					"all purpose flour",
+			Ingredient all_purpose_flour = new Ingredient(
+					"all_purpose_flour",
 					360,
 					10,
 					76,
 					1
 					);
-			Ingredient white sugar = new Ingredient(
-					"white sugar",
+			Ingredient white_sugar = new Ingredient(
+					"white_sugar",
 					407,
 					0,
 					100,
 					0
 					);
-			Ingredient baking powder = new Ingredient(
-					"baking powder",
+			Ingredient baking_powder = new Ingredient(
+					"baking_powder",
 					2,
 					0,
 					2,
 					0
 					);
-			Ingredient plant based milk = new Ingredient(
-					"plant based milk",
+			Ingredient plant_based_milk = new Ingredient(
+					"plant_based_milk",
 					110,
 					5,
 					16,
 					5
 					);
-			Ingredient vegetable oil = new Ingredient(
-					"vegetable oil",
+			Ingredient vegetable_oil = new Ingredient(
+					"vegetable_oil",
 					120,
 					0,
 					0,
 					14
 					);
-			Ingredient banana = new Ingredient(
-					"banana",
-					105,
-					1,
-					27,
-					0
-					);
-			Ingredient red onion = new Ingredient(
-					"red onion",
+			
+			Ingredient red_onion = new Ingredient(
+					"red_onion",
 					40,
 					1,
 					9,
@@ -354,8 +340,8 @@ public class IngredientConfig {
 					6,
 					0
 					);
-			Ingredient red pepper = new Ingredient(
-					"red pepper",
+			Ingredient red_pepper = new Ingredient(
+					"red_pepper",
 					39,
 					1,
 					9,
@@ -375,8 +361,8 @@ public class IngredientConfig {
 					5,
 					0
 					);
-			Ingredient vine tomatoes = new Ingredient(
-					"vine tomatoes",
+			Ingredient vine_tomatoes = new Ingredient(
+					"vine_tomatoes",
 					16,
 					1,
 					3,
@@ -389,8 +375,8 @@ public class IngredientConfig {
 					35,
 					4
 					);
-			Ingredient vegetable stock = new Ingredient(
-					"vegetable stock",
+			Ingredient vegetable_stock = new Ingredient(
+					"vegetable_stock",
 					15,
 					1,
 					3,
@@ -451,55 +437,54 @@ public class IngredientConfig {
 					banana,
 					cucumber,
 					water,
-					white rice,
-					olive oil,
-					ground beef,
+					white_rice,
+					olive_oil,
+					ground_beef,
 					spaghetti,
-					pasta sauce,
+					pasta_sauce,
 					onion,
-					chicken breast,
+					chicken_breast,
 					bagel,
 					tomatoes,
 					lettuce,
-					light mayonnaise,
-					black pepper,
-					bread crumbs,
-					garlic glove,
-					rosemary sprigs,
+					light_mayonnaise,
+					black_pepper,
+					bread_crumbs,
+					garlic_glove,
+					rosemary_sprigs,
 					leek,
-					dry white wine,
-					soya cream,
+					dry_white_wine,
+					soya_cream,
 					pasta,
 					parsley,
-					red chilli,
-					cherry tomatoes can,
-					caster sugar,
-					canned white bean,
+					red_chilli,
+					cherry_tomatoes_can,
+					caster_sugar,
+					canned_white_bean,
 					tempeh,
 					carrot,
 					celery,
 					mushrooms,
 					sage,
 					thyme,
-					bay leaves,
+					bay_leaves,
 					parsley,
-					red wine,
-					all purpose flour,
-					white sugar,
-					baking powder,
-					plant based milk,
-					vegetable oil,
-					banana,
-					red onion,
+					red_wine,
+					all_purpose_flour,
+					white_sugar,
+					baking_powder,
+					plant_based_milk,
+					vegetable_oil,
+					red_onion,
 					cumin,
 					coriander,
 					cinnamon,
-					red pepper,
+					red_pepper,
 					courgette,
 					aubergine,
-					vine tomatoes,
+					vine_tomatoes,
 					chickpeas,
-					vegetable stock,
+					vegetable_stock,
 					harissa,
 					prunes,
 					couscous,
