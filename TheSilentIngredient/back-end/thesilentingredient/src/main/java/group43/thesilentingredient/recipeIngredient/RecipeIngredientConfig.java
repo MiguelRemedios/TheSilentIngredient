@@ -24,7 +24,7 @@ public class RecipeIngredientConfig {
 			
 			//RECIPE ID - 1
 			RecipeIngredient r1ing1 = new RecipeIngredient(1, 1, 92.5, "g");
-			RecipeIngredient r1ing2 = new RecipeIngredient(2, 1, null, "ml");
+			RecipeIngredient r1ing2 = new RecipeIngredient(2, 1, 100.0, "ml");
 			RecipeIngredient r1ing3 = new RecipeIngredient(83, 1, 1.0, "tsp");
 			//r1ing1, r1ing2, r1ing3
 			
