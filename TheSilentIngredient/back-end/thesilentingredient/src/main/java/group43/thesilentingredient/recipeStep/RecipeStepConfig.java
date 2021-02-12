@@ -55,6 +55,7 @@ public class RecipeStepConfig {
 			RecipeStep stp32 = new RecipeStep(6,5,"Combine all the other ingredients in a pan and bring to the boil. Stir until the sugar dissolves.");
 			RecipeStep stp33 = new RecipeStep(7,5,"Fit the cucumbers snugly into a Kilner jar, then pour over the liquid.");
 			RecipeStep stp34 = new RecipeStep(8,5,"Seal and let it settle for 24 hours, then you can enjoy it");
+			
 			//Recipe-6
 			RecipeStep stp35 = new RecipeStep(1,6,"Peel and finely chop the onions");
 			RecipeStep stp36 = new RecipeStep(2,6,"drain and rinse the tin chickpea");
@@ -71,6 +72,7 @@ public class RecipeStepConfig {
 			RecipeStep stp47 = new RecipeStep(13,6,"Add 250ml water to make a thick sauce. Place the lid on the pan, lower the heat and simmer for 5 to 7 minutes.");
 			RecipeStep stp48 = new RecipeStep(14,6,"Pick and finely chop the coriander");
 			RecipeStep stp49 = new RecipeStep(15,6,"Then sprinkle onto the saucepan the coriander along with the garam masala and sliced green chillies, to serve.");
+			
 			//Recipe-7
 			RecipeStep stp50 = new RecipeStep(1,7,"Place the packet of coconut cream in the fridge and leave for 3-4 hours to thicken up.");
 			RecipeStep stp51 = new RecipeStep(2,7,"Preheat the oven to 180°C/350°F/gas 4.");
@@ -84,6 +86,7 @@ public class RecipeStepConfig {
 			RecipeStep stp59 = new RecipeStep(10,7,"Set aside tin to cool.");
 			RecipeStep stp60 = new RecipeStep(11,7,"In a bowl, whisk the chilled coconut cream, icing sugar and vanilla extract until thick and creamy.");
 			RecipeStep stp61 = new RecipeStep(12,7,"Slice the brownie into squares and serve with the coconut whip for drizzling.");
+			
 			//Recipe-8
 			RecipeStep stp62 = new RecipeStep(1,8,"To make the fajita mix, take two or three strips from each colour of pepper and finely chop them. Set aside.");
 			RecipeStep stp63 = new RecipeStep(2,8,"Heat the oil in a frying pan");
@@ -96,6 +99,7 @@ public class RecipeStepConfig {
 			RecipeStep stp70 = new RecipeStep(9,8,"Stir the beans around the pan to warm them through and help them absorb any flavours then stir through the coriander.");
 			RecipeStep stp71 = new RecipeStep(10,8,"Warm the tortillas in a microwave or in a low oven, then wrap them so they don’t dry out.");
 			RecipeStep stp72 = new RecipeStep(11,8,"Serve the tortillas with the fajita mix, beans, avocado and soured cream for everyone to help themselves.");
+			
 			//Recipe-9
 			RecipeStep stp73 = new RecipeStep(1,9,"Heat the oil in a deep lidded frying pan.");
 			RecipeStep stp74 = new RecipeStep(2,9,"Cook the onion, garlic, chilli and pepper for 10 minutes until starting to soften.");
@@ -105,6 +109,7 @@ public class RecipeStepConfig {
 			RecipeStep stp78 = new RecipeStep(6,9,"Bring to a simmer turning the heat down to low ");
 			RecipeStep stp79 = new RecipeStep(7,9,"Put on a lid and cook for 15 minutes or until the rice is cooked through.");
 			RecipeStep stp80 = new RecipeStep(8,9,"Stir through the coriander and serve with lime wedges for squeezing.");
+			
 			//Recipe-10
 			RecipeStep stp81 = new RecipeStep(1,10,"Cook the pasta following pack instructions.");
 			RecipeStep stp82 = new RecipeStep(2,10,"Simultaneously, Toss together the tomatoes, olive oil, vinegar, capers and lots of seasoning in a bowl.");
@@ -112,6 +117,7 @@ public class RecipeStepConfig {
 			RecipeStep stp84 = new RecipeStep(4,10,"Add to the tomato mixture and toss really well.");
 			RecipeStep stp85 = new RecipeStep(5,10,"Leave the mixture for 5 minutes, tossing a few times throughout.");
 			RecipeStep stp86 = new RecipeStep(6,10," Add the bocconcini and herbs, and toss again before serving.");
+			
 			//Recipe-11
 			RecipeStep stp87 = new RecipeStep(1,11,"Take left over bread lightly apply butter on 1 side of the bread slice.");
 			RecipeStep stp88 = new RecipeStep(2,11,"Cut chicken/beef into small pieces put it in a bowl use a pinch salt/pepper");
@@ -119,6 +125,7 @@ public class RecipeStepConfig {
 			RecipeStep stp90 = new RecipeStep(4,11,"Toast bread slice if preferable.");
 			RecipeStep stp91 = new RecipeStep(5,11,"Unload chicken/beef  on the bread slice.");
 			RecipeStep stp92 = new RecipeStep(6,11,"Apply chili sauce if prefereable and cover the sandwich filling with the 2nd slice and enjoy.");
+			
 			//Recipe-12
 			RecipeStep stp93 = new RecipeStep(1,12,"Take left over chicken pieces and put in a bowl.");
 			RecipeStep stp94 = new RecipeStep(1,12,"Add salt,pepper, other prefered spices into the bowl ");
@@ -126,6 +133,7 @@ public class RecipeStepConfig {
 			RecipeStep stp96 = new RecipeStep(1,12,"Crack and beat egg in a plate then add chili and salt.");
 			RecipeStep stp97 = new RecipeStep(1,12,"Drop chicken/beef pieces into flour if available if not then directly into the egg mixture.");
 			RecipeStep stp98 = new RecipeStep(1,12,"Shallow fry until browning appears and serve alongside some salad.");
+			
 			//Recipe-13
 			RecipeStep stp99 = new RecipeStep(1,13,"Take left over chicken/beef pieces shred it into smaller pieces.");
 			RecipeStep stp100 = new RecipeStep(2,13,"Take an egg and seperate the yolk from the white part");
@@ -134,6 +142,7 @@ public class RecipeStepConfig {
 			RecipeStep stp103 = new RecipeStep(5,13,"AMix the mashed potatoes, chicken/beef pieces and bread then mixwell");
 			RecipeStep stp104 = new RecipeStep(6,13,"Take a scoop of the potato and chicken/beef mixture then try shape it like a ball.");
 			RecipeStep stp105 = new RecipeStep(7,13,"Shallow fry and serve.");
+			
 			//Recipe-14
 			RecipeStep stp106 = new RecipeStep(1,14,"Take left over chicken/beef shred it");
 			RecipeStep stp107 = new RecipeStep(2,14,"Take an egg and seperate the yolk from the white part");
@@ -143,6 +152,7 @@ public class RecipeStepConfig {
 			RecipeStep stp111 = new RecipeStep(6,14,"Pour yellow part of egg on the flatbread and spread");
 			RecipeStep stp112 = new RecipeStep(7,14,"Cover with 2nd flatbread and use force to ensure they 2 sides are stuck to each other");
 			RecipeStep stp113 = new RecipeStep(8,14,"Microwave for 1.5 min and serve");
+			
 			//Recipe-15
 			RecipeStep stp114 = new RecipeStep(1,15,"Heat a good knob of butter in a pan. ");
 			RecipeStep stp115 = new RecipeStep(2,15,"Add garlic and rosemary and let it settle for 30 seconds.");
@@ -156,30 +166,91 @@ public class RecipeStepConfig {
 			RecipeStep stp123 = new RecipeStep(10,15,"Meanwhile, add the pasta to boiling water for 10 minutes");
 			RecipeStep stp124 = new RecipeStep(11,15,"Drain the water and mix with the leeks and mushrooms.");
 			RecipeStep stp125 = new RecipeStep(12,15,"Season and add in a handful of chopped fresh parsley, then serve.");
-			//Recipe-16
-			RecipeStep stp126 = new RecipeStep(1,16,"adasdaw");
-			RecipeStep stp127 = new RecipeStep(2,16,"adasdaw");
-			RecipeStep stp128 = new RecipeStep(3,16,"adasdaw");
-			RecipeStep stp129 = new RecipeStep(4,16,"adasdaw");
-			RecipeStep stp130 = new RecipeStep(5,16,"adasdaw");
-			RecipeStep stp131 = new RecipeStep(6,16,"adasdaw");
-			RecipeStep stp132 = new RecipeStep(7,16,"adasdaw");
-			RecipeStep stp133 = new RecipeStep(8,16,"adasdaw");
-			//Recipe-17
-			RecipeStep stp134 = new RecipeStep(1,5,"adasdaw");
-			//Recipe-18
-			RecipeStep stp135 = new RecipeStep(1,5,"adasdaw");
-			//Recipe-19
-			RecipeStep stp136 = new RecipeStep(1,5,"adasdaw");
-			//Recipe-20
-			RecipeStep stp137= new RecipeStep(1,5,"adasdaw");
-			//Recipe-21
-			RecipeStep stp138 = new RecipeStep(1,5,"adasdaw");
-			//Recipe-22
-			RecipeStep stp139 = new RecipeStep(1,5,"adasdaw");
 			
-			repository.saveAll(List.of(stp1, stp2, stp3, stp4, stp5, stp6, stp7, stp8, stp9,
-					stp10, stp11, stp12, stp13, stp14, stp15, stp16, stp17, stp18, stp19, stp20));
+			//Recipe-16
+			RecipeStep stp126 = new RecipeStep(1,16,"Heat the oil in a frying pan with a lid");
+			RecipeStep stp127 = new RecipeStep(2,16,"Then add in onions, chilli, garlic and coriander stalks and stir for 5 minutes.");
+			RecipeStep stp128 = new RecipeStep(3,16,"Add some tomatoes and sugar then Stir for 5 - 8 minutes");
+			RecipeStep stp129 = new RecipeStep(4,16,"Then bubble for 8-10 mins until thick.");
+			RecipeStep stp130 = new RecipeStep(5,16,"Make 4 dips in the sauce with a big spoon which has a cracked an egg each time.");
+			RecipeStep stp131 = new RecipeStep(6,16,"Put a lid on the pan, then cook over a low heat for 6-8 mins.");
+			RecipeStep stp132 = new RecipeStep(7,16,"When the eggs are done to your liking, scatter with the coriander leaves");
+			RecipeStep stp133 = new RecipeStep(8,16,"Serve with left over crusty bread");
+			
+			//Recipe-17
+			RecipeStep stp134 = new RecipeStep(1,17,"Heat oil in a large saucepan.");
+			RecipeStep stp135 = new RecipeStep(2,17,"Add the tempeh cubes and saute stir frequently until the tempeh is golden-brown.");
+			RecipeStep stp136 = new RecipeStep(3,17,"Add the onions, garlic, celery and carrots. ");
+			RecipeStep stp137 = new RecipeStep(4,17,"Add a pinch of salt and some ground black pepper");
+			RecipeStep stp138 = new RecipeStep(5,17,"Saute the vegetables for five minutes until the onions are translucent.");
+			RecipeStep stp139 = new RecipeStep(6,17,"Add the mushrooms and the wine. ");
+			RecipeStep stp140 = new RecipeStep(7,17,"Cook until the moisture from the vegetables and all of the water has evaporated.");
+			RecipeStep stp141 = new RecipeStep(8,17,"Add the tomatoes and beans along with the bay, sage, parsley and thyme leaves");
+			RecipeStep stp142 = new RecipeStep(9,17,"Bring to a boil -- add water if the stew is too thick - and turn the heat to a level where it boils gently.");
+			RecipeStep stp143 = new RecipeStep(10,17,"Add salt and pepper.");
+			RecipeStep stp144 = new RecipeStep(11,17,"Serve hot with some left over bread.");
+			
+			//Recipe-18
+			RecipeStep stp145 = new RecipeStep(1,18,"Combine flour, white sugar, baking powder and salt. ");
+			RecipeStep stp146 = new RecipeStep(2,18,"In a separate bowl, mix together egg, milk, vegetable oil and bananas.");
+			RecipeStep stp147 = new RecipeStep(3,18,"Stir flour mixture into banana mixture; batter will be slightly lumpy.");
+			RecipeStep stp148 = new RecipeStep(4,18,"Heat a lightly oiled griddle or frying pan over medium high heat.");
+			RecipeStep stp149 = new RecipeStep(5,18,"Pour the batter onto the griddle, using approximately 1/4 cup for each pancake.");
+			RecipeStep stp150 = new RecipeStep(6,18,"Cook until pancakes are golden brown on both sides and serve hot.");
+			
+			//Recipe-19
+			RecipeStep stp151 = new RecipeStep(1,19,"Fry the onion and garlic in some olive oil for 5 minutes.");
+			RecipeStep stp152 = new RecipeStep(2,19,"Add the spices and fry for a minute until fragrant. ");
+			RecipeStep stp153 = new RecipeStep(3,19,"Add the vegetables and fry for 8-10 minutes until they’re coated in the spices");
+			RecipeStep stp154 = new RecipeStep(4,19,"Add the chickpeas, stock, harissa and prunes. ");
+			RecipeStep stp155 = new RecipeStep(5,19,"Season and simmer for 15-20 minutes until the vegetables are tender.");
+			RecipeStep stp156 = new RecipeStep(6,19,"Scatter over the parsley and serve with couscous, if you like");
+			
+			//Recipe-20
+			RecipeStep stp157= new RecipeStep(1,20,"Put flour in a bowl, crack an egg in the middle and add a quarter of the milk.");
+			RecipeStep stp158= new RecipeStep(2,20,"Mix until all combined");
+			RecipeStep stp159= new RecipeStep(3,20,"Once all milk is mixed in and lump free, leave to rest for 20 minutes");
+			RecipeStep stp160= new RecipeStep(4,20,"Heat a non-stick frying pan with a small amount of cooking oil");
+			RecipeStep stp161= new RecipeStep(5,20,"Once hot add the batter to cover the whole frying pan");
+			RecipeStep stp162= new RecipeStep(6,20,"Cook for a few minutes until golden brown on the bottom");
+			RecipeStep stp163= new RecipeStep(7,20,"Flip and repeat");
+			RecipeStep stp164= new RecipeStep(8,20,"Serve up with some sugar according to how sweet you like it.");
+			
+			//Recipe-21
+			RecipeStep stp165 = new RecipeStep(1,21,"Pour the can of chickpeas into a bowl");
+			RecipeStep stp166 = new RecipeStep(2,21,"Sieve to seperate the chickpeas and the water.");
+			RecipeStep stp167 = new RecipeStep(3,21,"Gently heat the water from chickpea tin in the microwave");
+			RecipeStep stp168 = new RecipeStep(4,21,"Put all ingredients into a food processor and blend until a smooth paste");
+			RecipeStep stp169 = new RecipeStep(5,21,"Add spices if you like and serve");
+			
+			//Recipe-22
+			RecipeStep stp170 = new RecipeStep(1,22,"Pre heat oven to 180c/160c fan/gas 4");
+			RecipeStep stp171 = new RecipeStep(2,22,"Mix flour salt and yeast in large bowl");
+			RecipeStep stp172 = new RecipeStep(3,22,"In a seperate bowl whisk buttermilk, eggs and oil together");
+			RecipeStep stp173 = new RecipeStep(4,22,"Combine dry and wet ingredients into a sticky dough");
+			RecipeStep stp174 = new RecipeStep(5,22,"Grease a 900g loaf tin");
+			RecipeStep stp175 = new RecipeStep(6,22,"With oiled hands shape the dough into a sausage shape and place into the tin");
+			RecipeStep stp176 = new RecipeStep(7,22,"Cover with a damp tea towel and leave in a warm place for an hour");
+			RecipeStep stp177 = new RecipeStep(8,22,"Bake for 50-60 minutes until golden.");
+			RecipeStep stp178 = new RecipeStep(9,22,"Cool for 20 minutes, then serve");
+			
+			repository.saveAll(List.of(stp1,stp2,stp3,stp4,stp5,stp6,stp7,stp8,stp9,stp10,stp11,
+					stp12,stp13,stp14,stp15,stp16,stp17,stp18,stp19,stp20,stp21,stp22,stp23,
+					stp24,stp25,stp26,stp27,stp28,stp29,stp30,stp31,stp32,stp33,stp34,stp35,
+					stp36,stp37,stp38,stp39,stp40,stp41,stp42,stp43,stp44,stp45,stp46,stp47,
+					stp48,stp49,stp50,stp51,stp52,stp53,stp54,stp55,stp56,stp57,stp58,stp59,
+					stp60,stp61,stp62,stp63,stp64,stp65,stp66,stp67,stp68,stp69,stp70,stp71,
+					stp72,stp73,stp74,stp75,stp76,stp77,stp78,stp79,stp80,stp81,stp82,stp83,
+					stp84,stp85,stp86,stp87,stp88,stp89,stp90,stp91,stp92,stp93,stp94,stp95,
+					stp96,stp97,stp98,stp99,stp100,stp101,stp102,stp103,stp104,stp105,stp106,
+					stp107,stp108,stp109,stp110,stp111,stp112,stp113,stp114,stp115,stp116,
+					stp117,stp118,stp119,stp120,stp121,stp122,stp123,stp124,stp125,stp126,
+					stp127,stp128,stp129,stp130,stp131,stp132,stp133,stp134,stp135,stp136,
+					stp137,stp138,stp139,stp140,stp141,stp142,stp143,stp144,stp145,stp146,
+					stp147,stp148,stp149,stp150,stp151,stp152,stp153,stp154,stp155,stp156,
+					stp157,stp158,stp159,stp160,stp161,stp162,stp163,stp164,stp165,stp166,
+					stp167,stp168,stp169,stp170,stp171,stp172,stp173,stp174,stp175,stp176,
+					stp177,stp178));
 			
 		};
 		
