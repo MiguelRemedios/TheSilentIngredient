@@ -44,7 +44,7 @@ public class IngredientConfig {
 					);
 			
 			Ingredient grdtumeric = new Ingredient(
-					"ground tumeric",
+					"ground turmeric",
 					312,
 					9.7,
 					67,
