@@ -4,7 +4,7 @@ function recipes(/*imageid*/){
       if (this.readyState == 4 && this.status == 200) {
   
         var recipes = JSON.parse(this.responseText);
-        for (let index = 0; index < 22 /*recipes.length*/; index++) {
+        for (let index = 0; index < 24 /*recipes.length*/; index++) {
           document.getElementById(`rname${index+1}`).innerHTML = `${recipes[index].name}`;
           document.getElementById(`rdesc${index+1}`).innerHTML = `${recipes[index].description}`;
         }
@@ -28,7 +28,7 @@ function recipes(/*imageid*/){
                              recipeimages[1].path,recipeimages[3].path,recipeimages[3].path,recipeimages[0].path,
                              recipeimages[1].path,recipeimages[3].path,recipeimages[3].path,recipeimages[0].path,
                              recipeimages[1].path,recipeimages[3].path,recipeimages[3].path,recipeimages[0].path,
-                             recipeimages[1].path,recipeimages[3].path];
+                             recipeimages[1].path,recipeimages[3].path,recipeimages[1].path,recipeimages[3].path];
  
         
          for (let index = 0; index < recipeMainImages.length; index++) {
