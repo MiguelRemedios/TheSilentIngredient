@@ -1,7 +1,16 @@
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
+
+
 
 .column {
+    float: left;
     width: 25%;
+    padding: 0 10px;
+}
+.row {
+    margin: 0 -5px;
 }
 
 .row:after {
@@ -28,11 +37,12 @@
     align-items: center;
 }
 
-.card img{
+.card img {
     width: 100%;
     min-height: auto;
 }
-.card .container{
+
+.card .container {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -42,35 +52,36 @@
 
 h4 {
     text-overflow: ellipsis;
-    overflow: hidden; 
+    overflow: hidden;
     font-size: 1.1rem;
     margin-top: 17.6px;
     overflow-wrap: unset;
- }
+}
 
- a:nth-child(3){
-     justify-self: flex-end;
- }
- 
+a:nth-child(3) {
+    justify-self: flex-end;
+}
+
 .main-cont {
     padding: 0 4em 0 4em;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
-@media  screen and (max-width: 1920px) {
-    .card{
+
+@media screen and (max-width: 1920px) {
+    .card {
         height: fit-content;
     }
 }
+
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
         display: block;
         margin-bottom: 20px;
     }
-    
 }
 
 .diving {
@@ -96,16 +107,17 @@ input {
     font-size: 16px;
 }
 
-    input[type=text] {
-        background-color: white;
-        width: 100%;
-    }
+input[type=text] {
+    background-color: white;
+    width: 100%;
+}
 
-    input[type=submit] {
-        background-color: DodgerBlue;
-        color: #fff;
-        cursor: pointer;
-    }
+input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+}
+
 .autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
@@ -118,9 +130,9 @@ input {
     right: 0;
 }
 
-    .autocomplete-items div {
-        padding: 10px;
-        cursor: pointer;
-        background-color: white;
-        border-bottom: 1px solid #d4d4d4;
-    }
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-bottom: 1px solid #d4d4d4;
+}
