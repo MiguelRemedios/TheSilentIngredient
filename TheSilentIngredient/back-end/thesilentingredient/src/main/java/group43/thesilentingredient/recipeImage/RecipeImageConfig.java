@@ -34,9 +34,16 @@ public class RecipeImageConfig {
 			RecipeImage NDSpaghetti3 = new RecipeImage(2,"/images/recipe/nodiet/NDSpaghetti3.jpg");
 			RecipeImage NDSpaghetti4 = new RecipeImage(2,"/images/recipe/nodiet/NDSpaghetti4.jpg");
 			RecipeImage NDSpaghetti5 = new RecipeImage(2,"/images/recipe/nodiet/NDSpaghetti5.jpg");
+			//RECIPE 3
+			RecipeImage NDBagel1 = new RecipeImage(2,"/images/recipe/nodiet/NDBagel1.jpg");
+			RecipeImage NDBagel2 = new RecipeImage(2,"/images/recipe/nodiet/NDBagel2.jpg");
+			RecipeImage NDBagel3 = new RecipeImage(2,"/images/recipe/nodiet/NDBagel3.jpg");
+			RecipeImage NDBagel4 = new RecipeImage(2,"/images/recipe/nodiet/NDBagel4.jpg");
+			RecipeImage NDBagel5 = new RecipeImage(2,"/images/recipe/nodiet/NDBagel5.jpg");
 			
 			repository.saveAll(List.of(NDWhiteRice1,NDWhiteRice2,NDWhiteRice3,NDWhiteRice4,NDWhiteRice5,
-									   NDSpaghetti1,NDSpaghetti2,NDSpaghetti3,NDSpaghetti4,NDSpaghetti5));
+									   NDSpaghetti1,NDSpaghetti2,NDSpaghetti3,NDSpaghetti4,NDSpaghetti5,
+									   NDBagel1,NDBagel2,NDBagel3,NDBagel4,NDBagel5));
 		};
 
 	}

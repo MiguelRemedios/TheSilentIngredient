@@ -202,7 +202,7 @@ function recipe2(){
 
 function recipe3(){
   recipeInfo(3);
-  recipeImages(1,2,3,4,5);
+  recipeImages(11,12,13,14,15);
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
   recipesteps(4,2,3,1);
