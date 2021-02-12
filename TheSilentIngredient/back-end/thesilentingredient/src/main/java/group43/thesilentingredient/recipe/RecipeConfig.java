@@ -88,7 +88,7 @@ public class RecipeConfig {
 					);
 			
 			Recipe DVGPasta = new Recipe(
-					"Pasta Salad with Bocconcini, Capers and Tomatoes",
+					"Pasta Salad",
 					"Outstanding pasta reached in delicious vegetables",
 					2,
 					"20 mins"
