@@ -97,7 +97,7 @@ function recipesteps(){
 
       for (let index = 0; index < argcount; index++) {
         let step = steps.find(({id}) => id == myArgs[index]);
-        document.getElementById(`s${index+1}`).innerHTML = `${step.step}`;
+        document.getElementById(`s${index+1}`).innerHTML = `${index+1}) ${step.step}`;
       }
     }
   };
@@ -106,28 +106,45 @@ function recipesteps(){
 }
 
 //Display Nutrition
-function recipenutrition(ing1, ing2 = 0, ing3 = 0 , ing4 = 0, ing5 = 0, ing6 = 0, ing7 = 0, ing8 = 0, ing9 = 0, ing10 = 0){
+function recipenutrition(){
   var xmlhttp = new XMLHttpRequest();
+  const argcount = arguments.length;
+  const myArgs = arguments;
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
   
-        var nutrition = JSON.parse(this.responseText);
-  
-        let ingredient1 = nutrition.find(({id}) => id == ing1);
-        let ingredient2 = nutrition.find(({id}) => id == ing2);
-        let ingredient3 = nutrition.find(({id}) => id == ing3);
-        let ingredient4 = nutrition.find(({id}) => id == ing4);
-        let ingredient5 = nutrition.find(({id}) => id == ing5);
-        let ingredient6 = nutrition.find(({id}) => id == ing6);
-        let ingredient7 = nutrition.find(({id}) => id == ing7);
-        let ingredient8 = nutrition.find(({id}) => id == ing8);
-        let ingredient9 = nutrition.find(({id}) => id == ing9);
-        let ingredient10 = nutrition.find(({id}) => id == ing10);
+        var nutritions = JSON.parse(this.responseText);
+        var totalcalories, totalprotein, totalcarbo, totalfat;
+        totalcalories = totalprotein = totalcarbo = totalfat = 0;
+        var totalenergy, energyprotein, energycarbo, energyfat;
+        totalenergy = energyprotein = energycarbo = energyfat = 0;
 
-        $("#calories").html(ingredient1.calories);
-        $("#fat").html(ingredient2.fat);
-        $("#protein").html(ingredient2.protein);
-        $("#carbo").html(ingredient3.carbohydrate);
+        for (let index = 0; index < argcount; index++) {
+          let nutrition = nutritions.find(({id}) => id == myArgs[index]);
+
+          const calories = JSON.parse(`${nutrition.calories}`);
+          const protein = JSON.parse(`${nutrition.protein}`);
+          const carbo = JSON.parse(`${nutrition.carbohydrate}`);
+          const fat = JSON.parse(`${nutrition.fat}`);
+          totalcalories += calories;
+          totalprotein += protein;
+          totalcarbo += carbo;
+          totalfat += fat;
+
+          //Calculate energy
+          energyprotein = ((totalprotein * 4) * 4.184);
+          energycarbo = ((totalcarbo * 4) * 4.184);
+          energyfat = ((totalfat * 9) * 4.184);
+          totalenergy = Math.round(energyprotein + energycarbo + energyfat);
+        }
+
+        $("#energy").html(totalenergy + " kJ");
+        $("#calories").html(totalcalories + " kcal");
+        $("#protein").html(totalprotein  + " g");
+        $("#carbo").html(totalcarbo + " g");
+        $("#fat").html(totalfat + " g");
+
+        drawChart(totalfat,totalprotein,totalcarbo);
       }
     };
     xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient', true);
@@ -144,6 +161,24 @@ if (card == 1) {recipe1();}
 if (card == 2) {recipe2();}
 if (card == 3) {recipe3();}
 if (card == 4) {recipe4();}
+if (card == 5) {recipe5();}
+if (card == 6) {recipe6();}
+if (card == 7) {recipe7();}
+if (card == 8) {recipe8();}
+if (card == 9) {recipe9();}
+if (card == 10) {recipe10();}
+if (card == 11) {recipe11();}
+if (card == 12) {recipe12();}
+if (card == 13) {recipe13();}
+if (card == 14) {recipe14();}
+if (card == 15) {recipe15();}
+if (card == 16) {recipe16();}
+if (card == 17) {recipe17();}
+if (card == 18) {recipe18();}
+if (card == 19) {recipe19();}
+if (card == 20) {recipe20();}
+if (card == 21) {recipe21();}
+if (card == 22) {recipe22();}
 
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
 
@@ -152,8 +187,8 @@ function recipe1(){
   recipeImages(1,2,3,4,5);
   recipeingredients(2,3,83);
   recipeingredientsamount();
-  recipesteps(1,1,1,1,1,1);
-  recipenutrition(1,2,2);
+  recipesteps(1,2,3,4,5);
+  recipenutrition(1,3,4,5);
 }
 
 function recipe2(){
@@ -183,3 +218,236 @@ function recipe4(){
   recipenutrition(1,2,2);
 }
 
+function recipe5(){
+  recipeInfo(5);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(2,3,83);
+  recipeingredientsamount();
+  recipesteps(1,2,3,4,5);
+  recipenutrition(1,3,4,5);
+}
+
+function recipe6(){
+  recipeInfo(6);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe7(){
+  recipeInfo(7);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe8(){
+  recipeInfo(8);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe1(){
+  recipeInfo(1);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(2,3,83);
+  recipeingredientsamount();
+  recipesteps(1,2,3,4,5);
+  recipenutrition(1,3,4,5);
+}
+
+function recipe2(){
+  recipeInfo(2);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe3(){
+  recipeInfo(3);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe4(){
+  recipeInfo(4);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe5(){
+  recipeInfo(5);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(2,3,83);
+  recipeingredientsamount();
+  recipesteps(1,2,3,4,5);
+  recipenutrition(1,3,4,5);
+}
+
+function recipe6(){
+  recipeInfo(6);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe7(){
+  recipeInfo(7);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe8(){
+  recipeInfo(8);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe9(){
+  recipeInfo(9);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(2,3,83);
+  recipeingredientsamount();
+  recipesteps(1,2,3,4,5);
+  recipenutrition(1,3,4,5);
+}
+
+function recipe10(){
+  recipeInfo(10);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe11(){
+  recipeInfo(11);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe12(){
+  recipeInfo(12);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe13(){
+  recipeInfo(13);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(2,3,83);
+  recipeingredientsamount();
+  recipesteps(1,2,3,4,5);
+  recipenutrition(1,3,4,5);
+}
+
+function recipe14(){
+  recipeInfo(14);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe15(){
+  recipeInfo(15);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe16(){
+  recipeInfo(16);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe17(){
+  recipeInfo(17);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(2,3,83);
+  recipeingredientsamount();
+  recipesteps(1,2,3,4,5);
+  recipenutrition(1,3,4,5);
+}
+
+function recipe18(){
+  recipeInfo(18);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe19(){
+  recipeInfo(19);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe20(){
+  recipeInfo(20);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+
+function recipe21(){
+  recipeInfo(21);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(2,3,83);
+  recipeingredientsamount();
+  recipesteps(1,2,3,4,5);
+  recipenutrition(1,3,4,5);
+}
+
+function recipe22(){
+  recipeInfo(22);
+  recipeImages(1,2,3,4,5);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
