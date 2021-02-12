@@ -179,6 +179,8 @@ if (card == 19) {recipe19();}
 if (card == 20) {recipe20();}
 if (card == 21) {recipe21();}
 if (card == 22) {recipe22();}
+if (card == 23) {recipe23();}
+if (card == 24) {recipe24();}
 
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
 
@@ -193,7 +195,7 @@ function recipe1(){
 
 function recipe2(){
   recipeInfo(2);
-  recipeImages(1,2,3,4,5);
+  recipeImages(6,7,8,9,10);
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
   recipesteps(4,2,3,1);
@@ -202,7 +204,7 @@ function recipe2(){
 
 function recipe3(){
   recipeInfo(3);
-  recipeImages(1,2,3,4,5);
+  recipeImages(11,12,13,14,15);
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
   recipesteps(4,2,3,1);
@@ -211,7 +213,7 @@ function recipe3(){
 
 function recipe4(){
   recipeInfo(4);
-  recipeImages(1,2,3,4,5);
+  recipeImages(16,17,18,19,20);
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
   recipesteps(4,2,3,1);
