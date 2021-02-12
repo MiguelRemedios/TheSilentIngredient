@@ -2,13 +2,12 @@
     box-sizing: border-box;
 }
 
-
-
 .column {
     float: left;
     width: 25%;
     padding: 0 10px;
 }
+
 .row {
     margin: 0 -5px;
 }
@@ -73,6 +72,12 @@ a:nth-child(3) {
 @media screen and (max-width: 1920px) {
     .card {
         height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .column {
+        width: 50%;
     }
 }
 
