@@ -7,11 +7,11 @@
 <html>
 
 <head>
-    <title>Recipe Results</title>
+    <title>TheSilentIngredient</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/recipeSearch.css" />
+    <link rel="stylesheet" href="assets/css/recipeSearch.css"/>
 </head>
 
 <body class="is-preload">
@@ -37,10 +37,10 @@
                                 <select id="sel3" name="demo-category" id="demo-category">
                                     <option value="">- Diet -</option>
                                     <option value="1">Vegan</option>
-                                    <option value="1">Vegeterian</option>
-                                    <option value="1">Halal</option>
-                                    <option value="1">Lactose Free</option>
-                                    <option value="1">Gluten Free</option>
+                                    <option value="2">Vegeterian</option>
+                                    <option value="3">Halal</option>
+                                    <option value="4">Lactose Free</option>
+                                    <option value="5">Gluten Free</option>
                                 </select>
 
                                 <!-- </div> -->
@@ -55,126 +55,126 @@
                     <div class="main-cont">
                         <div class="row">
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                <div id="1" class="card">
+                                    <img id="rimg1" src="images/misty1.jpg" alt="Avatar" style="width:100%">
                                     <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
+                                        <h4 id="rname1"><b>Recipe Name</b></h4>
+                                        <p id="rdesc1">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                <div id="2"class="card">
+                                    <img id="rimg2" src="images/misty1.jpg" alt="Avatar" style="width:100%">
                                     <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
+                                        <h4 id="rname2"><b>Recipe Name</b></h4>
+                                        <p id="rdesc2">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                <div id="3" class="card">
+                                    <img id="rimg3" src="images/misty1.jpg" alt="Avatar" style="width:100%">
                                     <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
+                                        <h4 id="rname3"><b>Recipe Name</b></h4>
+                                        <p id="rdesc3">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                <div id="4" class="card">
+                                    <img id="rimg4" src="images/misty1.jpg" alt="Avatar" style="width:100%">
                                     <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
-                                    <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
-                                    <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
-                                    <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
-                                    <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
+                                        <h4 id="rname4"><b>Recipe Name</b></h4>
+                                        <p id="rdesc4">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                <div id="5" class="card">
+                                    <img id="rimg5" src="images/misty1.jpg" alt="Avatar" style="width:100%">
                                     <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
+                                        <h4 id="rname5"><b>Recipe Name</b></h4>
+                                        <p id="rdesc5">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                <div id="6" class="card">
+                                    <img id="rimg6" src="images/misty1.jpg" alt="Avatar" style="width:100%">
                                     <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
+                                        <h4 id="rname6"><b>Recipe Name</b></h4>
+                                        <p id="rdesc6">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                <div id="7" class="card">
+                                    <img id="rimg7" src="images/misty1.jpg" alt="Avatar" style="width:100%">
                                     <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
+                                        <h4 id="rname7"><b>Recipe Name</b></h4>
+                                        <p id="rdesc7">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                <div id="8" class="card">
+                                    <img id="rimg8" src="images/misty1.jpg" alt="Avatar" style="width:100%">
                                     <div class="container">
-                                        <h4><b>Recipe Name</b></h4>
-                                        <p>Some short description about the recipe.</p>
-                                        <a href="recipePage.html">Go somewhere</a>
+                                        <h4 id="rname8"><b>Recipe Name</b></h4>
+                                        <p id="rdesc8">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="9" class="card">
+                                    <img id="rimg9" src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                    <div class="container">
+                                        <h4 id="rname9"><b>Recipe Name</b></h4>
+                                        <p id="rdesc9">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="10" class="card">
+                                    <img id="rimg10" src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                    <div class="container">
+                                        <h4 id="rname10"><b>Recipe Name</b></h4>
+                                        <p id="rdesc10">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="11" class="card">
+                                    <img id="rimg11" src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                    <div class="container">
+                                        <h4 id="rname11"><b>Recipe Name</b></h4>
+                                        <p id="rdesc11">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="12" class="card">
+                                    <img id="rimg12" src="images/misty1.jpg" alt="Avatar" style="width:100%">
+                                    <div class="container">
+                                        <h4 id="rname12"><b>Recipe Name</b></h4>
+                                        <p id="rdesc12">Some short description about the recipe.</p>
+                                        <a href="recipePage.html" onclick="storeID(this)">Start cooking...</a> 
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +191,7 @@
 
                 <!-- Search -->
                 <section id="search" class="alt">
-                    <form autocomplete="off" action="/action_page.php">
+                    <form autocomplete="off">
                         <div class="autocomplete" style=" background-color: white;">
                             <input id="myInput" type="text" name="myIngredient" placeholder="Ingredient">
 
@@ -225,6 +225,7 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/searchIngredient.js"></script>
+    <script src="assets/js/seachRecipe.js"></script>
 </body>
 
 </html>

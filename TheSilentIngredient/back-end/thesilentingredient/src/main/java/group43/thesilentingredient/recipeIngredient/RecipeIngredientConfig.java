@@ -12,6 +12,15 @@ public class RecipeIngredientConfig {
 	@Bean
 	CommandLineRunner RecipeIngredientsCR(RecipeIngredientRepository repository) {
 		return args -> {
+			
+			//OBJECT NAME'S METHODOLOGY
+			//r = recipe
+			//{id}
+			//ing = ingredient
+			//{nr} = ingredient number
+			// *** r{id}ing{nr} ***
+			
+			//RECIPE ID - 1
 			RecipeIngredient ing1 = new RecipeIngredient(1,1,8.0,"quantity");
 			RecipeIngredient ing2 = new RecipeIngredient(2,1,400.0,"g");
 			RecipeIngredient ing3 = new RecipeIngredient(3,1,150.0,"ml");
