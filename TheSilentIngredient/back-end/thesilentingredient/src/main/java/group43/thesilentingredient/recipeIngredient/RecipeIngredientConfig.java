@@ -200,6 +200,24 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r20ing3 = new RecipeIngredient(79, 20, 250.0, "ml");
 			RecipeIngredient r20ing4 = new RecipeIngredient(81, 20, 2.0, "tbsp");
 			RecipeIngredient r20ing5 = new RecipeIngredient(66, 20, 50.0, "g");
+			
+			
+			// RECIPE ID - 21
+			RecipeIngredient r21ing1 = new RecipeIngredient(63, 21, 400.0, "g");
+			RecipeIngredient r21ing2 = new RecipeIngredient(80, 21, 100.0, "ml");
+			RecipeIngredient r21ing3 = new RecipeIngredient(81, 21, 150.0, "ml");
+			//RecipeIngredient r21ing4 = new RecipeIngredient(tahini, 21, 125.0, "g");
+			RecipeIngredient r21ing5 = new RecipeIngredient(69, 21, 1.5, "tsp");
+			RecipeIngredient r21ing6 = new RecipeIngredient(82, 21, 7.0, "g");
+						
+						
+			// RECIPE ID - 22
+			RecipeIngredient r22ing1 = new RecipeIngredient(78, 22, 400.0, "g");
+			RecipeIngredient r22ing2 = new RecipeIngredient(83, 22, 1.0, "tsp");
+			RecipeIngredient r22ing3 = new RecipeIngredient(84, 22, 7.0, "g");
+			RecipeIngredient r22ing4 = new RecipeIngredient(85, 22, 284.0, "ml");
+			RecipeIngredient r22ing5 = new RecipeIngredient(77, 22, 114.0, "g");
+			RecipeIngredient r22ing6 = new RecipeIngredient(4, 22, 2.0, "tbsp");
 
 			
 						
@@ -218,7 +236,9 @@ public class RecipeIngredientConfig {
 					r17ing1, r17ing2, r17ing3, r17ing4, r17ing5, r17ing6, r17ing7, r17ing8, r17ing9, r17ing10, r17ing11, r17ing12, r17ing13, r17ing14,
 					r18ing1, r18ing2, r18ing3, r18ing4, r18ing5, r18ing6, r18ing7, r18ing8,
 					r19ing1, r19ing2, r19ing3, r19ing4, r19ing5, r19ing6, r19ing7, r19ing8, r19ing9, r19ing10, r19ing11, r19ing12, r19ing13, r19ing14, r19ing15,
-					r20ing1, r20ing2, r20ing3, r20ing4, r20ing5));
+					r20ing1, r20ing2, r20ing3, r20ing4, r20ing5,
+					r21ing1, r21ing2, r21ing3, r21ing5, r21ing6,
+					r22ing1, r22ing2, r22ing3, r22ing4, r22ing5, r22ing6));
 		};
 	}
 }
