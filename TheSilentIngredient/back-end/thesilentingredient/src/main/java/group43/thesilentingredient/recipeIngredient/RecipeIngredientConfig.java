@@ -147,6 +147,35 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r16ing7 = new RecipeIngredient(60, 16, 1.0, "tsp");
 			RecipeIngredient r16ing8 = new RecipeIngredient(77, 16, 228.0, "g");
 			
+			
+			//RECIPE ID - 17
+			RecipeIngredient r17ing1 = new RecipeIngredient(24, 17, 510.0, "g");
+			RecipeIngredient r17ing2 = new RecipeIngredient(25, 17, 226.0, "g");
+			RecipeIngredient r17ing3 = new RecipeIngredient(4, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing4 = new RecipeIngredient(62, 17, 110.0, "g");
+			RecipeIngredient r17ing5 = new RecipeIngredient(26, 17, 100.0, "g");
+			RecipeIngredient r17ing6 = new RecipeIngredient(27, 17, 80.0, "g");
+			RecipeIngredient r17ing7 = new RecipeIngredient(15, 17, 25.0, "g");
+			RecipeIngredient r17ing8 = new RecipeIngredient(28, 17, 300.0, "g");
+			RecipeIngredient r17ing9 = new RecipeIngredient(10, 17, 360.0, "g");
+			RecipeIngredient r17ing10 = new RecipeIngredient(29, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing11 = new RecipeIngredient(30, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing12 = new RecipeIngredient(31, 17, 58.0, "g");
+			RecipeIngredient r17ing13 = new RecipeIngredient(21, 17, 2.0, "tbsp");
+			RecipeIngredient r17ing14 = new RecipeIngredient(32, 17, 125.0, "ml");
+			
+			
+			//RECIPE ID - 18
+			RecipeIngredient r18ing1 = new RecipeIngredient(33, 18, 250.0, "g");
+			RecipeIngredient r18ing2 = new RecipeIngredient(34, 18, 1.0, "tbsp");
+			RecipeIngredient r18ing3 = new RecipeIngredient(35, 18, 2.0, "tsp");
+			RecipeIngredient r18ing4 = new RecipeIngredient(77, 18, 57.0, "g");
+			RecipeIngredient r18ing5 = new RecipeIngredient(83, 18, 0.25, "g");
+			RecipeIngredient r18ing6 = new RecipeIngredient(36, 18, 250.0, "ml");
+			RecipeIngredient r18ing7 = new RecipeIngredient(37, 18, 2.0, "tbsp");
+			RecipeIngredient r18ing8 = new RecipeIngredient(1, 18, 200.0, "g");
+
+			
 						
 			repository.saveAll(List.of(r1ing1, r1ing2, r1ing3,
 					r2ing1, r2ing2, r2ing3, r2ing4, r2ing5,
@@ -159,7 +188,9 @@ public class RecipeIngredientConfig {
 					r13ing1, r13ing2, r13ing3, r13ing4, r13ing5,
 					r14ing1, r14ing2, r14ing3, r14ing4, r14ing5, r14ing6,
 					r15ing1, r15ing2, r15ing3, r15ing4, r15ing5, r15ing6, r15ing7, r15ing8, r15ing9,
-					r16ing1, r16ing2, r16ing3, r16ing4, r16ing5, r16ing6, r16ing7, r16ing8));
+					r16ing1, r16ing2, r16ing3, r16ing4, r16ing5, r16ing6, r16ing7, r16ing8,
+					r17ing1, r17ing2, r17ing3, r17ing4, r17ing5, r17ing6, r17ing7, r17ing8, r17ing9, r17ing10, r17ing11, r17ing12, r17ing13, r17ing14,
+					r18ing1, r18ing2, r18ing3, r18ing4, r18ing5, r18ing6, r18ing7, r18ing8));
 		};
 	}
 }
