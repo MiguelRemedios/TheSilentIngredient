@@ -174,6 +174,32 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r18ing6 = new RecipeIngredient(36, 18, 250.0, "ml");
 			RecipeIngredient r18ing7 = new RecipeIngredient(37, 18, 2.0, "tbsp");
 			RecipeIngredient r18ing8 = new RecipeIngredient(1, 18, 200.0, "g");
+			
+			
+			//RECIPE ID - 19
+			RecipeIngredient r19ing1 = new RecipeIngredient(38, 19, 110.0, "g");
+			RecipeIngredient r19ing2 = new RecipeIngredient(15, 19, 10.0, "g");
+			RecipeIngredient r19ing3 = new RecipeIngredient(4, 19, 2.0, "tbsp");
+			RecipeIngredient r19ing4 = new RecipeIngredient(39, 19, 0.5, "tsp");
+			RecipeIngredient r19ing5 = new RecipeIngredient(69, 19, 0.5, "tsp");
+			RecipeIngredient r19ing6 = new RecipeIngredient(40, 19, 0.5, "tsp");
+			RecipeIngredient r19ing7 = new RecipeIngredient(41, 19, 150.0, "g");
+			RecipeIngredient r19ing8 = new RecipeIngredient(42, 19, 210.0, "g");
+			RecipeIngredient r19ing9 = new RecipeIngredient(43, 19, 400.0, "g");
+			RecipeIngredient r19ing10 = new RecipeIngredient(44, 19, 480.0, "g");
+			RecipeIngredient r19ing11 = new RecipeIngredient(45, 19, 400.0, "g");
+			RecipeIngredient r19ing12 = new RecipeIngredient(46, 19, 250.0, "ml");
+			RecipeIngredient r19ing13 = new RecipeIngredient(47, 19, 2.0, "tbsp");
+			RecipeIngredient r19ing14 = new RecipeIngredient(48, 19, 35.0, "g");
+			RecipeIngredient r19ing15 = new RecipeIngredient(21, 19, 56.0, "g");
+			
+			
+			//RECIPE ID - 20
+			RecipeIngredient r20ing1 = new RecipeIngredient(78, 20, 125.0, "g");
+			RecipeIngredient r20ing2 = new RecipeIngredient(77, 20, 57.0, "g");
+			RecipeIngredient r20ing3 = new RecipeIngredient(79, 20, 250.0, "ml");
+			RecipeIngredient r20ing4 = new RecipeIngredient(81, 20, 2.0, "tbsp");
+			RecipeIngredient r20ing5 = new RecipeIngredient(66, 20, 50.0, "g");
 
 			
 						
@@ -190,7 +216,9 @@ public class RecipeIngredientConfig {
 					r15ing1, r15ing2, r15ing3, r15ing4, r15ing5, r15ing6, r15ing7, r15ing8, r15ing9,
 					r16ing1, r16ing2, r16ing3, r16ing4, r16ing5, r16ing6, r16ing7, r16ing8,
 					r17ing1, r17ing2, r17ing3, r17ing4, r17ing5, r17ing6, r17ing7, r17ing8, r17ing9, r17ing10, r17ing11, r17ing12, r17ing13, r17ing14,
-					r18ing1, r18ing2, r18ing3, r18ing4, r18ing5, r18ing6, r18ing7, r18ing8));
+					r18ing1, r18ing2, r18ing3, r18ing4, r18ing5, r18ing6, r18ing7, r18ing8,
+					r19ing1, r19ing2, r19ing3, r19ing4, r19ing5, r19ing6, r19ing7, r19ing8, r19ing9, r19ing10, r19ing11, r19ing12, r19ing13, r19ing14, r19ing15,
+					r20ing1, r20ing2, r20ing3, r20ing4, r20ing5));
 		};
 	}
 }
