@@ -130,13 +130,11 @@ function recipenutrition(){
           totalprotein += protein;
           totalcarbo += carbo;
           totalfat += fat;
-
-          //Calculate energy
-          energyprotein = ((totalprotein * 4) * 4.184);
-          energycarbo = ((totalcarbo * 4) * 4.184);
-          energyfat = ((totalfat * 9) * 4.184);
-          totalenergy = Math.round(energyprotein + energycarbo + energyfat);
         }
+        energyprotein = ((totalprotein * 4) * 4.184);
+        energycarbo = ((totalcarbo * 4) * 4.184);
+        energyfat = ((totalfat * 9) * 4.184);
+        totalenergy = Math.round(energyprotein + energycarbo + energyfat);
 
         $("#energy").html(totalenergy + " kJ");
         $("#calories").html(totalcalories + " kcal");
@@ -185,21 +183,28 @@ if (card == 24) {recipe24();}
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
 
 function recipe1(){
+  //All parameters are ID's from everyone's table, make sure you check them and add it correctly.
+  //Recipe ID
   recipeInfo(1);
+  //Images ID
   recipeImages(1,2,3,4,5);
-  recipeingredients(2,3,83);
-  recipeingredientsamount();
-  recipesteps(1,2,3,4,5);
-  recipenutrition(1,3,4,5);
+  //Ingredients ID
+  recipeingredients(3,2,83);
+  //Ingredient Amount ID
+  recipeingredientsamount(1,2,3);
+  //Step ID
+  recipesteps(1,2,3,4);
+  //Ingredients ID (same as above)
+  recipenutrition(3,2,83);
 }
 
 function recipe2(){
   recipeInfo(2);
   recipeImages(6,7,8,9,10);
-  recipeingredients(1,2);
-  recipeingredientsamount(1,2);
-  recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
+  recipeingredients(81,5,6,7,62);
+  recipeingredientsamount(4,5,6,7,8);
+  recipesteps(5,6,7,8,9,10);
+  recipenutrition(81,5,6,7,62);
 }
 
 function recipe3(){
