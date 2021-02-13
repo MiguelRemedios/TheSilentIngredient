@@ -115,6 +115,15 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r13ing4 = new RecipeIngredient(83, 13, 1.0, "tbsp");
 			RecipeIngredient r13ing5 = new RecipeIngredient(81, 13, 350.0, "ml");
 			
+			
+			// RECIPE ID - 14
+			RecipeIngredient r14ing1 = new RecipeIngredient(8, 14, 170.0, "g");
+			RecipeIngredient r14ing2 = new RecipeIngredient(77, 14, 114.0, "g");
+			RecipeIngredient r14ing3 = new RecipeIngredient(53, 14, 80.0, "g");
+			RecipeIngredient r14ing4 = new RecipeIngredient(83, 14, 1.0, "tbsp");
+			RecipeIngredient r14ing5 = new RecipeIngredient(68, 14, 2.0, "tbsp");
+			RecipeIngredient r14ing6 = new RecipeIngredient(81, 14, 15.0, "ml");
+			
 			repository.saveAll(List.of(r1ing1, r1ing2, r1ing3,
 					r2ing1, r2ing2, r2ing3, r2ing4, r2ing5,
 					r3ing1, r3ing2, r3ing3, r3ing4, r3ing5,
@@ -123,7 +132,8 @@ public class RecipeIngredientConfig {
 					r6ing1, r6ing2, r6ing3, r6ing4, r6ing5, r6ing7, r6ing8, r6ing10, r6ing12, r6ing13, r6ing15,
 					r7ing1, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8,
 					r12ing1, r12ing2, r12ing3, r12ing4, r12ing5,
-					r13ing1, r13ing2, r13ing3, r13ing4, r13ing5));
+					r13ing1, r13ing2, r13ing3, r13ing4, r13ing5,
+					r14ing1, r14ing2, r14ing3, r14ing4, r14ing5, r14ing6));
 		};
 	}
 }
