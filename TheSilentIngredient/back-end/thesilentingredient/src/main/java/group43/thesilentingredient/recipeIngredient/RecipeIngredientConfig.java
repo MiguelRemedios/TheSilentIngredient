@@ -124,6 +124,30 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r14ing5 = new RecipeIngredient(68, 14, 2.0, "tbsp");
 			RecipeIngredient r14ing6 = new RecipeIngredient(81, 14, 15.0, "ml");
 			
+			
+			// RECIPE ID - 15
+			RecipeIngredient r15ing1 = new RecipeIngredient(28, 15, 200.0, "g");
+			RecipeIngredient r15ing2 = new RecipeIngredient(81, 15, 3.0, "tbsp");
+			RecipeIngredient r15ing3 = new RecipeIngredient(15, 15, 15.0, "g");
+			RecipeIngredient r15ing4 = new RecipeIngredient(16, 15, 5.0, "g");
+			RecipeIngredient r15ing5 = new RecipeIngredient(17, 15, 270.0, "g");
+			RecipeIngredient r15ing6 = new RecipeIngredient(18, 15, 125.0, "ml");
+			RecipeIngredient r15ing7 = new RecipeIngredient(19, 15, 90.0, "ml");
+			RecipeIngredient r15ing8 = new RecipeIngredient(20, 15, 350.0, "g");
+			RecipeIngredient r15ing9 = new RecipeIngredient(21, 15, 50.0, "g");
+						
+						
+			//RECIPE ID - 16
+			RecipeIngredient r16ing1 = new RecipeIngredient(81, 16, 90.0, "g");
+			RecipeIngredient r16ing2 = new RecipeIngredient(38, 16, 220.0, "g");
+			RecipeIngredient r16ing3 = new RecipeIngredient(22, 16, 45.0, "g");
+			RecipeIngredient r16ing4 = new RecipeIngredient(15, 16, 5.0, "g");
+			RecipeIngredient r16ing5 = new RecipeIngredient(69, 16, 16.0, "g");
+			RecipeIngredient r16ing6 = new RecipeIngredient(23, 16, 800.0, "ml");
+			RecipeIngredient r16ing7 = new RecipeIngredient(60, 16, 1.0, "tsp");
+			RecipeIngredient r16ing8 = new RecipeIngredient(77, 16, 228.0, "g");
+			
+						
 			repository.saveAll(List.of(r1ing1, r1ing2, r1ing3,
 					r2ing1, r2ing2, r2ing3, r2ing4, r2ing5,
 					r3ing1, r3ing2, r3ing3, r3ing4, r3ing5,
@@ -133,7 +157,9 @@ public class RecipeIngredientConfig {
 					r7ing1, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8,
 					r12ing1, r12ing2, r12ing3, r12ing4, r12ing5,
 					r13ing1, r13ing2, r13ing3, r13ing4, r13ing5,
-					r14ing1, r14ing2, r14ing3, r14ing4, r14ing5, r14ing6));
+					r14ing1, r14ing2, r14ing3, r14ing4, r14ing5, r14ing6,
+					r15ing1, r15ing2, r15ing3, r15ing4, r15ing5, r15ing6, r15ing7, r15ing8, r15ing9,
+					r16ing1, r16ing2, r16ing3, r16ing4, r16ing5, r16ing6, r16ing7, r16ing8));
 		};
 	}
 }
