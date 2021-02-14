@@ -49,6 +49,154 @@ public class IngredientConfig {
 					20,
 					53.3
 					);
+			Ingredient grndCoriander = new Ingredient(
+					"ground coriander",
+					593.3,
+					20,
+					20,
+					53.3
+					);
+			Ingredient flourTortillas = new Ingredient(
+					"flour tortillas",
+					324.4,
+					8.8,
+					55.1,
+					7.1
+					);
+			
+			Ingredient souredCream = new Ingredient(
+					"soured cream",
+					196.6,
+					2.3,
+					43.3,
+					19.3
+					);
+			Ingredient groundnutOil = new Ingredient(
+					"groundnut oil",
+					884,
+					0,
+					0,
+					100
+					);
+			Ingredient greenPepper = new Ingredient(
+					"green pepper",
+					28,
+					0.9,
+					6.7,
+					0.2
+					);
+			Ingredient basmatiRice = new Ingredient(
+					"basmati rice",
+					121,
+					3.54,
+					25.22,
+					0.38
+					);
+			Ingredient chipotlePaste = new Ingredient(
+					"chipotle paste",
+					48,
+					1.9,
+					9,
+					0.4
+					);
+			Ingredient tomatoes = new Ingredient(
+					"tomatoes",
+					18,
+					0.9,
+					3.9,
+					0.2
+					);
+			Ingredient vegetableStock = new Ingredient(
+					"vegetable stock",
+					5.9,
+					0.2,
+					1,
+					0.1
+					);
+			Ingredient lime = new Ingredient(
+					"lime",
+					23,
+					0.3,
+					7.6,
+					0
+					);
+			Ingredient pasta = new Ingredient(
+					"pasta",
+					131,
+					5,
+					25,
+					1.1
+					);
+			Ingredient capers = new Ingredient(
+					"capers",
+					23,
+					2.4,
+					4.9,
+					0.9
+					);
+			Ingredient bocconcini = new Ingredient(
+					"bocconcini",
+					211.6,
+					21.2,
+					0,
+					12.3
+					);
+			Ingredient basil = new Ingredient(
+					"basil",
+					22,
+					3.2,
+					2.7,
+					0.6
+					);
+			Ingredient chives = new Ingredient(
+					"chives",
+					30,
+					3.3,
+					4.4,
+					0.7
+					);
+			Ingredient asafoetida = new Ingredient(
+					"asafoetida",
+					297.1,
+					4,
+					67.8,
+					1.1
+					);
+			Ingredient freshGingerPaste = new Ingredient(
+					"fresh ginger paste",
+					210.6,
+					1.5,
+					14.7,
+					16.8
+					);
+			Ingredient garlicPaste = new Ingredient(
+					"garlic paste",
+					422,
+					3.4,
+					18.8,
+					39.1
+					);
+			Ingredient greenChilliPaste = new Ingredient(
+					"green chilli paste",
+					175.1,
+					2.1,
+					43.8,
+					0.8
+					);
+			Ingredient turmeric = new Ingredient(
+					"turmeric",
+					352.97,
+					6.89,
+					73.6,
+					3.89
+					);
+			Ingredient dhanaJeeraPwdr = new Ingredient(
+					"dhana jeera powder",
+					346,
+					7,
+					45,
+					2
+					);
 			
 			
 			
