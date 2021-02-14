@@ -100,16 +100,145 @@ public class RecipeIngredientConfig {
 			//r7ing1, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8
 
 			
+			// RECIPE ID - 12
+			RecipeIngredient r12ing1 = new RecipeIngredient(8, 12, 340.0, "g");
+			RecipeIngredient r12ing2 = new RecipeIngredient(83, 12, 1.0, "tbsp");
+			RecipeIngredient r12ing3 = new RecipeIngredient(77, 12, 114.0, "g");
+			RecipeIngredient r12ing4 = new RecipeIngredient(81, 12, 250.0, "ml");
+			RecipeIngredient r12ing5 = new RecipeIngredient(33, 12, 50.0, "g");
 			
 			
+			// RECIPE ID - 13
+			RecipeIngredient r13ing1 = new RecipeIngredient(8, 13, 340.0, "g");
+			RecipeIngredient r13ing2 = new RecipeIngredient(52, 13, 540.0, "g");
+			RecipeIngredient r13ing3 = new RecipeIngredient(50, 13, 80.0, "g");
+			RecipeIngredient r13ing4 = new RecipeIngredient(83, 13, 1.0, "tbsp");
+			RecipeIngredient r13ing5 = new RecipeIngredient(81, 13, 350.0, "ml");
 			
+			
+			// RECIPE ID - 14
+			RecipeIngredient r14ing1 = new RecipeIngredient(8, 14, 170.0, "g");
+			RecipeIngredient r14ing2 = new RecipeIngredient(77, 14, 114.0, "g");
+			RecipeIngredient r14ing3 = new RecipeIngredient(53, 14, 80.0, "g");
+			RecipeIngredient r14ing4 = new RecipeIngredient(83, 14, 1.0, "tbsp");
+			RecipeIngredient r14ing5 = new RecipeIngredient(68, 14, 2.0, "tbsp");
+			RecipeIngredient r14ing6 = new RecipeIngredient(81, 14, 15.0, "ml");
+			
+			
+			// RECIPE ID - 15
+			RecipeIngredient r15ing1 = new RecipeIngredient(28, 15, 200.0, "g");
+			RecipeIngredient r15ing2 = new RecipeIngredient(81, 15, 3.0, "tbsp");
+			RecipeIngredient r15ing3 = new RecipeIngredient(15, 15, 15.0, "g");
+			RecipeIngredient r15ing4 = new RecipeIngredient(16, 15, 5.0, "g");
+			RecipeIngredient r15ing5 = new RecipeIngredient(17, 15, 270.0, "g");
+			RecipeIngredient r15ing6 = new RecipeIngredient(18, 15, 125.0, "ml");
+			RecipeIngredient r15ing7 = new RecipeIngredient(19, 15, 90.0, "ml");
+			RecipeIngredient r15ing8 = new RecipeIngredient(20, 15, 350.0, "g");
+			RecipeIngredient r15ing9 = new RecipeIngredient(21, 15, 50.0, "g");
+						
+						
+			//RECIPE ID - 16
+			RecipeIngredient r16ing1 = new RecipeIngredient(81, 16, 90.0, "g");
+			RecipeIngredient r16ing2 = new RecipeIngredient(38, 16, 220.0, "g");
+			RecipeIngredient r16ing3 = new RecipeIngredient(22, 16, 45.0, "g");
+			RecipeIngredient r16ing4 = new RecipeIngredient(15, 16, 5.0, "g");
+			RecipeIngredient r16ing5 = new RecipeIngredient(69, 16, 16.0, "g");
+			RecipeIngredient r16ing6 = new RecipeIngredient(23, 16, 800.0, "ml");
+			RecipeIngredient r16ing7 = new RecipeIngredient(60, 16, 1.0, "tsp");
+			RecipeIngredient r16ing8 = new RecipeIngredient(77, 16, 228.0, "g");
+			
+			
+			//RECIPE ID - 17
+			RecipeIngredient r17ing1 = new RecipeIngredient(24, 17, 510.0, "g");
+			RecipeIngredient r17ing2 = new RecipeIngredient(25, 17, 226.0, "g");
+			RecipeIngredient r17ing3 = new RecipeIngredient(4, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing4 = new RecipeIngredient(62, 17, 110.0, "g");
+			RecipeIngredient r17ing5 = new RecipeIngredient(26, 17, 100.0, "g");
+			RecipeIngredient r17ing6 = new RecipeIngredient(27, 17, 80.0, "g");
+			RecipeIngredient r17ing7 = new RecipeIngredient(15, 17, 25.0, "g");
+			RecipeIngredient r17ing8 = new RecipeIngredient(28, 17, 300.0, "g");
+			RecipeIngredient r17ing9 = new RecipeIngredient(10, 17, 360.0, "g");
+			RecipeIngredient r17ing10 = new RecipeIngredient(29, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing11 = new RecipeIngredient(30, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing12 = new RecipeIngredient(31, 17, 58.0, "g");
+			RecipeIngredient r17ing13 = new RecipeIngredient(21, 17, 2.0, "tbsp");
+			RecipeIngredient r17ing14 = new RecipeIngredient(32, 17, 125.0, "ml");
+			
+			
+			//RECIPE ID - 18
+			RecipeIngredient r18ing1 = new RecipeIngredient(33, 18, 250.0, "g");
+			RecipeIngredient r18ing2 = new RecipeIngredient(34, 18, 1.0, "tbsp");
+			RecipeIngredient r18ing3 = new RecipeIngredient(35, 18, 2.0, "tsp");
+			RecipeIngredient r18ing4 = new RecipeIngredient(77, 18, 57.0, "g");
+			RecipeIngredient r18ing5 = new RecipeIngredient(83, 18, 0.25, "g");
+			RecipeIngredient r18ing6 = new RecipeIngredient(36, 18, 250.0, "ml");
+			RecipeIngredient r18ing7 = new RecipeIngredient(37, 18, 2.0, "tbsp");
+			RecipeIngredient r18ing8 = new RecipeIngredient(1, 18, 200.0, "g");
+			
+			
+			//RECIPE ID - 19
+			RecipeIngredient r19ing1 = new RecipeIngredient(38, 19, 110.0, "g");
+			RecipeIngredient r19ing2 = new RecipeIngredient(15, 19, 10.0, "g");
+			RecipeIngredient r19ing3 = new RecipeIngredient(4, 19, 2.0, "tbsp");
+			RecipeIngredient r19ing4 = new RecipeIngredient(39, 19, 0.5, "tsp");
+			RecipeIngredient r19ing5 = new RecipeIngredient(69, 19, 0.5, "tsp");
+			RecipeIngredient r19ing6 = new RecipeIngredient(40, 19, 0.5, "tsp");
+			RecipeIngredient r19ing7 = new RecipeIngredient(41, 19, 150.0, "g");
+			RecipeIngredient r19ing8 = new RecipeIngredient(42, 19, 210.0, "g");
+			RecipeIngredient r19ing9 = new RecipeIngredient(43, 19, 400.0, "g");
+			RecipeIngredient r19ing10 = new RecipeIngredient(44, 19, 480.0, "g");
+			RecipeIngredient r19ing11 = new RecipeIngredient(45, 19, 400.0, "g");
+			RecipeIngredient r19ing12 = new RecipeIngredient(46, 19, 250.0, "ml");
+			RecipeIngredient r19ing13 = new RecipeIngredient(47, 19, 2.0, "tbsp");
+			RecipeIngredient r19ing14 = new RecipeIngredient(48, 19, 35.0, "g");
+			RecipeIngredient r19ing15 = new RecipeIngredient(21, 19, 56.0, "g");
+			
+			
+			//RECIPE ID - 20
+			RecipeIngredient r20ing1 = new RecipeIngredient(78, 20, 125.0, "g");
+			RecipeIngredient r20ing2 = new RecipeIngredient(77, 20, 57.0, "g");
+			RecipeIngredient r20ing3 = new RecipeIngredient(79, 20, 250.0, "ml");
+			RecipeIngredient r20ing4 = new RecipeIngredient(81, 20, 2.0, "tbsp");
+			RecipeIngredient r20ing5 = new RecipeIngredient(66, 20, 50.0, "g");
+			
+			
+			// RECIPE ID - 21
+			RecipeIngredient r21ing1 = new RecipeIngredient(63, 21, 400.0, "g");
+			RecipeIngredient r21ing2 = new RecipeIngredient(80, 21, 100.0, "ml");
+			RecipeIngredient r21ing3 = new RecipeIngredient(81, 21, 150.0, "ml");
+			//RecipeIngredient r21ing4 = new RecipeIngredient(tahini, 21, 125.0, "g");
+			RecipeIngredient r21ing5 = new RecipeIngredient(69, 21, 1.5, "tsp");
+			RecipeIngredient r21ing6 = new RecipeIngredient(82, 21, 7.0, "g");
+						
+						
+			// RECIPE ID - 22
+			RecipeIngredient r22ing1 = new RecipeIngredient(78, 22, 400.0, "g");
+			RecipeIngredient r22ing2 = new RecipeIngredient(83, 22, 1.0, "tsp");
+			RecipeIngredient r22ing3 = new RecipeIngredient(84, 22, 7.0, "g");
+			RecipeIngredient r22ing4 = new RecipeIngredient(85, 22, 284.0, "ml");
+			RecipeIngredient r22ing5 = new RecipeIngredient(77, 22, 114.0, "g");
+			RecipeIngredient r22ing6 = new RecipeIngredient(4, 22, 2.0, "tbsp");
+
+			
+						
 			repository.saveAll(List.of(r1ing1, r1ing2, r1ing3,
 					r2ing1, r2ing2, r2ing3, r2ing4, r2ing5,
 					r3ing1, r3ing2, r3ing3, r3ing4, r3ing5,
 					r4ing1, r4ing2, r4ing3, r4ing4, r4ing5,
 					r5ing1, r5ing2, r5ing3, r5ing4, r5ing5, r5ing6, r5ing7,
 					r6ing1, r6ing2, r6ing3, r6ing4, r6ing5, r6ing7, r6ing8, r6ing10, r6ing12, r6ing13, r6ing15,
-					r7ing1, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8));
+					r7ing1, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8,
+					r12ing1, r12ing2, r12ing3, r12ing4, r12ing5,
+					r13ing1, r13ing2, r13ing3, r13ing4, r13ing5,
+					r14ing1, r14ing2, r14ing3, r14ing4, r14ing5, r14ing6,
+					r15ing1, r15ing2, r15ing3, r15ing4, r15ing5, r15ing6, r15ing7, r15ing8, r15ing9,
+					r16ing1, r16ing2, r16ing3, r16ing4, r16ing5, r16ing6, r16ing7, r16ing8,
+					r17ing1, r17ing2, r17ing3, r17ing4, r17ing5, r17ing6, r17ing7, r17ing8, r17ing9, r17ing10, r17ing11, r17ing12, r17ing13, r17ing14,
+					r18ing1, r18ing2, r18ing3, r18ing4, r18ing5, r18ing6, r18ing7, r18ing8,
+					r19ing1, r19ing2, r19ing3, r19ing4, r19ing5, r19ing6, r19ing7, r19ing8, r19ing9, r19ing10, r19ing11, r19ing12, r19ing13, r19ing14, r19ing15,
+					r20ing1, r20ing2, r20ing3, r20ing4, r20ing5,
+					r21ing1, r21ing2, r21ing3, r21ing5, r21ing6,
+					r22ing1, r22ing2, r22ing3, r22ing4, r22ing5, r22ing6));
 		};
 	}
 }
