@@ -6,13 +6,15 @@ function recipeInfo(recipeid){
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 
-      var recipe = JSON.parse(this.responseText);
-      let recipe1 = recipe.find(({id}) => id == recipeid);
-      document.getElementById("title").innerHTML = `TheSilentIngredient - ${recipe1.name}`;
-      document.getElementById("r1").innerHTML = `${recipe1.name}`;
-      document.getElementById("r2").innerHTML = `${recipe1.description}`;
-      document.getElementById("r3").innerHTML = `Serving: ${recipe1.serving}`;
-      document.getElementById("r4").innerHTML = `Cooking Time: ${recipe1.cooktime}`;
+      var recipes = JSON.parse(this.responseText);
+      let recipe = recipes.find(({id}) => id == recipeid);
+      
+      //Recipe Page
+      document.getElementById("title").innerHTML = `TheSilentIngredient - ${recipe.name}`;
+      document.getElementById("r1").innerHTML = `${recipe.name}`;
+      document.getElementById("r2").innerHTML = `${recipe.description}`;
+      document.getElementById("r3").innerHTML = `Serving: ${recipe.serving}`;
+      document.getElementById("r4").innerHTML = `Cooking Time: ${recipe.cooktime}`;
     }
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe', true);
@@ -44,105 +46,59 @@ function recipeImages(image1, image2, image3, image4, image5){
   xmlhttp.send();
 }
 
-//Display Ingredients
-function recipeingredients(ing1, ing2 = 0, ing3 = 0 , ing4 = 0, ing5 = 0, ing6 = 0, ing7 = 0, ing8 = 0, ing9 = 0, ing10 = 0){
+function recipeingredients(){
   var xmlhttp = new XMLHttpRequest();
+  const argcount = arguments.length;
+  const myArgs = arguments;
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 
       var ingredients = JSON.parse(this.responseText);
 
-      let ingredient1 = ingredients.find(({id}) => id == ing1);
-      let ingredient2 = ingredients.find(({id}) => id == ing2);
-      let ingredient3 = ingredients.find(({id}) => id == ing3);
-      let ingredient4 = ingredients.find(({id}) => id == ing4);
-      let ingredient5 = ingredients.find(({id}) => id == ing5);
-      let ingredient6 = ingredients.find(({id}) => id == ing6);
-      let ingredient7 = ingredients.find(({id}) => id == ing7);
-      let ingredient8 = ingredients.find(({id}) => id == ing8);
-      let ingredient9 = ingredients.find(({id}) => id == ing9);
-      let ingredient10 = ingredients.find(({id}) => id == ing10);
-
-      document.getElementById("t2").innerHTML = `${ingredient1.name}`;
-      document.getElementById("t4").innerHTML = `${ingredient2.name}`;
-      document.getElementById("t6").innerHTML = `${ingredient3.name}`;
-      document.getElementById("t8").innerHTML = `${ingredient4.name}`;
-      document.getElementById("t10").innerHTML = `${ingredient5.name}`;
-      document.getElementById("t12").innerHTML = `${ingredient6.name}`;
-      document.getElementById("t14").innerHTML = `${ingredient7.name}`;
-      document.getElementById("t16").innerHTML = `${ingredient8.name}`;
-      document.getElementById("t18").innerHTML = `${ingredient9.name}`;
-      document.getElementById("t20").innerHTML = `${ingredient10.name}`;
+      for (let index = 0; index < argcount; index++) {
+        let ingredient = ingredients.find(({id}) => id == myArgs[index]);
+        document.getElementById(`i${index+1}`).innerHTML = `${ingredient.name}`;
       }
+    }
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient', true);
   xmlhttp.send();
 }
 
 //Display Ingredient's Amount
-function recipeingredientsamount(amount1, amount2 = 0, amount3 = 0, amount4 = 0, amount5 = 0, amount6 = 0, amount7 = 0, amount8 = 0, amount9 = 0, amount10 = 0){
+function recipeingredientsamount(){
   var xmlhttp = new XMLHttpRequest();
+  const argcount = arguments.length;
+  const myArgs = arguments;
   xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState == 4 && this.status == 200) {
 
-          var amount = JSON.parse(this.responseText);
+      var amounts = JSON.parse(this.responseText);
     
-          let amt1 = amount.find(({id}) => id == amount1);
-          let amt2 = amount.find(({id}) => id == amount2);
-          let amt3 = amount.find(({id}) => id == amount3);
-          let amt4 = amount.find(({id}) => id == amount4);
-          let amt5 = amount.find(({id}) => id == amount5);
-          let amt6 = amount.find(({id}) => id == amount6);
-          let amt7 = amount.find(({id}) => id == amount7);
-          let amt8 = amount.find(({id}) => id == amount8);
-          let amt9 = amount.find(({id}) => id == amount9);
-          let amt10 = amount.find(({id}) => id == amount10);
-    
-          document.getElementById("t1").innerHTML = `${amt1.quantity}` + ` ${amt1.measurement}`;
-          document.getElementById("t3").innerHTML = `${amt2.quantity}` + ` ${amt2.measurement}`;
-          document.getElementById("t5").innerHTML = `${amt3.quantity}` + ` ${amt3.measurement}`;
-          document.getElementById("t7").innerHTML = `${amt4.quantity}` + ` ${amt4.measurement}`;
-          document.getElementById("t9").innerHTML = `${amt5.quantity}` + ` ${amt5.measurement}`;
-          document.getElementById("t11").innerHTML = `${amt6.quantity}` + ` ${amt6.measurement}`;
-          document.getElementById("t13").innerHTML = `${amt7.quantity}` + ` ${amt7.measurement}`;
-          document.getElementById("t15").innerHTML = `${amt8.quantity}` + ` ${amt8.measurement}`;
-          document.getElementById("t17").innerHTML = `${amt9.quantity}` + ` ${amt9.measurement}`;
-          document.getElementById("t19").innerHTML = `${amt10.quantity}` + ` ${amt10.measurement}`;
+      for (let index = 0; index < argcount; index++) {
+        let amount = amounts.find(({id}) => id == myArgs[index]);
+        document.getElementById(`a${index+1}`).innerHTML = `${amount.quantity}` + ` ${amount.measurement}`;
       }
-      };
-      xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient', true);
-      xmlhttp.send();
     }
+  };
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient', true);
+  xmlhttp.send();
+}
 
 //Display Recipe Steps
-function recipesteps(stp1, stp2 = 0, stp3 = 0, stp4 = 0, stp5 = 0, stp6 = 0, stp7 = 0, stp8 = 0, stp9 = 0, stp10 = 0){
+function recipesteps(){
   var xmlhttp = new XMLHttpRequest();
+  const argcount = arguments.length;
+  const myArgs = arguments;
   xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState == 4 && this.status == 200) {
 
-          var steps = JSON.parse(this.responseText);
+      var steps = JSON.parse(this.responseText);
 
-          let step1 = steps.find(({id}) => id == stp1);
-          let step2 = steps.find(({id}) => id == stp2);
-          let step3 = steps.find(({id}) => id == stp3);
-          let step4 = steps.find(({id}) => id == stp4);
-          let step5 = steps.find(({id}) => id == stp5);
-          let step6 = steps.find(({id}) => id == stp6);
-          let step7 = steps.find(({id}) => id == stp7);
-          let step8 = steps.find(({id}) => id == stp8);
-          let step9 = steps.find(({id}) => id == stp9);
-          let step10 = steps.find(({id}) => id == stp10);
-
-          $("#s1").html(step1.step);
-          $("#s2").html(step2.step);
-          $("#s3").html(step3.step);
-          $("#s4").html(step4.step);
-          $("#s5").html(step5.step);
-          $("#s6").html(step6.step);
-          $("#s7").html(step7.step);
-          $("#s8").html(step8.step);
-          $("#s9").html(step9.step);
-          $("#s10").html(step10.step);
+      for (let index = 0; index < argcount; index++) {
+        let step = steps.find(({id}) => id == myArgs[index]);
+        document.getElementById(`s${index+1}`).innerHTML = `${index+1}) ${step.step}`;
+      }
     }
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-step', true);
@@ -150,44 +106,122 @@ function recipesteps(stp1, stp2 = 0, stp3 = 0, stp4 = 0, stp5 = 0, stp6 = 0, stp
 }
 
 //Display Nutrition
-function recipenutrition(ing1, ing2 = 0, ing3 = 0 , ing4 = 0, ing5 = 0, ing6 = 0, ing7 = 0, ing8 = 0, ing9 = 0, ing10 = 0){
+function recipenutrition(){
   var xmlhttp = new XMLHttpRequest();
+  const argcount = arguments.length;
+  const myArgs = arguments;
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
   
-        var nutrition = JSON.parse(this.responseText);
-  
-        let ingredient1 = nutrition.find(({id}) => id == ing1);
-        let ingredient2 = nutrition.find(({id}) => id == ing2);
-        let ingredient3 = nutrition.find(({id}) => id == ing3);
-        let ingredient4 = nutrition.find(({id}) => id == ing4);
-        let ingredient5 = nutrition.find(({id}) => id == ing5);
-        let ingredient6 = nutrition.find(({id}) => id == ing6);
-        let ingredient7 = nutrition.find(({id}) => id == ing7);
-        let ingredient8 = nutrition.find(({id}) => id == ing8);
-        let ingredient9 = nutrition.find(({id}) => id == ing9);
-        let ingredient10 = nutrition.find(({id}) => id == ing10);
+        var nutritions = JSON.parse(this.responseText);
+        var totalcalories, totalprotein, totalcarbo, totalfat;
+        totalcalories = totalprotein = totalcarbo = totalfat = 0;
+        var totalenergy, energyprotein, energycarbo, energyfat;
+        totalenergy = energyprotein = energycarbo = energyfat = 0;
 
-        $("#calories").html(ingredient1.calories);
-        $("#fat").html(ingredient2.fat);
-        $("#protein").html(ingredient2.protein);
-        $("#carbo").html(ingredient3.carbohydrate);
+        for (let index = 0; index < argcount; index++) {
+          let nutrition = nutritions.find(({id}) => id == myArgs[index]);
+
+          const calories = JSON.parse(`${nutrition.calories}`);
+          const protein = JSON.parse(`${nutrition.protein}`);
+          const carbo = JSON.parse(`${nutrition.carbohydrate}`);
+          const fat = JSON.parse(`${nutrition.fat}`);
+          totalcalories += calories;
+          totalprotein += protein;
+          totalcarbo += carbo;
+          totalfat += fat;
+        }
+        energyprotein = ((totalprotein * 4) * 4.184);
+        energycarbo = ((totalcarbo * 4) * 4.184);
+        energyfat = ((totalfat * 9) * 4.184);
+        totalenergy = Math.round(energyprotein + energycarbo + energyfat);
+
+        $("#energy").html(totalenergy + " kJ");
+        $("#calories").html(totalcalories + " kcal");
+        $("#protein").html(totalprotein  + " g");
+        $("#carbo").html(totalcarbo + " g");
+        $("#fat").html(totalfat + " g");
+
+        drawChart(totalfat,totalprotein,totalcarbo);
       }
     };
     xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient', true);
     xmlhttp.send();
   } 
-//<-------------------------------------------------- RECIPES SCRIPT -------------------------------------------------->
+
+
+//<-------------------------------------------------- RECIPE'S FILTER -------------------------------------------------->
+
+var card = localStorage.getItem("cardID");
+console.log(card);
+
+if (card == 1) {recipe1();}
+if (card == 2) {recipe2();}
+if (card == 3) {recipe3();}
+if (card == 4) {recipe4();}
+if (card == 5) {recipe5();}
+if (card == 6) {recipe6();}
+if (card == 7) {recipe7();}
+if (card == 8) {recipe8();}
+if (card == 9) {recipe9();}
+if (card == 10) {recipe10();}
+if (card == 11) {recipe11();}
+if (card == 12) {recipe12();}
+if (card == 13) {recipe13();}
+if (card == 14) {recipe14();}
+if (card == 15) {recipe15();}
+if (card == 16) {recipe16();}
+if (card == 17) {recipe17();}
+if (card == 18) {recipe18();}
+if (card == 19) {recipe19();}
+if (card == 20) {recipe20();}
+if (card == 21) {recipe21();}
+if (card == 22) {recipe22();}
+if (card == 23) {recipe23();}
+if (card == 24) {recipe24();}
 
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
 
 function recipe1(){
+  //All parameters are ID's from everyone's table, make sure you check them and add it correctly.
+  //Recipe ID
   recipeInfo(1);
+  //Images ID
   recipeImages(1,2,3,4,5);
+  //Ingredients ID
+  recipeingredients(3,2,83);
+  //Ingredient Amount ID
+  recipeingredientsamount(1,2,3);
+  //Step ID
+  recipesteps(1,2,3,4);
+  //Ingredients ID (same as above)
+  recipenutrition(3,2,83);
+}
+
+function recipe2(){
+  recipeInfo(2);
+  recipeImages(6,7,8,9,10);
+  recipeingredients(81,5,6,7,62);
+  recipeingredientsamount(4,5,6,7,8);
+  recipesteps(5,6,7,8,9,10);
+  recipenutrition(81,5,6,7,62);
+}
+
+function recipe3(){
+  recipeInfo(3);
+  recipeImages(11,12,13,14,15);
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
-  recipesteps(1,2);
+  recipesteps(4,2,3,1);
   recipenutrition(1,2,2);
 }
 
-recipe1();
+function recipe4(){
+  recipeInfo(4);
+  recipeImages(16,17,18,19,20);
+  recipeingredients(1,2);
+  recipeingredientsamount(1,2);
+  recipesteps(4,2,3,1);
+  recipenutrition(1,2,2);
+}
+

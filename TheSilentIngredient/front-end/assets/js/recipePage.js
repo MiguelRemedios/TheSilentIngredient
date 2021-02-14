@@ -21,13 +21,19 @@ function topFunction() {
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
-function drawChart() {
+function drawChart(e1,e2,e3) {
 
+  if (e1 == 0 && e2 == 0 && e3 == 0) {
+    e1 = 1;
+    e2 = 1;
+    e3 = 1;
+  }
+  
   var data = google.visualization.arrayToDataTable([
     ['Nutrition ', 'Percentage Breakdown'],
-    ['Fat', 10],
-    ['Protein', 23],
-    ['Carbohydrates', 54],
+    ['Fat', e1],
+    ['Protein', e2],
+    ['Carbohydrates', e3],
   ]);
 
   var options = {

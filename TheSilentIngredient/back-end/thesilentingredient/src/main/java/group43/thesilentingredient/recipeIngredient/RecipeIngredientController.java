@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "api/v1/recipe-ingredient")
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 public class RecipeIngredientController {
 	
 	private final RecipeIngredientService recipeIngredientService;
@@ -34,7 +34,7 @@ public class RecipeIngredientController {
 	}
 	
 	@GetMapping(path = "{recipe_id}")
-    public Optional<RecipeIngredient> retrieveRecipeIngredient(@PathVariable("recipe_id") Long recipe_id){
+    public List<RecipeIngredient> retrieveRecipeIngredient(@PathVariable("recipe_id") Integer recipe_id){
         return recipeIngredientService.retrieveRecipeIngredient(recipe_id);
     }
 	

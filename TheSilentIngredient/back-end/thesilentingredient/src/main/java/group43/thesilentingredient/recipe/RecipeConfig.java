@@ -45,10 +45,25 @@ public class RecipeConfig {
 			
 			Recipe NDBurger = new Recipe(
 					"Burger",
-					"Excellent and well prepared burgerl",
+					"Excellent and well prepared burger",
 					4,
 					"15 mins"
 					);
+			
+			Recipe NDCandiedBacon = new Recipe(
+					"Candied Bacon",
+					"Salty, sweet and crispy bacon combo",
+					3,
+					"15 mins"
+					);
+			
+			Recipe NDBeerMilkshake = new Recipe(
+					"Root Beer Milkshake",
+					"Delicious flavoured root beer milkshake",
+					1,
+					"5 mins"
+					);
+			
 			
 			//VEGAN RECIPES
 			Recipe DVSpicyPickle = new Recipe(
@@ -88,7 +103,7 @@ public class RecipeConfig {
 					);
 			
 			Recipe DVGPasta = new Recipe(
-					"Pasta Salad with Bocconcini, Capers and Tomatoes",
+					"Pasta Salad",
 					"Outstanding pasta reached in delicious vegetables",
 					2,
 					"20 mins"
@@ -186,7 +201,8 @@ public class RecipeConfig {
 										DVGFajitaRoll, DVGSpicyRice, DVGPasta,//DVG
 										DHSandwich, DHChickenTKM, DHMeatball, DHChickenFlatbread, //DH
 									   	DLPasta, DLShakshuka, DLCassoulet, DLBananaPancakes, DLChickpeaTagine, //DL
-									   	DGPancakes, DGHummus, DGBread));  //DG
+									   	DGPancakes, DGHummus, DGBread,  //DG
+									   	NDCandiedBacon,NDBeerMilkshake)); //ND
 		};
 
 	}
