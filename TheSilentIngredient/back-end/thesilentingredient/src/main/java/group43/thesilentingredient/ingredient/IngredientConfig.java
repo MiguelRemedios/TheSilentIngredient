@@ -12,6 +12,53 @@ public class IngredientConfig {
 	@Bean
 	CommandLineRunner commandLineRunner10(IngredientRepository repository) {
 		return args -> {
+			
+			Ingredient grmMasala = new Ingredient(
+					"garam masala",
+					306.6,
+					11.3,
+					56.7,
+					12.7
+					);
+			
+			Ingredient grndFlaxseed = new Ingredient(
+					"ground flaxseed",
+					534,
+					19,
+					30,
+					43
+					);
+			Ingredient gfBakingPowder = new Ingredient(
+					"gluten-free baking powder",
+					160,
+					0.1,
+					60,
+					0
+					);
+			Ingredient ccntCream = new Ingredient(
+					"coconut cream",
+					327,
+					3.6,
+					6.7,
+					34.7
+					);
+			Ingredient tahini = new Ingredient(
+					"tahini",
+					593.3,
+					20,
+					20,
+					53.3
+					);
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			Ingredient pickCucumber = new Ingredient(
 					"pickling cucumber",
 					11,
