@@ -197,16 +197,7 @@ public class IngredientConfig {
 					45,
 					2
 					);
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+	
 			Ingredient pickCucumber = new Ingredient(
 					"pickling cucumber",
 					11,
@@ -937,7 +928,33 @@ public class IngredientConfig {
 					buttermilk,
 					blackbeanstin,
 					avocado,
-					garlic)
+					garlic,
+					grmMasala,
+					grndFlaxseed,
+					gfBakingPowder,
+					ccntCream,
+					tahini,
+					grndCoriander,
+					flourTortillas,
+					souredCream,
+					groundnutOil,
+					greenPepper,
+					basmatiRice,
+					chipotlePaste,
+					tomatoes,
+					vegetableStock,
+					lime,
+					pasta,
+					capers,
+					bocconcini,
+					basil,
+					chives,
+					asafoetida,
+					freshGingerPaste,
+					garlicPaste,
+					greenChilliPaste,
+					turmeric,
+					dhanaJeeraPwdr)
 					);
 		};
 
