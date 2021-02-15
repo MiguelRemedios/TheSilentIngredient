@@ -110,33 +110,36 @@ function recipenutrition(){
   var xmlhttp = new XMLHttpRequest();
   const argcount = arguments.length;
   const myArgs = arguments;
+  console.log(myArgs);
+
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
   
         var nutritions = JSON.parse(this.responseText);
+
         var totalcalories, totalprotein, totalcarbo, totalfat;
         totalcalories = totalprotein = totalcarbo = totalfat = 0;
         var totalenergy, energyprotein, energycarbo, energyfat;
         totalenergy = energyprotein = energycarbo = energyfat = 0;
 
         for (let index = 0; index < argcount; index++) {
-          let nutrition = nutritions.find(({id}) => id == myArgs[index]);
+          let nutrition = nutritions.find(({id}) => id == myArgs[index].id);
 
           const calories = JSON.parse(`${nutrition.calories}`);
           const protein = JSON.parse(`${nutrition.protein}`);
           const carbo = JSON.parse(`${nutrition.carbohydrate}`);
           const fat = JSON.parse(`${nutrition.fat}`);
-          totalcalories += calories;
-          totalprotein += protein;
-          totalcarbo += carbo;
-          totalfat += fat;
 
-          //Calculate energy
-          energyprotein = ((totalprotein * 4) * 4.184);
-          energycarbo = ((totalcarbo * 4) * 4.184);
-          energyfat = ((totalfat * 9) * 4.184);
-          totalenergy = Math.round(energyprotein + energycarbo + energyfat);
+          totalcalories += calories * myArgs[index].amount;
+
+          totalprotein += protein * myArgs[index].amount;
+          totalcarbo += carbo * myArgs[index].amount;
+          totalfat += fat * myArgs[index].amount;
         }
+        energyprotein = ((totalprotein * 4) * 4.184);
+        energycarbo = ((totalcarbo * 4) * 4.184);
+        energyfat = ((totalfat * 9) * 4.184);
+        totalenergy = Math.round(energyprotein + energycarbo + energyfat);
 
         $("#energy").html(totalenergy + " kJ");
         $("#calories").html(totalcalories + " kcal");
@@ -185,21 +188,28 @@ if (card == 24) {recipe24();}
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
 
 function recipe1(){
+  //All parameters are ID's from everyone's table, make sure you check them and add it correctly.
+  //Recipe ID
   recipeInfo(1);
+  //Images ID
   recipeImages(1,2,3,4,5);
-  recipeingredients(2,3,83);
-  recipeingredientsamount();
-  recipesteps(1,2,3,4,5);
-  recipenutrition(1,3,4,5);
+  //Ingredients ID
+  recipeingredients(3,2,83);
+  //Ingredient Amount ID
+  recipeingredientsamount(1,2,3);
+  //Step ID
+  recipesteps(1,2,3,4);
+  //Ingredients ID (same as above)
+  recipenutrition({"id":3,"amount":92.5},{"id":2,"amount":10},{"id":83,"amount":10});
 }
 
 function recipe2(){
   recipeInfo(2);
   recipeImages(6,7,8,9,10);
-  recipeingredients(1,2);
-  recipeingredientsamount(1,2);
-  recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
+  recipeingredients(81,5,6,7,62);
+  recipeingredientsamount(4,5,6,7,8);
+  recipesteps(5,6,7,8,9,10);
+  recipenutrition(81,5,6,7,62);
 }
 
 function recipe3(){

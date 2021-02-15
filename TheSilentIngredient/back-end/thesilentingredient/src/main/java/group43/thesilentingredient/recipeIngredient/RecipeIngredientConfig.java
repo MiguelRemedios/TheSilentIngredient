@@ -98,6 +98,39 @@ public class RecipeIngredientConfig {
 			//RecipeIngredient r7ing9 = new RecipeIngredient(coconut cream, 7, 200.0, "ml");
 			RecipeIngredient r7ing10 = new RecipeIngredient(76, 7, 3.0, "tbsp");
 			//r7ing1, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8
+			
+			//RECIPE ID - 8
+			RecipeIngredient r8ing1 = new RecipeIngredient(86, 8, 400.0, "g");
+			RecipeIngredient r8ing2 = new RecipeIngredient(69, 8, 5.0, "g");
+			//RecipeIngredient r8ing3 = new RecipeIngredient(flour tortillas, 8, 8.0, "quantity");
+			RecipeIngredient r8ing4 = new RecipeIngredient(87, 8, 1.0, "quantity");
+			//RecipeIngredient r8ing5 = new RecipeIngredient(sour cream, 8, 2.0, "tbsp");
+			//r8ing1, r8ing2, r8ing4
+			
+			//RECIPE ID - 9
+			//RecipeIngredient r9ing1 = new RecipeIngredient(groundnut oil, 9, 75.0, "ml");
+			RecipeIngredient r9ing2 = new RecipeIngredient(62, 9, 1.0, "quantity");
+			RecipeIngredient r9ing3 = new RecipeIngredient(15, 9, 2.0, "cloves");
+			RecipeIngredient r9ing4 = new RecipeIngredient(64, 9, 1.0, "quantity");
+			//RecipeIngredient r9ing5 = new RecipeIngredient(green pepper, 9, 1.0, "quantity");
+			RecipeIngredient r9ing6 = new RecipeIngredient(3, 9, 200.0, "g");
+			//RecipeIngredient r9ing7 = new RecipeIngredient(chipotle paste, 9, 1.0, "tbsp");
+			RecipeIngredient r9ing8 = new RecipeIngredient(67, 9, 400.0, "g");
+			RecipeIngredient r9ing9 = new RecipeIngredient(46, 9, 250.0, "ml");
+			RecipeIngredient r9ing10 = new RecipeIngredient(69, 9, 5.0, "g");
+			//RecipeIngredient r9ing11 = new RecipeIngredient(lime, 9, 0.25, "quantity");
+			//r9ing2, r9ing3, r9ing4, r9ing6, r9ing8, r9ing9, r9ing10
+			
+			//RECIPE ID - 10
+			RecipeIngredient r10ing1 = new RecipeIngredient(20, 10, 150.0, "g");
+			RecipeIngredient r10ing2 = new RecipeIngredient(44, 10, 3.0, "quantity");
+			RecipeIngredient r10ing3 = new RecipeIngredient(81, 10, 2.0, "tbsp");
+			//RecipeIngredient r10ing4 = new RecipeIngredient(red wine vinegar, 10, 1.0, "tbsp");
+			//RecipeIngredient r10ing5 = new RecipeIngredient(capers, 10, 1.0, "tbsp");
+			//RecipeIngredient r10ing6 = new RecipeIngredient(bocconcini, 10, 150.0, "g");
+			//RecipeIngredient r10ing7 = new RecipeIngredient(basil, 10, 1.0, "g");
+			//RecipeIngredient r10ing8 = new RecipeIngredient(chives, 10, 2.0, "tbsp");
+			//r10ing1, r10ing2, r10ing3,
 
 			
 			// RECIPE ID - 12
@@ -228,6 +261,9 @@ public class RecipeIngredientConfig {
 					r5ing1, r5ing2, r5ing3, r5ing4, r5ing5, r5ing6, r5ing7,
 					r6ing1, r6ing2, r6ing3, r6ing4, r6ing5, r6ing7, r6ing8, r6ing10, r6ing12, r6ing13, r6ing15,
 					r7ing1, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8,
+					r8ing1, r8ing2, r8ing4,
+					r9ing2, r9ing3, r9ing4, r9ing6, r9ing8, r9ing9, r9ing10,
+					r10ing1, r10ing2, r10ing3,
 					r12ing1, r12ing2, r12ing3, r12ing4, r12ing5,
 					r13ing1, r13ing2, r13ing3, r13ing4, r13ing5,
 					r14ing1, r14ing2, r14ing3, r14ing4, r14ing5, r14ing6,

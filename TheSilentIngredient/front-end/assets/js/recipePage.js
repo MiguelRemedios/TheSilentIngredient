@@ -23,6 +23,12 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart(e1,e2,e3) {
 
+  if (e1 == 0 && e2 == 0 && e3 == 0) {
+    e1 = 1;
+    e2 = 1;
+    e3 = 1;
+  }
+  
   var data = google.visualization.arrayToDataTable([
     ['Nutrition ', 'Percentage Breakdown'],
     ['Fat', e1],
