@@ -44,3 +44,20 @@ function drawChart(e1,e2,e3) {
 
   chart.draw(data, options);
 }
+
+/*var $table = $('#mytable');
+var thead = $table[0].tHead, tbody = $table[0].tBodies[0];
+var colsLen = tbody.rows[0].cells.length, rowsLen = tbody.rows.length;
+var hideNode = function(node) { if (node) node.style.display = "none"; };
+for (var j = 0; j < colsLen; ++j) {
+    var counter = 0;
+    for (var i = 0; i < rowsLen; ++i) {
+        if (tbody.rows[i].cells[j].childNodes.length == 0) ++counter;
+    }
+    if (counter == rowsLen) {
+        for (var i = 0; i < rowsLen; ++i) {
+            hideNode(tbody.rows[i].cells[j]);
+        }
+        hideNode(thead.rows[0].cells[j]);
+    }
+}*/
