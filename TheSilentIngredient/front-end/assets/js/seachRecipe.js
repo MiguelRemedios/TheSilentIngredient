@@ -47,4 +47,34 @@ function storeID(element){
     localStorage.setItem("cardID", card.id);
 }
 
+
+function searchEngine(){
+    var maincontainer = document.querySelector(".main-cont").children;
+    //console.log(maincontainer);
+    var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
+    var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
+    for (const ingredient of ingredientArray) {
+      for (const recipe of recipeIngredients) {
+        
+        if (recipe.ingredient_id == ingredient) {
+          document.getElementById(recipe.recipe_id).style.display = "none";
+          document.getElementById(recipe.recipe_id).style.position = "absolute";
+        }
+      }
+
+    }
+}
+
+fetch("http://localhost:8080/api/v1/recipe-ingredient")
+  .then((data) => data.json())
+  .then((data) => {
+    var recipeIngs = [];
+    for (var i = 0; i < data.length; i++) {
+      recipeIngs.push(data[i]);
+    }
+    localStorage.setItem("recipeIngredients", JSON.stringify(recipeIngs));
+});
+
+
 recipes();
+//searchEngine();

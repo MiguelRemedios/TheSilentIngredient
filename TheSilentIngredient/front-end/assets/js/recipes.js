@@ -110,26 +110,31 @@ function recipenutrition(){
   var xmlhttp = new XMLHttpRequest();
   const argcount = arguments.length;
   const myArgs = arguments;
+  console.log(myArgs);
+
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
   
         var nutritions = JSON.parse(this.responseText);
+
         var totalcalories, totalprotein, totalcarbo, totalfat;
         totalcalories = totalprotein = totalcarbo = totalfat = 0;
         var totalenergy, energyprotein, energycarbo, energyfat;
         totalenergy = energyprotein = energycarbo = energyfat = 0;
 
         for (let index = 0; index < argcount; index++) {
-          let nutrition = nutritions.find(({id}) => id == myArgs[index]);
+          let nutrition = nutritions.find(({id}) => id == myArgs[index].id);
 
           const calories = JSON.parse(`${nutrition.calories}`);
           const protein = JSON.parse(`${nutrition.protein}`);
           const carbo = JSON.parse(`${nutrition.carbohydrate}`);
           const fat = JSON.parse(`${nutrition.fat}`);
-          totalcalories += calories;
-          totalprotein += protein;
-          totalcarbo += carbo;
-          totalfat += fat;
+
+          totalcalories += calories * myArgs[index].amount;
+
+          totalprotein += protein * myArgs[index].amount;
+          totalcarbo += carbo * myArgs[index].amount;
+          totalfat += fat * myArgs[index].amount;
         }
         energyprotein = ((totalprotein * 4) * 4.184);
         energycarbo = ((totalcarbo * 4) * 4.184);
@@ -195,7 +200,7 @@ function recipe1(){
   //Step ID
   recipesteps(1,2,3,4);
   //Ingredients ID (same as above)
-  recipenutrition(3,2,83);
+  recipenutrition({"id":3,"amount":92.5},{"id":2,"amount":10},{"id":83,"amount":10});
 }
 
 function recipe2(){
