@@ -99,13 +99,6 @@ public class IngredientConfig {
 					9,
 					0.4
 					);
-			Ingredient tomatoes = new Ingredient(
-					"tomatoes",
-					18,
-					0.9,
-					3.9,
-					0.2
-					);
 			Ingredient vegetableStock = new Ingredient(
 					"vegetable stock",
 					5.9,
@@ -119,13 +112,6 @@ public class IngredientConfig {
 					0.3,
 					7.6,
 					0
-					);
-			Ingredient pasta = new Ingredient(
-					"pasta",
-					131,
-					5,
-					25,
-					1.1
 					);
 			Ingredient capers = new Ingredient(
 					"capers",
