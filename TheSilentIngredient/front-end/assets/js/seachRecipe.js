@@ -47,18 +47,23 @@ function storeID(element){
     localStorage.setItem("cardID", card.id);
 }
 
+/*function toggle(){
+  const argcount = arguments.length;
+  for (let index = 0; index < argcount; index++) {
+    document.getElementById(`${index+1}`).style.display = "none";
+  }
+}*/
+
 
 function searchEngine(){
-    var maincontainer = document.querySelector(".main-cont").children;
-    //console.log(maincontainer);
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
     var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
     for (const ingredient of ingredientArray) {
       for (const recipe of recipeIngredients) {
         
         if (recipe.ingredient_id == ingredient) {
-          document.getElementById(recipe.recipe_id).style.display = "none";
-          document.getElementById(recipe.recipe_id).style.position = "absolute";
+          document.getElementById(recipe.recipe_id).style.display = "block";
+          //document.getElementById(recipe.recipe_id).style.position = "absolute";
         }
       }
 
@@ -77,3 +82,4 @@ fetch("http://localhost:8080/api/v1/recipe-ingredient")
 
 
 recipes();
+//toggle(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24);
