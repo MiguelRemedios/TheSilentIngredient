@@ -205,7 +205,7 @@ function recipe2(){
   recipeImages(6,7,8,9,10);
   recipeingredients(81,5,6,7,62);
   recipeingredientsamount(4,5,6,7,8);
-  recipesteps(5,6,7,8,9,10);
+  recipesteps(1,2,3,4);
   recipenutrition(81,5,6,7,62);
 }
 
@@ -215,7 +215,7 @@ function recipe3(){
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
   recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
+  recipenutrition(/*1,2,2*/);
 }
 
 function recipe4(){
@@ -224,6 +224,5 @@ function recipe4(){
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
   recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
+  recipenutrition(/*1,2,2*/);
 }
-
