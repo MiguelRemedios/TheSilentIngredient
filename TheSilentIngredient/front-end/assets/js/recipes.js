@@ -133,16 +133,18 @@ function recipenutrition(){
           totalcarbo += carbo * myArgs[index].amount;
           totalfat += fat * myArgs[index].amount;
         }
+
         energyprotein = ((totalprotein * 4) * 4.184);
         energycarbo = ((totalcarbo * 4) * 4.184);
         energyfat = ((totalfat * 9) * 4.184);
         totalenergy = Math.round(energyprotein + energycarbo + energyfat);
+        totalcalories = Math.round(totalcalories);
 
         $("#energy").html(totalenergy + " kJ");
         $("#calories").html(totalcalories + " kcal");
-        $("#protein").html(totalprotein  + " g");
-        $("#carbo").html(totalcarbo + " g");
-        $("#fat").html(totalfat + " g");
+        $("#protein").html(Number(totalprotein.toFixed(1))  + " g");
+        $("#carbo").html(Number(totalcarbo.toFixed(1)) + " g");
+        $("#fat").html(Number(totalfat.toFixed(1)) + " g");
 
         drawChart(totalfat,totalprotein,totalcarbo);
       }
@@ -197,7 +199,11 @@ function recipe1(){
   //Step ID
   recipesteps(1,2,3,4);
   //Ingredients ID (same as above)
-  recipenutrition({"id":3,"amount":1},{"id":2,"amount":100},{"id":83,"amount":1});
+  //(GRAMS) amount = QUANTITY / 100 (e.g 555g of rice = 5.55)
+  //(MILILITERS) Since g = ml 100g = 100ml, same logic. Amount for liquids =  QUANTITY / 100 (e.g 750ml of water = 7.5)
+
+  //1 tbsp of salt = 17g / amount = 17 / 100 = 0.17
+  recipenutrition({"id":3,"amount":5.55},{"id":2,"amount":7.5},{"id":83,"amount":0.17});
 }
 
 function recipe2(){
@@ -205,8 +211,10 @@ function recipe2(){
   recipeImages(6,7,8,9,10);
   recipeingredients(81,5,6,7,62);
   recipeingredientsamount(4,5,6,7,8);
-  recipesteps(1,2,3,4);
-  recipenutrition(81,5,6,7,62);
+  recipesteps(5,6,7,8,9,10);
+  //81) 1 tbsp olive oil = 13.3g / amount: 0.133
+  //62) 1 onion = 110g / amount: 1.1
+  recipenutrition({"id":81,"amount":0.133}, {"id":5,"amount":4.535}, {"id":6,"amount":3.4}, {"id":7,"amount":3.4}, {"id":62,"amount":1.1});
 }
 
 function recipe3(){
