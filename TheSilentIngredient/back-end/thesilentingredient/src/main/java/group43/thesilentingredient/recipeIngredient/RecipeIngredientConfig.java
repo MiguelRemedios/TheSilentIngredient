@@ -4,6 +4,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import group43.thesilentingredient.ingredient.Ingredient;
+
 import java.util.List;
 
 @Configuration
@@ -247,7 +249,7 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r21ing1 = new RecipeIngredient(63, 21, 400.0, "g");
 			RecipeIngredient r21ing2 = new RecipeIngredient(80, 21, 100.0, "ml");
 			RecipeIngredient r21ing3 = new RecipeIngredient(81, 21, 150.0, "ml");
-			//RecipeIngredient r21ing4 = new RecipeIngredient(tahini, 21, 125.0, "g");
+			RecipeIngredient r21ing4 = new RecipeIngredient(93, 21, 125.0, "g");
 			RecipeIngredient r21ing5 = new RecipeIngredient(69, 21, 1.5, "tsp");
 			RecipeIngredient r21ing6 = new RecipeIngredient(82, 21, 7.0, "g");
 						
@@ -259,6 +261,15 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r22ing4 = new RecipeIngredient(85, 22, 284.0, "ml");
 			RecipeIngredient r22ing5 = new RecipeIngredient(77, 22, 114.0, "g");
 			RecipeIngredient r22ing6 = new RecipeIngredient(4, 22, 2.0, "tbsp");
+			
+			
+			RecipeIngredient r23ing1 = new RecipeIngredient(71, 23, 110.0, "g");
+			RecipeIngredient r23ing2 = new RecipeIngredient(113, 23, 225.0, "g");
+			
+			
+			//RecipeIngredient r24ing1 = new RecipeIngredient(vanilla ice cream, 24, 75.0, "g");
+			RecipeIngredient r24ing2 = new RecipeIngredient(79, 24, 250.0, "ml");
+			//RecipeIngredient r24ing3 = new RecipeIngredient(root beer, 24, 120.0, "ml");
 
 			
 						
@@ -282,8 +293,10 @@ public class RecipeIngredientConfig {
 					r18ing1, r18ing2, r18ing3, r18ing4, r18ing5, r18ing6, r18ing7, r18ing8,
 					r19ing1, r19ing2, r19ing3, r19ing4, r19ing5, r19ing6, r19ing7, r19ing8, r19ing9, r19ing10, r19ing11, r19ing12, r19ing13, r19ing14, r19ing15,
 					r20ing1, r20ing2, r20ing3, r20ing4, r20ing5,
-					r21ing1, r21ing2, r21ing3, r21ing5, r21ing6,
-					r22ing1, r22ing2, r22ing3, r22ing4, r22ing5, r22ing6));
+					r21ing1, r21ing2, r21ing3, r21ing4, r21ing5, r21ing6,
+					r22ing1, r22ing2, r22ing3, r22ing4, r22ing5, r22ing6,
+					r23ing1, r23ing2,
+					r24ing2));
 		};
 	}
 }
