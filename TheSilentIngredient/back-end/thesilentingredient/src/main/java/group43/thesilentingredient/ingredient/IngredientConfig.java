@@ -249,7 +249,7 @@ public class IngredientConfig {
 					"onion",
 					40,
 					1.1,
-					9.3,
+					9,
 					0.1
 					);
 			
@@ -464,10 +464,10 @@ public class IngredientConfig {
 					);
 			Ingredient white_rice = new Ingredient(
 					"white rice",
-					68,
-					1,
-					15,
-					0
+					130,
+					2.7,
+					28,
+					0.3
 					);
 			
 			Ingredient olive_oil = new Ingredient(
@@ -480,28 +480,28 @@ public class IngredientConfig {
 			
 			Ingredient ground_beef = new Ingredient(
 					"ground beef",
-					218,
-					24,
+					230,
+					28,
 					0,
-					13
+					12
 					);
 			Ingredient spaghetti = new Ingredient(
 					"spaghetti",
-					174,
-					8,
-					40,
-					1
+					158,
+					6,
+					31,
+					0.9
 					);
 			Ingredient pasta_sauce = new Ingredient(
-					"pasta_sauce",
-					130,
-					4,
-					20,
-					4
+					"pasta sauce",
+					29,
+					1.3,
+					7,
+					0.2
 					);
 
 			Ingredient chicken_breast = new Ingredient(
-					"chicken_breast",
+					"chicken breast",
 					284,
 					53,
 					0,
@@ -824,7 +824,14 @@ public class IngredientConfig {
 					24,
 					3
 					);
-			
+			Ingredient bacon = new Ingredient(
+					"bacon",
+					108,
+					16,
+					0,
+					13
+					);
+
 			repository.saveAll(List.of(
 					banana,
 					water,
@@ -940,7 +947,8 @@ public class IngredientConfig {
 					garlicPaste,
 					greenChilliPaste,
 					turmeric,
-					dhanaJeeraPwdr)
+					dhanaJeeraPwdr,
+					bacon)
 					);
 		};
 
