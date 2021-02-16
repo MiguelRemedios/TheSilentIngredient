@@ -23,17 +23,17 @@ public class RecipeIngredientConfig {
 			//ingredient_id, recipe_id, quantity, measurement
 			
 			//RECIPE ID - 1
-			RecipeIngredient r1ing1 = new RecipeIngredient(2, 1, 92.5, "g");
-			RecipeIngredient r1ing2 = new RecipeIngredient(3, 1, 100.0, "ml");
+			RecipeIngredient r1ing1 = new RecipeIngredient(3, 1, 555.0, "g");
+			RecipeIngredient r1ing2 = new RecipeIngredient(2, 1, 750.0, "ml");
 			RecipeIngredient r1ing3 = new RecipeIngredient(83, 1, 1.0, "tsp");
 			//r1ing1, r1ing2, r1ing3
 			
 					
 			//RECIPE ID - 2
 			RecipeIngredient r2ing1 = new RecipeIngredient(81, 2, 1.0, "tbsp");
-			RecipeIngredient r2ing2 = new RecipeIngredient(5, 2, 450.0, "g");
-			RecipeIngredient r2ing3 = new RecipeIngredient(6, 2, 340.0, "g");
-			RecipeIngredient r2ing4 = new RecipeIngredient(7, 2, 550.0, "g");
+			RecipeIngredient r2ing2 = new RecipeIngredient(5, 2, 453.5, "g");
+			RecipeIngredient r2ing3 = new RecipeIngredient(6, 2, 340.2, "g");
+			RecipeIngredient r2ing4 = new RecipeIngredient(7, 2, 562.0, "g");
 			RecipeIngredient r2ing5 = new RecipeIngredient(62, 2, 1.0, "quantity");
 			//r2ing1, r2ing2, r2ing3, r2ing4, r2ing5
 			
