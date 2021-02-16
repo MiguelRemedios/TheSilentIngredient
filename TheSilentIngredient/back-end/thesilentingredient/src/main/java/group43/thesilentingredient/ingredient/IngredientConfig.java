@@ -824,7 +824,14 @@ public class IngredientConfig {
 					24,
 					3
 					);
-			
+			Ingredient bacon = new Ingredient(
+					"bacon",
+					108,
+					16,
+					0,
+					13
+					);
+
 			repository.saveAll(List.of(
 					banana,
 					water,
@@ -940,7 +947,8 @@ public class IngredientConfig {
 					garlicPaste,
 					greenChilliPaste,
 					turmeric,
-					dhanaJeeraPwdr)
+					dhanaJeeraPwdr,
+					bacon)
 					);
 		};
 
