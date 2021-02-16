@@ -110,8 +110,6 @@ function recipenutrition(){
   var xmlhttp = new XMLHttpRequest();
   const argcount = arguments.length;
   const myArgs = arguments;
-  console.log(myArgs);
-
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
   
@@ -131,7 +129,6 @@ function recipenutrition(){
           const fat = JSON.parse(`${nutrition.fat}`);
 
           totalcalories += calories * myArgs[index].amount;
-
           totalprotein += protein * myArgs[index].amount;
           totalcarbo += carbo * myArgs[index].amount;
           totalfat += fat * myArgs[index].amount;
@@ -200,7 +197,7 @@ function recipe1(){
   //Step ID
   recipesteps(1,2,3,4);
   //Ingredients ID (same as above)
-  recipenutrition({"id":3,"amount":92.5},{"id":2,"amount":10},{"id":83,"amount":10});
+  recipenutrition({"id":3,"amount":1},{"id":2,"amount":100},{"id":83,"amount":1});
 }
 
 function recipe2(){
@@ -208,7 +205,7 @@ function recipe2(){
   recipeImages(6,7,8,9,10);
   recipeingredients(81,5,6,7,62);
   recipeingredientsamount(4,5,6,7,8);
-  recipesteps(5,6,7,8,9,10);
+  recipesteps(1,2,3,4);
   recipenutrition(81,5,6,7,62);
 }
 
@@ -218,7 +215,7 @@ function recipe3(){
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
   recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
+  recipenutrition(/*1,2,2*/);
 }
 
 function recipe4(){
@@ -227,6 +224,5 @@ function recipe4(){
   recipeingredients(1,2);
   recipeingredientsamount(1,2);
   recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
+  recipenutrition(/*1,2,2*/);
 }
-
