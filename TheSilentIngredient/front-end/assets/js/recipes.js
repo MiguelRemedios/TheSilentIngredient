@@ -133,16 +133,18 @@ function recipenutrition(){
           totalcarbo += carbo * myArgs[index].amount;
           totalfat += fat * myArgs[index].amount;
         }
+
         energyprotein = ((totalprotein * 4) * 4.184);
         energycarbo = ((totalcarbo * 4) * 4.184);
         energyfat = ((totalfat * 9) * 4.184);
         totalenergy = Math.round(energyprotein + energycarbo + energyfat);
+        totalcalories = Math.round(totalcalories);
 
         $("#energy").html(totalenergy + " kJ");
         $("#calories").html(totalcalories + " kcal");
-        $("#protein").html(totalprotein  + " g");
-        $("#carbo").html(totalcarbo + " g");
-        $("#fat").html(totalfat + " g");
+        $("#protein").html(Number(totalprotein.toFixed(1))  + " g");
+        $("#carbo").html(Number(totalcarbo.toFixed(1)) + " g");
+        $("#fat").html(Number(totalfat.toFixed(1)) + " g");
 
         drawChart(totalfat,totalprotein,totalcarbo);
       }
@@ -197,7 +199,11 @@ function recipe1(){
   //Step ID
   recipesteps(1,2,3,4);
   //Ingredients ID (same as above)
-  recipenutrition({"id":3,"amount":1},{"id":2,"amount":100},{"id":83,"amount":1});
+  //(GRAMS) amount = QUANTITY / 100 (e.g 555g of rice = 5.55)
+  //(MILILITERS) Since g = ml 100g = 100ml, same logic. Amount for liquids =  QUANTITY / 100 (e.g 750ml of water = 7.5)
+
+  //1 tbsp of salt = 17g / amount = 17 / 100 = 0.17
+  recipenutrition({"id":3,"amount":5.55},{"id":2,"amount":7.5},{"id":83,"amount":0.17});
 }
 
 function recipe2(){
@@ -205,17 +211,24 @@ function recipe2(){
   recipeImages(6,7,8,9,10);
   recipeingredients(81,5,6,7,62);
   recipeingredientsamount(4,5,6,7,8);
-  recipesteps(1,2,3,4);
-  recipenutrition(81,5,6,7,62);
+  recipesteps(5,6,7,8,9,10);
+  //81) 1 tbsp olive oil = 13.3g / amount: 0.133
+  //62) 1 onion = 110g / amount: 1.1
+  recipenutrition({"id":81,"amount":0.133}, {"id":5,"amount":4.535}, {"id":6,"amount":3.4}, {"id":7,"amount":3.4}, {"id":62,"amount":1.1});
 }
 
 function recipe3(){
   recipeInfo(3);
   recipeImages(11,12,13,14,15);
-  recipeingredients(1,2);
-  recipeingredientsamount(1,2);
-  recipesteps(4,2,3,1);
-  recipenutrition(/*1,2,2*/);
+  recipeingredients(8,9,10,11,12);
+  recipeingredientsamount(9,10,11,12,13);
+  recipesteps(11,12,13,14,15,16,17,18,19,20);
+
+  //8) 1 5oz (mid term) chicken breast = 142 g
+  //10) 1 tomato = 123 g
+  //11) 1 lettuce leaf = 8 g
+  //12) 1 tbsp light mayo = 15g
+  recipenutrition({"id":8,"amount":1.42}, {"id":9,"amount":1.05}, {"id":10,"amount":3.69}, {"id":11,"amount":0.16}, {"id":10,"amount":3.69}, {"id":12,"amount":0.15});
 }
 
 function recipe4(){

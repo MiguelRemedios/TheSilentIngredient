@@ -62,7 +62,7 @@ function searchEngine(){
       for (const recipe of recipeIngredients) {
         
         if (recipe.ingredient_id == ingredient) {
-          document.getElementById(recipe.recipe_id).style.display = "block";
+          document.getElementById(recipe.recipe_id).style.display = "none";
           //document.getElementById(recipe.recipe_id).style.position = "absolute";
         }
       }
