@@ -133,21 +133,21 @@ function recipenutrition(){
     xmlhttp.send();
   }
   
-  function ingredientNutrition(id, i, quantity){
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        var ingredient = JSON.parse(this.responseText);
-        console.log((quantity/100)*ingredient.calories)
-  
-    xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
-    xmlhttp.send();
+function ingredientNutrition(id, i, quantity){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var ingredient = JSON.parse(this.responseText);
+      console.log((quantity/100)*ingredient.calories)
     }
   }
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
+  xmlhttp.send();
+    
 }
   
-  function ingredientName(id, i) {
-    var xmlhttp = new XMLHttpRequest();
+function ingredientName(id, i) {
+  var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         var ingredient = JSON.parse(this.responseText);
@@ -157,7 +157,7 @@ function recipenutrition(){
   
     xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient/' + id, true);
     xmlhttp.send();
-  }
+}
 
 
   
