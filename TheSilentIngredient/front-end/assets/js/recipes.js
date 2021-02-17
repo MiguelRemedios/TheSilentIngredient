@@ -220,10 +220,15 @@ function recipe2(){
 function recipe3(){
   recipeInfo(3);
   recipeImages(11,12,13,14,15);
-  recipeingredients(1,2);
-  recipeingredientsamount(1,2);
-  recipesteps(4,2,3,1);
-  recipenutrition(/*1,2,2*/);
+  recipeingredients(8,9,10,11,12);
+  recipeingredientsamount(9,10,11,12,13);
+  recipesteps(11,12,13,14,15,16,17,18,19,20);
+
+  //8) 1 5oz (mid term) chicken breast = 142 g
+  //10) 1 tomato = 123 g
+  //11) 1 lettuce leaf = 8 g
+  //12) 1 tbsp light mayo = 15g
+  recipenutrition({"id":8,"amount":1.42}, {"id":9,"amount":1.05}, {"id":10,"amount":3.69}, {"id":11,"amount":0.16}, {"id":10,"amount":3.69}, {"id":12,"amount":0.15});
 }
 
 function recipe4(){
