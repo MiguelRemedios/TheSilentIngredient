@@ -249,7 +249,7 @@ public class IngredientConfig {
 					"onion",
 					40,
 					1.1,
-					9.3,
+					9,
 					0.1
 					);
 			
@@ -464,10 +464,10 @@ public class IngredientConfig {
 					);
 			Ingredient white_rice = new Ingredient(
 					"white rice",
-					68,
-					1,
-					15,
-					0
+					130,
+					2.7,
+					28,
+					0.3
 					);
 			
 			Ingredient olive_oil = new Ingredient(
@@ -480,60 +480,60 @@ public class IngredientConfig {
 			
 			Ingredient ground_beef = new Ingredient(
 					"ground beef",
-					218,
-					24,
+					230,
+					28,
 					0,
-					13
+					12
 					);
 			Ingredient spaghetti = new Ingredient(
 					"spaghetti",
-					174,
-					8,
-					40,
-					1
+					158,
+					6,
+					31,
+					0.9
 					);
 			Ingredient pasta_sauce = new Ingredient(
-					"pasta_sauce",
-					130,
-					4,
-					20,
-					4
+					"pasta sauce",
+					29,
+					1.3,
+					7,
+					0.2
 					);
 
 			Ingredient chicken_breast = new Ingredient(
-					"chicken_breast",
-					284,
-					53,
+					"chicken breast",
+					165,
+					31,
 					0,
-					6
+					3.6
 					);
 			Ingredient bagel = new Ingredient(
 					"bagel",
-					289,
-					11,
-					56,
-					2
+					250,
+					10,
+					49,
+					1.5
 					);
 			Ingredient tomatoes = new Ingredient(
 					"tomatoes",
 					18,
-					1,
-					4,
-					0
+					0.9,
+					3.9,
+					0.2
 					);
 			Ingredient lettuce = new Ingredient(
-					"lettuce",
-					10,
-					1,
-					2,
-					0
+					"lettuce leaves",
+					15,
+					1.4,
+					2.9,
+					0.2
 					);
 			Ingredient light_mayonnaise = new Ingredient(
 					"light mayonnaise",
-					20,
-					0,
-					6,
-					1
+					238,
+					0.4,
+					9.2,
+					22.2
 					);
 			Ingredient black_pepper = new Ingredient(
 					"black pepper",
@@ -824,7 +824,35 @@ public class IngredientConfig {
 					24,
 					3
 					);
-			
+			Ingredient bacon = new Ingredient(
+					"bacon",
+					180,
+					16,
+					0,
+					13
+					);
+			Ingredient vanilla_ice_cream = new Ingredient(
+					"vanilla ice cream",
+					192,
+					2.1,
+					29,
+					7.4
+					);
+			Ingredient root_beer = new Ingredient(
+					"root beer",
+					21,
+					0,
+					5.1,
+					0
+					);
+			Ingredient red_wine_vinegar = new Ingredient(
+					"red wine vinegar",
+					20,
+					0.5,
+					0.5,
+					0
+					);
+
 			repository.saveAll(List.of(
 					banana,
 					water,
@@ -940,7 +968,11 @@ public class IngredientConfig {
 					garlicPaste,
 					greenChilliPaste,
 					turmeric,
-					dhanaJeeraPwdr)
+					dhanaJeeraPwdr,
+					bacon,
+					vanilla_ice_cream,
+					root_beer,
+					red_wine_vinegar)
 					);
 		};
 
