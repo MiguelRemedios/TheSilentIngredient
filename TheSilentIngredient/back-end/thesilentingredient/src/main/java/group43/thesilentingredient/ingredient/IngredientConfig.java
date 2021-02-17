@@ -826,10 +826,31 @@ public class IngredientConfig {
 					);
 			Ingredient bacon = new Ingredient(
 					"bacon",
-					108,
+					180,
 					16,
 					0,
 					13
+					);
+			Ingredient vanilla_ice_cream = new Ingredient(
+					"vanilla ice cream",
+					192,
+					2.1,
+					29,
+					7.4
+					);
+			Ingredient root_beer = new Ingredient(
+					"root beer",
+					21,
+					0,
+					5.1,
+					0
+					);
+			Ingredient red_wine_vinegar = new Ingredient(
+					"red wine vinegar",
+					20,
+					0.5,
+					0.5,
+					0
 					);
 
 			repository.saveAll(List.of(
@@ -948,7 +969,10 @@ public class IngredientConfig {
 					greenChilliPaste,
 					turmeric,
 					dhanaJeeraPwdr,
-					bacon)
+					bacon,
+					vanilla_ice_cream,
+					root_beer,
+					red_wine_vinegar)
 					);
 		};
 

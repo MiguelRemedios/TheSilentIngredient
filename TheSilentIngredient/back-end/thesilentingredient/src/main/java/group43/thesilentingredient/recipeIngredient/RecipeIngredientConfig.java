@@ -127,14 +127,14 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r10ing1 = new RecipeIngredient(20, 10, 150.0, "g");
 			RecipeIngredient r10ing2 = new RecipeIngredient(44, 10, 3.0, "quantity");
 			RecipeIngredient r10ing3 = new RecipeIngredient(81, 10, 2.0, "tbsp");
-			//RecipeIngredient r10ing4 = new RecipeIngredient(red wine vinegar, 10, 1.0, "tbsp");
+			RecipeIngredient r10ing4 = new RecipeIngredient(116, 10, 1.0, "tbsp");
 			RecipeIngredient r10ing5 = new RecipeIngredient(103, 10, 1.0, "tbsp");
 			RecipeIngredient r10ing6 = new RecipeIngredient(104, 10, 150.0, "g");
 			RecipeIngredient r10ing7 = new RecipeIngredient(105, 10, 1.0, "g");
 			RecipeIngredient r10ing8 = new RecipeIngredient(106, 10, 2.0, "tbsp");
 			//r10ing1, r10ing2, r10ing3, r10ing5, r10ing6, r10ing7, r10ing8
 			
-			//RECIPE ID - 5
+			//RECIPE ID - 11
 			RecipeIngredient r11ing1 = new RecipeIngredient(8, 11, 50.0, "g");
 			RecipeIngredient r11ing2 = new RecipeIngredient(50, 11, 2.0, "slices");
 			RecipeIngredient r11ing3 = new RecipeIngredient(83, 11, 0.25, "tsp");
@@ -263,13 +263,15 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r22ing6 = new RecipeIngredient(4, 22, 2.0, "tbsp");
 			
 			
+			// RECIPE ID - 23
 			RecipeIngredient r23ing1 = new RecipeIngredient(71, 23, 110.0, "g");
 			RecipeIngredient r23ing2 = new RecipeIngredient(113, 23, 225.0, "g");
 			
 			
-			//RecipeIngredient r24ing1 = new RecipeIngredient(vanilla ice cream, 24, 75.0, "g");
+			// RECIPE ID - 24
+			RecipeIngredient r24ing1 = new RecipeIngredient(114, 24, 75.0, "g");
 			RecipeIngredient r24ing2 = new RecipeIngredient(79, 24, 250.0, "ml");
-			//RecipeIngredient r24ing3 = new RecipeIngredient(root beer, 24, 120.0, "ml");
+			RecipeIngredient r24ing3 = new RecipeIngredient(115, 24, 120.0, "ml");
 
 			
 						
@@ -282,7 +284,7 @@ public class RecipeIngredientConfig {
 					r7ing1, r7ing2, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8, r7ing9, r7ing10,
 					r8ing1, r8ing2, r8ing3, r8ing4, r8ing5,
 					r9ing1, r9ing2, r9ing3, r9ing4, r9ing5, r9ing6, r9ing7, r9ing8, r9ing9, r9ing10, r9ing11,
-					r10ing1, r10ing2, r10ing3, r10ing5, r10ing6, r10ing7, r10ing8,
+					r10ing1, r10ing2, r10ing3, r10ing4, r10ing5, r10ing6, r10ing7, r10ing8,
 					r11ing1, r11ing2, r11ing3, r11ing4, r11ing5,
 					r12ing1, r12ing2, r12ing3, r12ing4, r12ing5,
 					r13ing1, r13ing2, r13ing3, r13ing4, r13ing5,
@@ -296,7 +298,7 @@ public class RecipeIngredientConfig {
 					r21ing1, r21ing2, r21ing3, r21ing4, r21ing5, r21ing6,
 					r22ing1, r22ing2, r22ing3, r22ing4, r22ing5, r22ing6,
 					r23ing1, r23ing2,
-					r24ing2));
+					r24ing1, r24ing2, r24ing3));
 		};
 	}
 }
