@@ -23,4 +23,6 @@
 | 20 | 30 mins      | Delicious pancakes                                | Pancakes                  |       6 |
 | 21 | 15 mins      | Wonderful and amazing hummus                      | Hummus                    |       6 |
 | 22 | 1 hr 10 mins | Gluten free bread                                 | Bread                     |      10 |
+| 23 | 15 mins      | Salty, sweet and crispy bacon combo               | Candied Bacon             |       3 |
+| 24 | 5 mins       | Delicious flavoured root beer milkshake           | Root Beer Milkshake       |       1 |
 +----+--------------+---------------------------------------------------+---------------------------+---------+

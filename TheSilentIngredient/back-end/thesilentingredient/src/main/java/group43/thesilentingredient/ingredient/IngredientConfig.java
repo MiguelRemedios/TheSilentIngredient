@@ -12,6 +12,178 @@ public class IngredientConfig {
 	@Bean
 	CommandLineRunner commandLineRunner10(IngredientRepository repository) {
 		return args -> {
+			
+			Ingredient grmMasala = new Ingredient(
+					"garam masala",
+					306.6,
+					11.3,
+					56.7,
+					12.7
+					);
+			
+			Ingredient grndFlaxseed = new Ingredient(
+					"ground flaxseed",
+					534,
+					19,
+					30,
+					43
+					);
+			Ingredient gfBakingPowder = new Ingredient(
+					"gluten-free baking powder",
+					160,
+					0.1,
+					60,
+					0
+					);
+			Ingredient ccntCream = new Ingredient(
+					"coconut cream",
+					327,
+					3.6,
+					6.7,
+					34.7
+					);
+			Ingredient tahini = new Ingredient(
+					"tahini",
+					593.3,
+					20,
+					20,
+					53.3
+					);
+			Ingredient grndCoriander = new Ingredient(
+					"ground coriander",
+					593.3,
+					20,
+					20,
+					53.3
+					);
+			Ingredient flourTortillas = new Ingredient(
+					"flour tortillas",
+					324.4,
+					8.8,
+					55.1,
+					7.1
+					);
+			
+			Ingredient souredCream = new Ingredient(
+					"soured cream",
+					196.6,
+					2.3,
+					43.3,
+					19.3
+					);
+			Ingredient groundnutOil = new Ingredient(
+					"groundnut oil",
+					884,
+					0,
+					0,
+					100
+					);
+			Ingredient greenPepper = new Ingredient(
+					"green pepper",
+					28,
+					0.9,
+					6.7,
+					0.2
+					);
+			Ingredient basmatiRice = new Ingredient(
+					"basmati rice",
+					121,
+					3.54,
+					25.22,
+					0.38
+					);
+			Ingredient chipotlePaste = new Ingredient(
+					"chipotle paste",
+					48,
+					1.9,
+					9,
+					0.4
+					);
+			Ingredient vegetableStock = new Ingredient(
+					"vegetable stock",
+					5.9,
+					0.2,
+					1,
+					0.1
+					);
+			Ingredient lime = new Ingredient(
+					"lime",
+					23,
+					0.3,
+					7.6,
+					0
+					);
+			Ingredient capers = new Ingredient(
+					"capers",
+					23,
+					2.4,
+					4.9,
+					0.9
+					);
+			Ingredient bocconcini = new Ingredient(
+					"bocconcini",
+					211.6,
+					21.2,
+					0,
+					12.3
+					);
+			Ingredient basil = new Ingredient(
+					"basil",
+					22,
+					3.2,
+					2.7,
+					0.6
+					);
+			Ingredient chives = new Ingredient(
+					"chives",
+					30,
+					3.3,
+					4.4,
+					0.7
+					);
+			Ingredient asafoetida = new Ingredient(
+					"asafoetida",
+					297.1,
+					4,
+					67.8,
+					1.1
+					);
+			Ingredient freshGingerPaste = new Ingredient(
+					"fresh ginger paste",
+					210.6,
+					1.5,
+					14.7,
+					16.8
+					);
+			Ingredient garlicPaste = new Ingredient(
+					"garlic paste",
+					422,
+					3.4,
+					18.8,
+					39.1
+					);
+			Ingredient greenChilliPaste = new Ingredient(
+					"green chilli paste",
+					175.1,
+					2.1,
+					43.8,
+					0.8
+					);
+			Ingredient turmeric = new Ingredient(
+					"turmeric",
+					352.97,
+					6.89,
+					73.6,
+					3.89
+					);
+			Ingredient dhanaJeeraPwdr = new Ingredient(
+					"dhana jeera powder",
+					346,
+					7,
+					45,
+					2
+					);
+	
 			Ingredient pickCucumber = new Ingredient(
 					"pickling cucumber",
 					11,
@@ -77,7 +249,7 @@ public class IngredientConfig {
 					"onion",
 					40,
 					1.1,
-					9.3,
+					9,
 					0.1
 					);
 			
@@ -292,14 +464,14 @@ public class IngredientConfig {
 					);
 			Ingredient white_rice = new Ingredient(
 					"white rice",
-					68,
-					1,
-					15,
-					0
+					130,
+					2.7,
+					28,
+					0.3
 					);
 			
 			Ingredient olive_oil = new Ingredient(
-					"olive_oil",
+					"olive oil",
 					119,
 					0,
 					0,
@@ -307,85 +479,85 @@ public class IngredientConfig {
 					);
 			
 			Ingredient ground_beef = new Ingredient(
-					"ground_beef",
-					218,
-					24,
+					"ground beef",
+					230,
+					28,
 					0,
-					13
+					12
 					);
 			Ingredient spaghetti = new Ingredient(
 					"spaghetti",
-					174,
-					8,
-					40,
-					1
+					158,
+					6,
+					31,
+					0.9
 					);
 			Ingredient pasta_sauce = new Ingredient(
-					"pasta_sauce",
-					130,
-					4,
-					20,
-					4
+					"pasta sauce",
+					29,
+					1.3,
+					7,
+					0.2
 					);
 
 			Ingredient chicken_breast = new Ingredient(
-					"chicken_breast",
-					284,
-					53,
+					"chicken breast",
+					165,
+					31,
 					0,
-					6
+					3.6
 					);
 			Ingredient bagel = new Ingredient(
 					"bagel",
-					289,
-					11,
-					56,
-					2
+					250,
+					10,
+					49,
+					1.5
 					);
 			Ingredient tomatoes = new Ingredient(
 					"tomatoes",
 					18,
-					1,
-					4,
-					0
+					0.9,
+					3.9,
+					0.2
 					);
 			Ingredient lettuce = new Ingredient(
-					"lettuce",
-					10,
-					1,
-					2,
-					0
+					"lettuce leaves",
+					15,
+					1.4,
+					2.9,
+					0.2
 					);
 			Ingredient light_mayonnaise = new Ingredient(
-					"light_mayonnaise",
-					20,
-					0,
-					6,
-					1
+					"light mayonnaise",
+					238,
+					0.4,
+					9.2,
+					22.2
 					);
 			Ingredient black_pepper = new Ingredient(
-					"black_pepper",
+					"black pepper",
 					4,
 					0,
 					1,
 					0
 					);
 			Ingredient bread_crumbs = new Ingredient(
-					"bread_crumbs",
+					"bread crumbs",
 					450,
 					17,
 					80,
 					6
 					);
 			Ingredient garlic_glove = new Ingredient(
-					"garlic_glove",
+					"garlic glove",
 					13,
 					0,
 					3,
 					0
 					);
 			Ingredient rosemary_sprigs = new Ingredient(
-					"rosemary_sprigs",
+					"rosemary sprigs",
 					4,
 					0,
 					0,
@@ -399,14 +571,14 @@ public class IngredientConfig {
 					0
 					);
 			Ingredient dry_white_wine = new Ingredient(
-					"dry white_wine",
+					"dry white wine",
 					120,
 					0,
 					4,
 					0
 					);
 			Ingredient dry_soya_cream = new Ingredient(
-					"soya_cream",
+					"soya cream",
 					140,
 					2,
 					1,
@@ -420,14 +592,14 @@ public class IngredientConfig {
 					1
 					);
 			Ingredient red_chilli = new Ingredient(
-					"red_chilli",
+					"red chilli",
 					6,
 					0,
 					1,
 					0
 					);
 			Ingredient cherry_tomatoes_can = new Ingredient(
-					"cherry_tomatoes_can",
+					"cherry tomatoes can",
 					25,
 					1,
 					6,
@@ -435,7 +607,7 @@ public class IngredientConfig {
 					);
 		
 			Ingredient canned_white_bean = new Ingredient(
-					"canned_white_bean",
+					"canned white bean",
 					242,
 					17,
 					44,
@@ -484,7 +656,7 @@ public class IngredientConfig {
 					0
 					);
 			Ingredient bay_leaves = new Ingredient(
-					"bay_leaves",
+					"bay leaves",
 					5,
 					0,
 					0,
@@ -498,42 +670,42 @@ public class IngredientConfig {
 					0
 					);
 			Ingredient red_wine = new Ingredient(
-					"red_wine",
+					"red wine",
 					160,
 					0,
 					4,
 					0
 					);
 			Ingredient all_purpose_flour = new Ingredient(
-					"all_purpose_flour",
+					"all purpose flour",
 					360,
 					10,
 					76,
 					1
 					);
 			Ingredient white_sugar = new Ingredient(
-					"white_sugar",
+					"white sugar",
 					407,
 					0,
 					100,
 					0
 					);
 			Ingredient baking_powder = new Ingredient(
-					"baking_powder",
+					"baking powder",
 					2,
 					0,
 					2,
 					0
 					);
 			Ingredient plant_based_milk = new Ingredient(
-					"plant_based_milk",
+					"plant based milk",
 					110,
 					5,
 					16,
 					5
 					);
 			Ingredient vegetable_oil = new Ingredient(
-					"vegetable_oil",
+					"vegetable oil",
 					120,
 					0,
 					0,
@@ -541,7 +713,7 @@ public class IngredientConfig {
 					);
 			
 			Ingredient red_onion = new Ingredient(
-					"red_onion",
+					"red onion",
 					40,
 					1,
 					9,
@@ -562,7 +734,7 @@ public class IngredientConfig {
 					0
 					);
 			Ingredient red_pepper = new Ingredient(
-					"red_pepper",
+					"red pepper",
 					39,
 					1,
 					9,
@@ -583,7 +755,7 @@ public class IngredientConfig {
 					0
 					);
 			Ingredient vine_tomatoes = new Ingredient(
-					"vine_tomatoes",
+					"vine tomatoes",
 					16,
 					1,
 					3,
@@ -597,7 +769,7 @@ public class IngredientConfig {
 					4
 					);
 			Ingredient vegetable_stock = new Ingredient(
-					"vegetable_stock",
+					"vegetable stock",
 					15,
 					1,
 					3,
@@ -652,7 +824,35 @@ public class IngredientConfig {
 					24,
 					3
 					);
-			
+			Ingredient bacon = new Ingredient(
+					"bacon",
+					180,
+					16,
+					0,
+					13
+					);
+			Ingredient vanilla_ice_cream = new Ingredient(
+					"vanilla ice cream",
+					192,
+					2.1,
+					29,
+					7.4
+					);
+			Ingredient root_beer = new Ingredient(
+					"root beer",
+					21,
+					0,
+					5.1,
+					0
+					);
+			Ingredient red_wine_vinegar = new Ingredient(
+					"red wine vinegar",
+					20,
+					0.5,
+					0.5,
+					0
+					);
+
 			repository.saveAll(List.of(
 					banana,
 					water,
@@ -742,7 +942,37 @@ public class IngredientConfig {
 					buttermilk,
 					blackbeanstin,
 					avocado,
-					garlic)
+					garlic,
+					grmMasala,
+					grndFlaxseed,
+					gfBakingPowder,
+					ccntCream,
+					tahini,
+					grndCoriander,
+					flourTortillas,
+					souredCream,
+					groundnutOil,
+					greenPepper,
+					basmatiRice,
+					chipotlePaste,
+					tomatoes,
+					vegetableStock,
+					lime,
+					pasta,
+					capers,
+					bocconcini,
+					basil,
+					chives,
+					asafoetida,
+					freshGingerPaste,
+					garlicPaste,
+					greenChilliPaste,
+					turmeric,
+					dhanaJeeraPwdr,
+					bacon,
+					vanilla_ice_cream,
+					root_beer,
+					red_wine_vinegar)
 					);
 		};
 

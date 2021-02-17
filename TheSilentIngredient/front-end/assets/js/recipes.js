@@ -46,45 +46,6 @@ function recipeImages(image1, image2, image3, image4, image5){
   xmlhttp.send();
 }
 
-function recipeingredients(){
-  var xmlhttp = new XMLHttpRequest();
-  const argcount = arguments.length;
-  const myArgs = arguments;
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-
-      var ingredients = JSON.parse(this.responseText);
-
-      for (let index = 0; index < argcount; index++) {
-        let ingredient = ingredients.find(({id}) => id == myArgs[index]);
-        document.getElementById(`i${index+1}`).innerHTML = `${ingredient.name}`;
-      }
-    }
-  };
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient', true);
-  xmlhttp.send();
-}
-
-//Display Ingredient's Amount
-function recipeingredientsamount(){
-  var xmlhttp = new XMLHttpRequest();
-  const argcount = arguments.length;
-  const myArgs = arguments;
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-
-      var amounts = JSON.parse(this.responseText);
-    
-      for (let index = 0; index < argcount; index++) {
-        let amount = amounts.find(({id}) => id == myArgs[index]);
-        document.getElementById(`a${index+1}`).innerHTML = `${amount.quantity}` + ` ${amount.measurement}`;
-      }
-    }
-  };
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient', true);
-  xmlhttp.send();
-}
-
 //Display Recipe Steps
 function recipesteps(){
   var xmlhttp = new XMLHttpRequest();
@@ -114,35 +75,37 @@ function recipenutrition(){
       if (this.readyState == 4 && this.status == 200) {
   
         var nutritions = JSON.parse(this.responseText);
+
         var totalcalories, totalprotein, totalcarbo, totalfat;
         totalcalories = totalprotein = totalcarbo = totalfat = 0;
         var totalenergy, energyprotein, energycarbo, energyfat;
         totalenergy = energyprotein = energycarbo = energyfat = 0;
 
         for (let index = 0; index < argcount; index++) {
-          let nutrition = nutritions.find(({id}) => id == myArgs[index]);
+          let nutrition = nutritions.find(({id}) => id == myArgs[index].id);
 
           const calories = JSON.parse(`${nutrition.calories}`);
           const protein = JSON.parse(`${nutrition.protein}`);
           const carbo = JSON.parse(`${nutrition.carbohydrate}`);
           const fat = JSON.parse(`${nutrition.fat}`);
-          totalcalories += calories;
-          totalprotein += protein;
-          totalcarbo += carbo;
-          totalfat += fat;
 
-          //Calculate energy
-          energyprotein = ((totalprotein * 4) * 4.184);
-          energycarbo = ((totalcarbo * 4) * 4.184);
-          energyfat = ((totalfat * 9) * 4.184);
-          totalenergy = Math.round(energyprotein + energycarbo + energyfat);
+          totalcalories += calories * myArgs[index].amount;
+          totalprotein += protein * myArgs[index].amount;
+          totalcarbo += carbo * myArgs[index].amount;
+          totalfat += fat * myArgs[index].amount;
         }
+
+        energyprotein = ((totalprotein * 4) * 4.184);
+        energycarbo = ((totalcarbo * 4) * 4.184);
+        energyfat = ((totalfat * 9) * 4.184);
+        totalenergy = Math.round(energyprotein + energycarbo + energyfat);
+        totalcalories = Math.round(totalcalories);
 
         $("#energy").html(totalenergy + " kJ");
         $("#calories").html(totalcalories + " kcal");
-        $("#protein").html(totalprotein  + " g");
-        $("#carbo").html(totalcarbo + " g");
-        $("#fat").html(totalfat + " g");
+        $("#protein").html(Number(totalprotein.toFixed(1))  + " g");
+        $("#carbo").html(Number(totalcarbo.toFixed(1)) + " g");
+        $("#fat").html(Number(totalfat.toFixed(1)) + " g");
 
         drawChart(totalfat,totalprotein,totalcarbo);
       }
@@ -152,6 +115,52 @@ function recipenutrition(){
   } 
 
 
+  function recipeingredients(recipeid) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var ingredients = JSON.parse(this.responseText);
+        for (let i = 0; i < ingredients.length; i++) {
+          var obj = ingredients[i];
+          ingredientName(obj.ingredient_id, i);
+          ingredientNutrition(obj.ingredient_id, i, obj.quantity);
+          console.log(obj.quantity)
+          document.getElementById(`a${i + 1}`).innerHTML = `${obj.quantity}` + ` ${obj.measurement}`;
+        }
+      }
+    };
+    xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
+    xmlhttp.send();
+  }
+  
+function ingredientNutrition(id, i, quantity){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var ingredient = JSON.parse(this.responseText);
+      console.log((quantity/100)*ingredient.calories)
+    }
+  }
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
+  xmlhttp.send();
+    
+}
+  
+function ingredientName(id, i) {
+  var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var ingredient = JSON.parse(this.responseText);
+        document.getElementById(`i${i + 1}`).innerHTML = `${ingredient.name}`;
+      }
+    }
+  
+    xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient/' + id, true);
+    xmlhttp.send();
+}
+
+
+  
 //<-------------------------------------------------- RECIPE'S FILTER -------------------------------------------------->
 
 var card = localStorage.getItem("cardID");
@@ -185,38 +194,53 @@ if (card == 24) {recipe24();}
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
 
 function recipe1(){
+  //All parameters are ID's from everyone's table, make sure you check them and add it correctly.
+  //Recipe ID
   recipeInfo(1);
+  //Images ID
   recipeImages(1,2,3,4,5);
-  recipeingredients(2,3,83);
-  recipeingredientsamount();
-  recipesteps(1,2,3,4,5);
-  recipenutrition(1,3,4,5);
+  //Ingredients ID
+  recipeingredients(1);
+  //Step ID
+  recipesteps(1,2,3,4);
+  //Ingredients ID (same as above)
+  //(GRAMS) amount = QUANTITY / 100 (e.g 555g of rice = 5.55)
+  //(MILILITERS) Since g = ml 100g = 100ml, same logic. Amount for liquids =  QUANTITY / 100 (e.g 750ml of water = 7.5)
+
+  //1 tbsp of salt = 17g / amount = 17 / 100 = 0.17
+  recipenutrition({"id":3,"amount":5.55},{"id":2,"amount":7.5},{"id":83,"amount":0.17});
 }
 
 function recipe2(){
   recipeInfo(2);
   recipeImages(6,7,8,9,10);
-  recipeingredients(1,2);
-  recipeingredientsamount(1,2);
-  recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
+  recipeingredients(81,5,6,7,62);
+  recipeingredientsamount(4,5,6,7,8);
+  recipesteps(5,6,7,8,9,10);
+  //81) 1 tbsp olive oil = 13.3g / amount: 0.133
+  //62) 1 onion = 110g / amount: 1.1
+  recipenutrition({"id":81,"amount":0.133}, {"id":5,"amount":4.535}, {"id":6,"amount":3.4}, {"id":7,"amount":3.4}, {"id":62,"amount":1.1});
 }
 
 function recipe3(){
   recipeInfo(3);
   recipeImages(11,12,13,14,15);
-  recipeingredients(1,2);
-  recipeingredientsamount(1,2);
-  recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
+  recipeingredients(8,9,10,11,12);
+  recipeingredientsamount(9,10,11,12,13);
+  recipesteps(11,12,13,14,15,16,17,18,19,20);
+
+  //8) 1 5oz (mid term) chicken breast = 142 g
+  //10) 1 tomato = 123 g
+  //11) 1 lettuce leaf = 8 g
+  //12) 1 tbsp light mayo = 15g
+  recipenutrition({"id":8,"amount":1.42}, {"id":9,"amount":1.05}, {"id":10,"amount":3.69}, {"id":11,"amount":0.16}, {"id":12,"amount":0.15});
 }
 
 function recipe4(){
   recipeInfo(4);
   recipeImages(16,17,18,19,20);
-  recipeingredients(1,2);
-  recipeingredientsamount(1,2);
-  recipesteps(4,2,3,1);
-  recipenutrition(1,2,2);
-}
+  recipeingredients(77,83,13,5,14);
+  recipeingredientsamount(14,15,16,17,18);
+  recipesteps(21,22,23,24,25,26);
 
+}

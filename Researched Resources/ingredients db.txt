@@ -1,92 +1,116 @@
-+----+----------+--------------+-------+---------------------------+---------+
-| id | calories | carbohydrate | fat   | name                      | protein |
-+----+----------+--------------+-------+---------------------------+---------+
-|  1 |        3 |            1 |     1 | banana                    |       2 |
-|  2 |        0 |            0 |     0 | water                     |       0 |
-|  3 |       68 |           15 |     0 | white rice                |       1 |
-|  4 |      119 |            0 |    13 | olive_oil                 |       0 |
-|  5 |      218 |            0 |    13 | ground_beef               |      24 |
-|  6 |      174 |           40 |     1 | spaghetti                 |       8 |
-|  7 |      130 |           20 |     4 | pasta_sauce               |       4 |
-|  8 |      284 |            0 |     6 | chicken_breast            |      53 |
-|  9 |      289 |           56 |     2 | bagel                     |      11 |
-| 10 |       18 |            4 |     0 | tomatoes                  |       1 |
-| 11 |       10 |            2 |     0 | lettuce                   |       1 |
-| 12 |       20 |            6 |     1 | light_mayonnaise          |       0 |
-| 13 |        4 |            1 |     0 | black_pepper              |       0 |
-| 14 |      450 |           80 |     6 | bread_crumbs              |      17 |
-| 15 |       13 |            3 |     0 | garlic_glove              |       0 |
-| 16 |        4 |            0 |     0 | rosemary_sprigs           |       0 |
-| 17 |       54 |           12 |     0 | leek                      |       1 |
-| 18 |      120 |            4 |     0 | dry white_wine            |       0 |
-| 19 |      140 |            1 |    14 | soya_cream                |       2 |
-| 20 |      174 |           40 |     1 | pasta                     |       8 |
-| 21 |       11 |            2 |     0 | parsley                   |       1 |
-| 22 |        6 |            1 |     0 | red_chilli                |       0 |
-| 23 |       25 |            6 |     1 | cherry_tomatoes_can       |       1 |
-| 24 |      242 |           44 |     0 | canned_white_bean         |      17 |
-| 25 |      140 |           10 |     5 | tempeh                    |      16 |
-| 26 |       41 |           10 |     0 | carrot                    |       1 |
-| 27 |       14 |            3 |     0 | celery                    |       0 |
-| 28 |       14 |            3 |     0 | mushrooms                 |       0 |
-| 29 |        2 |            0 |     0 | sage                      |       0 |
-| 30 |        2 |            0 |     0 | thyme                     |       0 |
-| 31 |        5 |            0 |     0 | bay_leaves                |       0 |
-| 32 |      160 |            4 |     0 | red_wine                  |       0 |
-| 33 |      360 |           76 |     1 | all_purpose_flour         |      10 |
-| 34 |      407 |          100 |     0 | white_sugar               |       0 |
-| 35 |        2 |            2 |     0 | baking_powder             |       0 |
-| 36 |      110 |           16 |     5 | plant_based_milk          |       5 |
-| 37 |      120 |            0 |    14 | vegetable_oil             |       0 |
-| 38 |       40 |            9 |     0 | red_onion                 |       1 |
-| 39 |       22 |            3 |     1 | cumin                     |       1 |
-| 40 |        0 |            6 |     0 | cinnamon                  |       0 |
-| 41 |       39 |            9 |     0 | red_pepper                |       1 |
-| 42 |       21 |            4 |     0 | courgette                 |       1 |
-| 43 |       20 |            5 |     0 | aubergine                 |       2 |
-| 44 |       16 |            3 |     0 | vine_tomatoes             |       1 |
-| 45 |      210 |           35 |     4 | chickpeas                 |      10 |
-| 46 |       15 |            3 |     0 | vegetable_stock           |       1 |
-| 47 |      170 |            4 |    17 | harrisa                   |       1 |
-| 48 |      115 |           30 |     0 | prunes                    |       1 |
-| 49 |      174 |           36 |     0 | couscous                  |       6 |
-| 50 |       54 |           11 |     0 | bread                     |       2 |
-| 51 |       12 |            3 |     2 | sauce                     |       0 |
-| 52 |      110 |           26 |     0 | potatoes                  |       3 |
-| 53 |      150 |           24 |     3 | flatbread                 |       4 |
-| 54 |       11 |          2.3 |   0.2 | pickling cucumber         |     0.3 |
-| 55 |       10 |          2.2 |   0.2 | cucumber                  |     0.6 |
-| 56 |       75 |           17 |     0 | shallots                  |     2.5 |
-| 57 |      469 |        34.94 | 28.76 | mustard seeds             |   24.94 |
-| 58 |      312 |           67 |   3.3 | ground tumeric            |     9.7 |  ///////// turmeric spelling
-| 59 |      337 |        50.02 |  15.9 | star anise                |    17.6 |
-| 60 |      400 |          100 |     0 | caster sugar              |       0 |
-| 61 |       21 |          0.9 |     0 | vinegar                   |       0 |
-| 62 |       40 |          9.3 |   0.1 | onion                     |     1.1 |
-| 63 |      225 |           20 |    14 | tin chickpeas             |     7.2 |
-| 64 |       40 |          9.5 |   0.2 | green chillies            |       2 |
-| 65 |      884 |            0 |   100 | sunflower oil             |       0 |
-| 66 |      380 |           98 |     0 | sugar                     |     0.1 |
-| 67 |       32 |          7.3 |   0.3 | tin tomatoes              |     1.6 |
-| 68 |      282 |           50 |    14 | red chilli powder         |      13 |
-| 69 |       23 |          3.7 |   0.5 | coriander                 |     2.1 |
-| 70 |      329 |           63 |   0.5 | tin aduki beans           |      20 |
-| 71 |      380 |           98 |     0 | brown sugar               |     0.1 |
-| 72 |      228 |           58 |    14 | cocoa powder              |      20 |
-| 73 |      579 |           22 |    50 | almonds                   |      21 |
-| 74 |      288 |           13 |   0.1 | vanilla extract           |     0.1 |
-| 75 |      598 |           46 |    43 | dark dairy-free chocolate |     7.8 |
-| 76 |      418 |           68 |    16 | icing sugar               |       0 |
-| 77 |      143 |          0.7 |   9.5 | egg                       |      13 |
-| 78 |      340 |           72 |   2.5 | gluten-free plain flour   |      13 |
-| 79 |       34 |            5 |   0.1 | milk                      |     3.4 |
-| 80 |       22 |          6.9 |   0.2 | lemon juice               |     0.4 |
-| 81 |      884 |            0 |   100 | olive oil                 |       0 |
-| 82 |      311 |           68 |   6.7 | cardamon                  |      11 |
-| 83 |        0 |            0 |     0 | salt                      |       0 |
-| 84 |      325 |           41 |   7.6 | dried yeast               |      40 |
-| 85 |       62 |          4.9 |   3.3 | buttermilk                |     3.2 |
-| 86 |       91 |           17 |   0.3 | tin black beans           |       6 |
-| 87 |      160 |          8.5 |    15 | avocado                   |       2 |
-| 88 |      149 |           33 |   0.5 | garlic                    |     6.4 |
-+----+----------+--------------+-------+---------------------------+---------+
++-----+----------+--------------+-------+---------------------------+---------+
+| id  | calories | carbohydrate | fat   | name                      | protein |
++-----+----------+--------------+-------+---------------------------+---------+
+|   1 |        3 |            1 |     1 | banana                    |       2 |
+|   2 |        0 |            0 |     0 | water                     |       0 |
+|   3 |       68 |           15 |     0 | white rice                |       1 |
+|   4 |      119 |            0 |    13 | olive oil                 |       0 |
+|   5 |      218 |            0 |    13 | ground beef               |      24 |
+|   6 |      174 |           40 |     1 | spaghetti                 |       8 |
+|   7 |      130 |           20 |     4 | pasta_sauce               |       4 |
+|   8 |      284 |            0 |     6 | chicken_breast            |      53 |
+|   9 |      289 |           56 |     2 | bagel                     |      11 |
+|  10 |       18 |            4 |     0 | tomatoes                  |       1 |
+|  11 |       10 |            2 |     0 | lettuce                   |       1 |
+|  12 |       20 |            6 |     1 | light mayonnaise          |       0 |
+|  13 |        4 |            1 |     0 | black pepper              |       0 |
+|  14 |      450 |           80 |     6 | bread crumbs              |      17 |
+|  15 |       13 |            3 |     0 | garlic glove              |       0 |
+|  16 |        4 |            0 |     0 | rosemary sprigs           |       0 |
+|  17 |       54 |           12 |     0 | leek                      |       1 |
+|  18 |      120 |            4 |     0 | dry white wine            |       0 |
+|  19 |      140 |            1 |    14 | soya cream                |       2 |
+|  20 |      174 |           40 |     1 | pasta                     |       8 |
+|  21 |       11 |            2 |     0 | parsley                   |       1 |
+|  22 |        6 |            1 |     0 | red chilli                |       0 |
+|  23 |       25 |            6 |     1 | cherry tomatoes can       |       1 |
+|  24 |      242 |           44 |     0 | canned white bean         |      17 |
+|  25 |      140 |           10 |     5 | tempeh                    |      16 |
+|  26 |       41 |           10 |     0 | carrot                    |       1 |
+|  27 |       14 |            3 |     0 | celery                    |       0 |
+|  28 |       14 |            3 |     0 | mushrooms                 |       0 |
+|  29 |        2 |            0 |     0 | sage                      |       0 |
+|  30 |        2 |            0 |     0 | thyme                     |       0 |
+|  31 |        5 |            0 |     0 | bay leaves                |       0 |
+|  32 |      160 |            4 |     0 | red wine                  |       0 |
+|  33 |      360 |           76 |     1 | all purpose flour         |      10 |
+|  34 |      407 |          100 |     0 | white sugar               |       0 |
+|  35 |        2 |            2 |     0 | baking powder             |       0 |
+|  36 |      110 |           16 |     5 | plant based milk          |       5 |
+|  37 |      120 |            0 |    14 | vegetable oil             |       0 |
+|  38 |       40 |            9 |     0 | red onion                 |       1 |
+|  39 |       22 |            3 |     1 | cumin                     |       1 |
+|  40 |        0 |            6 |     0 | cinnamon                  |       0 |
+|  41 |       39 |            9 |     0 | red pepper                |       1 |
+|  42 |       21 |            4 |     0 | courgette                 |       1 |
+|  43 |       20 |            5 |     0 | aubergine                 |       2 |
+|  44 |       16 |            3 |     0 | vine tomatoes             |       1 |
+|  45 |      210 |           35 |     4 | chickpeas                 |      10 |
+|  46 |       15 |            3 |     0 | vegetable stock           |       1 |
+|  47 |      170 |            4 |    17 | harrisa                   |       1 |
+|  48 |      115 |           30 |     0 | prunes                    |       1 |
+|  49 |      174 |           36 |     0 | couscous                  |       6 |
+|  50 |       54 |           11 |     0 | bread                     |       2 |
+|  51 |       12 |            3 |     2 | sauce                     |       0 |
+|  52 |      110 |           26 |     0 | potatoes                  |       3 |
+|  53 |      150 |           24 |     3 | flatbread                 |       4 |
+|  54 |       11 |          2.3 |   0.2 | pickling cucumber         |     0.3 |
+|  55 |       10 |          2.2 |   0.2 | cucumber                  |     0.6 |
+|  56 |       75 |           17 |     0 | shallots                  |     2.5 |
+|  57 |      469 |        34.94 | 28.76 | mustard seeds             |   24.94 |
+|  58 |      312 |           67 |   3.3 | ground turmeric           |     9.7 |
+|  59 |      337 |        50.02 |  15.9 | star anise                |    17.6 |
+|  60 |      400 |          100 |     0 | caster sugar              |       0 |
+|  61 |       21 |          0.9 |     0 | vinegar                   |       0 |
+|  62 |       40 |          9.3 |   0.1 | onion                     |     1.1 |
+|  63 |      225 |           20 |    14 | tin chickpeas             |     7.2 |
+|  64 |       40 |          9.5 |   0.2 | green chillies            |       2 |
+|  65 |      884 |            0 |   100 | sunflower oil             |       0 |
+|  66 |      380 |           98 |     0 | sugar                     |     0.1 |
+|  67 |       32 |          7.3 |   0.3 | tin tomatoes              |     1.6 |
+|  68 |      282 |           50 |    14 | red chilli powder         |      13 |
+|  69 |       23 |          3.7 |   0.5 | coriander                 |     2.1 |
+|  70 |      329 |           63 |   0.5 | tin aduki beans           |      20 |
+|  71 |      380 |           98 |     0 | brown sugar               |     0.1 |
+|  72 |      228 |           58 |    14 | cocoa powder              |      20 |
+|  73 |      579 |           22 |    50 | almonds                   |      21 |
+|  74 |      288 |           13 |   0.1 | vanilla extract           |     0.1 |
+|  75 |      598 |           46 |    43 | dark dairy-free chocolate |     7.8 |
+|  76 |      418 |           68 |    16 | icing sugar               |       0 |
+|  77 |      143 |          0.7 |   9.5 | egg                       |      13 |
+|  78 |      340 |           72 |   2.5 | gluten-free plain flour   |      13 |
+|  79 |       34 |            5 |   0.1 | milk                      |     3.4 |
+|  80 |       22 |          6.9 |   0.2 | lemon juice               |     0.4 |
+|  81 |      884 |            0 |   100 | olive oil                 |       0 |
+|  82 |      311 |           68 |   6.7 | cardamon                  |      11 |
+|  83 |        0 |            0 |     0 | salt                      |       0 |
+|  84 |      325 |           41 |   7.6 | dried yeast               |      40 |
+|  85 |       62 |          4.9 |   3.3 | buttermilk                |     3.2 |
+|  86 |       91 |           17 |   0.3 | tin black beans           |       6 |
+|  87 |      160 |          8.5 |    15 | avocado                   |       2 |
+|  88 |      149 |           33 |   0.5 | garlic                    |     6.4 |
+|  89 |    306.6 |         56.7 |  12.7 | garam masala              |    11.3 |
+|  90 |      534 |           30 |    43 | ground flaxseed           |      19 |
+|  91 |      160 |           60 |     0 | gluten-free baking powder |     0.1 |
+|  92 |      327 |          6.7 |  34.7 | coconut cream             |     3.6 |
+|  93 |    593.3 |           20 |  53.3 | tahini                    |      20 |
+|  94 |    593.3 |           20 |  53.3 | ground coriander          |      20 |
+|  95 |    324.4 |         55.1 |   7.1 | flour tortillas           |     8.8 |
+|  96 |    196.6 |         43.3 |  19.3 | soured cream              |     2.3 |
+|  97 |      884 |            0 |   100 | groundnut oil             |       0 |
+|  98 |       28 |          6.7 |   0.2 | green pepper              |     0.9 |
+|  99 |      121 |        25.22 |  0.38 | basmati rice              |    3.54 |
+| 100 |       48 |            9 |   0.4 | chipotle paste            |     1.9 |
+| 101 |      5.9 |            1 |   0.1 | vegetable stock           |     0.2 |
+| 102 |       23 |          7.6 |     0 | lime                      |     0.3 |
+| 103 |       23 |          4.9 |   0.9 | capers                    |     2.4 |
+| 104 |    211.6 |            0 |  12.3 | bocconcini                |    21.2 |
+| 105 |       22 |          2.7 |   0.6 | basil                     |     3.2 |
+| 106 |       30 |          4.4 |   0.7 | chives                    |     3.3 |
+| 107 |    297.1 |         67.8 |   1.1 | asafoetida                |       4 |
+| 108 |    210.6 |         14.7 |  16.8 | fresh ginger paste        |     1.5 |
+| 109 |      422 |         18.8 |  39.1 | garlic paste              |     3.4 |
+| 110 |    175.1 |         43.8 |   0.8 | green chilli paste        |     2.1 |
+| 111 |   352.97 |         73.6 |  3.89 | turmeric                  |    6.89 |
+| 112 |      346 |           45 |     2 | dhana jeera powder        |       7 |
++-----+----------+--------------+-------+---------------------------+---------+
