@@ -117,8 +117,6 @@ function recipenutrition(){
 
   function recipeingredients(recipeid) {
     var xmlhttp = new XMLHttpRequest();
-    const argcount = arguments.length;
-    const myArgs = arguments;
     xmlhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         var ingredients = JSON.parse(this.responseText);
@@ -144,7 +142,9 @@ function recipenutrition(){
   
     xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
     xmlhttp.send();
+    }
   }
+}
   
   function ingredientName(id, i) {
     var xmlhttp = new XMLHttpRequest();
@@ -200,9 +200,7 @@ function recipe1(){
   //Images ID
   recipeImages(1,2,3,4,5);
   //Ingredients ID
-  recipeingredients(3,2,83);
-  //Ingredient Amount ID
-  recipeingredientsamount(1,2,3);
+  recipeingredients(1);
   //Step ID
   recipesteps(1,2,3,4);
   //Ingredients ID (same as above)
