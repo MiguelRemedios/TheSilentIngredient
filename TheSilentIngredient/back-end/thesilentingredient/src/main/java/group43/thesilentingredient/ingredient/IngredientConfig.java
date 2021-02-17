@@ -502,38 +502,38 @@ public class IngredientConfig {
 
 			Ingredient chicken_breast = new Ingredient(
 					"chicken breast",
-					284,
-					53,
+					165,
+					31,
 					0,
-					6
+					3.6
 					);
 			Ingredient bagel = new Ingredient(
 					"bagel",
-					289,
-					11,
-					56,
-					2
+					250,
+					10,
+					49,
+					1.5
 					);
 			Ingredient tomatoes = new Ingredient(
 					"tomatoes",
 					18,
-					1,
-					4,
-					0
+					0.9,
+					3.9,
+					0.2
 					);
 			Ingredient lettuce = new Ingredient(
-					"lettuce",
-					10,
-					1,
-					2,
-					0
+					"lettuce leaves",
+					15,
+					1.4,
+					2.9,
+					0.2
 					);
 			Ingredient light_mayonnaise = new Ingredient(
 					"light mayonnaise",
-					20,
-					0,
-					6,
-					1
+					238,
+					0.4,
+					9.2,
+					22.2
 					);
 			Ingredient black_pepper = new Ingredient(
 					"black pepper",
