@@ -502,38 +502,38 @@ public class IngredientConfig {
 
 			Ingredient chicken_breast = new Ingredient(
 					"chicken breast",
-					284,
-					53,
+					165,
+					31,
 					0,
-					6
+					3.6
 					);
 			Ingredient bagel = new Ingredient(
 					"bagel",
-					289,
-					11,
-					56,
-					2
+					250,
+					10,
+					49,
+					1.5
 					);
 			Ingredient tomatoes = new Ingredient(
 					"tomatoes",
 					18,
-					1,
-					4,
-					0
+					0.9,
+					3.9,
+					0.2
 					);
 			Ingredient lettuce = new Ingredient(
-					"lettuce",
-					10,
-					1,
-					2,
-					0
+					"lettuce leaves",
+					15,
+					1.4,
+					2.9,
+					0.2
 					);
 			Ingredient light_mayonnaise = new Ingredient(
 					"light mayonnaise",
-					20,
-					0,
-					6,
-					1
+					238,
+					0.4,
+					9.2,
+					22.2
 					);
 			Ingredient black_pepper = new Ingredient(
 					"black pepper",
@@ -826,10 +826,31 @@ public class IngredientConfig {
 					);
 			Ingredient bacon = new Ingredient(
 					"bacon",
-					108,
+					180,
 					16,
 					0,
 					13
+					);
+			Ingredient vanilla_ice_cream = new Ingredient(
+					"vanilla ice cream",
+					192,
+					2.1,
+					29,
+					7.4
+					);
+			Ingredient root_beer = new Ingredient(
+					"root beer",
+					21,
+					0,
+					5.1,
+					0
+					);
+			Ingredient red_wine_vinegar = new Ingredient(
+					"red wine vinegar",
+					20,
+					0.5,
+					0.5,
+					0
 					);
 
 			repository.saveAll(List.of(
@@ -948,7 +969,10 @@ public class IngredientConfig {
 					greenChilliPaste,
 					turmeric,
 					dhanaJeeraPwdr,
-					bacon)
+					bacon,
+					vanilla_ice_cream,
+					root_beer,
+					red_wine_vinegar)
 					);
 		};
 
