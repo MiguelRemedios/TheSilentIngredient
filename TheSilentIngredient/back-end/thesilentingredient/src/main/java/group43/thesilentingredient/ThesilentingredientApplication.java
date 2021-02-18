@@ -24,6 +24,7 @@ public class ThesilentingredientApplication {
 				registry.addMapping("/api/v1/recipe-image/**").allowedOrigins("*").allowedMethods("GET", "POST", "DELETE", "PUT");
 				registry.addMapping("/api/v1/diet").allowedOrigins("*").allowedMethods("GET", "POST", "DELETE", "PUT");
 				registry.addMapping("/api/v1/recipe-ingredient").allowedOrigins("*").allowedMethods("GET", "POST", "DELETE", "PUT");
+				registry.addMapping("/api/v1/recipe-ingredient/**").allowedOrigins("*").allowedMethods("GET", "POST", "DELETE", "PUT");
 				registry.addMapping("/api/v1/ingredient").allowedOrigins("*").allowedMethods("GET", "POST", "DELETE", "PUT");
 				registry.addMapping("/api/v1/recipe-step").allowedOrigins("*").allowedMethods("GET", "POST", "DELETE", "PUT");
 				registry.addMapping("/api/v1/recipe-step/**").allowedOrigins("*").allowedMethods("GET", "POST", "DELETE", "PUT");
