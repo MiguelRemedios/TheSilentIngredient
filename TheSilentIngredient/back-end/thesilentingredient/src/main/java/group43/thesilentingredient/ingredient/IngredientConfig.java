@@ -802,16 +802,25 @@ public class IngredientConfig {
 					0.5,
 					0
 					);
+			Ingredient pasta = new Ingredient(
+					"pasta",
+					131,
+					5,
+					25,
+					1.1
+					);
 
 			repository.saveAll(List.of(
 					banana,
 					water,
 					white_rice,
+					oliveoil,
 					ground_beef,
 					spaghetti,
 					pasta_sauce,
 					chicken_breast,
 					bagel,
+					vine_tomatoes,
 					lettuce,
 					light_mayonnaise,
 					black_pepper,
@@ -821,6 +830,7 @@ public class IngredientConfig {
 					leek,
 					dry_white_wine,
 					dry_soya_cream,
+					pasta,
 					parsley,
 					red_chilli,
 					cherry_tomatoes_can,
@@ -879,7 +889,7 @@ public class IngredientConfig {
 					glutenfreeflour,
 					milk,
 					lemonjc,
-					oliveoil,
+					
 					cardamon,
 					salt,
 					driedyeast,
