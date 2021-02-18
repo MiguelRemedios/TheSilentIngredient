@@ -34,6 +34,11 @@ public class RecipeStepController {
 		return recipeStepService.retrieveRecipeStep(stepId);
 	}
 	
+	@GetMapping(path = "/nr/{recipe_id}")
+	public List<RecipeStep> retrieveRecipeImages(@PathVariable("recipe_id") Integer recipe_id){
+		return recipeStepService.retrieveRecipeSteps(recipe_id);
+	}
+	
 	@PostMapping
 	public void registerRecipe(@RequestBody RecipeStep recipe_step) {
 		recipeStepService.addNewStep(recipe_step);
