@@ -17,6 +17,8 @@ function recipeInfo(recipeid){
       recipeingredients(recipeid);
       recipesteps(recipeid);
 
+      ingredientNutrition(recipeid);
+
     }
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe/' + recipeid, true);
@@ -51,6 +53,77 @@ function recipesteps(id){
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-step/nr/' + id, true);
   xmlhttp.send();
 }
+
+function recipeingredients(recipeid) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var ingredients = JSON.parse(this.responseText);
+      for (let i = 0; i < ingredients.length; i++) {
+        var obj = ingredients[i];
+        ingredientName(obj.ingredient_id, i);
+        document.getElementById(`a${i + 1}`).innerHTML = `${obj.quantity}` + ` ${obj.measurement}`;
+
+      }
+    }
+  };
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
+  xmlhttp.send();
+}
+
+function ingredientName(id, i) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var ingredient = JSON.parse(this.responseText);
+      document.getElementById(`i${i + 1}`).innerHTML = `${ingredient.name}`;
+    }
+  }
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient/' + id, true);
+  xmlhttp.send();
+}
+
+function ingredientNutrition(id){
+  var xmlhttp = new XMLHttpRequest();
+  var ingID = 0;
+  var amount = 0;
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      
+      var nutrition = JSON.parse(this.responseText);
+      var array = [];
+
+      for (let index = 0; index < nutrition.length; index++) {
+        
+        ingID = nutrition[index].ingredient_id;
+        amount = nutrition[index].quantity;
+        var object = {"id":ingID,"amount":amount}
+        array.push(object);
+      }
+
+      //var arrayToString = JSON.stringify(Object.assign({}, array));  // convert array to string
+      //var stringToJsonObject = JSON.parse(arrayToString);  // convert string to json object
+      //console.log(stringToJsonObject);
+      //JSON.stringify(array);
+      console.log(array);
+      return array;
+    }
+  }
+xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + id, true);
+xmlhttp.send(); 
+}
+
+/*function ingredientNutrition(id, i, quantity){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var ingredient = JSON.parse(this.responseText);
+      console.log((quantity/100)*ingredient.calories)
+    }
+  }
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
+  xmlhttp.send(); 
+}*/
 
 //Display Nutrition
 function recipenutrition(){
@@ -101,50 +174,9 @@ function recipenutrition(){
   } 
 
 
-function recipeingredients(recipeid) {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var ingredients = JSON.parse(this.responseText);
-      for (let i = 0; i < ingredients.length; i++) {
-        var obj = ingredients[i];
-        ingredientName(obj.ingredient_id, i);
-        //ingredientNutrition(obj.ingredient_id, i, obj.quantity);
-        //console.log(obj.quantity)
-        document.getElementById(`a${i + 1}`).innerHTML = `${obj.quantity}` + ` ${obj.measurement}`;
-      }
-    }
-  };
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
-  xmlhttp.send();
-}
   
-/*function ingredientNutrition(id, i, quantity){
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var ingredient = JSON.parse(this.responseText);
-      console.log((quantity/100)*ingredient.calories)
-    }
-  }
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
-  xmlhttp.send(); 
-}*/
-  
-function ingredientName(id, i) {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var ingredient = JSON.parse(this.responseText);
-      document.getElementById(`i${i + 1}`).innerHTML = `${ingredient.name}`;
-    }
-  }
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient/' + id, true);
-  xmlhttp.send();
-}
 
 
-  
 //<-------------------------------------------------- RECIPE'S FILTER -------------------------------------------------->
 
 var card = localStorage.getItem("cardID");
