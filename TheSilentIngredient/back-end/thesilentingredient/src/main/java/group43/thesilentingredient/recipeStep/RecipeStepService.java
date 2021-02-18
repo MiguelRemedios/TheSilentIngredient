@@ -20,9 +20,12 @@ public class RecipeStepService {
 		return recipeStepRepository.findAll();
 	}
 	
-	
 	public Optional<RecipeStep> retrieveRecipeStep(Long stepId) {
 		return recipeStepRepository.findById(stepId);
+	}
+
+	public List<RecipeStep> retrieveRecipeSteps(Integer recipe_id) {
+		return recipeStepRepository.findIngredientsByRecipeID(recipe_id);
 	}
 	
 	public void addNewStep(RecipeStep recipe_step) {
@@ -46,8 +49,5 @@ public class RecipeStepService {
 
 		recipeStepRepository.deleteById(stepId);
 	}
-
-
-	
 	
 }

@@ -26,6 +26,10 @@ public class RecipeImageService {
 		return recipeimgRepository.findById(recipeImageId);
 	}
 
+	public List<RecipeImage> retrieveRecipeImages(Integer recipeNr) {
+		return recipeimgRepository.findIngredientsByRecipeNr(recipeNr);
+	}
+
 	public void addNewRecipeImage(RecipeImage recipeImage) {
 		Optional<RecipeImage> recipeimgOptional = recipeimgRepository.findRecipeImageByNr(recipeImage.getRecipeNr());
 
