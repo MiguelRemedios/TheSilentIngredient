@@ -234,5 +234,8 @@ function recipe3(){
 
 function recipe4(){
   recipeInfo(4);
-
+  //77) 1 egg = 50 g
+  //83) 1 tbsp of salt = 17g
+  //13) 1 tbsp of b pepper = 7g
+  recipenutrition({"id":77,"amount":0.5}, {"id":83,"amount":0.085}, {"id":13,"amount":0.035}, {"id":5,"amount":4.5}, {"id":14,"amount":0.6});
 }
