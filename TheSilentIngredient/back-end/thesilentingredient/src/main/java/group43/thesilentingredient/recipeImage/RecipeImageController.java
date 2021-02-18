@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path= "api/v1/recipeimage")
+@RequestMapping(path= "api/v1/recipe-image")
 @CrossOrigin(origins = "*")
 
 public class RecipeImageController {
@@ -36,6 +36,11 @@ public class RecipeImageController {
 	@GetMapping(path = "{id}")
 	public Optional<RecipeImage> retrieveRecipeImage(@PathVariable("id") Long recipeImageId){
 		return recipeImageService.retrieveRecipeImage(recipeImageId);
+	}
+	
+	@GetMapping(path = "/nr/{recipeNr}")
+	public List<RecipeImage> retrieveRecipeImages(@PathVariable("recipeNr") Integer recipeNr){
+		return recipeImageService.retrieveRecipeImages(recipeNr);
 	}
 
 	@PostMapping

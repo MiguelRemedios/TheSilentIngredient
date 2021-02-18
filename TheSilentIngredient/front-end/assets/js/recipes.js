@@ -7,101 +7,48 @@ function recipeInfo(recipeid){
     if (this.readyState == 4 && this.status == 200) {
 
       var recipes = JSON.parse(this.responseText);
-      let recipe = recipes.find(({id}) => id == recipeid);
-      
-      //Recipe Page
-      document.getElementById("title").innerHTML = `TheSilentIngredient - ${recipe.name}`;
-      document.getElementById("r1").innerHTML = `${recipe.name}`;
-      document.getElementById("r2").innerHTML = `${recipe.description}`;
-      document.getElementById("r3").innerHTML = `Serving: ${recipe.serving}`;
-      document.getElementById("r4").innerHTML = `Cooking Time: ${recipe.cooktime}`;
+      document.getElementById("title").innerHTML = `TheSilentIngredient - ${recipes.name}`;
+      document.getElementById("r1").innerHTML = `${recipes.name}`;
+      document.getElementById("r2").innerHTML = `${recipes.description}`;
+      document.getElementById("r3").innerHTML = `Serving: ${recipes.serving}`;
+      document.getElementById("r4").innerHTML = `Cooking Time: ${recipes.cooktime}`;
+
+      recipeImages(recipeid);
+      recipeingredients(recipeid);
+      recipesteps(recipeid);
+
     }
   };
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe', true);
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe/' + recipeid, true);
   xmlhttp.send();
 }
 
-//Display Recipe Images 
-function recipeImages(image1, image2, image3, image4, image5){
+function recipeImages(id){
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-
-      var recipeimage = JSON.parse(this.responseText);
-      let img1 = recipeimage.find(({id}) => id == image1);
-      let img2 = recipeimage.find(({id}) => id == image2);
-      let img3 = recipeimage.find(({id}) => id == image3);
-      let img4 = recipeimage.find(({id}) => id == image4);
-      let img5 = recipeimage.find(({id}) => id == image5);
-
-      $("#imageBox").attr("src",`${img1.path}`);
-      $("#image1").attr("src",`${img1.path}`);
-      $("#image2").attr("src",`${img2.path}`);
-      $("#image3").attr("src",`${img3.path}`);
-      $("#image4").attr("src",`${img4.path}`);
-      $("#image5").attr("src",`${img5.path}`);
+      var recipeimages = JSON.parse(this.responseText);
+      for (let i = 0; i < recipeimages.length; i++) {
+        $("#imageBox").attr("src",`${recipeimages[0].path}`);
+        $(`#image${i + 1}`).attr("src",`${recipeimages[i].path}`);
+      }      
     }
   };
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipeimage', true);
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-image/nr/' + id, true);
   xmlhttp.send();
 }
 
-function recipeingredients(){
+function recipesteps(id){
   var xmlhttp = new XMLHttpRequest();
-  const argcount = arguments.length;
-  const myArgs = arguments;
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-
-      var ingredients = JSON.parse(this.responseText);
-
-      for (let index = 0; index < argcount; index++) {
-        let ingredient = ingredients.find(({id}) => id == myArgs[index]);
-        document.getElementById(`i${index+1}`).innerHTML = `${ingredient.name}`;
-      }
-    }
-  };
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient', true);
-  xmlhttp.send();
-}
-
-//Display Ingredient's Amount
-function recipeingredientsamount(){
-  var xmlhttp = new XMLHttpRequest();
-  const argcount = arguments.length;
-  const myArgs = arguments;
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-
-      var amounts = JSON.parse(this.responseText);
-    
-      for (let index = 0; index < argcount; index++) {
-        let amount = amounts.find(({id}) => id == myArgs[index]);
-        document.getElementById(`a${index+1}`).innerHTML = `${amount.quantity}` + ` ${amount.measurement}`;
-      }
-    }
-  };
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient', true);
-  xmlhttp.send();
-}
-
-//Display Recipe Steps
-function recipesteps(){
-  var xmlhttp = new XMLHttpRequest();
-  const argcount = arguments.length;
-  const myArgs = arguments;
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-
       var steps = JSON.parse(this.responseText);
-
-      for (let index = 0; index < argcount; index++) {
-        let step = steps.find(({id}) => id == myArgs[index]);
-        document.getElementById(`s${index+1}`).innerHTML = `${index+1}) ${step.step}`;
-      }
+      for (let i = 0; i < steps.length; i++) {
+        $(`#s${i + 1}`).html(`${i+1}) ${steps[i].step}`);
+      }      
     }
   };
-  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-step', true);
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-step/nr/' + id, true);
   xmlhttp.send();
 }
 
@@ -154,6 +101,50 @@ function recipenutrition(){
   } 
 
 
+function recipeingredients(recipeid) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var ingredients = JSON.parse(this.responseText);
+      for (let i = 0; i < ingredients.length; i++) {
+        var obj = ingredients[i];
+        ingredientName(obj.ingredient_id, i);
+        //ingredientNutrition(obj.ingredient_id, i, obj.quantity);
+        //console.log(obj.quantity)
+        document.getElementById(`a${i + 1}`).innerHTML = `${obj.quantity}` + ` ${obj.measurement}`;
+      }
+    }
+  };
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
+  xmlhttp.send();
+}
+  
+/*function ingredientNutrition(id, i, quantity){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var ingredient = JSON.parse(this.responseText);
+      console.log((quantity/100)*ingredient.calories)
+    }
+  }
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + recipeid, true);
+  xmlhttp.send(); 
+}*/
+  
+function ingredientName(id, i) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var ingredient = JSON.parse(this.responseText);
+      document.getElementById(`i${i + 1}`).innerHTML = `${ingredient.name}`;
+    }
+  }
+  xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient/' + id, true);
+  xmlhttp.send();
+}
+
+
+  
 //<-------------------------------------------------- RECIPE'S FILTER -------------------------------------------------->
 
 var card = localStorage.getItem("cardID");
@@ -187,17 +178,7 @@ if (card == 24) {recipe24();}
 //<----------------------------------------------------- RECIPES ------------------------------------------------------>
 
 function recipe1(){
-  //All parameters are ID's from everyone's table, make sure you check them and add it correctly.
-  //Recipe ID
   recipeInfo(1);
-  //Images ID
-  recipeImages(1,2,3,4,5);
-  //Ingredients ID
-  recipeingredients(3,2,83);
-  //Ingredient Amount ID
-  recipeingredientsamount(1,2,3);
-  //Step ID
-  recipesteps(1,2,3,4);
   //Ingredients ID (same as above)
   //(GRAMS) amount = QUANTITY / 100 (e.g 555g of rice = 5.55)
   //(MILILITERS) Since g = ml 100g = 100ml, same logic. Amount for liquids =  QUANTITY / 100 (e.g 750ml of water = 7.5)
@@ -208,22 +189,11 @@ function recipe1(){
 
 function recipe2(){
   recipeInfo(2);
-  recipeImages(6,7,8,9,10);
-  recipeingredients(81,5,6,7,62);
-  recipeingredientsamount(4,5,6,7,8);
-  recipesteps(5,6,7,8,9,10);
-  //81) 1 tbsp olive oil = 13.3g / amount: 0.133
-  //62) 1 onion = 110g / amount: 1.1
   recipenutrition({"id":81,"amount":0.133}, {"id":5,"amount":4.535}, {"id":6,"amount":3.4}, {"id":7,"amount":3.4}, {"id":62,"amount":1.1});
 }
 
 function recipe3(){
   recipeInfo(3);
-  recipeImages(11,12,13,14,15);
-  recipeingredients(8,9,10,11,12);
-  recipeingredientsamount(9,10,11,12,13);
-  recipesteps(11,12,13,14,15,16,17,18,19,20);
-
   //8) 1 5oz (mid term) chicken breast = 142 g
   //10) 1 tomato = 123 g
   //11) 1 lettuce leaf = 8 g
@@ -233,9 +203,5 @@ function recipe3(){
 
 function recipe4(){
   recipeInfo(4);
-  recipeImages(16,17,18,19,20);
-  recipeingredients(77,83,13,5,14);
-  recipeingredientsamount(14,15,16,17,18);
-  recipesteps(21,22,23,24,25,26);
 
 }

@@ -36,7 +36,7 @@ function recipes(/*imageid*/){
         }
       }
     };
-    xmlhttp2.open("GET", 'http://localhost:8080/api/v1/recipeimage', true);
+    xmlhttp2.open("GET", 'http://localhost:8080/api/v1/recipe-image', true);
     xmlhttp2.send();
 
 }
