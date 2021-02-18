@@ -360,10 +360,10 @@ public class IngredientConfig {
 					);
 			Ingredient egg = new Ingredient(
 					"egg",
-					143,
+					155,
 					13,
-					0.7,
-					9.5
+					1.1,
+					11
 					);
 			Ingredient glutenfreeflour = new Ingredient(
 					"gluten-free plain flour",
