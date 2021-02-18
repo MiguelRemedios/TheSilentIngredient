@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "api/v1/recipe-ingredient")
-//@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*")
 public class RecipeIngredientController {
 	
 	private final RecipeIngredientService recipeIngredientService;

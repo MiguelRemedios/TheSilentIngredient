@@ -37,25 +37,27 @@ function autocomplete(inp, arr) {
           var ingredient = e.currentTarget.getElementsByTagName("input")[0]
             .value;
 
+          var ingArray = JSON.parse(localStorage.getItem("ingredients"));
           var array = [];
 
           if (localStorage.getItem("ingredientArray") !== null) {
             var tmpArray = JSON.parse(localStorage.getItem("ingredientArray"));
 
-            if (!tmpArray.includes(ingredient)) {
-              array.push(...tmpArray);
-            } else {
+            if (tmpArray.includes(ingArray.indexOf(ingredient) + 1)) {
               return;
-            }
+            } 
+            array.push(...tmpArray);
           }
-          array.push(ingredient);
+
+          var ingID = ingArray.indexOf(ingredient) + 1;
+
+          array.push(ingID);
 
           localStorage.setItem("ingredientArray", JSON.stringify(array));
 
-          console.log(ingredient);
+          console.log(array);
           toList(ingredient);
           document.getElementById("myInput").value = "";
-
           closeAllLists(b);
         });
         a.appendChild(b);
@@ -159,5 +161,6 @@ fetch("http://localhost:8080/api/v1/ingredient")
       ingredients.push(dataObject[i].name);
     }
     console.log(ingredients);
+    localStorage.setItem("ingredients", JSON.stringify(ingredients));
     autocomplete(document.getElementById("myInput"), ingredients);
   });
