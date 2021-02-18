@@ -52,6 +52,12 @@ public class RecipeImageConfig {
 			RecipeImage fajita3 = new RecipeImage(8,"http://127.0.0.1:5500/images/recipe/fajita3.jpg");
 			RecipeImage fajita4 = new RecipeImage(8,"http://127.0.0.1:5500/images/recipe/fajita4.jpg");
 			RecipeImage fajita5 = new RecipeImage(8,"http://127.0.0.1:5500/images/recipe/fajita5.jpg");
+			//RECIPE 8
+			RecipeImage spicyrice1 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice1.jpg");
+			RecipeImage spicyrice2 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice2.jpg");
+			RecipeImage spicyrice3 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice3.jpg");
+			RecipeImage spicyrice4 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice4.jpg");
+			RecipeImage spicyrice5 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice5.jpg");
 			//RECIPE 11
 			RecipeImage HALALChicken1 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken1.jpg");
 			RecipeImage HALALChicken2 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken2.jpg");
@@ -76,6 +82,7 @@ public class RecipeImageConfig {
 									   NDBagel1,NDBagel2,NDBagel3,NDBagel4,NDBagel5,
 									   NDBurger1,NDBurger2,NDBurger3,NDBurger4,NDBurger5,
 									   fajita1, fajita2, fajita3, fajita4, fajita5,
+									   spicyrice1, spicyrice2, spicyrice3, spicyrice4, spicyrice5,
 									   HALALChicken1, HALALChicken2, HALALChicken3, HALALChicken4, HALALChicken5,
 									   HALALCTM1, HALALCTM2, HALALCTM3, HALALCTM4, HALALCTM5,
 									   HALALMB1, HALALMB2, HALALMB3, HALALMB4, HALALMB5));
