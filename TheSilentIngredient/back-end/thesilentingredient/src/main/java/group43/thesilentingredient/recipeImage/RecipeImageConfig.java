@@ -52,12 +52,18 @@ public class RecipeImageConfig {
 			RecipeImage fajita3 = new RecipeImage(8,"http://127.0.0.1:5500/images/recipe/fajita3.jpg");
 			RecipeImage fajita4 = new RecipeImage(8,"http://127.0.0.1:5500/images/recipe/fajita4.jpg");
 			RecipeImage fajita5 = new RecipeImage(8,"http://127.0.0.1:5500/images/recipe/fajita5.jpg");
-			//RECIPE 8
+			//RECIPE 9
 			RecipeImage spicyrice1 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice1.jpg");
 			RecipeImage spicyrice2 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice2.jpg");
 			RecipeImage spicyrice3 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice3.jpg");
 			RecipeImage spicyrice4 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice4.jpg");
 			RecipeImage spicyrice5 = new RecipeImage(9,"http://127.0.0.1:5500/images/recipe/spicyrice5.jpg");
+			//RECIPE 10
+			RecipeImage pastaSalad1 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage pastaSalad2 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad2.jpg");
+			RecipeImage pastaSalad3 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad3.jpg");
+			RecipeImage pastaSalad4 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad4.jpg");
+			RecipeImage pastaSalad5 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad5.jpg");
 			//RECIPE 11
 			RecipeImage HALALChicken1 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken1.jpg");
 			RecipeImage HALALChicken2 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken2.jpg");
@@ -83,6 +89,7 @@ public class RecipeImageConfig {
 									   NDBurger1,NDBurger2,NDBurger3,NDBurger4,NDBurger5,
 									   fajita1, fajita2, fajita3, fajita4, fajita5,
 									   spicyrice1, spicyrice2, spicyrice3, spicyrice4, spicyrice5,
+									   pastaSalad1, pastaSalad2, pastaSalad3, pastaSalad4, pastaSalad5,
 									   HALALChicken1, HALALChicken2, HALALChicken3, HALALChicken4, HALALChicken5,
 									   HALALCTM1, HALALCTM2, HALALCTM3, HALALCTM4, HALALCTM5,
 									   HALALMB1, HALALMB2, HALALMB3, HALALMB4, HALALMB5));
