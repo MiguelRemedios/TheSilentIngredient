@@ -214,7 +214,6 @@ function recipe1(){
   //Ingredients ID (same as above)
   //(GRAMS) amount = QUANTITY / 100 (e.g 555g of rice = 5.55)
   //(MILILITERS) Since g = ml 100g = 100ml, same logic. Amount for liquids =  QUANTITY / 100 (e.g 750ml of water = 7.5)
-
   //1 tbsp of salt = 17g / amount = 17 / 100 = 0.17
   recipenutrition({"id":3,"amount":5.55},{"id":2,"amount":7.5},{"id":83,"amount":0.17});
 }
@@ -235,5 +234,8 @@ function recipe3(){
 
 function recipe4(){
   recipeInfo(4);
-
+  //77) 1 egg = 50 g
+  //83) 1 tbsp of salt = 17g
+  //13) 1 tbsp of b pepper = 7g
+  recipenutrition({"id":77,"amount":0.5}, {"id":83,"amount":0.085}, {"id":13,"amount":0.035}, {"id":5,"amount":4.5}, {"id":14,"amount":0.6});
 }
