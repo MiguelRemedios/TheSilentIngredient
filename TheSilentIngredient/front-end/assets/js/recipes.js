@@ -356,6 +356,65 @@ function recipe15() {
 
   recipenutrition({ "id": 27, "amount": 2 }, { "id": 15, "amount": 0.15 }, { "id": 16, "amount": 0.026 }, { "id": 17, "amount": 2.7 }, { "id": 18, "amount": 1.25 }, { "id": 19, "amount": 0.9 }, { "id": 20, "amount": 3.5 }, { "id": 31, "amount": 0.55 });
 }
+
+function recipe16() {
+    recipeInfo(16);
+
+    //1 tbsp olive oil            4 
+    //2 red onions, chopped       38
+    //1 red chilli                22
+    //1 garlic clove, sliced      15
+    //coriander                   69 
+    //2 cans cherry tomatoes      25
+    //1 tsp caster sugar          60
+    //4 eggs                      77
+
+
+    recipenutrition({ "id": 4, "amount": 0.0532 }, { "id": 38, "amount": 2.2 }, { "id": 22, "amount": 1.1 }, { "id": 15, "amount": 0.055 }, 
+		    { "id": 69, "amount": 1.25 }, { "id": 25, "amount": 4.0 }, { "id": 60, "amount": 0.13 }, { "id": 77, "amount": 2.0 });
+
+}
+
+
+function recipe17() {
+    recipeInfo(17);
+
+    //3 cups canned white beans, drained and washed
+    //8 oz package of tempeh, cubed into ½-inch pieces
+    //1 tbsp extra virgin olive oil
+    //1 medium onion, diced
+    //2 medium carrots, sliced
+    //2 stalks of celery, diced
+    //5 cloves garlic, finely minced
+    //15 mushrooms sliced
+    //2 tomatoes diced
+    //1 tbsp chopped sage
+    //1 tbsp chopped thyme
+    //2 bay leaves
+    //2 tbsp parsley, chopped
+    //½ cup red wine, optional
+    //Salt and ground black pepper to taste
+    recipenutrition({ "id": 23, "amount": 5.10 }, { "id": 24, "amount": 2.27 }, { "id": 4, "amount": 0.13 }, { "id": 58, "amount": 1.10 }, 
+		    { "id": 25, "amount": 1.56 }, { "id": 26, "amount": 1.06 }, { "id": 15, "amount": 0.30 }, { "id": 27, "amount": 2.34}, 
+		    { "id": 111, "amount": 2.46 }, { "id": 28, "amount": 0.02 }, { "id": 29, "amount": 0.03 }, { "id": 30, "amount": 0.025 },
+		    { "id": 31, "amount": 0.0324 }, { "id": 32, "amount": 1.25 }, { "id": 78, "amount": 0.0036 }, { "id": 13, "amount": 0.0005 });
+}
+
+function recipe18(){
+  recipeInfo(18);
+
+  //1 cup all-purpose flour         33 - 133
+  //1 tablespoon white sugar        62 - 134
+  //2 teaspoons baking powder       34 - 135
+  //¼ teaspoon salt                 78 - 136
+  //1 egg, beaten                   73 - 137
+  //1 cup plant based milk          35 - 138
+  //2 tablespoons vegetable oil     36 - 139
+  //2 ripe bananas, mashed          1  - 140
+
+  recipenutrition({"id":33,"amount":1.25},{"id":62,"amount":0.12},{"id":34,"amount":0.008},{"id":78,"amount":0.001},{"id":73,"amount":0.57}, 
+		  {"id":35,"amount":2.4}, {"id":36,"amount":0.26}, {"id":1,"amount":2.4});
+}
 function recipe19() {
   recipeInfo(19);
 
