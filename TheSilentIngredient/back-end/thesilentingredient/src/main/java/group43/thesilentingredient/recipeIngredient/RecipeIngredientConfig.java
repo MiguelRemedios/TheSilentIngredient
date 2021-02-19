@@ -43,8 +43,8 @@ public class RecipeIngredientConfig {
 			//RECIPE ID - 3
 			RecipeIngredient r3ing1 = new RecipeIngredient(8, 3, 1.0, "quantity");
 			RecipeIngredient r3ing2 = new RecipeIngredient(9, 3, 1.0, "quantity");
-			RecipeIngredient r3ing3 = new RecipeIngredient(111, 3, 3.0, "quantity");
-			RecipeIngredient r3ing4 = new RecipeIngredient(11, 3, 2.0, "quantity");
+			RecipeIngredient r3ing3 = new RecipeIngredient(111, 3, 3.0, "slices");
+			RecipeIngredient r3ing4 = new RecipeIngredient(11, 3, 2.0, "leafs");
 			RecipeIngredient r3ing5 = new RecipeIngredient(12, 3, 1.0, "tbsp");
 			//r3ing1, r3ing2, r3ing3, r3ing4, r3ing5
 			
@@ -53,7 +53,8 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r4ing2 = new RecipeIngredient(78, 4, 0.5, "tsp");
 			RecipeIngredient r4ing3 = new RecipeIngredient(13, 4, 0.5, "tsp");
 			RecipeIngredient r4ing4 = new RecipeIngredient(5, 4, 450.0, "g");
-			RecipeIngredient r4ing5 = new RecipeIngredient(47, 4, 2.0, "slices");
+			RecipeIngredient r4ing5 = new RecipeIngredient(14, 4, 60.0, "g");
+			RecipeIngredient r4ing6 = new RecipeIngredient(47, 4, 2.0, "slices");
 			//r4ing1, r4ing2, r4ing3, r4ing4, r4ing5
 			
 			
@@ -291,7 +292,7 @@ public class RecipeIngredientConfig {
 			repository.saveAll(List.of(r1ing1, r1ing2, r1ing3,
 					r2ing1, r2ing2, r2ing3, r2ing4, r2ing5,
 					r3ing1, r3ing2, r3ing3, r3ing4, r3ing5,
-					r4ing1, r4ing2, r4ing3, r4ing4, r4ing5,
+					r4ing1, r4ing2, r4ing3, r4ing4, r4ing5, r4ing6,
 					r5ing1, r5ing2, r5ing3, r5ing4, r5ing5, r5ing6, r5ing7,
 					r6ing1, r6ing2, r6ing3, r6ing4, r6ing5, r6ing6, r6ing7, r6ing8, r6ing9, r6ing10, r6ing11, r6ing12, r6ing13, r6ing14, r6ing15, r6ing16,
 					r7ing1, r7ing2, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8, r7ing9, r7ing10, r7ing11,

@@ -7,8 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import group43.thesilentingredient.recipeIngredient.RecipeIngredient;
-
 @Repository
 public interface RecipeImageRepository extends JpaRepository<RecipeImage, Long>{
 	
