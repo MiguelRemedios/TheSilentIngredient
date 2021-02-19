@@ -339,7 +339,6 @@ function recipe15() {
   //350g pasta                20 - 109
   //parsley                   31 - 110
 
-
   recipenutrition({ "id": 102, "amount": 2 }, { "id": 104, "amount": 0.15 }, { "id": 105, "amount": 0.026 }, { "id": 106, "amount": 2.7 }, { "id": 107, "amount": 1.25 }, { "id": 108, "amount": 0.9 }, { "id": 109, "amount": 3.5 }, { "id": 110, "amount": 0.55 });
 }
 function recipe19() {
