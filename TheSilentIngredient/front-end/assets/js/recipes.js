@@ -47,8 +47,9 @@ function recipesteps(id) {
       var steps = JSON.parse(this.responseText);
       for (let i = 0; i < steps.length; i++) {
         $(`#s${i + 1}`).html(`${i + 1}) ${steps[i].step}`);
+        document.getElementById(`s${i + 1}`).parentElement.style.display = "block";
       }
-    }
+    }    
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-step/nr/' + id, true);
   xmlhttp.send();
@@ -63,7 +64,7 @@ function recipeingredients(recipeid) {
         var obj = ingredients[i];
         ingredientName(obj.ingredient_id, i);
         document.getElementById(`a${i + 1}`).innerHTML = `${obj.quantity}` + ` ${obj.measurement}`;
-
+        document.getElementById(`a${i + 1}`).parentElement.style.display = "block";
       }
     }
   };
@@ -77,6 +78,7 @@ function ingredientName(id, i) {
     if (this.readyState == 4 && this.status == 200) {
       var ingredient = JSON.parse(this.responseText);
       document.getElementById(`i${i + 1}`).innerHTML = `${ingredient.name}`;
+      document.getElementById(`i${i + 1}`).parentElement.style.display = "";
     }
   }
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient/' + id, true);
@@ -394,7 +396,6 @@ function recipe21() {
   recipenutrition({ "id": 59, "amount": 4 }, { "id": 76, "amount": 0.972 }, { "id": 4, "amount": 1.35 }, 
                   { "id": 106, "amount": 0.027 }, { "id": 54, "amount": 0.027 }, { "id": 77, "amount": 0.01 });
 }
-
 function recipe22() {
 	//Gluten free bread
 	recipeInfo(22);
@@ -429,6 +430,4 @@ function recipe24() {
 	 */ 
 	recipenutrition({ "id": 108, "amount": 0.75 }, { "id": 75, "amount": 2.5 }, { "id": 109, "amount": 1.2 });
 }
-
-
 

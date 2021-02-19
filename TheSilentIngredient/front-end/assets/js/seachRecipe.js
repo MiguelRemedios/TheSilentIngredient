@@ -57,17 +57,32 @@ function storeID(element){
 
 function searchEngine(){
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
+    ingredientArray.sort(function(a, b){return a - b});
     var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
+  
+    var tempArray = [];
+
     for (const ingredient of ingredientArray) {
-      for (const recipe of recipeIngredients) {
-        
-        if (recipe.ingredient_id == ingredient) {
-          document.getElementById(recipe.recipe_id).style.display = "none";
-          //document.getElementById(recipe.recipe_id).style.position = "absolute";
+      if (ingredientArray.indexOf(ingredient) == 0) {
+        for (const recipe of recipeIngredients) {
+          if (recipe.ingredient_id == ingredient) {
+            tempArray.push(recipe.recipe_id);
+          }
         }
       }
 
+      for (const recipeID of tempArray) {
+        if (!recipeIngredients.find(recipe => recipe.ingredient_id == ingredient)){
+          
+          tempArray.splice(tempArray.indexOf(recipeID), 1);
+        }
+      }
     }
+
+    for (const recipeID of tempArray) {
+      document.getElementById(recipeID).style.display = "block";
+    }
+    console.log(tempArray);
 }
 
 fetch("http://localhost:8080/api/v1/recipe-ingredient")
