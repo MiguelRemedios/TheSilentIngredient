@@ -312,7 +312,7 @@ function recipe13() {
   //2 slices of bread,    47 - 93
   //1 tbsp of salt,       78 - 14
   //350ml of oil          4  - 95
-  recipenutrition({ "id": 91, "amount": 3.44 }, { "id": 92, "amount": 4 }, { "id": 93, "amount": 0.8 }, { "id": 94, "amount": 0.17 }, { "id": 95, "amount": 3.2 });
+  recipenutrition({ "id": 8, "amount": 3.44 }, { "id": 48, "amount": 4 }, { "id": 47, "amount": 0.8 }, { "id": 78, "amount": 0.17 }, { "id": 4, "amount": 3.2 });
 }
 
 function recipe14() {
@@ -324,7 +324,7 @@ function recipe14() {
   //1 tbsp of salt,        78  - 99
   //2 tbsp of chili sauce, 113 - 100
   //15ml oil               61  - 101
-  recipenutrition({ "id": 96, "amount": 1.7 }, { "id": 97, "amount": 1.2 }, { "id": 98, "amount": 0.7 }, { "id": 99, "amount": 0.17 }, { "id": 100, "amount": 0.34 }, { "id": 101, "amount": 0.15 });
+  recipenutrition({ "id": 8, "amount": 1.7 }, { "id": 73, "amount": 1.2 }, { "id": 49, "amount": 0.7 }, { "id": 78, "amount": 0.17 }, { "id": 113, "amount": 0.34 }, { "id": 61, "amount": 0.15 });
 }
 
 function recipe15() {
@@ -339,7 +339,7 @@ function recipe15() {
   //350g pasta                20 - 109
   //parsley                   31 - 110
 
-  recipenutrition({ "id": 102, "amount": 2 }, { "id": 104, "amount": 0.15 }, { "id": 105, "amount": 0.026 }, { "id": 106, "amount": 2.7 }, { "id": 107, "amount": 1.25 }, { "id": 108, "amount": 0.9 }, { "id": 109, "amount": 3.5 }, { "id": 110, "amount": 0.55 });
+  recipenutrition({ "id": 27, "amount": 2 }, { "id": 15, "amount": 0.15 }, { "id": 16, "amount": 0.026 }, { "id": 17, "amount": 2.7 }, { "id": 18, "amount": 1.25 }, { "id": 19, "amount": 0.9 }, { "id": 20, "amount": 3.5 }, { "id": 31, "amount": 0.55 });
 }
 function recipe19() {
   recipeInfo(19);
