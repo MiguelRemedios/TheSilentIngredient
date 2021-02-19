@@ -47,6 +47,7 @@ function recipesteps(id){
       var steps = JSON.parse(this.responseText);
       for (let i = 0; i < steps.length; i++) {
         $(`#s${i + 1}`).html(`${i+1}) ${steps[i].step}`);
+        document.getElementById(`s${i + 1}`).parentElement.style.display = "block";
       }      
     }
   };
@@ -63,7 +64,7 @@ function recipeingredients(recipeid) {
         var obj = ingredients[i];
         ingredientName(obj.ingredient_id, i);
         document.getElementById(`a${i + 1}`).innerHTML = `${obj.quantity}` + ` ${obj.measurement}`;
-
+        document.getElementById(`a${i + 1}`).parentElement.style.display = "block";
       }
     }
   };
@@ -77,6 +78,7 @@ function ingredientName(id, i) {
     if (this.readyState == 4 && this.status == 200) {
       var ingredient = JSON.parse(this.responseText);
       document.getElementById(`i${i + 1}`).innerHTML = `${ingredient.name}`;
+      document.getElementById(`i${i + 1}`).parentElement.style.display = "";
     }
   }
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/ingredient/' + id, true);
