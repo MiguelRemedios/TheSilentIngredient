@@ -817,11 +817,18 @@ public class IngredientConfig {
 					0.2
 					);
 			Ingredient chili_powder = new Ingredient(
-					"Chili Powder",
+					"chili powder",
 					282,
 					13,
 					50,
 					14
+					);
+			Ingredient chili_sauce = new Ingredient(
+					"chili sauce",
+					11,
+					0.5,
+					1.8,
+					0.4
 					);
 			
 
@@ -938,7 +945,7 @@ public class IngredientConfig {
 					vanilla_ice_cream,
 					root_beer,
 					red_wine_vinegar, 
-					regular_tomatoes, chili_powder)
+					regular_tomatoes, chili_powder, chili_sauce)
 					);
 		};
 
