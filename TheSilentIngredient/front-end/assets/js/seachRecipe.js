@@ -24,8 +24,8 @@ function recipes(/*imageid*/){
          //recipeMainImages.length = imageid;
          //ID's
          recipeMainImages = [recipeimages[0].path,recipeimages[5].path,recipeimages[10].path,recipeimages[15].path,
-                             recipeimages[0].path,recipeimages[1].path,recipeimages[3].path,recipeimages[4].path,
-                             recipeimages[1].path,recipeimages[3].path,recipeimages[3].path,recipeimages[0].path,
+                             recipeimages[55].path,recipeimages[50].path,recipeimages[60].path,recipeimages[20].path,
+                             recipeimages[25].path,recipeimages[0].path,recipeimages[35].path,recipeimages[40].path,
                              recipeimages[1].path,recipeimages[3].path,recipeimages[3].path,recipeimages[0].path,
                              recipeimages[1].path,recipeimages[3].path,recipeimages[3].path,recipeimages[0].path,
                              recipeimages[1].path,recipeimages[3].path,recipeimages[1].path,recipeimages[3].path];
@@ -36,7 +36,7 @@ function recipes(/*imageid*/){
         }
       }
     };
-    xmlhttp2.open("GET", 'http://localhost:8080/api/v1/recipeimage', true);
+    xmlhttp2.open("GET", 'http://localhost:8080/api/v1/recipe-image', true);
     xmlhttp2.send();
 
 }
