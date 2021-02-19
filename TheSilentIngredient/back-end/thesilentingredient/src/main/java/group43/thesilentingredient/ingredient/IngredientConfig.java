@@ -395,8 +395,8 @@ public class IngredientConfig {
 					0,
 					100
 					);
-			Ingredient cardamon = new Ingredient(
-					"cardamon",
+			Ingredient cardamom = new Ingredient(
+					"cardamom",
 					311,
 					11,
 					68,
@@ -527,7 +527,7 @@ public class IngredientConfig {
 					71.4,
 					5.4
 					);
-			Ingredient garlic_glove = new Ingredient(
+			Ingredient garlic_clove = new Ingredient(
 					"garlic",
 					150,
 					6.3,
@@ -816,6 +816,21 @@ public class IngredientConfig {
 					3.9,
 					0.2
 					);
+			Ingredient chili_powder = new Ingredient(
+					"chili powder",
+					282,
+					13,
+					50,
+					14
+					);
+			Ingredient chili_sauce = new Ingredient(
+					"chili sauce",
+					11,
+					0.5,
+					1.8,
+					0.4
+					);
+			
 
 
 			repository.saveAll(List.of(
@@ -833,13 +848,12 @@ public class IngredientConfig {
 					light_mayonnaise,
 					black_pepper,
 					bread_crumbs,
-					garlic_glove,
+					garlic_clove,
 					rosemary_sprigs,
 					leek,
 					dry_white_wine,
 					dry_soya_cream,
 					pasta,
-					parsley,
 					red_chilli,
 					cherry_tomatoes_can,
 					canned_white_bean,
@@ -897,7 +911,7 @@ public class IngredientConfig {
 					glutenfreeflour,
 					milk,
 					lemonjc,
-					cardamon,
+					cardamom,
 					salt,
 					driedyeast,
 					buttermilk,
@@ -931,7 +945,7 @@ public class IngredientConfig {
 					vanilla_ice_cream,
 					root_beer,
 					red_wine_vinegar, 
-					regular_tomatoes)
+					regular_tomatoes, chili_powder, chili_sauce)
 					);
 		};
 
