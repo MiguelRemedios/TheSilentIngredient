@@ -319,6 +319,63 @@ function recipe8(){
   recipenutrition({"id":81,"amount": 4}, {"id":65,"amount": 0.8}, {"id":89,"amount": 1.08},{"id":82,"amount": 1.5},{"id":90,"amount": 0.3026});
 }
 
+function recipe9(){
+  recipeInfo(9);
+//13.5g -groundnut oil 1 tbsp
+//225g -onion 1 large, finely chopped
+//8g -garlic 2 cloves, crushed
+//45g -green chilli 1, sliced
+//119g -green pepper 1, diced
+//-basmati rice 200g
+//14g -chipotle paste 1 tbsp
+//-chopped tomatoes 400g tin
+//250g -vegetable stock 250ml
+//5g -coriander a handful, chopped
+//1g -lime wedges to serve
+
+  recipenutrition({"id":91,"amount": 0.135},{"id":58,"amount": 2.25},{"id":15,"amount": 0.08},{"id":60,"amount": 0.45},{"id": 93,"amount": 2},{"id":94,"amount": 0.14},
+  {"id":63,"amount": 4},{"id":95,"amount": 2.5},{"id":65,"amount": 0.05},{"id":92,"amount": 1.19},{"id":96,"amount": 0.01},);
+}
+function recipe10(){
+  recipeInfo(10);
+//-short pasta (such as radiatori) 150g
+//240g -vine tomatoes 3, diced
+//26.6g -olive oil 2 tbsp
+//14.90g -red wine vinegar 1 tbsp
+//7.5g -baby capers 1 tbsp
+//-bocconcini 150g pack, drained and balls torn in half if large (see notes below)
+//70g -basil a handful, chopped
+//7g -chives chopped to make 2 tbsp
+
+  recipenutrition({"id":20,"amount": 1.5},{"id":10,"amount": 2.4},{"id":4,"amount": 0.266},{"id":110,"amount": 0.149},{"id":97,"amount": 0.75},{"id":98,"amount": 1.5},
+  {"id":99,"amount": 0.7},{"id":100,"amount": 0.07},);
+}
+function recipe11(){
+  recipeInfo(11);
+  //142g chicken breast 1 piece
+  //76g 2 slices bread
+  //17.07g 1tbsp salt
+  //8.12g 1tbsp chili powder
+  //7g 1tbsp pepper
+  //15g 1tbsp chili sauce
+
+  recipenutrition({"id":8,"amount": 1.42},{"id":47,"amount": 0.76},{"id":78,"amount":0.1707},{"id":112,"amount": 0.0812},{"id":13,"amount": 0.07},{"id":113,"amount": 0.15},);
+}
+function recipe12(){
+  recipeInfo(12);
+  //284g chicken breast 2 pieces
+  //17.07g 1tbsp salt
+  //8.12g 1tbsp chili powder
+  //7g 1tbsp pepper
+  //15g 1tbsp chili sauce
+  //250ml sunflower oil
+  //100g 2 eggs
+  // 50g flour
+
+  recipenutrition({"id":8,"amount": 2.84},{"id":78,"amount": 0.1707},{"id":112,"amount": 0.0812},{"id":13,"amount": 0.07},{"id":113,"amount": 0.15},
+  {"id":61,"amount": 2.5},{"id":73,"amount": 1},{"id":33,"amount": 0.5},);
+}
+
 function recipe13() {
   recipeInfo(13);
 
@@ -327,7 +384,7 @@ function recipe13() {
   //2 slices of bread,    47 - 93
   //1 tbsp of salt,       78 - 14
   //350ml of oil          4  - 95
-  recipenutrition({ "id": 8, "amount": 3.44 }, { "id": 48, "amount": 4 }, { "id": 47, "amount": 0.8 }, { "id": 78, "amount": 0.17 }, { "id": 4, "amount": 3.2 });
+  recipenutrition({ "id": 8, "amount": 2.84 }, { "id": 48, "amount": 4 }, { "id": 47, "amount": 0.8 }, { "id": 78, "amount": 0.17 }, { "id": 4, "amount": 3.2 });
 }
 
 function recipe14() {
@@ -339,7 +396,7 @@ function recipe14() {
   //1 tbsp of salt,        78  - 99
   //2 tbsp of chili sauce, 113 - 100
   //15ml oil               61  - 101
-  recipenutrition({ "id": 8, "amount": 1.7 }, { "id": 73, "amount": 1.2 }, { "id": 49, "amount": 0.7 }, { "id": 78, "amount": 0.17 }, { "id": 113, "amount": 0.34 }, { "id": 61, "amount": 0.15 });
+  recipenutrition({ "id": 8, "amount": 1.42 }, { "id": 73, "amount": 1.2 }, { "id": 49, "amount": 0.7 }, { "id": 78, "amount": 0.17 }, { "id": 113, "amount": 0.34 }, { "id": 61, "amount": 0.15 });
 }
 
 function recipe15() {
