@@ -215,12 +215,12 @@ function recipe1() {
   //(GRAMS) amount = QUANTITY / 100 (e.g 555g of rice = 5.55)
   //(MILILITERS) Since g = ml 100g = 100ml, same logic. Amount for liquids =  QUANTITY / 100 (e.g 750ml of water = 7.5)
   //1 tbsp of salt = 17g / amount = 17 / 100 = 0.17
-  recipenutrition({ "id": 3, "amount": 5.55 }, { "id": 2, "amount": 7.5 }, { "id": 83, "amount": 0.17 });
+  recipenutrition({"id":3,"amount":5.55},{"id":2,"amount":7.5},{"id":78,"amount":0.17});
 }
 
 function recipe2() {
   recipeInfo(2);
-  recipenutrition({ "id": 81, "amount": 0.133 }, { "id": 5, "amount": 4.535 }, { "id": 6, "amount": 3.4 }, { "id": 7, "amount": 3.4 }, { "id": 62, "amount": 1.1 });
+  recipenutrition({"id":4,"amount":0.133}, {"id":5,"amount":4.535}, {"id":6,"amount":3.4}, {"id":7,"amount":5.62}, {"id":58,"amount":1.1});
 }
 
 function recipe3() {
@@ -229,7 +229,7 @@ function recipe3() {
   //10) 1 tomato = 123 g
   //11) 1 lettuce leaf = 8 g
   //12) 1 tbsp light mayo = 15g
-  recipenutrition({ "id": 8, "amount": 1.42 }, { "id": 9, "amount": 1.05 }, { "id": 10, "amount": 3.69 }, { "id": 11, "amount": 0.16 }, { "id": 12, "amount": 0.15 });
+  recipenutrition({"id":8,"amount":1.42}, {"id":9,"amount":1.05}, {"id":111,"amount":0.765}, {"id":11,"amount":0.16}, {"id":12,"amount":0.15});
 }
 
 function recipe4() {
@@ -237,7 +237,7 @@ function recipe4() {
   //77) 1 egg = 50 g
   //83) 1 tbsp of salt = 17g
   //13) 1 tbsp of b pepper = 7g
-  recipenutrition({ "id": 77, "amount": 0.5 }, { "id": 83, "amount": 0.085 }, { "id": 13, "amount": 0.035 }, { "id": 5, "amount": 4.5 }, { "id": 14, "amount": 0.6 });
+  recipenutrition({"id":73,"amount":0.5}, {"id":78,"amount":0.085}, {"id":13,"amount":0.035}, {"id":5,"amount":4.5}, {"id":14,"amount":0.6}, {"id":47,"amount":0.56});
 }
 
 function recipe5() {
@@ -394,3 +394,41 @@ function recipe21() {
   recipenutrition({ "id": 59, "amount": 4 }, { "id": 76, "amount": 0.972 }, { "id": 4, "amount": 1.35 }, 
                   { "id": 106, "amount": 0.027 }, { "id": 54, "amount": 0.027 }, { "id": 77, "amount": 0.01 });
 }
+
+function recipe22() {
+	//Gluten free bread
+	recipeInfo(22);
+	/*
+	 * id:74 gluten-free plain flour 400.0g
+	 * id:78 salt 1 tsp -> 5.9g
+	 * id:79 dried yeast 7.0g
+	 * id:80 buttermilk 284ml
+	 * id:73 egg 2unit -> 100g
+	 * id:4 olive oil 2tbsp -> 8.88g
+	 */
+	recipenutrition({ "id": 74, "amount": 4.00 }, { "id": 78, "amount": 0.059 }, { "id": 79, "amount": 0.07 }, { "id": 80, "amount": 2.84 }, { "id": 73, "amount": 1.00 }, { "id": 4, "amount": 0.088 });
+}
+
+function recipe23() {
+	//Candied Bacon
+	recipeInfo(23);
+	/*
+	 * id:67 brown sugar 110g
+	 * id:107 bacon 225g
+	 */
+	recipenutrition({ "id": 67, "amount": 1.1 }, { "id": 107, "amount": 2.25 });
+}
+
+function recipe24() {
+	//Root Beer Milkshake
+	recipeInfo(24);
+	/*
+	 * id:108 vanilla ice cream 75g
+	 * id:75 milk 250ml
+	 * id:109 root beer 120ml
+	 */ 
+	recipenutrition({ "id": 108, "amount": 0.75 }, { "id": 75, "amount": 2.5 }, { "id": 109, "amount": 1.2 });
+}
+
+
+
