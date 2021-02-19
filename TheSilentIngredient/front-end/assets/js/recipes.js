@@ -239,3 +239,65 @@ function recipe4(){
   //13) 1 tbsp of b pepper = 7g
   recipenutrition({"id":77,"amount":0.5}, {"id":83,"amount":0.085}, {"id":13,"amount":0.035}, {"id":5,"amount":4.5}, {"id":14,"amount":0.6});
 }
+
+function recipe5(){
+recipeInfo(5);
+
+//  6 pickling cucumbers
+//  2 shallots
+//  2 teaspoons mustard seeds
+//  ½ teaspoon ground turmeric
+//  2 star anise
+//  75 g caster sugar
+//  150 ml vinegar
+
+recipenutrition();
+}
+
+function recipe6(){
+recipeInfo(6);
+
+// 2 medium onions
+// 1 x 400 g tin chickpeas
+//  1-2 fresh green chillies
+//  2 tablespoons sunflower oil
+//  1 teaspoon mustard seeds
+// ½ teaspoon asafoetida
+//  1-2 teaspoon sugar , optional
+//  ½ x 400 g tin of tomatoes
+//  1 teaspoon fresh ginger paste
+//  1 teaspoon garlic paste
+//  1 teaspoon green chilli paste
+//  1 teaspoon red chilli powder
+//  1 teaspoon turmeric
+//  1 teaspoon dhana jeera powder
+//  1-2 teaspoon sugar , optional
+//  a few sprigs of fresh coriander
+//  ½ teaspoon garam masala
+
+
+
+
+recipenutrition();
+}
+
+function recipe7(){
+  recipeInfo(7)
+
+//75 ml sunflower oil , plus extra for greasing
+//6 tbsp ground flaxseed
+//1 x 400g tin of aduki beans
+//200 g soft light brown sugar
+//55 g cocoa powder
+//55 g ground almonds
+//1 tsp gluten-free baking powder
+//1 tsp vanilla extract
+//100 g dark dairy-free chocolate
+//200 ml coconut cream
+//3 tbsp icing sugar
+//1/2 tsp vanilla extract
+
+
+
+  recipenutrition();
+}

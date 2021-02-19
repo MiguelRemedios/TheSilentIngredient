@@ -434,25 +434,18 @@ public class IngredientConfig {
 					);
 			Ingredient avocado = new Ingredient(
 					"avocado",
-					160,
+					161,
 					2,
 					8.5,
-					15
-					);
-			Ingredient garlic = new Ingredient(
-					"garlic",
-					149,
-					6.4,
-					33,
-					0.5
+					14.5
 					);
 			
 			Ingredient banana = new Ingredient(
 					"banana",
-					3,
-					2,
-					1,
-					1
+					89,
+					1.1,
+					22.9,
+					0.3
 					);
 			
 			Ingredient water = new Ingredient(
@@ -464,372 +457,329 @@ public class IngredientConfig {
 					);
 			Ingredient white_rice = new Ingredient(
 					"white rice",
-					130,
+					129.8,
 					2.7,
-					28,
+					28.5,
 					0.3
-					);
-			
-			Ingredient olive_oil = new Ingredient(
-					"olive oil",
-					119,
-					0,
-					0,
-					13
 					);
 			
 			Ingredient ground_beef = new Ingredient(
 					"ground beef",
-					230,
-					28,
+					272.6,
+					27.4,
 					0,
-					12
+					17.7
 					);
 			Ingredient spaghetti = new Ingredient(
 					"spaghetti",
-					158,
-					6,
-					31,
-					0.9
+					149.9,
+					5.3,
+					30,
+					0.6
 					);
 			Ingredient pasta_sauce = new Ingredient(
 					"pasta sauce",
-					29,
-					1.3,
-					7,
-					0.2
+					50,
+					1.4,
+					7.4,
+					1.6
 					);
 
 			Ingredient chicken_breast = new Ingredient(
 					"chicken breast",
-					165,
-					31,
+					164.9,
+					30.8,
 					0,
 					3.6
 					);
 			Ingredient bagel = new Ingredient(
 					"bagel",
-					250,
-					10,
-					49,
-					1.5
-					);
-			Ingredient tomatoes = new Ingredient(
-					"tomatoes",
-					18,
-					0.9,
-					3.9,
-					0.2
+					263.7,
+					10.5,
+					52.4,
+					1.3
 					);
 			Ingredient lettuce = new Ingredient(
-					"lettuce leaves",
-					15,
-					1.4,
-					2.9,
-					0.2
+					"lettuce",
+					17,
+					1.3,
+					3.3,
+					0.3
 					);
 			Ingredient light_mayonnaise = new Ingredient(
 					"light mayonnaise",
-					238,
+					240.1,
 					0.4,
-					9.2,
-					22.2
+					9.3,
+					22
 					);
 			Ingredient black_pepper = new Ingredient(
 					"black pepper",
-					4,
-					0,
-					1,
-					0
+					252.3,
+					10.4,
+					65.3,
+					3.5
 					);
 			Ingredient bread_crumbs = new Ingredient(
 					"bread crumbs",
-					450,
-					17,
-					80,
-					6
+					399.8,
+					13.6,
+					71.4,
+					5.4
 					);
 			Ingredient garlic_glove = new Ingredient(
-					"garlic glove",
-					13,
-					0,
-					3,
-					0
+					"garlic",
+					150,
+					6.3,
+					33,
+					0.7
 					);
 			Ingredient rosemary_sprigs = new Ingredient(
-					"rosemary sprigs",
-					4,
-					0,
-					0,
-					0
+					"rosemary",
+					333.2,
+					5,
+					64.1,
+					15
 					);
 			Ingredient leek = new Ingredient(
 					"leek",
-					54,
-					1,
-					12,
-					0
+					30.6,
+					0.8,
+					7.6,
+					0.2
 					);
 			Ingredient dry_white_wine = new Ingredient(
-					"dry white wine",
-					120,
-					0,
-					4,
+					"dried white wine",
+					66,
+					0.1,
+					0.6,
 					0
 					);
 			Ingredient dry_soya_cream = new Ingredient(
 					"soya cream",
-					140,
+					200,
 					2,
-					1,
-					14
-					);
-			Ingredient pasta = new Ingredient(
-					"pasta",
-					174,
-					8,
-					40,
-					1
+					32,
+					8
 					);
 			Ingredient red_chilli = new Ingredient(
 					"red chilli",
-					6,
-					0,
-					1,
-					0
+					37,
+					2,
+					7,
+					0.3
 					);
 			Ingredient cherry_tomatoes_can = new Ingredient(
-					"cherry tomatoes can",
-					25,
-					1,
-					6,
-					1
+					"canned cherry tomatoes",
+					32.2,
+					1.7,
+					21.2,
+					0.3
 					);
 		
 			Ingredient canned_white_bean = new Ingredient(
-					"canned white bean",
-					242,
-					17,
-					44,
-					0
+					"canned white beans",
+					114.2,
+					7.3,
+					21.2,
+					0.3
 					);
 			Ingredient tempeh = new Ingredient(
 					"tempeh",
-					140,
-					16,
-					10,
-					5
+					196.3,
+					20,
+					7.9,
+					11.4
 					);
 			Ingredient carrot = new Ingredient(
 					"carrot",
-					41,
-					1,
-					10,
-					0
+					16,
+					0.3,
+					3.8,
+					0.1
 					);
 			Ingredient celery = new Ingredient(
 					"celery",
-					14,
-					0,
+					16,
+					0.7,
 					3,
-					0
+					0.2
 					);
 			Ingredient mushrooms = new Ingredient(
 					"mushrooms",
-					14,
-					0,
-					3,
-					0
+					28.3,
+					2.2,
+					5.2,
+					0.5
 					);
 			Ingredient sage = new Ingredient(
 					"sage",
-					2,
-					0,
-					0,
-					0
+					314.4,
+					10,
+					61.4,
+					12.9
 					);
 			Ingredient thyme = new Ingredient(
 					"thyme",
-					2,
-					0,
-					0,
-					0
+					101.3,
+					5,
+					25,
+					1.3
 					);
 			Ingredient bay_leaves = new Ingredient(
 					"bay leaves",
-					5,
-					0,
-					0,
-					0
+					315,
+					10,
+					75,
+					10
 					);
 			Ingredient parsley = new Ingredient(
 					"parsley",
-					11,
-					1,
-					2,
-					0
+					36.8,
+					2.9,
+					6.3,
+					0.8
 					);
 			Ingredient red_wine = new Ingredient(
 					"red wine",
-					160,
-					0,
-					4,
+					85,
+					0.1,
+					2.6,
 					0
 					);
 			Ingredient all_purpose_flour = new Ingredient(
-					"all purpose flour",
-					360,
-					10,
+					"flour",
+					364,
+					10.4,
 					76,
 					1
 					);
-			Ingredient white_sugar = new Ingredient(
-					"white sugar",
-					407,
-					0,
-					100,
-					0
-					);
 			Ingredient baking_powder = new Ingredient(
 					"baking powder",
-					2,
+					52.2,
 					0,
-					2,
+					28.3,
 					0
 					);
 			Ingredient plant_based_milk = new Ingredient(
 					"plant based milk",
-					110,
-					5,
-					16,
-					5
+					41.2,
+					2.9,
+					3.3,
+					1.6
 					);
 			Ingredient vegetable_oil = new Ingredient(
 					"vegetable oil",
-					120,
+					856.8,
 					0,
 					0,
-					14
+					100
 					);
 			
 			Ingredient red_onion = new Ingredient(
 					"red onion",
-					40,
-					1,
-					9,
-					0
+					42.2,
+					1.3,
+					9.8,
+					0.2
 					);
 			Ingredient cumin = new Ingredient(
 					"cumin",
-					22,
-					1,
-					3,
-					1
+					376,
+					17.6,
+					44.3,
+					22.4
 					);
 			Ingredient cinnamon = new Ingredient(
 					"cinnamon",
-					0,
-					0,
-					6,
-					0
+					246.1,
+					3.8,
+					80.7,
+					1.2
 					);
 			Ingredient red_pepper = new Ingredient(
 					"red pepper",
-					39,
-					1,
-					9,
-					0
+					28.1,
+					0.9,
+					6.7,
+					0.2
 					);
 			Ingredient courgette = new Ingredient(
 					"courgette",
-					21,
-					1,
-					4,
-					0
+					15.2,
+					1.2,
+					2.7,
+					0.4
 					);
 			Ingredient aubergine = new Ingredient(
 					"aubergine",
-					20,
-					2,
-					5,
-					0
+					35,
+					0.8,
+					8.7,
+					0.2
 					);
 			Ingredient vine_tomatoes = new Ingredient(
 					"vine tomatoes",
-					16,
-					1,
-					3,
-					0
+					17.9,
+					0.9,
+					3.9,
+					0.2
 					);
 			Ingredient chickpeas = new Ingredient(
 					"chickpeas",
-					210,
-					10,
-					35,
-					4
-					);
-			Ingredient vegetable_stock = new Ingredient(
-					"vegetable stock",
-					15,
-					1,
-					3,
-					0
+					164.1,
+					9.2,
+					27.4,
+					2.6
 					);
 			Ingredient harissa = new Ingredient(
 					"harrisa",
-					170,
-					1,
-					4,
-					17
+					328.4,
+					6.2,
+					27.1,
+					25
 					);
 			Ingredient prunes = new Ingredient(
 					"prunes",
-					115,
-					1,
-					30,
+					275,
+					2.5,
+					65,
 					0
 					);
 			Ingredient couscous = new Ingredient(
 					"couscous",
-					174,
-					6,
-					36,
-					0
+					112,
+					3.8,
+					23,
+					0.2
 					);
 			Ingredient bread = new Ingredient(
 					"bread",
-					54,
-					2,
-					11,
-					0
-					);
-			Ingredient sauce = new Ingredient(
-					"sauce",
-					12,
-					0,
-					3,
-					2
+					265,
+					9,
+					49,
+					3.2
 					);
 			Ingredient potatoes = new Ingredient(
 					"potatoes",
-					110,
-					3,
-					26,
-					0
+					87,
+					1.9,
+					20.1,
+					0.1
 					);
 			Ingredient flatbread = new Ingredient(
 					"flatbread",
-					150,
-					4,
-					24,
-					3
+					300,
+					8,
+					48,
+					7
 					);
 			Ingredient bacon = new Ingredient(
 					"bacon",
-					180,
-					16,
-					0,
-					13
+					541,
+					67,
+					1.4,
+					42
 					);
 			Ingredient vanilla_ice_cream = new Ingredient(
 					"vanilla ice cream",
@@ -852,18 +802,25 @@ public class IngredientConfig {
 					0.5,
 					0
 					);
+			Ingredient pasta = new Ingredient(
+					"pasta",
+					131,
+					5,
+					25,
+					1.1
+					);
 
 			repository.saveAll(List.of(
 					banana,
 					water,
 					white_rice,
-					olive_oil,
+					oliveoil,
 					ground_beef,
 					spaghetti,
 					pasta_sauce,
 					chicken_breast,
 					bagel,
-					tomatoes,
+					vine_tomatoes,
 					lettuce,
 					light_mayonnaise,
 					black_pepper,
@@ -888,7 +845,6 @@ public class IngredientConfig {
 					parsley,
 					red_wine,
 					all_purpose_flour,
-					white_sugar,
 					baking_powder,
 					plant_based_milk,
 					vegetable_oil,
@@ -900,12 +856,10 @@ public class IngredientConfig {
 					aubergine,
 					vine_tomatoes,
 					chickpeas,
-					vegetable_stock,
 					harissa,
 					prunes,
 					couscous,
 					bread,
-					sauce,
 					potatoes,
 					flatbread,
 					pickCucumber,
@@ -935,14 +889,13 @@ public class IngredientConfig {
 					glutenfreeflour,
 					milk,
 					lemonjc,
-					oliveoil,
+					
 					cardamon,
 					salt,
 					driedyeast,
 					buttermilk,
 					blackbeanstin,
 					avocado,
-					garlic,
 					grmMasala,
 					grndFlaxseed,
 					gfBakingPowder,
@@ -955,10 +908,8 @@ public class IngredientConfig {
 					greenPepper,
 					basmatiRice,
 					chipotlePaste,
-					tomatoes,
 					vegetableStock,
 					lime,
-					pasta,
 					capers,
 					bocconcini,
 					basil,
