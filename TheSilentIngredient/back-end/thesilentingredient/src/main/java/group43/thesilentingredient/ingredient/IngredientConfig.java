@@ -809,6 +809,14 @@ public class IngredientConfig {
 					25,
 					1.1
 					);
+			Ingredient regular_tomatoes = new Ingredient(
+					"tomatoes",
+					18,
+					0.9,
+					3.9,
+					0.2
+					);
+
 
 			repository.saveAll(List.of(
 					banana,
@@ -889,7 +897,6 @@ public class IngredientConfig {
 					glutenfreeflour,
 					milk,
 					lemonjc,
-					
 					cardamon,
 					salt,
 					driedyeast,
@@ -923,7 +930,8 @@ public class IngredientConfig {
 					bacon,
 					vanilla_ice_cream,
 					root_beer,
-					red_wine_vinegar)
+					red_wine_vinegar, 
+					regular_tomatoes)
 					);
 		};
 
