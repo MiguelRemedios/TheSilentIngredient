@@ -158,125 +158,133 @@ public class RecipeIngredientConfig {
 			
 			// RECIPE ID - 13
 			RecipeIngredient r13ing1 = new RecipeIngredient(8, 13, 340.0, "g");
-			RecipeIngredient r13ing2 = new RecipeIngredient(52, 13, 540.0, "g");
-			RecipeIngredient r13ing3 = new RecipeIngredient(50, 13, 80.0, "g");
-			RecipeIngredient r13ing4 = new RecipeIngredient(83, 13, 1.0, "tbsp");
-			RecipeIngredient r13ing5 = new RecipeIngredient(81, 13, 350.0, "ml");
+			RecipeIngredient r13ing2 = new RecipeIngredient(48, 13, 540.0, "g");
+			RecipeIngredient r13ing3 = new RecipeIngredient(47, 13, 80.0, "g");
+			RecipeIngredient r13ing4 = new RecipeIngredient(78, 13, 1.0, "tbsp");
+			RecipeIngredient r13ing5 = new RecipeIngredient(4, 13, 350.0, "ml");
+			RecipeIngredient r13ing6 = new RecipeIngredient(112,13,2.0, "tbsp");
+			RecipeIngredient r13ing7 = new RecipeIngredient(13,13,1.0,"tbsp");
 			
 			
 			// RECIPE ID - 14
 			RecipeIngredient r14ing1 = new RecipeIngredient(8, 14, 170.0, "g");
-			RecipeIngredient r14ing2 = new RecipeIngredient(77, 14, 114.0, "g");
-			RecipeIngredient r14ing3 = new RecipeIngredient(53, 14, 80.0, "g");
-			RecipeIngredient r14ing4 = new RecipeIngredient(83, 14, 1.0, "tbsp");
-			RecipeIngredient r14ing5 = new RecipeIngredient(68, 14, 2.0, "tbsp");
-			RecipeIngredient r14ing6 = new RecipeIngredient(81, 14, 15.0, "ml");
+			RecipeIngredient r14ing2 = new RecipeIngredient(73, 14, 2.0, "quantity");
+			RecipeIngredient r14ing3 = new RecipeIngredient(49, 14, 80.0, "g");
+			RecipeIngredient r14ing4 = new RecipeIngredient(78, 14, 1.0, "tbsp");
+			RecipeIngredient r14ing5 = new RecipeIngredient(113, 14, 2.0, "tbsp");
+			RecipeIngredient r14ing6 = new RecipeIngredient(61, 14, 15.0, "ml");
+			RecipeIngredient r14ing7 = new RecipeIngredient(112, 14, 1.0, "tbsp");
+			RecipeIngredient r14ing8 = new RecipeIngredient(13, 14, 1.0, "tbsp");
+			
 			
 			
 			// RECIPE ID - 15
-			RecipeIngredient r15ing1 = new RecipeIngredient(28, 15, 200.0, "g");
-			RecipeIngredient r15ing2 = new RecipeIngredient(81, 15, 3.0, "tbsp");
-			RecipeIngredient r15ing3 = new RecipeIngredient(15, 15, 15.0, "g");
+			RecipeIngredient r15ing1 = new RecipeIngredient(27, 15, 200.0, "g");
+			RecipeIngredient r15ing2 = new RecipeIngredient(4, 15, 3.0, "tbsp");
+			RecipeIngredient r15ing3 = new RecipeIngredient(15, 15, 3.0, "cloves");
 			RecipeIngredient r15ing4 = new RecipeIngredient(16, 15, 5.0, "g");
 			RecipeIngredient r15ing5 = new RecipeIngredient(17, 15, 270.0, "g");
 			RecipeIngredient r15ing6 = new RecipeIngredient(18, 15, 125.0, "ml");
 			RecipeIngredient r15ing7 = new RecipeIngredient(19, 15, 90.0, "ml");
 			RecipeIngredient r15ing8 = new RecipeIngredient(20, 15, 350.0, "g");
-			RecipeIngredient r15ing9 = new RecipeIngredient(21, 15, 50.0, "g");
+			RecipeIngredient r15ing9 = new RecipeIngredient(31, 15, 50.0, "g");
 						
 						
 			//RECIPE ID - 16
-			RecipeIngredient r16ing1 = new RecipeIngredient(81, 16, 90.0, "g");
-			RecipeIngredient r16ing2 = new RecipeIngredient(38, 16, 220.0, "g");
-			RecipeIngredient r16ing3 = new RecipeIngredient(22, 16, 45.0, "g");
-			RecipeIngredient r16ing4 = new RecipeIngredient(15, 16, 5.0, "g");
-			RecipeIngredient r16ing5 = new RecipeIngredient(69, 16, 16.0, "g");
-			RecipeIngredient r16ing6 = new RecipeIngredient(23, 16, 800.0, "ml");
-			RecipeIngredient r16ing7 = new RecipeIngredient(60, 16, 1.0, "tsp");
-			RecipeIngredient r16ing8 = new RecipeIngredient(77, 16, 228.0, "g");
+			RecipeIngredient r16ing1 = new RecipeIngredient(4, 16, 1.0, "tbsp");
+			RecipeIngredient r16ing2 = new RecipeIngredient(37, 16, 220.0, "g");
+			RecipeIngredient r16ing3 = new RecipeIngredient(21, 16, 45.0, "g");
+			RecipeIngredient r16ing4 = new RecipeIngredient(15, 16, 1.0, "clove");
+			RecipeIngredient r16ing5 = new RecipeIngredient(65, 16, 16.0, "g");
+			RecipeIngredient r16ing6 = new RecipeIngredient(22, 16, 800.0, "ml");
+			RecipeIngredient r16ing7 = new RecipeIngredient(56, 16, 1.0, "tsp");
+			RecipeIngredient r16ing8 = new RecipeIngredient(73, 16, 4.0, "quantity");
 			
 			
 			//RECIPE ID - 17
-			RecipeIngredient r17ing1 = new RecipeIngredient(24, 17, 510.0, "g");
-			RecipeIngredient r17ing2 = new RecipeIngredient(25, 17, 226.0, "g");
+			RecipeIngredient r17ing1 = new RecipeIngredient(23, 17, 510.0, "g");
+			RecipeIngredient r17ing2 = new RecipeIngredient(24, 17, 226.0, "g");
 			RecipeIngredient r17ing3 = new RecipeIngredient(4, 17, 1.0, "tbsp");
-			RecipeIngredient r17ing4 = new RecipeIngredient(62, 17, 110.0, "g");
-			RecipeIngredient r17ing5 = new RecipeIngredient(26, 17, 100.0, "g");
-			RecipeIngredient r17ing6 = new RecipeIngredient(27, 17, 80.0, "g");
-			RecipeIngredient r17ing7 = new RecipeIngredient(15, 17, 25.0, "g");
-			RecipeIngredient r17ing8 = new RecipeIngredient(28, 17, 300.0, "g");
-			RecipeIngredient r17ing9 = new RecipeIngredient(10, 17, 360.0, "g");
-			RecipeIngredient r17ing10 = new RecipeIngredient(29, 17, 1.0, "tbsp");
-			RecipeIngredient r17ing11 = new RecipeIngredient(30, 17, 1.0, "tbsp");
-			RecipeIngredient r17ing12 = new RecipeIngredient(31, 17, 58.0, "g");
-			RecipeIngredient r17ing13 = new RecipeIngredient(21, 17, 2.0, "tbsp");
+			RecipeIngredient r17ing4 = new RecipeIngredient(58, 17, 110.0, "g");
+			RecipeIngredient r17ing5 = new RecipeIngredient(25, 17, 2.0, "quantity");
+			RecipeIngredient r17ing6 = new RecipeIngredient(26, 17, 2.0, "quantity");
+			RecipeIngredient r17ing7 = new RecipeIngredient(15, 17, 5.0, "cloves");
+			RecipeIngredient r17ing8 = new RecipeIngredient(27, 17, 300.0, "g");
+			RecipeIngredient r17ing9 = new RecipeIngredient(111, 17, 246.0, "g");
+			RecipeIngredient r17ing10 = new RecipeIngredient(28, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing11 = new RecipeIngredient(29, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing12 = new RecipeIngredient(30, 17, 58.0, "g");
+			RecipeIngredient r17ing13 = new RecipeIngredient(31, 17, 2.0, "tbsp");
 			RecipeIngredient r17ing14 = new RecipeIngredient(32, 17, 125.0, "ml");
+			RecipeIngredient r17ing15 = new RecipeIngredient(78, 17, 1.0, "tbsp");
+			RecipeIngredient r17ing16 = new RecipeIngredient(13, 17, 1.0, "tbsp");
 			
 			
 			//RECIPE ID - 18
 			RecipeIngredient r18ing1 = new RecipeIngredient(33, 18, 250.0, "g");
-			RecipeIngredient r18ing2 = new RecipeIngredient(34, 18, 1.0, "tbsp");
-			RecipeIngredient r18ing3 = new RecipeIngredient(35, 18, 2.0, "tsp");
-			RecipeIngredient r18ing4 = new RecipeIngredient(77, 18, 57.0, "g");
-			RecipeIngredient r18ing5 = new RecipeIngredient(83, 18, 0.25, "g");
-			RecipeIngredient r18ing6 = new RecipeIngredient(36, 18, 250.0, "ml");
-			RecipeIngredient r18ing7 = new RecipeIngredient(37, 18, 2.0, "tbsp");
-			RecipeIngredient r18ing8 = new RecipeIngredient(1, 18, 200.0, "g");
+			RecipeIngredient r18ing2 = new RecipeIngredient(62, 18, 1.0, "tbsp");
+			RecipeIngredient r18ing3 = new RecipeIngredient(34, 18, 2.0, "tsp");
+			RecipeIngredient r18ing4 = new RecipeIngredient(78, 18, 0.5, "tsp");
+			RecipeIngredient r18ing5 = new RecipeIngredient(73, 18, 1.0, "quantity");
+			RecipeIngredient r18ing6 = new RecipeIngredient(35, 18, 250.0, "ml");
+			RecipeIngredient r18ing7 = new RecipeIngredient(36, 18, 2.0, "tbsp");
+			RecipeIngredient r18ing8 = new RecipeIngredient(1, 18, 2.0, "quantity");
 			
 			
 			//RECIPE ID - 19
-			RecipeIngredient r19ing1 = new RecipeIngredient(38, 19, 110.0, "g");
-			RecipeIngredient r19ing2 = new RecipeIngredient(15, 19, 10.0, "g");
+			RecipeIngredient r19ing1 = new RecipeIngredient(37, 19, 110.0, "g");
+			RecipeIngredient r19ing2 = new RecipeIngredient(15, 19, 2.0, "cloves");
 			RecipeIngredient r19ing3 = new RecipeIngredient(4, 19, 2.0, "tbsp");
-			RecipeIngredient r19ing4 = new RecipeIngredient(39, 19, 0.5, "tsp");
-			RecipeIngredient r19ing5 = new RecipeIngredient(69, 19, 0.5, "tsp");
-			RecipeIngredient r19ing6 = new RecipeIngredient(40, 19, 0.5, "tsp");
-			RecipeIngredient r19ing7 = new RecipeIngredient(41, 19, 150.0, "g");
-			RecipeIngredient r19ing8 = new RecipeIngredient(42, 19, 210.0, "g");
-			RecipeIngredient r19ing9 = new RecipeIngredient(43, 19, 400.0, "g");
-			RecipeIngredient r19ing10 = new RecipeIngredient(44, 19, 480.0, "g");
-			RecipeIngredient r19ing11 = new RecipeIngredient(45, 19, 400.0, "g");
-			RecipeIngredient r19ing12 = new RecipeIngredient(46, 19, 250.0, "ml");
-			RecipeIngredient r19ing13 = new RecipeIngredient(47, 19, 2.0, "tbsp");
-			RecipeIngredient r19ing14 = new RecipeIngredient(48, 19, 35.0, "g");
-			RecipeIngredient r19ing15 = new RecipeIngredient(21, 19, 56.0, "g");
+			RecipeIngredient r19ing4 = new RecipeIngredient(38, 19, 0.5, "tsp");
+			RecipeIngredient r19ing5 = new RecipeIngredient(65, 19, 0.5, "tsp");
+			RecipeIngredient r19ing6 = new RecipeIngredient(39, 19, 0.5, "tsp");
+			RecipeIngredient r19ing7 = new RecipeIngredient(40, 19, 1.0, "quantity");
+			RecipeIngredient r19ing8 = new RecipeIngredient(41, 19, 1.0, "quantity");
+			RecipeIngredient r19ing9 = new RecipeIngredient(42, 19, 1.0, "quantity");
+			RecipeIngredient r19ing10 = new RecipeIngredient(10, 19, 480.0, "g");
+			RecipeIngredient r19ing11 = new RecipeIngredient(59, 19, 400.0, "g");
+			RecipeIngredient r19ing12 = new RecipeIngredient(36, 19, 250.0, "ml");
+			RecipeIngredient r19ing13 = new RecipeIngredient(44, 19, 2.0, "tbsp");
+			RecipeIngredient r19ing14 = new RecipeIngredient(45, 19, 35.0, "g");
+			RecipeIngredient r19ing15 = new RecipeIngredient(31, 19, 56.0, "g");
+			RecipeIngredient r19ing16 = new RecipeIngredient(46, 19, 250.0, "g");
 			
 			
 			//RECIPE ID - 20
-			RecipeIngredient r20ing1 = new RecipeIngredient(78, 20, 125.0, "g");
-			RecipeIngredient r20ing2 = new RecipeIngredient(77, 20, 57.0, "g");
-			RecipeIngredient r20ing3 = new RecipeIngredient(79, 20, 250.0, "ml");
-			RecipeIngredient r20ing4 = new RecipeIngredient(81, 20, 2.0, "tbsp");
-			RecipeIngredient r20ing5 = new RecipeIngredient(66, 20, 50.0, "g");
+			RecipeIngredient r20ing1 = new RecipeIngredient(74, 20, 125.0, "g");
+			RecipeIngredient r20ing2 = new RecipeIngredient(73, 20, 1.0, "quantity");
+			RecipeIngredient r20ing3 = new RecipeIngredient(75, 20, 250.0, "ml");
+			RecipeIngredient r20ing4 = new RecipeIngredient(61, 20, 4.0, "tbsp");
+			RecipeIngredient r20ing5 = new RecipeIngredient(62, 20, 50.0, "g");
 			
 			
 			// RECIPE ID - 21
-			RecipeIngredient r21ing1 = new RecipeIngredient(63, 21, 400.0, "g");
-			RecipeIngredient r21ing2 = new RecipeIngredient(80, 21, 100.0, "ml");
-			RecipeIngredient r21ing3 = new RecipeIngredient(81, 21, 150.0, "ml");
-			RecipeIngredient r21ing4 = new RecipeIngredient(93, 21, 125.0, "g");
-			RecipeIngredient r21ing5 = new RecipeIngredient(69, 21, 1.5, "tsp");
-			RecipeIngredient r21ing6 = new RecipeIngredient(82, 21, 7.0, "g");
+			RecipeIngredient r21ing1 = new RecipeIngredient(59, 21, 400.0, "g");
+			RecipeIngredient r21ing2 = new RecipeIngredient(76, 21, 100.0, "ml");
+			RecipeIngredient r21ing3 = new RecipeIngredient(4, 21, 150.0, "ml");
+			RecipeIngredient r21ing4 = new RecipeIngredient(87, 21, 125.0, "g");
+			RecipeIngredient r21ing5 = new RecipeIngredient(54, 21, 1.5, "tbsp");
+			RecipeIngredient r21ing6 = new RecipeIngredient(77, 21, 5.0, "pods");
 						
 						
 			// RECIPE ID - 22
-			RecipeIngredient r22ing1 = new RecipeIngredient(78, 22, 400.0, "g");
-			RecipeIngredient r22ing2 = new RecipeIngredient(83, 22, 1.0, "tsp");
-			RecipeIngredient r22ing3 = new RecipeIngredient(84, 22, 7.0, "g");
-			RecipeIngredient r22ing4 = new RecipeIngredient(85, 22, 284.0, "ml");
-			RecipeIngredient r22ing5 = new RecipeIngredient(77, 22, 114.0, "g");
+			RecipeIngredient r22ing1 = new RecipeIngredient(74, 22, 400.0, "g");
+			RecipeIngredient r22ing2 = new RecipeIngredient(78, 22, 1.0, "tsp");
+			RecipeIngredient r22ing3 = new RecipeIngredient(79, 22, 7.0, "g");
+			RecipeIngredient r22ing4 = new RecipeIngredient(80, 22, 284.0, "ml");
+			RecipeIngredient r22ing5 = new RecipeIngredient(73, 22, 2.0, "quantity");
 			RecipeIngredient r22ing6 = new RecipeIngredient(4, 22, 2.0, "tbsp");
 			
 			
 			// RECIPE ID - 23
-			RecipeIngredient r23ing1 = new RecipeIngredient(71, 23, 110.0, "g");
-			RecipeIngredient r23ing2 = new RecipeIngredient(113, 23, 225.0, "g");
+			RecipeIngredient r23ing1 = new RecipeIngredient(67, 23, 110.0, "g");
+			RecipeIngredient r23ing2 = new RecipeIngredient(107, 23, 225.0, "g");
 			
 			
 			// RECIPE ID - 24
-			RecipeIngredient r24ing1 = new RecipeIngredient(114, 24, 75.0, "g");
-			RecipeIngredient r24ing2 = new RecipeIngredient(79, 24, 250.0, "ml");
-			RecipeIngredient r24ing3 = new RecipeIngredient(115, 24, 120.0, "ml");
+			RecipeIngredient r24ing1 = new RecipeIngredient(108, 24, 75.0, "g");
+			RecipeIngredient r24ing2 = new RecipeIngredient(75, 24, 250.0, "ml");
+			RecipeIngredient r24ing3 = new RecipeIngredient(109, 24, 120.0, "ml");
 
 			
 						
@@ -303,7 +311,7 @@ public class RecipeIngredientConfig {
 					r21ing1, r21ing2, r21ing3, r21ing4, r21ing5, r21ing6,
 					r22ing1, r22ing2, r22ing3, r22ing4, r22ing5, r22ing6,
 					r23ing1, r23ing2,
-					r24ing1, r24ing2, r24ing3));
+					r24ing1, r24ing2, r24ing3, r13ing6, r13ing7,r14ing7, r14ing8,r17ing15,r17ing16,r19ing16));
 		};
 	}
 }
