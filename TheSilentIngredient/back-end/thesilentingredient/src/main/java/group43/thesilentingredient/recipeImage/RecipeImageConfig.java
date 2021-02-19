@@ -46,6 +46,24 @@ public class RecipeImageConfig {
 			RecipeImage NDBurger3 = new RecipeImage(4,"http://127.0.0.1:5500/images/recipe/nodiet/NDBurger3.jpg");
 			RecipeImage NDBurger4 = new RecipeImage(4,"http://127.0.0.1:5500/images/recipe/nodiet/NDBurger4.jpg");
 			RecipeImage NDBurger5 = new RecipeImage(4,"http://127.0.0.1:5500/images/recipe/nodiet/NDBurger5.jpg");
+			//RECIPE 5
+			RecipeImage DVSpicycucumberpickle1 = new RecipeImage(5,"http://127.0.0.1:5500/images/recipe/Vegan/DVSpicycucumber1.jpg");
+			RecipeImage DVSpicycucumberpickle2 = new RecipeImage(5,"http://127.0.0.1:5500/images/recipe/Vegan/DVSpicycucumber2.jpg");
+			RecipeImage DVSpicycucumberpickle3 = new RecipeImage(5,"http://127.0.0.1:5500/images/recipe/Vegan/DVSpicycucumber3.jpg");
+			RecipeImage DVSpicycucumberpickle4 = new RecipeImage(5,"http://127.0.0.1:5500/images/recipe/Vegan/DVSpicycucumber4.jpg");
+			RecipeImage DVSpicycucumberpickle5 = new RecipeImage(5,"http://127.0.0.1:5500/images/recipe/Vegan/DVSpicycucumber5.jpg");
+			//RECIPE 6
+			RecipeImage DVChickpeacurry1 = new RecipeImage(6,"http://127.0.0.1:5500/images/recipe/Vegan/DVChickpeacurry1.jpg");
+			RecipeImage DVChickpeacurry2 = new RecipeImage(6,"http://127.0.0.1:5500/images/recipe/Vegan/DVChickpeacurry2.jpg");
+			RecipeImage DVChickpeacurry3 = new RecipeImage(6,"http://127.0.0.1:5500/images/recipe/Vegan/DVChickpeacurry3.jpg");
+			RecipeImage DVChickpeacurry4 = new RecipeImage(6,"http://127.0.0.1:5500/images/recipe/Vegan/DVChickpeacurry4.jpg");
+			RecipeImage DVChickpeacurry5 = new RecipeImage(6,"http://127.0.0.1:5500/images/recipe/Vegan/DVChickpeacurry5.jpg");
+			//RECIPE 7
+			RecipeImage DVChocolatebrownie1 = new RecipeImage(7,"http://127.0.0.1:5500/images/recipe/Vegan/DVChocolatebrownie1.jpg");
+			RecipeImage DVChocolatebrownie2 = new RecipeImage(7,"http://127.0.0.1:5500/images/recipe/Vegan/DVChocolatebrownie2.jpg");
+			RecipeImage DVChocolatebrownie3 = new RecipeImage(7,"http://127.0.0.1:5500/images/recipe/Vegan/DVChocolatebrownie3.jpg");
+			RecipeImage DVChocolatebrownie4 = new RecipeImage(7,"http://127.0.0.1:5500/images/recipe/Vegan/DVChocolatebrownie4.jpg");
+			RecipeImage DVChocolatebrownie5 = new RecipeImage(7,"http://127.0.0.1:5500/images/recipe/Vegan/DVChocolatebrownie5.jpg");
 			//RECIPE 8
 			RecipeImage fajita1 = new RecipeImage(8,"http://127.0.0.1:5500/images/recipe/fajita1.jpg");
 			RecipeImage fajita2 = new RecipeImage(8,"http://127.0.0.1:5500/images/recipe/fajita2.jpg");
@@ -92,7 +110,10 @@ public class RecipeImageConfig {
 									   pastaSalad1, pastaSalad2, pastaSalad3, pastaSalad4, pastaSalad5,
 									   HALALChicken1, HALALChicken2, HALALChicken3, HALALChicken4, HALALChicken5,
 									   HALALCTM1, HALALCTM2, HALALCTM3, HALALCTM4, HALALCTM5,
-									   HALALMB1, HALALMB2, HALALMB3, HALALMB4, HALALMB5));
+									   HALALMB1, HALALMB2, HALALMB3, HALALMB4, HALALMB5, DVChickpeacurry1, DVChickpeacurry2, DVChickpeacurry3, 
+									   DVChickpeacurry4, DVChickpeacurry5, DVSpicycucumberpickle1, DVSpicycucumberpickle2, DVSpicycucumberpickle3,
+									   DVSpicycucumberpickle4, DVSpicycucumberpickle5, DVChocolatebrownie1, DVChocolatebrownie2, DVChocolatebrownie3,
+									   DVChocolatebrownie4, DVChocolatebrownie5));
 		};
 
 	}
