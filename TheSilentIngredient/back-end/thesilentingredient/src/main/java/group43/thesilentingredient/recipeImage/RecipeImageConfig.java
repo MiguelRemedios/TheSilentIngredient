@@ -104,6 +104,27 @@ public class RecipeImageConfig {
 			RecipeImage LFP4 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP4.jpg");
 			RecipeImage LFP5 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP5.jpg");
 			
+			//RECIPE 22 Gluten-free bread
+			RecipeImage DGGFB1 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread1.jpg");
+			RecipeImage DGGFB2 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread2.jpg");
+			RecipeImage DGGFB3 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread3.jpg");
+			RecipeImage DGGFB4 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread4.jpg");
+			RecipeImage DGGFB5 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread5.jpg");
+			
+			//RECIPE 23 Candied bacon
+			RecipeImage NDCB1 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon1.jpg");
+			RecipeImage NDCB2 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon2.jpg");
+			RecipeImage NDCB3 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon3.jpg");
+			RecipeImage NDCB4 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon4.jpg");
+			RecipeImage NDCB5 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon5.jpg");
+			
+			//RECIPE 24 Root beer milkshake
+			RecipeImage NDRBM1 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake1.jpg");
+			RecipeImage NDRBM2 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake2.jpg");
+			RecipeImage NDRBM3 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake3.jpg");
+			RecipeImage NDRBM4 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake4.jpg");
+			RecipeImage NDRBM5 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake5.jpg");
+			
 			repository.saveAll(List.of(NDWhiteRice1,NDWhiteRice2,NDWhiteRice3,NDWhiteRice4,NDWhiteRice5,
 									   NDSpaghetti1,NDSpaghetti2,NDSpaghetti3,NDSpaghetti4,NDSpaghetti5,
 									   NDBagel1,NDBagel2,NDBagel3,NDBagel4,NDBagel5,
@@ -117,7 +138,9 @@ public class RecipeImageConfig {
 									   DVChickpeacurry1, DVChickpeacurry2, DVChickpeacurry3, 
 									   DVChickpeacurry4, DVChickpeacurry5, DVSpicycucumberpickle1, DVSpicycucumberpickle2, DVSpicycucumberpickle3,
 									   DVSpicycucumberpickle4, DVSpicycucumberpickle5, DVChocolatebrownie1, DVChocolatebrownie2, DVChocolatebrownie3,
-									   DVChocolatebrownie4, DVChocolatebrownie5));
+									   DVChocolatebrownie4, DVChocolatebrownie5, DGGFB1, DGGFB2,
+									   DGGFB3, DGGFB4, DGGFB5,NDCB1, NDCB2, NDCB3, NDCB4, NDCB5,
+									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5));
 		};
 
 	}
