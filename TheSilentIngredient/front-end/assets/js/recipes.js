@@ -215,12 +215,12 @@ function recipe1(){
   //(GRAMS) amount = QUANTITY / 100 (e.g 555g of rice = 5.55)
   //(MILILITERS) Since g = ml 100g = 100ml, same logic. Amount for liquids =  QUANTITY / 100 (e.g 750ml of water = 7.5)
   //1 tbsp of salt = 17g / amount = 17 / 100 = 0.17
-  recipenutrition({"id":3,"amount":5.55},{"id":2,"amount":7.5},{"id":83,"amount":0.17});
+  recipenutrition({"id":3,"amount":5.55},{"id":2,"amount":7.5},{"id":78,"amount":0.17});
 }
 
 function recipe2(){
   recipeInfo(2);
-  recipenutrition({"id":81,"amount":0.133}, {"id":5,"amount":4.535}, {"id":6,"amount":3.4}, {"id":7,"amount":3.4}, {"id":62,"amount":1.1});
+  recipenutrition({"id":4,"amount":0.133}, {"id":5,"amount":4.535}, {"id":6,"amount":3.4}, {"id":7,"amount":5.62}, {"id":58,"amount":1.1});
 }
 
 function recipe3(){
@@ -229,7 +229,7 @@ function recipe3(){
   //10) 1 tomato = 123 g
   //11) 1 lettuce leaf = 8 g
   //12) 1 tbsp light mayo = 15g
-  recipenutrition({"id":8,"amount":1.42}, {"id":9,"amount":1.05}, {"id":10,"amount":3.69}, {"id":11,"amount":0.16}, {"id":12,"amount":0.15});
+  recipenutrition({"id":8,"amount":1.42}, {"id":9,"amount":1.05}, {"id":111,"amount":0.765}, {"id":11,"amount":0.16}, {"id":12,"amount":0.15});
 }
 
 function recipe4(){
@@ -237,7 +237,7 @@ function recipe4(){
   //77) 1 egg = 50 g
   //83) 1 tbsp of salt = 17g
   //13) 1 tbsp of b pepper = 7g
-  recipenutrition({"id":77,"amount":0.5}, {"id":83,"amount":0.085}, {"id":13,"amount":0.035}, {"id":5,"amount":4.5}, {"id":14,"amount":0.6});
+  recipenutrition({"id":73,"amount":0.5}, {"id":78,"amount":0.085}, {"id":13,"amount":0.035}, {"id":5,"amount":4.5}, {"id":14,"amount":0.6}, {"id":47,"amount":0.56});
 }
 
 function recipe5(){
@@ -301,6 +301,44 @@ function recipe7(){
 
   recipenutrition();
 }
+
+function recipe13(){
+  recipeInfo(13);
+
+  //2 leg/breast piece,   8  - 91
+  //3 potatoes,           48 - 92
+  //2 slices of bread,    47 - 93
+  //1 tbsp of salt,       78 - 14
+  //350ml of oil          4  - 95
+  recipenutrition({"id":91,"amount":3.44},{"id":92,"amount":4},{"id":93,"amount":0.8},{"id":94,"amount":0.17},{"id":95,"amount":3.2});
+}
+
+function recipe14(){
+  recipeInfo(14);
+
+  //1 leg/breast piece,    8   - 96
+  //2 eggs,                73  - 97
+  //2 flatbread,           49  - 98
+  //1 tbsp of salt,        78  - 99
+  //2 tbsp of chili sauce, 113 - 100
+  //15ml oil               61  - 101
+  recipenutrition({"id":96,"amount":1.7},{"id":97,"amount":1.2},{"id":98,"amount":0.7},{"id":99,"amount":0.17},{"id":100,"amount":0.34},{"id":101,"amount":0.15});
+}
+
+function recipe15(){
+  recipeInfo(15);
+
+  //200g chestnut mushrooms   27 - 102
+  //3 garlic cloves           15 - 104
+  //2 fresh rosemary sprigs   16 - 105
+  //3 leeks                   17 - 106
+  //125ml dry white wine      18 - 107
+  //90ml soya cream           19 - 108
+  //350g pasta                20 - 109
+  //parsley                   31 - 110
+
+  recipenutrition({"id":102,"amount":2},{"id":104,"amount":0.15},{"id":105,"amount":0.026},{"id":106,"amount":2.7},{"id":107,"amount":1.25}, {"id":108,"amount":0.9}, {"id":109,"amount":3.5}, {"id":110,"amount":0.55});
+}
 function recipe22() {
 	//Gluten free bread
 	recipeInfo(22);
@@ -337,7 +375,4 @@ function recipe24() {
 }
 
 
-
-
-	
 
