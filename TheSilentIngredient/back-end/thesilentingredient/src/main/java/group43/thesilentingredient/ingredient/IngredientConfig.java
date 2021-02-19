@@ -360,10 +360,10 @@ public class IngredientConfig {
 					);
 			Ingredient egg = new Ingredient(
 					"egg",
-					143,
+					155,
 					13,
-					0.7,
-					9.5
+					1.1,
+					11
 					);
 			Ingredient glutenfreeflour = new Ingredient(
 					"gluten-free plain flour",
@@ -802,16 +802,33 @@ public class IngredientConfig {
 					0.5,
 					0
 					);
+			Ingredient pasta = new Ingredient(
+					"pasta",
+					131,
+					5,
+					25,
+					1.1
+					);
+			Ingredient regular_tomatoes = new Ingredient(
+					"tomatoes",
+					18,
+					0.9,
+					3.9,
+					0.2
+					);
+
 
 			repository.saveAll(List.of(
 					banana,
 					water,
 					white_rice,
+					oliveoil,
 					ground_beef,
 					spaghetti,
 					pasta_sauce,
 					chicken_breast,
 					bagel,
+					vine_tomatoes,
 					lettuce,
 					light_mayonnaise,
 					black_pepper,
@@ -821,6 +838,7 @@ public class IngredientConfig {
 					leek,
 					dry_white_wine,
 					dry_soya_cream,
+					pasta,
 					parsley,
 					red_chilli,
 					cherry_tomatoes_can,
@@ -879,7 +897,6 @@ public class IngredientConfig {
 					glutenfreeflour,
 					milk,
 					lemonjc,
-					oliveoil,
 					cardamon,
 					salt,
 					driedyeast,
@@ -913,7 +930,8 @@ public class IngredientConfig {
 					bacon,
 					vanilla_ice_cream,
 					root_beer,
-					red_wine_vinegar)
+					red_wine_vinegar, 
+					regular_tomatoes)
 					);
 		};
 
