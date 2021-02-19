@@ -47,11 +47,9 @@ function recipesteps(id) {
       var steps = JSON.parse(this.responseText);
       for (let i = 0; i < steps.length; i++) {
         $(`#s${i + 1}`).html(`${i + 1}) ${steps[i].step}`);
-      }
-        $(`#s${i + 1}`).html(`${i+1}) ${steps[i].step}`);
         document.getElementById(`s${i + 1}`).parentElement.style.display = "block";
-      }      
-    }
+      }
+    }    
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-step/nr/' + id, true);
   xmlhttp.send();
