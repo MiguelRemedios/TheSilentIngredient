@@ -32,7 +32,7 @@ public class RecipeIngredientConfig {
 			
 					
 			//RECIPE ID - 2
-			RecipeIngredient r2ing1 = new RecipeIngredient(81, 2, 1.0, "tbsp");
+			RecipeIngredient r2ing1 = new RecipeIngredient(4, 2, 1.0, "tbsp");
 			RecipeIngredient r2ing2 = new RecipeIngredient(5, 2, 453.5, "g");
 			RecipeIngredient r2ing3 = new RecipeIngredient(6, 2, 340.2, "g");
 			RecipeIngredient r2ing4 = new RecipeIngredient(7, 2, 562.0, "g");
@@ -53,7 +53,7 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r4ing2 = new RecipeIngredient(78, 4, 0.5, "tsp");
 			RecipeIngredient r4ing3 = new RecipeIngredient(13, 4, 0.5, "tsp");
 			RecipeIngredient r4ing4 = new RecipeIngredient(5, 4, 450.0, "g");
-			RecipeIngredient r4ing5 = new RecipeIngredient(14, 4, 60.0, "g");
+			RecipeIngredient r4ing5 = new RecipeIngredient(47, 4, 2.0, "slices");
 			//r4ing1, r4ing2, r4ing3, r4ing4, r4ing5
 			
 			
