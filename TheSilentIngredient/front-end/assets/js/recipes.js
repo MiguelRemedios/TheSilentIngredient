@@ -301,3 +301,43 @@ function recipe7(){
 
   recipenutrition();
 }
+function recipe22() {
+	//Gluten free bread
+	recipeInfo(22);
+	/*
+	 * id:74 gluten-free plain flour 400.0g
+	 * id:78 salt 1 tsp -> 5.9g
+	 * id:79 dried yeast 7.0g
+	 * id:80 buttermilk 284ml
+	 * id:73 egg 2unit -> 100g
+	 * id:4 olive oil 2tbsp -> 8.88g
+	 */
+	recipenutrition({ "id": 74, "amount": 4.00 }, { "id": 78, "amount": 0.059 }, { "id": 79, "amount": 0.07 }, { "id": 80, "amount": 2.84 }, { "id": 73, "amount": 1.00 }, { "id": 4, "amount": 0.088 });
+}
+
+function recipe23() {
+	//Candied Bacon
+	recipeInfo(23);
+	/*
+	 * id:67 brown sugar 110g
+	 * id:107 bacon 225g
+	 */
+	recipenutrition({ "id": 67, "amount": 1.1 }, { "id": 107, "amount": 2.25 });
+}
+
+function recipe24() {
+	//Root Beer Milkshake
+	recipeInfo(24);
+	/*
+	 * id:108 vanilla ice cream 75g
+	 * id:75 milk 250ml
+	 * id:109 root beer 120ml
+	 */ 
+	recipenutrition({ "id": 108, "amount": 0.75 }, { "id": 75, "amount": 2.5 }, { "id": 109, "amount": 1.2 });
+}
+
+
+
+
+	
+
