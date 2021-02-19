@@ -104,6 +104,28 @@ public class RecipeImageConfig {
 			RecipeImage LFP4 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP4.jpg");
 			RecipeImage LFP5 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP5.jpg");
 			
+			//RECIPE 16
+            		RecipeImage Shakshuka1 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose free/shakshuka1.jpg");
+            		RecipeImage Shakshuka2 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose free/shakshuka2.jpg");
+            		RecipeImage Shakshuka3 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose free/shakshuka3.jpg");
+            		RecipeImage Shakshuka4 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose free/shakshuka4.jpg");
+            		RecipeImage Shakshuka5 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose free/shakshuka5.jpg");
+
+           		//RECIPE 17
+            		RecipeImage Cassoulet1 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose free/cassoulet1.jpg");
+            		RecipeImage Cassoulet2 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose free/cassoulet2.jpg");
+            		RecipeImage Cassoulet3 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose free/cassoulet3.jpg");
+            		RecipeImage Cassoulet4 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose free/cassoulet4.jpg");
+            		RecipeImage Cassoulet5 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose free/cassoulet5.jpg");
+
+            		//RECIPE 18
+            		RecipeImage Bananapancakes1 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose free/bananapancakes1.jpg");
+            		RecipeImage Bananapancakes2 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose free/bananapancakes2.jpg");
+            		RecipeImage Bananapancakes3 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose free/bananapancakes3.jpg");
+            		RecipeImage Bananapancakes4 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose free/bananapancakes4.jpg");
+            		RecipeImage Bananapancakes5 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose free/bananapancakes5.jpg");
+			
+			
 			//RECIPE 22 Gluten-free bread
 			RecipeImage DGGFB1 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread1.jpg");
 			RecipeImage DGGFB2 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread2.jpg");
@@ -135,6 +157,9 @@ public class RecipeImageConfig {
 									   NDMB1, NDMB2, NDMB3, NDMB4, NDMB5, 
 									   NDFB1, NDFB2, NDFB3, NDFB4, NDFB5, 
 									   LFP1, LFP2, LFP3, LFP4, LFP5,
+						   			   Shakshuka1, Shakshuka2, Shakshuka3, Shakshuka4, Shakshuka5,
+                                       					   Cassoulet1, Cassoulet2, Cassoulet3, Cassoulet4, Cassoulet5,
+                                     					   Bananapancakes1, Bananapancakes2, Bananapancakes3, Bananapancakes4, Bananapancakes5,
 									   DVChickpeacurry1, DVChickpeacurry2, DVChickpeacurry3, 
 									   DVChickpeacurry4, DVChickpeacurry5, DVSpicycucumberpickle1, DVSpicycucumberpickle2, DVSpicycucumberpickle3,
 									   DVSpicycucumberpickle4, DVSpicycucumberpickle5, DVChocolatebrownie1, DVChocolatebrownie2, DVChocolatebrownie3,
