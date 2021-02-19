@@ -301,3 +301,41 @@ function recipe7(){
 
   recipenutrition();
 }
+
+function recipe13(){
+  recipeInfo(13);
+
+  //2 leg/breast piece,   8  - 91
+  //3 potatoes,           48 - 92
+  //2 slices of bread,    47 - 93
+  //1 tbsp of salt,       78 - 14
+  //350ml of oil          4  - 95
+  recipenutrition({"id":91,"amount":3.44},{"id":92,"amount":4},{"id":93,"amount":0.8},{"id":94,"amount":0.17},{"id":95,"amount":3.2});
+}
+
+function recipe14(){
+  recipeInfo(14);
+
+  //1 leg/breast piece,    8   - 96
+  //2 eggs,                73  - 97
+  //2 flatbread,           49  - 98
+  //1 tbsp of salt,        78  - 99
+  //2 tbsp of chili sauce, 113 - 100
+  //15ml oil               61  - 101
+  recipenutrition({"id":96,"amount":1.7},{"id":97,"amount":1.2},{"id":98,"amount":0.7},{"id":99,"amount":0.17},{"id":100,"amount":0.34},{"id":101,"amount":0.15});
+}
+
+function recipe15(){
+  recipeInfo(15);
+
+  //200g chestnut mushrooms   27 - 102
+  //3 garlic cloves           15 - 104
+  //2 fresh rosemary sprigs   16 - 105
+  //3 leeks                   17 - 106
+  //125ml dry white wine      18 - 107
+  //90ml soya cream           19 - 108
+  //350g pasta                20 - 109
+  //parsley                   31 - 110
+
+  recipenutrition({"id":102,"amount":2},{"id":104,"amount":0.15},{"id":105,"amount":0.026},{"id":106,"amount":2.7},{"id":107,"amount":1.25}, {"id":108,"amount":0.9}, {"id":109,"amount":3.5}, {"id":110,"amount":0.55});
+}
