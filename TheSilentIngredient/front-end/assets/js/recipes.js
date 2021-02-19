@@ -245,15 +245,15 @@ function recipe4() {
 function recipe5() {
   recipeInfo(5);
 
-  //  6 pickling cucumbers
-  //  2 shallots
-  //  2 teaspoons mustard seeds
-  //  ½ teaspoon ground turmeric
-  //  2 star anise
-  //  75 g caster sugar
-  //  150 ml vinegar
+  // 600g 6 pickling cucumbers
+  // 100g 2 shallots
+  // 10g  2 teaspoons mustard seeds
+  // 1.5g ½ teaspoon ground turmeric
+  // 38g 2 star anise
+  // 75g caster sugar
+  //150g  150 ml vinegar
 
-  recipenutrition();
+  recipenutrition({"id":50,"amount": 6}, {"id":52,"amount": 1}, {"id":53,"amount": 0.1}, {"id":54,"amount": 0.015}, {"id":55,"amount": 0.38}, {"id":55,"amount": 0.75}, {"id":57,"amount": 1.5});
 }
 
 function recipe6() {
@@ -280,14 +280,16 @@ function recipe6() {
 
 
 
-  recipenutrition();
+recipenutrition({ "id": 58, "amount": 2.4 }, { "id": 43, "amount": 4 }, { "id": 60, "amount": 0.9 }, { "id": 61, "amount": 0.26 }, { "id": 53, "amount": 0.05 }, 
+  { "id": 101, "amount": 0.02 }, { "id": 62, "amount": 0.08 }, { "id": 111, "amount": 2 }, { "id": 102, "amount": 0.017 }, { "id": 103, "amount": 0.028 }, { "id": 104, "amount": 0.028 },
+   { "id": 64, "amount": 0.027 }, { "id": 105, "amount": 0.031 }, { "id": 106, "amount": 0.027 }, { "id": 62, "amount": 0.08 }, { "id": 65, "amount": 0.006 }, { "id": 83, "amount": 0.007 });
 }
 
 function recipe7() {
-  recipeInfo(7)
+  recipeInfo(7);
 
   //75 ml sunflower oil , plus extra for greasing
-  //6 tbsp ground flaxseed
+  //42g 6 tbsp ground flaxseed
   //1 x 400g tin of aduki beans
   //200 g soft light brown sugar
   //55 g cocoa powder
@@ -301,7 +303,20 @@ function recipe7() {
 
 
 
-  recipenutrition();
+  recipenutrition({"id":61,"amount": 0.75}, {"id":84,"amount": 0.42},{"id":66,"amount": 4}, {"id":67,"amount": 2}, {"id":68,"amount": 0.55}, {"id":69,"amount": 0.55}, {"id": 85,"amount":0.04}, {"id":70,"amount": 0.063},
+   {"id":71,"amount": 1}, {"id":86,"amount": 2}, {"id":72,"amount": 0.0781});
+}
+
+function recipe8(){
+  recipeInfo(8);
+  //400g can black beans
+  //80g drained -small bunch coriander
+  //108g finely chopped -4 large or 8-12 small flour tortillas 
+  //150g 1 avocado sliced 
+  //30.26g 2 tbsp soured cream
+
+
+  recipenutrition({"id":81,"amount": 4}, {"id":65,"amount": 0.8}, {"id":89,"amount": 1.08},{"id":82,"amount": 1.5},{"id":90,"amount": 0.3026});
 }
 
 function recipe13() {

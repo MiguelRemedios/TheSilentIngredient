@@ -84,7 +84,7 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r6ing12 = new RecipeIngredient(64, 6, 1.0, "tsp");
 			RecipeIngredient r6ing13 = new RecipeIngredient(105, 6, 1.0, "tsp");
 			RecipeIngredient r6ing14 = new RecipeIngredient(106, 6, 1.0, "tsp");
-			RecipeIngredient r6ing15 = new RecipeIngredient(65, 6, 1.0, "quantity");
+			RecipeIngredient r6ing15 = new RecipeIngredient(65, 6, 3.0, "quantity");
 			RecipeIngredient r6ing16 = new RecipeIngredient(83, 6, 0.5, "tsp");
 			//r6ing1, r6ing2, r6ing3, r6ing4, r6ing5, r6ing6, r6ing7, r6ing8, r6ing9, r6ing10, r6ing11, r6ing12, r6ing13, r6ing14, r6ing15, r6ing16
 			
