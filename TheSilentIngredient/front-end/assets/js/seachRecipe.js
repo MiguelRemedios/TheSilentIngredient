@@ -16,22 +16,16 @@ function recipes(/*imageid*/){
     var xmlhttp2 = new XMLHttpRequest();
     xmlhttp2.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-  
         var recipeimages = JSON.parse(this.responseText);
-
-         //Work by ID in the backend
-         var recipeMainImages = [];
-         //recipeMainImages.length = imageid;
-         //ID's
-         recipeMainImages = [recipeimages[0].path,recipeimages[5].path,recipeimages[10].path,recipeimages[15].path,
-                             recipeimages[55].path,recipeimages[50].path,recipeimages[60].path,recipeimages[20].path,
-                             recipeimages[25].path,recipeimages[0].path,recipeimages[35].path,recipeimages[40].path,
-                             recipeimages[1].path,recipeimages[3].path,recipeimages[3].path,recipeimages[0].path,
-                             recipeimages[1].path,recipeimages[3].path,recipeimages[3].path,recipeimages[0].path,
-                             recipeimages[1].path,recipeimages[3].path,recipeimages[1].path,recipeimages[3].path];
+        var recipeMainImages = [];
+        recipeMainImages = [recipeimages[0].path,recipeimages[5].path,recipeimages[10].path,recipeimages[15].path,
+                            recipeimages[80].path,recipeimages[75].path,recipeimages[85].path,recipeimages[20].path,
+                            recipeimages[25].path,recipeimages[30].path,recipeimages[35].path,recipeimages[40].path,
+                            recipeimages[45].path,recipeimages[50].path,recipeimages[55].path,recipeimages[60].path,
+                            recipeimages[65].path,recipeimages[70].path,recipeimages[3].path,recipeimages[0].path,
+                            recipeimages[1].path,recipeimages[90].path,recipeimages[95].path,recipeimages[100].path];
  
-        
-         for (let index = 0; index < recipeMainImages.length; index++) {
+        for (let index = 0; index < recipeMainImages.length; index++) {
           $(`#rimg${index+1}`).attr("src",`${recipeMainImages[index]}`);
         }
       }
