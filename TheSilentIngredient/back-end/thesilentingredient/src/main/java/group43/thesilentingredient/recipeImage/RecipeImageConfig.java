@@ -83,17 +83,17 @@ public class RecipeImageConfig {
 			RecipeImage pastaSalad4 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad4.jpg");
 			RecipeImage pastaSalad5 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad5.jpg");
 			//RECIPE 11
-			RecipeImage DHSandwich1 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
-			RecipeImage DHSandwich2 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
-			RecipeImage DHSandwich3 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
-			RecipeImage DHSandwich4 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
-			RecipeImage DHSandwich5 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHSandwich1 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW1.jpg");
+			RecipeImage DHSandwich2 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW2.jpg");
+			RecipeImage DHSandwich3 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW3.jpg");
+			RecipeImage DHSandwich4 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW4.jpg");
+			RecipeImage DHSandwich5 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW5.jpg");
 			//RECIPE 12
-			RecipeImage DHChickenTKM1 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
-			RecipeImage DHChickenTKM2 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
-			RecipeImage DHChickenTKM3 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
-			RecipeImage DHChickenTKM4 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
-			RecipeImage DHChickenTKM5 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHChickenTKM1 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM1.jpg");
+			RecipeImage DHChickenTKM2 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM2.jpg");
+			RecipeImage DHChickenTKM3 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM3.jpg");
+			RecipeImage DHChickenTKM4 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM4.jpg");
+			RecipeImage DHChickenTKM5 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM5.jpg");
 			//RECIPE 13
 			RecipeImage NDMB1 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB1.jpg");
 			RecipeImage NDMB2 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB2.jpg");
