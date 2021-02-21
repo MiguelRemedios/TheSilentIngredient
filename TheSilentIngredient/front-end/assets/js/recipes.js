@@ -303,7 +303,8 @@ function recipe7() {
 
 
 
-  recipenutrition({"id":61,"amount": 0.75}, {"id":84,"amount": 0.42},{"id":66,"amount": 4}, {"id":67,"amount": 2}, {"id":68,"amount": 0.55}, {"id":69,"amount": 0.55}, {"id": 85,"amount":0.04}, {"id":70,"amount": 0.063},
+  recipenutrition({"id":61,"amount": 0.75}, {"id":84,"amount": 0.42},{"id":66,"amount": 4}, {"id":67,"amount": 2}, {"id":68,"amount": 0.55}, 
+  {"id":69,"amount": 0.55}, {"id": 85,"amount":0.04}, {"id":70,"amount": 0.063},
    {"id":71,"amount": 1}, {"id":86,"amount": 2}, {"id":72,"amount": 0.0781});
 }
 
@@ -348,7 +349,7 @@ function recipe10(){
 //7g -chives chopped to make 2 tbsp
 
   recipenutrition({"id":20,"amount": 1.5},{"id":10,"amount": 2.4},{"id":4,"amount": 0.266},{"id":110,"amount": 0.149},{"id":97,"amount": 0.75},{"id":98,"amount": 1.5},
-  {"id":99,"amount": 0.7},{"id":100,"amount": 0.07},);
+  {"id":99,"amount": 0.7},{"id":100,"amount": 0.07});
 }
 function recipe11(){
   recipeInfo(11);
