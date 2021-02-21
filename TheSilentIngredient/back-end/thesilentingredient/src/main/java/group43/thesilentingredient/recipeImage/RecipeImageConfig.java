@@ -83,23 +83,80 @@ public class RecipeImageConfig {
 			RecipeImage pastaSalad4 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad4.jpg");
 			RecipeImage pastaSalad5 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad5.jpg");
 			//RECIPE 11
-			RecipeImage HALALChicken1 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken1.jpg");
-			RecipeImage HALALChicken2 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken2.jpg");
-			RecipeImage HALALChicken3 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken3.jpg");
-			RecipeImage HALALChicken4 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken4.jpg");
-			RecipeImage HALALChicken5 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/HALALChicken5.jpg");
+			RecipeImage DHSandwich1 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHSandwich2 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHSandwich3 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHSandwich4 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHSandwich5 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
 			//RECIPE 12
-			RecipeImage HALALCTM1 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM1.jpg");
-			RecipeImage HALALCTM2 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM2.jpg");
-			RecipeImage HALALCTM3 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM3.jpg");
-			RecipeImage HALALCTM4 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM4.jpg");
-			RecipeImage HALALCTM5 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM5.jpg");
+			RecipeImage DHChickenTKM1 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHChickenTKM2 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHChickenTKM3 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHChickenTKM4 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
+			RecipeImage DHChickenTKM5 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad1.jpg");
 			//RECIPE 13
-			RecipeImage HALALMB1 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/halal/HALALMB1.jpg");
-			RecipeImage HALALMB2 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/halal/HALALMB2.jpg");
-			RecipeImage HALALMB3 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/halal/HALALMB3.jpg");
-			RecipeImage HALALMB4 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/halal/HALALMB4.jpg");
-			RecipeImage HALALMB5 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/halal/HALALMB5.jpg");
+			RecipeImage NDMB1 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB1.jpg");
+			RecipeImage NDMB2 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB2.jpg");
+			RecipeImage NDMB3 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB3.jpg");
+			RecipeImage NDMB4 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB4.jpg");
+			RecipeImage NDMB5 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB5.jpg");
+			
+			//RECIPE 14
+			RecipeImage NDFB1 = new RecipeImage(14,"http://127.0.0.1:5500/images/recipe/nodiet/NDFB1.jpg");
+			RecipeImage NDFB2 = new RecipeImage(14,"http://127.0.0.1:5500/images/recipe/nodiet/NDFB2.jpg");
+			RecipeImage NDFB3 = new RecipeImage(14,"http://127.0.0.1:5500/images/recipe/nodiet/NDFB3.jpg");
+			RecipeImage NDFB4 = new RecipeImage(14,"http://127.0.0.1:5500/images/recipe/nodiet/NDFB4.jpg");
+			RecipeImage NDFB5 = new RecipeImage(14,"http://127.0.0.1:5500/images/recipe/nodiet/NDFB5.jpg");
+			
+			//RECIPE 15
+			RecipeImage LFP1 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP1.jpg");
+			RecipeImage LFP2 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP2.jpg");
+			RecipeImage LFP3 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP3.jpg");
+			RecipeImage LFP4 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP4.jpg");
+			RecipeImage LFP5 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP5.jpg");
+			
+			//RECIPE 16
+            RecipeImage Shakshuka1 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka1.jpg");
+            RecipeImage Shakshuka2 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka2.jpg");
+            RecipeImage Shakshuka3 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka3.jpg");
+            RecipeImage Shakshuka4 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka4.jpg");
+            RecipeImage Shakshuka5 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka5.jpg");
+
+           	//RECIPE 17
+            RecipeImage Cassoulet1 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet1.jpg");
+            RecipeImage Cassoulet2 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet2.jpg");
+            RecipeImage Cassoulet3 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet3.jpg");
+            RecipeImage Cassoulet4 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet4.jpg");
+            RecipeImage Cassoulet5 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet5.jpg");
+
+            //RECIPE 18
+            RecipeImage Bananapancakes1 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes1.jpg");
+            RecipeImage Bananapancakes2 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes2.jpg");
+            RecipeImage Bananapancakes3 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes3.jpg");
+            RecipeImage Bananapancakes4 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes4.jpg");
+            RecipeImage Bananapancakes5 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes5.jpg");
+			
+			
+			//RECIPE 22 Gluten-free bread
+			RecipeImage DGGFB1 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread1.jpg");
+			RecipeImage DGGFB2 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread2.jpg");
+			RecipeImage DGGFB3 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread3.jpg");
+			RecipeImage DGGFB4 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread4.jpg");
+			RecipeImage DGGFB5 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread5.jpg");
+			
+			//RECIPE 23 Candied bacon
+			RecipeImage NDCB1 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon1.jpg");
+			RecipeImage NDCB2 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon2.jpg");
+			RecipeImage NDCB3 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon3.jpg");
+			RecipeImage NDCB4 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon4.jpg");
+			RecipeImage NDCB5 = new RecipeImage(23,"http://127.0.0.1:5500/images/recipe/nodiet/NDBacon5.jpg");
+			
+			//RECIPE 24 Root beer milkshake
+			RecipeImage NDRBM1 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake1.jpg");
+			RecipeImage NDRBM2 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake2.jpg");
+			RecipeImage NDRBM3 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake3.jpg");
+			RecipeImage NDRBM4 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake4.jpg");
+			RecipeImage NDRBM5 = new RecipeImage(24,"http://127.0.0.1:5500/images/recipe/nodiet/NDMilkshake5.jpg");
 			
 			repository.saveAll(List.of(NDWhiteRice1,NDWhiteRice2,NDWhiteRice3,NDWhiteRice4,NDWhiteRice5,
 									   NDSpaghetti1,NDSpaghetti2,NDSpaghetti3,NDSpaghetti4,NDSpaghetti5,
@@ -108,12 +165,20 @@ public class RecipeImageConfig {
 									   fajita1, fajita2, fajita3, fajita4, fajita5,
 									   spicyrice1, spicyrice2, spicyrice3, spicyrice4, spicyrice5,
 									   pastaSalad1, pastaSalad2, pastaSalad3, pastaSalad4, pastaSalad5,
-									   HALALChicken1, HALALChicken2, HALALChicken3, HALALChicken4, HALALChicken5,
-									   HALALCTM1, HALALCTM2, HALALCTM3, HALALCTM4, HALALCTM5,
-									   HALALMB1, HALALMB2, HALALMB3, HALALMB4, HALALMB5, DVChickpeacurry1, DVChickpeacurry2, DVChickpeacurry3, 
+									   DHSandwich1,DHSandwich2,DHSandwich3,DHSandwich4,DHSandwich5,
+									   DHChickenTKM1,DHChickenTKM2,DHChickenTKM3,DHChickenTKM4,DHChickenTKM5,
+									   NDMB1, NDMB2, NDMB3, NDMB4, NDMB5, 
+									   NDFB1, NDFB2, NDFB3, NDFB4, NDFB5, 
+									   LFP1, LFP2, LFP3, LFP4, LFP5,
+						   			   Shakshuka1, Shakshuka2, Shakshuka3, Shakshuka4, Shakshuka5,
+                                       					   Cassoulet1, Cassoulet2, Cassoulet3, Cassoulet4, Cassoulet5,
+                                     					   Bananapancakes1, Bananapancakes2, Bananapancakes3, Bananapancakes4, Bananapancakes5,
+									   DVChickpeacurry1, DVChickpeacurry2, DVChickpeacurry3, 
 									   DVChickpeacurry4, DVChickpeacurry5, DVSpicycucumberpickle1, DVSpicycucumberpickle2, DVSpicycucumberpickle3,
 									   DVSpicycucumberpickle4, DVSpicycucumberpickle5, DVChocolatebrownie1, DVChocolatebrownie2, DVChocolatebrownie3,
-									   DVChocolatebrownie4, DVChocolatebrownie5));
+									   DVChocolatebrownie4, DVChocolatebrownie5, DGGFB1, DGGFB2,
+									   DGGFB3, DGGFB4, DGGFB5,NDCB1, NDCB2, NDCB3, NDCB4, NDCB5,
+									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5));
 		};
 
 	}
