@@ -23,7 +23,7 @@ public class RecipeImageConfig {
 			
 			// NO DIET RECIPE IMAGES
 			//RECIPE 1
-			RecipeImage NDWhiteRice1 = new RecipeImage(1,"http://127.0.0.1:5500/images/recipe/nodiet/NDWhiteRice1.jpg");
+			RecipeImage NDWhiteRice1 = new RecipeImage(1,"http://127.0.0.1:5500/images/logo.png");
 			RecipeImage NDWhiteRice2 = new RecipeImage(1,"http://127.0.0.1:5500/images/recipe/nodiet/NDWhiteRice2.jpg");
 			RecipeImage NDWhiteRice3 = new RecipeImage(1,"http://127.0.0.1:5500/images/recipe/nodiet/NDWhiteRice3.jpg");
 			RecipeImage NDWhiteRice4 = new RecipeImage(1,"http://127.0.0.1:5500/images/recipe/nodiet/NDWhiteRice4.jpg");
