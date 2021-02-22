@@ -36,7 +36,7 @@ function recipes(/*imageid*/){
 }
 
 function storeID(element){
-    var card = element.parentElement.parentElement;
+    var card = element.parentElement.parentElement.parentElement.parentElement;
     console.log(card.id);
     localStorage.setItem("cardID", card.id);
 }
@@ -48,13 +48,13 @@ function storeID(element){
   }
 }*/
 
-
 function searchEngine(){
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
     ingredientArray.sort(function(a, b){return a - b});
     var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
   
     var tempArray = [];
+    var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
 
     for (const ingredient of ingredientArray) {
       if (ingredientArray.indexOf(ingredient) == 0) {
@@ -73,10 +73,15 @@ function searchEngine(){
       }
     }
 
-    for (const recipeID of tempArray) {
-      document.getElementById(recipeID).style.display = "block";
+    var recipesArray = recipesArray.filter(recipeID => !tempArray.includes(recipeID));
+
+    for (const recipeID of recipesArray) {
+      document.getElementById(recipeID).style.display = "none";
     }
+
+    localStorage.setItem("recipesFilter", JSON.stringify(tempArray));
     console.log(tempArray);
+    console.log(recipesArray);
 }
 
 fetch("http://localhost:8080/api/v1/recipe-ingredient")
