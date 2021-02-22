@@ -112,18 +112,18 @@ public class RecipeImageConfig {
 			RecipeImage DLCT5 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT5.jpg");
 			
 			//RECIPE 20
-			RecipeImage DGP1 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP1.jpg");
-			RecipeImage DGP2 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP2.jpg");
-			RecipeImage DGP3 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP3.jpg");
-			RecipeImage DGP4 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP4.jpg");
-			RecipeImage DGP5 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP5.jpg");
+			RecipeImage DGP1 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP1.jpg");
+			RecipeImage DGP2 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP2.jpg");
+			RecipeImage DGP3 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP3.jpg");
+			RecipeImage DGP4 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP4.jpg");
+			RecipeImage DGP5 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP5.jpg");
 			
 			//RECIPE 21
-			RecipeImage DGH1 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH1.jpg");
-			RecipeImage DGH2 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH2.jpg");
-			RecipeImage DGH3 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH3.jpg");
-			RecipeImage DGH4 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH4.jpg");
-			RecipeImage DGH5 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH5.jpg");
+			RecipeImage DGH1 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH1.jpg");
+			RecipeImage DGH2 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH2.jpg");
+			RecipeImage DGH3 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH3.jpg");
+			RecipeImage DGH4 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH4.jpg");
+			RecipeImage DGH5 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH5.jpg");
 			
 			//RECIPE 22 Gluten-free bread
 			RecipeImage DGGFB1 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread1.jpg");
