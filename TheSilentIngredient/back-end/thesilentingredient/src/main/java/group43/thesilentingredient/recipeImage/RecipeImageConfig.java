@@ -155,14 +155,14 @@ public class RecipeImageConfig {
 									   pastaSalad1, pastaSalad2, pastaSalad3, pastaSalad4, pastaSalad5,
 									   NDMB1, NDMB2, NDMB3, NDMB4, NDMB5, 
 									   NDFB1, NDFB2, NDFB3, NDFB4, NDFB5, 
-									   LFP1, LFP2, LFP3, LFP4, LFP5, DLCT1, DLCT2, DLCT3, DLCT4, DLCT5,
-									   DGP1, DGP2, DGP3, DGP4, DGP5, DGH1, DGH2, DGH3, DGH4, DGH5,
+									   LFP1, LFP2, LFP3, LFP4, LFP5,
 									   DVChickpeacurry1, DVChickpeacurry2, DVChickpeacurry3, 
 									   DVChickpeacurry4, DVChickpeacurry5, DVSpicycucumberpickle1, DVSpicycucumberpickle2, DVSpicycucumberpickle3,
 									   DVSpicycucumberpickle4, DVSpicycucumberpickle5, DVChocolatebrownie1, DVChocolatebrownie2, DVChocolatebrownie3,
 									   DVChocolatebrownie4, DVChocolatebrownie5, DGGFB1, DGGFB2,
 									   DGGFB3, DGGFB4, DGGFB5,NDCB1, NDCB2, NDCB3, NDCB4, NDCB5,
-									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5));
+									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5, DLCT1, DLCT2, DLCT3, DLCT4, DLCT5,
+									   DGP1, DGP2, DGP3, DGP4, DGP5, DGH1, DGH2, DGH3, DGH4, DGH5));
 		};
 
 	}
