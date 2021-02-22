@@ -104,6 +104,27 @@ public class RecipeImageConfig {
 			RecipeImage LFP4 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP4.jpg");
 			RecipeImage LFP5 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP5.jpg");
 			
+			//RECIPE 19
+			RecipeImage DLCT1 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT1.jpg");
+			RecipeImage DLCT2 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT2.jpg");
+			RecipeImage DLCT3 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT3.jpg");
+			RecipeImage DLCT4 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT4.jpg");
+			RecipeImage DLCT5 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT5.jpg");
+			
+			//RECIPE 20
+			RecipeImage DGP1 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP1.jpg");
+			RecipeImage DGP2 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP2.jpg");
+			RecipeImage DGP3 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP3.jpg");
+			RecipeImage DGP4 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP4.jpg");
+			RecipeImage DGP5 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/Lactose free/DGP5.jpg");
+			
+			//RECIPE 21
+			RecipeImage DGH1 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH1.jpg");
+			RecipeImage DGH2 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH2.jpg");
+			RecipeImage DGH3 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH3.jpg");
+			RecipeImage DGH4 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH4.jpg");
+			RecipeImage DGH5 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/Lactose free/DGH5.jpg");
+			
 			//RECIPE 22 Gluten-free bread
 			RecipeImage DGGFB1 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread1.jpg");
 			RecipeImage DGGFB2 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread2.jpg");
@@ -134,7 +155,8 @@ public class RecipeImageConfig {
 									   pastaSalad1, pastaSalad2, pastaSalad3, pastaSalad4, pastaSalad5,
 									   NDMB1, NDMB2, NDMB3, NDMB4, NDMB5, 
 									   NDFB1, NDFB2, NDFB3, NDFB4, NDFB5, 
-									   LFP1, LFP2, LFP3, LFP4, LFP5,
+									   LFP1, LFP2, LFP3, LFP4, LFP5, DLCT1, DLCT2, DLCT3, DLCT4, DLCT5,
+									   DGP1, DGP2, DGP3, DGP4, DGP5, DGH1, DGH2, DGH3, DGH4, DGH5,
 									   DVChickpeacurry1, DVChickpeacurry2, DVChickpeacurry3, 
 									   DVChickpeacurry4, DVChickpeacurry5, DVSpicycucumberpickle1, DVSpicycucumberpickle2, DVSpicycucumberpickle3,
 									   DVSpicycucumberpickle4, DVSpicycucumberpickle5, DVChocolatebrownie1, DVChocolatebrownie2, DVChocolatebrownie3,
