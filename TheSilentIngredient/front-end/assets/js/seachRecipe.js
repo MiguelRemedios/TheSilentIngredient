@@ -26,8 +26,7 @@ function recipes(/*imageid*/){
                             recipeimages[1].path,recipeimages[90].path,recipeimages[95].path,recipeimages[100].path];
  
         for (let index = 0; index < recipeMainImages.length; index++) {
-          document.getElementById(`rimg${index+1}`).src = `${recipeMainImages[index]}`;
-          //$(`#rimg${index+1}`).attr("src",`${recipeMainImages[index]}`);
+          $(`#rimg${index+1}`).attr("src",`${recipeMainImages[index]}`);
         }
       }
     };
