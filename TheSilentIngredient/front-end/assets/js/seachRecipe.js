@@ -22,8 +22,8 @@ function recipes(/*imageid*/){
                             recipeimages[80].path,recipeimages[75].path,recipeimages[85].path,recipeimages[20].path,
                             recipeimages[25].path,recipeimages[30].path,recipeimages[35].path,recipeimages[40].path,
                             recipeimages[45].path,recipeimages[50].path,recipeimages[55].path,recipeimages[60].path,
-                            recipeimages[65].path,recipeimages[70].path,recipeimages[3].path,recipeimages[0].path,
-                            recipeimages[1].path,recipeimages[90].path,recipeimages[95].path,recipeimages[100].path];
+                            recipeimages[65].path,recipeimages[70].path,recipeimages[105].path,recipeimages[110].path,
+                            recipeimages[115].path,recipeimages[90].path,recipeimages[95].path,recipeimages[100].path];
  
         for (let index = 0; index < recipeMainImages.length; index++) {
           $(`#rimg${index+1}`).attr("src",`${recipeMainImages[index]}`);
@@ -80,8 +80,8 @@ function searchEngine(){
     }
 
     localStorage.setItem("recipesFilter", JSON.stringify(tempArray));
-    console.log(tempArray);
-    console.log(recipesArray);
+    //console.log(tempArray);
+    //console.log(recipesArray);
 }
 
 fetch("http://localhost:8080/api/v1/recipe-ingredient")
