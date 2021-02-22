@@ -137,6 +137,27 @@ public class RecipeImageConfig {
             RecipeImage Bananapancakes5 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes5.jpg");
 			
 			
+			//RECIPE 19
+			RecipeImage DLCT1 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT1.jpg");
+			RecipeImage DLCT2 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT2.jpg");
+			RecipeImage DLCT3 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT3.jpg");
+			RecipeImage DLCT4 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT4.jpg");
+			RecipeImage DLCT5 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT5.jpg");
+			
+			//RECIPE 20
+			RecipeImage DGP1 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP1.jpg");
+			RecipeImage DGP2 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP2.jpg");
+			RecipeImage DGP3 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP3.jpg");
+			RecipeImage DGP4 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP4.jpg");
+			RecipeImage DGP5 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP5.jpg");
+			
+			//RECIPE 21
+			RecipeImage DGH1 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH1.jpg");
+			RecipeImage DGH2 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH2.jpg");
+			RecipeImage DGH3 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH3.jpg");
+			RecipeImage DGH4 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH4.jpg");
+			RecipeImage DGH5 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH5.jpg");
+			
 			//RECIPE 22 Gluten-free bread
 			RecipeImage DGGFB1 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread1.jpg");
 			RecipeImage DGGFB2 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread2.jpg");
@@ -178,7 +199,8 @@ public class RecipeImageConfig {
 									   DVSpicycucumberpickle4, DVSpicycucumberpickle5, DVChocolatebrownie1, DVChocolatebrownie2, DVChocolatebrownie3,
 									   DVChocolatebrownie4, DVChocolatebrownie5, DGGFB1, DGGFB2,
 									   DGGFB3, DGGFB4, DGGFB5,NDCB1, NDCB2, NDCB3, NDCB4, NDCB5,
-									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5));
+									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5, DLCT1, DLCT2, DLCT3, DLCT4, DLCT5,
+									   DGP1, DGP2, DGP3, DGP4, DGP5, DGH1, DGH2, DGH3, DGH4, DGH5));
 		};
 
 	}
