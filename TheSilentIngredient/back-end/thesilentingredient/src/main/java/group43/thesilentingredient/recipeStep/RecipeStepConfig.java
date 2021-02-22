@@ -12,6 +12,7 @@ public class RecipeStepConfig {
 	@Bean
 	CommandLineRunner RecipeStepCR(RecipeStepRepository repository) {
 		return args -> {
+			
 			//Recipe-1
 			RecipeStep stp1 = new RecipeStep(1,1,"Bring water with salt to a boil in a 4-quart heavy saucepan with a tight-fitting lid.");
 			RecipeStep stp2 = new RecipeStep(2,1,"Add rice and stir once, then reduce heat to low and cook, covered, 20 minutes.");
@@ -234,6 +235,21 @@ public class RecipeStepConfig {
 			RecipeStep stp177 = new RecipeStep(8,22,"Bake for 50-60 minutes until golden.");
 			RecipeStep stp178 = new RecipeStep(9,22,"Cool for 20 minutes, then serve");
 			
+			//Recipe-23
+			RecipeStep stp179 = new RecipeStep(1,23,"Cook bacon in 2 batches on a skillet over moderate heat, turning over once until bacon is browned on edges but still flexible.");
+			RecipeStep stp180 = new RecipeStep(2,23,"Cook the bacon for 5 to 6 minutes total per batch.");
+			RecipeStep stp181 = new RecipeStep(3,23,"Transfer bacon as cooked to paper towels to drain.");
+			RecipeStep stp182 = new RecipeStep(4,23,"Pour off fat from skillet.");
+			RecipeStep stp183 = new RecipeStep(5,23,"Arrange bacon in skillet in 1 layer.");
+			RecipeStep stp184 = new RecipeStep(6,23,"Sprinkle sugar over bacon and cook over low heat for 8-10 minutes");
+			RecipeStep stp185 = new RecipeStep(7,23,"Turning occasionally until sugar is caramelized reduced heat for the last few minutes as sugar burns quick.");
+			RecipeStep stp186 = new RecipeStep(8,23,"When the bacon has turned brown your back is ready.");
+			RecipeStep stp187 = new RecipeStep(9,23,"Transfer bacon with tongs to brown paper to cool and serve.");
+			
+			//Recipe-24
+			RecipeStep stp188 = new RecipeStep(1,24,"Put all ingredients in a blender.");
+			RecipeStep stp189 = new RecipeStep(2,24,"Blend for 3-4 mins depending on how smooth/thick you want the milkshake and serve.");
+			
 			repository.saveAll(List.of(stp1,stp2,stp3,stp4,stp5,stp6,stp7,stp8,stp9,stp10,stp11,
 					stp12,stp13,stp14,stp15,stp16,stp17,stp18,stp19,stp20,stp21,stp22,stp23,
 					stp24,stp25,stp26,stp27,stp28,stp29,stp30,stp31,stp32,stp33,stp34,stp35,
@@ -250,8 +266,8 @@ public class RecipeStepConfig {
 					stp147,stp148,stp149,stp150,stp151,stp152,stp153,stp154,stp155,stp156,
 					stp157,stp158,stp159,stp160,stp161,stp162,stp163,stp164,stp165,stp166,
 					stp167,stp168,stp169,stp170,stp171,stp172,stp173,stp174,stp175,stp176,
-					stp177,stp178));
-			
+					stp177,stp178,stp179,stp180,stp181,stp182,stp183,stp184,stp185,stp186,
+					stp187,stp188,stp189));	
 		};
 		
 	}

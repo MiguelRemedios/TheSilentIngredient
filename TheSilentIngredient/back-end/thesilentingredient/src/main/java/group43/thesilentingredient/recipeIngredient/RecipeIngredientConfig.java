@@ -96,11 +96,11 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r7ing4 = new RecipeIngredient(67, 7, 200.0, "g");
 			RecipeIngredient r7ing5 = new RecipeIngredient(68, 7, 55.0, "g");
 			RecipeIngredient r7ing6 = new RecipeIngredient(69, 7, 55.0, "g");
-			RecipeIngredient r7ing7 = new RecipeIngredient(34, 7, 1.0, "tsp");
-			RecipeIngredient r7ing8 = new RecipeIngredient(70, 7, 1.5, "tsp");
-			RecipeIngredient r7ing9 = new RecipeIngredient(71, 7, 1.0, "tsp");
-			RecipeIngredient r7ing10 = new RecipeIngredient(92, 7, 200.0, "ml");
-			RecipeIngredient r7ing11 = new RecipeIngredient(62, 7, 3.0, "tbsp");
+			RecipeIngredient r7ing7 = new RecipeIngredient(85, 7, 1.0, "tsp");
+			RecipeIngredient r7ing8 = new RecipeIngredient(70, 7, 1.0, "tsp");
+			RecipeIngredient r7ing9 = new RecipeIngredient(71, 7, 100.0, "g");
+			RecipeIngredient r7ing10 = new RecipeIngredient(86, 7, 200.0, "ml");
+			RecipeIngredient r7ing11 = new RecipeIngredient(72, 7, 3.0, "tbsp");
 			//r7ing1, r7ing2, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8, r7ing9, r7ing10, r7ing11
 			
 			//RECIPE ID - 8

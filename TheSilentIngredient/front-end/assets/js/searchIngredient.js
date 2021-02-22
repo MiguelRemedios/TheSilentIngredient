@@ -50,9 +50,7 @@ function autocomplete(inp, arr) {
           }
 
           var ingID = ingArray.indexOf(ingredient) + 1;
-
           array.push(ingID);
-
           localStorage.setItem("ingredientArray", JSON.stringify(array));
 
           console.log(array);
