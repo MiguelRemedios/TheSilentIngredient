@@ -16,9 +16,9 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     min-width: 200px;
-    min-height: 350px;
+    /* height: 350px; */
     max-width: 250px;
-    max-height: 400px;
+    height: 400px;
     text-align: center;
     background-color: #f1f1f1;
     display: flex;
@@ -39,8 +39,6 @@
     line-height: 1.5;
     font-size: 0.9em;
     padding: 15px;
-    background: #fafafa;
-   
 }
 
 .card__info {

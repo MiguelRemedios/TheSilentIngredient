@@ -4,8 +4,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import group43.thesilentingredient.ingredient.Ingredient;
-
 import java.util.List;
 
 @Configuration
