@@ -158,7 +158,7 @@ fetch("http://localhost:8080/api/v1/ingredient")
     for (var i = 0; i < dataObject.length; i++) {
       ingredients.push(dataObject[i].name);
     }
-    console.log(ingredients);
+    //console.log(ingredients);
     localStorage.setItem("ingredients", JSON.stringify(ingredients));
     autocomplete(document.getElementById("myInput"), ingredients);
   });
