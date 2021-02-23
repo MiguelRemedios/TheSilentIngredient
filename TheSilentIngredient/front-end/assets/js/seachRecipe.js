@@ -57,6 +57,8 @@ function searchEngine(){
     var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
 
     for (const ingredient of ingredientArray) {
+      //se o ingrediente estiver na 1 posiçao do array
+      //Fazer for loop para verificar os indexes e adicionar ao array
       if (ingredientArray.indexOf(ingredient) == 0) {
         for (const recipe of recipeIngredients) {
           if (recipe.ingredient_id == ingredient) {
@@ -67,7 +69,6 @@ function searchEngine(){
 
       for (const recipeID of tempArray) {
         if (!recipeIngredients.find(recipe => recipe.ingredient_id == ingredient)){
-          
           tempArray.splice(tempArray.indexOf(recipeID), 1);
         }
       }

@@ -9,7 +9,10 @@ import java.util.List;
 @Configuration
 public class RecipeIngredientConfig {
 
-	@Bean
+	//						TABLE ALREADY COMPLETED!
+	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
+	//				  (ANY CHANGE TEXT IN THE GROUP CHAT)
+	/*@Bean
 	CommandLineRunner RecipeIngredientsCR(RecipeIngredientRepository repository) {
 		return args -> {
 			
@@ -312,5 +315,5 @@ public class RecipeIngredientConfig {
 					r23ing1, r23ing2,
 					r24ing1, r24ing2, r24ing3, r13ing6, r13ing7,r14ing7, r14ing8,r17ing15,r17ing16,r19ing16));
 		};
-	}
+	}*/
 }
