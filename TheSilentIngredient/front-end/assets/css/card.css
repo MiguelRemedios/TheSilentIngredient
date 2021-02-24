@@ -15,9 +15,9 @@
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    min-width: 200px;
+    /* min-width: 200px; */
     /* height: 350px; */
-    max-width: 250px;
+    /* max-width: 250px; */
     height: 400px;
     text-align: center;
     background-color: #f1f1f1;
@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 240px;
 }
 .card__image {
     border-radius: 10px;
@@ -55,6 +56,8 @@
     color: #64968c;
     font-size: large;
     text-decoration: none;
+    justify-content: end;
+    vertical-align: bottom;
 }
 
 .card__link:hover {
