@@ -53,7 +53,7 @@
 }
 
 .card__link {
-    color: #64968c;
+    /* color: #64968c; */
     font-size: large;
     text-decoration: none;
     justify-content: end;
