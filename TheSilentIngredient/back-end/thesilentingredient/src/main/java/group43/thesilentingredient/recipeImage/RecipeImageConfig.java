@@ -9,7 +9,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RecipeImageConfig {
 
-	@Bean
+	//						TABLE ALREADY COMPLETED!
+	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
+	//				  (ANY CHANGE TEXT IN THE GROUP CHAT)
+	/*@Bean
 	CommandLineRunner commandLineRunner3(RecipeImageRepository repository) {
 		return args -> {
 			
@@ -202,6 +205,5 @@ public class RecipeImageConfig {
 									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5, DLCT1, DLCT2, DLCT3, DLCT4, DLCT5,
 									   DGP1, DGP2, DGP3, DGP4, DGP5, DGH1, DGH2, DGH3, DGH4, DGH5));
 		};
-
-	}
+	}*/
 }
