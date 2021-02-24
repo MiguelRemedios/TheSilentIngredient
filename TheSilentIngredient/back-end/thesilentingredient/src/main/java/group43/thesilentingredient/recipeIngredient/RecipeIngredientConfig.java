@@ -4,14 +4,15 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import group43.thesilentingredient.ingredient.Ingredient;
-
 import java.util.List;
 
 @Configuration
 public class RecipeIngredientConfig {
 
-	@Bean
+	//						TABLE ALREADY COMPLETED!
+	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
+	//				  (ANY CHANGE TEXT IN THE GROUP CHAT)
+	/*@Bean
 	CommandLineRunner RecipeIngredientsCR(RecipeIngredientRepository repository) {
 		return args -> {
 			
@@ -84,7 +85,7 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r6ing12 = new RecipeIngredient(64, 6, 1.0, "tsp");
 			RecipeIngredient r6ing13 = new RecipeIngredient(105, 6, 1.0, "tsp");
 			RecipeIngredient r6ing14 = new RecipeIngredient(106, 6, 1.0, "tsp");
-			RecipeIngredient r6ing15 = new RecipeIngredient(65, 6, 1.0, "quantity");
+			RecipeIngredient r6ing15 = new RecipeIngredient(65, 6, 3.0, "quantity");
 			RecipeIngredient r6ing16 = new RecipeIngredient(83, 6, 0.5, "tsp");
 			//r6ing1, r6ing2, r6ing3, r6ing4, r6ing5, r6ing6, r6ing7, r6ing8, r6ing9, r6ing10, r6ing11, r6ing12, r6ing13, r6ing14, r6ing15, r6ing16
 			
@@ -96,11 +97,11 @@ public class RecipeIngredientConfig {
 			RecipeIngredient r7ing4 = new RecipeIngredient(67, 7, 200.0, "g");
 			RecipeIngredient r7ing5 = new RecipeIngredient(68, 7, 55.0, "g");
 			RecipeIngredient r7ing6 = new RecipeIngredient(69, 7, 55.0, "g");
-			RecipeIngredient r7ing7 = new RecipeIngredient(34, 7, 1.0, "tsp");
-			RecipeIngredient r7ing8 = new RecipeIngredient(70, 7, 1.5, "tsp");
-			RecipeIngredient r7ing9 = new RecipeIngredient(71, 7, 1.0, "tsp");
-			RecipeIngredient r7ing10 = new RecipeIngredient(92, 7, 200.0, "ml");
-			RecipeIngredient r7ing11 = new RecipeIngredient(62, 7, 3.0, "tbsp");
+			RecipeIngredient r7ing7 = new RecipeIngredient(85, 7, 1.0, "tsp");
+			RecipeIngredient r7ing8 = new RecipeIngredient(70, 7, 1.0, "tsp");
+			RecipeIngredient r7ing9 = new RecipeIngredient(71, 7, 100.0, "g");
+			RecipeIngredient r7ing10 = new RecipeIngredient(86, 7, 200.0, "ml");
+			RecipeIngredient r7ing11 = new RecipeIngredient(72, 7, 3.0, "tbsp");
 			//r7ing1, r7ing2, r7ing3, r7ing4, r7ing5, r7ing6, r7ing7, r7ing8, r7ing9, r7ing10, r7ing11
 			
 			//RECIPE ID - 8
@@ -314,5 +315,5 @@ public class RecipeIngredientConfig {
 					r23ing1, r23ing2,
 					r24ing1, r24ing2, r24ing3, r13ing6, r13ing7,r14ing7, r14ing8,r17ing15,r17ing16,r19ing16));
 		};
-	}
+	}*/
 }

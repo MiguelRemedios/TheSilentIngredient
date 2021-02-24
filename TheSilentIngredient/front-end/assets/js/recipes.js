@@ -245,15 +245,15 @@ function recipe4() {
 function recipe5() {
   recipeInfo(5);
 
-  //  6 pickling cucumbers
-  //  2 shallots
-  //  2 teaspoons mustard seeds
-  //  ½ teaspoon ground turmeric
-  //  2 star anise
-  //  75 g caster sugar
-  //  150 ml vinegar
+  // 600g 6 pickling cucumbers
+  // 100g 2 shallots
+  // 10g  2 teaspoons mustard seeds
+  // 1.5g ½ teaspoon ground turmeric
+  // 38g 2 star anise
+  // 75g caster sugar
+  //150g  150 ml vinegar
 
-  recipenutrition();
+  recipenutrition({"id":50,"amount": 6}, {"id":52,"amount": 1}, {"id":53,"amount": 0.1}, {"id":54,"amount": 0.015}, {"id":55,"amount": 0.38}, {"id":55,"amount": 0.75}, {"id":57,"amount": 1.5});
 }
 
 function recipe6() {
@@ -280,14 +280,16 @@ function recipe6() {
 
 
 
-  recipenutrition();
+recipenutrition({ "id": 58, "amount": 2.4 }, { "id": 43, "amount": 4 }, { "id": 60, "amount": 0.9 }, { "id": 61, "amount": 0.26 }, { "id": 53, "amount": 0.05 }, 
+  { "id": 101, "amount": 0.02 }, { "id": 62, "amount": 0.08 }, { "id": 111, "amount": 2 }, { "id": 102, "amount": 0.017 }, { "id": 103, "amount": 0.028 }, { "id": 104, "amount": 0.028 },
+   { "id": 64, "amount": 0.027 }, { "id": 105, "amount": 0.031 }, { "id": 106, "amount": 0.027 }, { "id": 62, "amount": 0.08 }, { "id": 65, "amount": 0.006 }, { "id": 83, "amount": 0.007 });
 }
 
 function recipe7() {
-  recipeInfo(7)
+  recipeInfo(7);
 
   //75 ml sunflower oil , plus extra for greasing
-  //6 tbsp ground flaxseed
+  //42g 6 tbsp ground flaxseed
   //1 x 400g tin of aduki beans
   //200 g soft light brown sugar
   //55 g cocoa powder
@@ -301,7 +303,78 @@ function recipe7() {
 
 
 
-  recipenutrition();
+  recipenutrition({"id":61,"amount": 0.75}, {"id":84,"amount": 0.42},{"id":66,"amount": 4}, {"id":67,"amount": 2}, {"id":68,"amount": 0.55}, 
+  {"id":69,"amount": 0.55}, {"id": 85,"amount":0.04}, {"id":70,"amount": 0.063},
+   {"id":71,"amount": 1}, {"id":86,"amount": 2}, {"id":72,"amount": 0.0781});
+}
+
+function recipe8(){
+  recipeInfo(8);
+  //400g can black beans
+  //80g drained -small bunch coriander
+  //108g finely chopped -4 large or 8-12 small flour tortillas 
+  //150g 1 avocado sliced 
+  //30.26g 2 tbsp soured cream
+
+
+  recipenutrition({"id":81,"amount": 4}, {"id":65,"amount": 0.8}, {"id":89,"amount": 1.08},{"id":82,"amount": 1.5},{"id":90,"amount": 0.3026});
+}
+
+function recipe9(){
+  recipeInfo(9);
+//13.5g -groundnut oil 1 tbsp
+//225g -onion 1 large, finely chopped
+//8g -garlic 2 cloves, crushed
+//45g -green chilli 1, sliced
+//119g -green pepper 1, diced
+//-basmati rice 200g
+//14g -chipotle paste 1 tbsp
+//-chopped tomatoes 400g tin
+//250g -vegetable stock 250ml
+//5g -coriander a handful, chopped
+//1g -lime wedges to serve
+
+  recipenutrition({"id":91,"amount": 0.135},{"id":58,"amount": 2.25},{"id":15,"amount": 0.08},{"id":60,"amount": 0.45},{"id": 93,"amount": 2},{"id":94,"amount": 0.14},
+  {"id":63,"amount": 4},{"id":95,"amount": 2.5},{"id":65,"amount": 0.05},{"id":92,"amount": 1.19},{"id":96,"amount": 0.01},);
+}
+function recipe10(){
+  recipeInfo(10);
+//-short pasta (such as radiatori) 150g
+//240g -vine tomatoes 3, diced
+//26.6g -olive oil 2 tbsp
+//14.90g -red wine vinegar 1 tbsp
+//7.5g -baby capers 1 tbsp
+//-bocconcini 150g pack, drained and balls torn in half if large (see notes below)
+//70g -basil a handful, chopped
+//7g -chives chopped to make 2 tbsp
+
+  recipenutrition({"id":20,"amount": 1.5},{"id":10,"amount": 2.4},{"id":4,"amount": 0.266},{"id":110,"amount": 0.149},{"id":97,"amount": 0.75},{"id":98,"amount": 1.5},
+  {"id":99,"amount": 0.7},{"id":100,"amount": 0.07});
+}
+function recipe11(){
+  recipeInfo(11);
+  //142g chicken breast 1 piece
+  //76g 2 slices bread
+  //17.07g 1tbsp salt
+  //8.12g 1tbsp chili powder
+  //7g 1tbsp pepper
+  //15g 1tbsp chili sauce
+
+  recipenutrition({"id":8,"amount": 1.42},{"id":47,"amount": 0.76},{"id":78,"amount":0.1707},{"id":112,"amount": 0.0812},{"id":13,"amount": 0.07},{"id":113,"amount": 0.15},);
+}
+function recipe12(){
+  recipeInfo(12);
+  //284g chicken breast 2 pieces
+  //17.07g 1tbsp salt
+  //8.12g 1tbsp chili powder
+  //7g 1tbsp pepper
+  //15g 1tbsp chili sauce
+  //250ml sunflower oil
+  //100g 2 eggs
+  // 50g flour
+
+  recipenutrition({"id":8,"amount": 2.84},{"id":78,"amount": 0.1707},{"id":112,"amount": 0.0812},{"id":13,"amount": 0.07},{"id":113,"amount": 0.15},
+  {"id":61,"amount": 2.5},{"id":73,"amount": 1},{"id":33,"amount": 0.5},);
 }
 
 function recipe13() {
@@ -312,7 +385,7 @@ function recipe13() {
   //2 slices of bread,    47 - 93
   //1 tbsp of salt,       78 - 14
   //350ml of oil          4  - 95
-  recipenutrition({ "id": 8, "amount": 3.44 }, { "id": 48, "amount": 4 }, { "id": 47, "amount": 0.8 }, { "id": 78, "amount": 0.17 }, { "id": 4, "amount": 3.2 });
+  recipenutrition({ "id": 8, "amount": 2.84 }, { "id": 48, "amount": 4 }, { "id": 47, "amount": 0.8 }, { "id": 78, "amount": 0.17 }, { "id": 4, "amount": 3.2 });
 }
 
 function recipe14() {
@@ -324,7 +397,7 @@ function recipe14() {
   //1 tbsp of salt,        78  - 99
   //2 tbsp of chili sauce, 113 - 100
   //15ml oil               61  - 101
-  recipenutrition({ "id": 8, "amount": 1.7 }, { "id": 73, "amount": 1.2 }, { "id": 49, "amount": 0.7 }, { "id": 78, "amount": 0.17 }, { "id": 113, "amount": 0.34 }, { "id": 61, "amount": 0.15 });
+  recipenutrition({ "id": 8, "amount": 1.42 }, { "id": 73, "amount": 1.2 }, { "id": 49, "amount": 0.7 }, { "id": 78, "amount": 0.17 }, { "id": 113, "amount": 0.34 }, { "id": 61, "amount": 0.15 });
 }
 
 function recipe15() {
@@ -340,6 +413,65 @@ function recipe15() {
   //parsley                   31 - 110
 
   recipenutrition({ "id": 27, "amount": 2 }, { "id": 15, "amount": 0.15 }, { "id": 16, "amount": 0.026 }, { "id": 17, "amount": 2.7 }, { "id": 18, "amount": 1.25 }, { "id": 19, "amount": 0.9 }, { "id": 20, "amount": 3.5 }, { "id": 31, "amount": 0.55 });
+}
+
+function recipe16() {
+    recipeInfo(16);
+
+    //1 tbsp olive oil            4 
+    //2 red onions, chopped       38
+    //1 red chilli                22
+    //1 garlic clove, sliced      15
+    //coriander                   69 
+    //2 cans cherry tomatoes      25
+    //1 tsp caster sugar          60
+    //4 eggs                      77
+
+
+    recipenutrition({ "id": 4, "amount": 0.0532 }, { "id": 38, "amount": 2.2 }, { "id": 22, "amount": 1.1 }, { "id": 15, "amount": 0.055 }, 
+		    { "id": 69, "amount": 1.25 }, { "id": 25, "amount": 4.0 }, { "id": 60, "amount": 0.13 }, { "id": 77, "amount": 2.0 });
+
+}
+
+
+function recipe17() {
+    recipeInfo(17);
+
+    //3 cups canned white beans, drained and washed
+    //8 oz package of tempeh, cubed into ½-inch pieces
+    //1 tbsp extra virgin olive oil
+    //1 medium onion, diced
+    //2 medium carrots, sliced
+    //2 stalks of celery, diced
+    //5 cloves garlic, finely minced
+    //15 mushrooms sliced
+    //2 tomatoes diced
+    //1 tbsp chopped sage
+    //1 tbsp chopped thyme
+    //2 bay leaves
+    //2 tbsp parsley, chopped
+    //½ cup red wine, optional
+    //Salt and ground black pepper to taste
+    recipenutrition({ "id": 23, "amount": 5.10 }, { "id": 24, "amount": 2.27 }, { "id": 4, "amount": 0.13 }, { "id": 58, "amount": 1.10 }, 
+		    { "id": 25, "amount": 1.56 }, { "id": 26, "amount": 1.06 }, { "id": 15, "amount": 0.30 }, { "id": 27, "amount": 2.34}, 
+		    { "id": 111, "amount": 2.46 }, { "id": 28, "amount": 0.02 }, { "id": 29, "amount": 0.03 }, { "id": 30, "amount": 0.025 },
+		    { "id": 31, "amount": 0.0324 }, { "id": 32, "amount": 1.25 }, { "id": 78, "amount": 0.0036 }, { "id": 13, "amount": 0.0005 });
+}
+
+function recipe18(){
+  recipeInfo(18);
+
+  //1 cup all-purpose flour         33 - 133
+  //1 tablespoon white sugar        62 - 134
+  //2 teaspoons baking powder       34 - 135
+  //¼ teaspoon salt                 78 - 136
+  //1 egg, beaten                   73 - 137
+  //1 cup plant based milk          35 - 138
+  //2 tablespoons vegetable oil     36 - 139
+  //2 ripe bananas, mashed          1  - 140
+
+  recipenutrition({"id":33,"amount":1.25},{"id":62,"amount":0.12},{"id":34,"amount":0.008},{"id":78,"amount":0.001},{"id":73,"amount":0.57}, 
+		  {"id":35,"amount":2.4}, {"id":36,"amount":0.26}, {"id":1,"amount":2.4});
 }
 function recipe19() {
   recipeInfo(19);

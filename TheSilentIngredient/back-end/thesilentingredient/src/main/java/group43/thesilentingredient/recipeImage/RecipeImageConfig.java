@@ -9,7 +9,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RecipeImageConfig {
 
-	@Bean
+	//						TABLE ALREADY COMPLETED!
+	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
+	//				  (ANY CHANGE TEXT IN THE GROUP CHAT)
+	/*@Bean
 	CommandLineRunner commandLineRunner3(RecipeImageRepository repository) {
 		return args -> {
 			
@@ -82,7 +85,18 @@ public class RecipeImageConfig {
 			RecipeImage pastaSalad3 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad3.jpg");
 			RecipeImage pastaSalad4 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad4.jpg");
 			RecipeImage pastaSalad5 = new RecipeImage(10,"http://127.0.0.1:5500/images/recipe/halal/pastaSalad5.jpg");
-
+			//RECIPE 11
+			RecipeImage DHSandwich1 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW1.jpg");
+			RecipeImage DHSandwich2 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW2.jpg");
+			RecipeImage DHSandwich3 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW3.jpg");
+			RecipeImage DHSandwich4 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW4.jpg");
+			RecipeImage DHSandwich5 = new RecipeImage(11,"http://127.0.0.1:5500/images/recipe/chickenSW5.jpg");
+			//RECIPE 12
+			RecipeImage DHChickenTKM1 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM1.jpg");
+			RecipeImage DHChickenTKM2 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM2.jpg");
+			RecipeImage DHChickenTKM3 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM3.jpg");
+			RecipeImage DHChickenTKM4 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM4.jpg");
+			RecipeImage DHChickenTKM5 = new RecipeImage(12,"http://127.0.0.1:5500/images/recipe/halal/HALALCTM5.jpg");
 			//RECIPE 13
 			RecipeImage NDMB1 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB1.jpg");
 			RecipeImage NDMB2 = new RecipeImage(13,"http://127.0.0.1:5500/images/recipe/nodiet/NDMB2.jpg");
@@ -98,11 +112,54 @@ public class RecipeImageConfig {
 			RecipeImage NDFB5 = new RecipeImage(14,"http://127.0.0.1:5500/images/recipe/nodiet/NDFB5.jpg");
 			
 			//RECIPE 15
-			RecipeImage LFP1 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP1.jpg");
-			RecipeImage LFP2 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP2.jpg");
-			RecipeImage LFP3 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP3.jpg");
-			RecipeImage LFP4 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP4.jpg");
-			RecipeImage LFP5 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose free/LFP5.jpg");
+			RecipeImage LFP1 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP1.jpg");
+			RecipeImage LFP2 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP2.jpg");
+			RecipeImage LFP3 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP3.jpg");
+			RecipeImage LFP4 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP4.jpg");
+			RecipeImage LFP5 = new RecipeImage(15,"http://127.0.0.1:5500/images/recipe/Lactose_free/LFP5.jpg");
+			
+			//RECIPE 16
+            RecipeImage Shakshuka1 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka1.jpg");
+            RecipeImage Shakshuka2 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka2.jpg");
+            RecipeImage Shakshuka3 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka3.jpg");
+            RecipeImage Shakshuka4 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka4.jpg");
+            RecipeImage Shakshuka5 = new RecipeImage(16,"http://127.0.0.1:5500/images/recipe/Lactose_free/shakshuka5.jpg");
+
+           	//RECIPE 17
+            RecipeImage Cassoulet1 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet1.jpg");
+            RecipeImage Cassoulet2 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet2.jpg");
+            RecipeImage Cassoulet3 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet3.jpg");
+            RecipeImage Cassoulet4 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet4.jpg");
+            RecipeImage Cassoulet5 = new RecipeImage(17,"http://127.0.0.1:5500/images/recipe/Lactose_free/cassoulet5.jpg");
+
+            //RECIPE 18
+            RecipeImage Bananapancakes1 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes1.jpg");
+            RecipeImage Bananapancakes2 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes2.jpg");
+            RecipeImage Bananapancakes3 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes3.jpg");
+            RecipeImage Bananapancakes4 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes4.jpg");
+            RecipeImage Bananapancakes5 = new RecipeImage(18,"http://127.0.0.1:5500/images/recipe/Lactose_free/bananapancakes5.jpg");
+			
+			
+			//RECIPE 19
+			RecipeImage DLCT1 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT1.jpg");
+			RecipeImage DLCT2 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT2.jpg");
+			RecipeImage DLCT3 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT3.jpg");
+			RecipeImage DLCT4 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT4.jpg");
+			RecipeImage DLCT5 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT5.jpg");
+			
+			//RECIPE 20
+			RecipeImage DGP1 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP1.jpg");
+			RecipeImage DGP2 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP2.jpg");
+			RecipeImage DGP3 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP3.jpg");
+			RecipeImage DGP4 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP4.jpg");
+			RecipeImage DGP5 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP5.jpg");
+			
+			//RECIPE 21
+			RecipeImage DGH1 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH1.jpg");
+			RecipeImage DGH2 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH2.jpg");
+			RecipeImage DGH3 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH3.jpg");
+			RecipeImage DGH4 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH4.jpg");
+			RecipeImage DGH5 = new RecipeImage(21,"http://127.0.0.1:5500/images/recipe/GF/DGH5.jpg");
 			
 			//RECIPE 22 Gluten-free bread
 			RecipeImage DGGFB1 = new RecipeImage(22,"http://127.0.0.1:5500/images/recipe/GF/GFBread1.jpg");
@@ -132,16 +189,21 @@ public class RecipeImageConfig {
 									   fajita1, fajita2, fajita3, fajita4, fajita5,
 									   spicyrice1, spicyrice2, spicyrice3, spicyrice4, spicyrice5,
 									   pastaSalad1, pastaSalad2, pastaSalad3, pastaSalad4, pastaSalad5,
+									   DHSandwich1,DHSandwich2,DHSandwich3,DHSandwich4,DHSandwich5,
+									   DHChickenTKM1,DHChickenTKM2,DHChickenTKM3,DHChickenTKM4,DHChickenTKM5,
 									   NDMB1, NDMB2, NDMB3, NDMB4, NDMB5, 
 									   NDFB1, NDFB2, NDFB3, NDFB4, NDFB5, 
 									   LFP1, LFP2, LFP3, LFP4, LFP5,
+						   			   Shakshuka1, Shakshuka2, Shakshuka3, Shakshuka4, Shakshuka5,
+                                       					   Cassoulet1, Cassoulet2, Cassoulet3, Cassoulet4, Cassoulet5,
+                                     					   Bananapancakes1, Bananapancakes2, Bananapancakes3, Bananapancakes4, Bananapancakes5,
 									   DVChickpeacurry1, DVChickpeacurry2, DVChickpeacurry3, 
 									   DVChickpeacurry4, DVChickpeacurry5, DVSpicycucumberpickle1, DVSpicycucumberpickle2, DVSpicycucumberpickle3,
 									   DVSpicycucumberpickle4, DVSpicycucumberpickle5, DVChocolatebrownie1, DVChocolatebrownie2, DVChocolatebrownie3,
 									   DVChocolatebrownie4, DVChocolatebrownie5, DGGFB1, DGGFB2,
 									   DGGFB3, DGGFB4, DGGFB5,NDCB1, NDCB2, NDCB3, NDCB4, NDCB5,
-									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5));
+									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5, DLCT1, DLCT2, DLCT3, DLCT4, DLCT5,
+									   DGP1, DGP2, DGP3, DGP4, DGP5, DGH1, DGH2, DGH3, DGH4, DGH5));
 		};
-
-	}
+	}*/
 }

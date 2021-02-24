@@ -50,9 +50,7 @@ function autocomplete(inp, arr) {
           }
 
           var ingID = ingArray.indexOf(ingredient) + 1;
-
           array.push(ingID);
-
           localStorage.setItem("ingredientArray", JSON.stringify(array));
 
           console.log(array);
@@ -160,7 +158,7 @@ fetch("http://localhost:8080/api/v1/ingredient")
     for (var i = 0; i < dataObject.length; i++) {
       ingredients.push(dataObject[i].name);
     }
-    console.log(ingredients);
+    //console.log(ingredients);
     localStorage.setItem("ingredients", JSON.stringify(ingredients));
     autocomplete(document.getElementById("myInput"), ingredients);
   });
