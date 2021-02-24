@@ -1,10 +1,10 @@
-function recipes(/*imageid*/){
+function recipes(){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
   
         var recipes = JSON.parse(this.responseText);
-        for (let index = 0; index < 24 /*recipes.length*/; index++) {
+        for (let index = 0; index < recipes.length ; index++) {
           document.getElementById(`rname${index+1}`).innerHTML = `${recipes[index].name}`;
           document.getElementById(`rdesc${index+1}`).innerHTML = `${recipes[index].description}`;
         }
@@ -33,6 +33,8 @@ function recipes(/*imageid*/){
     xmlhttp2.open("GET", 'http://localhost:8080/api/v1/recipe-image', true);
     xmlhttp2.send();
 
+    var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
+    localStorage.setItem("recipesFilter", JSON.stringify(recipesArray));
 }
 
 function storeID(element){
@@ -41,24 +43,15 @@ function storeID(element){
     localStorage.setItem("cardID", card.id);
 }
 
-/*function toggle(){
-  const argcount = arguments.length;
-  for (let index = 0; index < argcount; index++) {
-    document.getElementById(`${index+1}`).style.display = "none";
-  }
-}*/
-
 function searchEngine(){
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
-    ingredientArray.sort(function(a, b){return a - b});
+    //ingredientArray.sort(function(a, b){return a - b});
     var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
   
     var tempArray = [];
     var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
 
     for (const ingredient of ingredientArray) {
-      //se o ingrediente estiver na 1 posiçao do array
-      //Fazer for loop para verificar os indexes e adicionar ao array
       if (ingredientArray.indexOf(ingredient) == 0) {
         for (const recipe of recipeIngredients) {
           if (recipe.ingredient_id == ingredient) {
@@ -75,14 +68,81 @@ function searchEngine(){
     }
 
     var recipesArray = recipesArray.filter(recipeID => !tempArray.includes(recipeID));
-
     for (const recipeID of recipesArray) {
       document.getElementById(recipeID).style.display = "none";
     }
-
     localStorage.setItem("recipesFilter", JSON.stringify(tempArray));
     //console.log(tempArray);
     //console.log(recipesArray);
+}
+
+
+function searchEngine2(){
+  var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
+  var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
+  if (ingredientArray === null) return console.log("Please enter some ingredients first!");; 
+
+  var tempArray = [];
+  var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+
+  //Block of code to get the recipe id's out of the ingredients selected
+  for (let index = 0; index < ingredientArray.length; index++) {
+
+    if (ingredientArray.indexOf(ingredientArray[index]) == index) {
+
+      for (const recipe of recipeIngredients) {
+
+        //ERRO TA AQUI VIADO, LÊ ESSA PORRA QUANDO ACORDAR
+        if (recipe.ingredient_id == ingredientArray[index]) {
+
+          removeDuplicates(tempArray);
+          tempArray.push(recipe.recipe_id);
+          tempArray.sort(function(a, b){return a - b});
+        }
+      }
+    } 
+
+    var array = removeDuplicates(tempArray);
+    //console.log(array);
+    /*
+    for (const recipeID of array) {
+      if (!recipeIngredients.find(recipe => recipe.ingredient_id == ingredientArray[index])){
+        array.splice(array.indexOf(recipeID), 1);
+      }
+    }*/
+    
+    var displayRecipes = [];
+    //Block of code in charge of checking if recipeID's really include both ingredients in IngredientArray
+    for (const recipeID of array) {
+      if (recipeIngredients.find(recipe => recipe.ingredient_id == ingredientArray[index])){
+
+        displayRecipes.push(recipeID);
+      }
+    }
+
+    console.log(displayRecipes);
+ 
+
+  }
+
+  //BLOCK of code to make the recipes toggle between hiding/showing
+  var recipesArray = recipesArray.filter(recipeID => !array.includes(recipeID));
+  for (const recipeID of recipesArray) {
+    document.getElementById(recipeID).style.display = "none";
+  }
+
+  //Set the array in the localstorage
+  localStorage.setItem("recipesFilter", JSON.stringify(array));
+  //console.log(array);
+}
+
+function removeDuplicates(data){
+  let unique = data.reduce(function (a,b) {
+    if (a.indexOf(b) < 0) a.push(b);
+    return a;
+  }, []);
+  return unique;
+
 }
 
 fetch("http://localhost:8080/api/v1/recipe-ingredient")
@@ -97,4 +157,3 @@ fetch("http://localhost:8080/api/v1/recipe-ingredient")
 
 
 recipes();
-//toggle(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24);
