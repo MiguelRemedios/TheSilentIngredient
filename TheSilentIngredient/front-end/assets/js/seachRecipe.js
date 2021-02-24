@@ -80,10 +80,15 @@ function searchEngine(){
 function searchEngine2(){
   var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
   var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
-  if (ingredientArray === null) return console.log("Please enter some ingredients first!");; 
+  if (ingredientArray === null) return console.log("Please enter some ingredients first!");
+  if (!(typeof ingredientArray != "undefined" && ingredientArray != null && ingredientArray.length != null && ingredientArray.length > 0)) {
+    return alert("Ingredient List is empty! Please add a ingredient!");
+}
 
   var tempArray = [];
   var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
 
   //Block of code to get the recipe id's out of the ingredients selected
   for (let index = 0; index < ingredientArray.length; index++) {
@@ -120,20 +125,31 @@ function searchEngine2(){
       }
     }
 
-    console.log(displayRecipes);
- 
-
+    
   }
+//-------------------------------------------------------------------------------------------------------------------------------------------
 
   //BLOCK of code to make the recipes toggle between hiding/showing
-  var recipesArray = recipesArray.filter(recipeID => !array.includes(recipeID));
-  for (const recipeID of recipesArray) {
-    document.getElementById(recipeID).style.display = "none";
+  if (ingredientArray !== null) {
+    //hiderecipesArray - saves all recipes that need to be hidden
+    var hiderecipesArray = recipesArray.filter(recipeID => !array.includes(recipeID));
+    for (const recipeID of hiderecipesArray) {
+      document.getElementById(recipeID).style.display = "none";
+    }
+
+    //showrecipesArray - saves all recipes that need to be shown / displayed
+    var showrecipesArray = recipesArray.filter(recipeID => array.includes(recipeID));
+    for (const recipeID of showrecipesArray) {
+      document.getElementById(recipeID).style.display = "block";
+    }
   }
+
+  //CONSOLE LOGS HANDLING
+  console.log("%cRecipes to hide:\n" + hiderecipesArray.length + ") "  + hiderecipesArray, 'color: #FF8484');
+  console.log("%cRecipes to display:\n" + showrecipesArray.length + ") "  + showrecipesArray, 'color: #9CFF67');
 
   //Set the array in the localstorage
   localStorage.setItem("recipesFilter", JSON.stringify(array));
-  //console.log(array);
 }
 
 function removeDuplicates(data){
