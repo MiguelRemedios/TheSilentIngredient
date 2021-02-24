@@ -9,7 +9,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RecipeImageConfig {
 
-	@Bean
+	//						TABLE ALREADY COMPLETED!
+	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
+	//				  (ANY CHANGE TEXT IN THE GROUP CHAT)
+	/*@Bean
 	CommandLineRunner commandLineRunner3(RecipeImageRepository repository) {
 		return args -> {
 			
@@ -138,11 +141,11 @@ public class RecipeImageConfig {
 			
 			
 			//RECIPE 19
-			RecipeImage DLCT1 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT1.jpg");
-			RecipeImage DLCT2 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT2.jpg");
-			RecipeImage DLCT3 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT3.jpg");
-			RecipeImage DLCT4 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT4.jpg");
-			RecipeImage DLCT5 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose free/DLCT5.jpg");
+			RecipeImage DLCT1 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT1.jpg");
+			RecipeImage DLCT2 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT2.jpg");
+			RecipeImage DLCT3 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT3.jpg");
+			RecipeImage DLCT4 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT4.jpg");
+			RecipeImage DLCT5 = new RecipeImage(19,"http://127.0.0.1:5500/images/recipe/Lactose_free/DLCT5.jpg");
 			
 			//RECIPE 20
 			RecipeImage DGP1 = new RecipeImage(20,"http://127.0.0.1:5500/images/recipe/GF/DGP1.jpg");
@@ -202,6 +205,5 @@ public class RecipeImageConfig {
 									   NDRBM1, NDRBM2, NDRBM3, NDRBM4, NDRBM5, DLCT1, DLCT2, DLCT3, DLCT4, DLCT5,
 									   DGP1, DGP2, DGP3, DGP4, DGP5, DGH1, DGH2, DGH3, DGH4, DGH5));
 		};
-
-	}
+	}*/
 }

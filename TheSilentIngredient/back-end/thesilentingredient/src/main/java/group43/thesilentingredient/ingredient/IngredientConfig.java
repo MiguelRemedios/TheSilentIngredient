@@ -9,7 +9,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class IngredientConfig {    
 
-	@Bean
+	//						TABLE ALREADY COMPLETED!
+	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
+	//					(ANY CHANGE TEXT IN THE GROUP CHAT)
+	/*@Bean
 	CommandLineRunner commandLineRunner10(IngredientRepository repository) {
 		return args -> {
 			
@@ -949,5 +952,5 @@ public class IngredientConfig {
 					);
 		};
 
-	}
+	}*/
 }
