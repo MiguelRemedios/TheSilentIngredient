@@ -30,13 +30,13 @@
                         <span>
                             <h1>Results</h1>
                             <div class="sel_tags">
-                                <select id="sel3" name="demo-category" id="demo-category">
-                                    <option value="">- Diet -</option>
-                                    <option value="1">Vegan</option>
-                                    <option value="2">Vegeterian</option>
-                                    <option value="3">Halal</option>
-                                    <option value="4">Lactose Free</option>
-                                    <option value="5">Gluten Free</option>
+                                <select id="sel3" onchange="dietEngine()" name="demo-category" id="demo-category">
+                                    <option id="option0" value="0">- Diet -</option>
+                                    <option id="option1" value="1">Vegan</option>
+                                    <option id="option2" value="2">Vegeterian</option>
+                                    <option id="option3" value="3">Halal</option>
+                                    <option id="option4" value="4">Lactose Free</option>
+                                    <option id="option5" value="5">Gluten Free</option>
                                 </select>
                             </div>
                         </span>
@@ -47,7 +47,7 @@
                     <div class="cards">
                         <div id="1" class="card">
                             <div class="card">
-                                <img id="rimg1"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg1" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname1"><b></b></h4>
                                     <p id="rdesc1"></p>
@@ -61,7 +61,7 @@
                         </div>
                         <div id="2" class="card">
                             <div class="card">
-                                <img id="rimg2"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg2" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname2"><b></b></h4>
                                     <p id="rdesc2"></p>
@@ -75,7 +75,7 @@
                         </div>
                         <div id="3" class="card">
                             <div class="card">
-                                <img id="rimg3"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg3" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname3"><b></b></h4>
                                     <p id="rdesc3"></p>
@@ -89,7 +89,7 @@
                         </div>
                         <div id="4" class="card">
                             <div class="card">
-                                <img id="rimg4"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg4" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname4"><b></b></h4>
                                     <p id="rdesc4"></p>
@@ -103,7 +103,7 @@
                         </div>
                         <div id="5" class="card">
                             <div class="card">
-                                <img id="rimg5"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg5" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname5"><b></b></h4>
                                     <p id="rdesc5"></p>
@@ -117,7 +117,7 @@
                         </div>
                         <div id="6" class="card">
                             <div class="card">
-                                <img id="rimg6"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg6" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname6"><b></b></h4>
                                     <p id="rdesc6"></p>
@@ -131,7 +131,7 @@
                         </div>
                         <div id="7" class="card">
                             <div class="card">
-                                <img id="rimg7"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg7" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname7"><b></b></h4>
                                     <p id="rdesc7"></p>
@@ -145,7 +145,7 @@
                         </div>
                         <div id="8" class="card">
                             <div class="card">
-                                <img id="rimg8"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg8" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname8"><b></b></h4>
                                     <p id="rdesc8"></p>
@@ -159,7 +159,7 @@
                         </div>
                         <div id="9" class="card">
                             <div class="card">
-                                <img id="rimg9"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg9" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname9"><b></b></h4>
                                     <p id="rdesc9"></p>
@@ -173,7 +173,7 @@
                         </div>
                         <div id="10" class="card">
                             <div class="card">
-                                <img id="rimg10"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg10" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname10"><b></b></h4>
                                     <p id="rdesc10"></p>
@@ -187,7 +187,7 @@
                         </div>
                         <div id="11" class="card">
                             <div class="card">
-                                <img id="rimg11"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg11" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname11"><b></b></h4>
                                     <p id="rdesc11"></p>
@@ -201,7 +201,7 @@
                         </div>
                         <div id="12" class="card">
                             <div class="card">
-                                <img id="rimg12"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg12" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname12"><b></b></h4>
                                     <p id="rdesc12"></p>
@@ -215,7 +215,7 @@
                         </div>
                         <div id="13" class="card">
                             <div class="card">
-                                <img id="rimg13"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg13" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname13"><b></b></h4>
                                     <p id="rdesc13"></p>
@@ -229,7 +229,7 @@
                         </div>
                         <div id="14" class="card">
                             <div class="card">
-                                <img id="rimg14"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg14" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname14"><b></b></h4>
                                     <p id="rdesc14"></p>
@@ -243,7 +243,7 @@
                         </div>
                         <div id="15" class="card">
                             <div class="card">
-                                <img id="rimg15"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg15" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname15"><b></b></h4>
                                     <p id="rdesc15"></p>
@@ -257,7 +257,7 @@
                         </div>
                         <div id="16" class="card">
                             <div class="card">
-                                <img id="rimg16"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg16" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname16"><b></b></h4>
                                     <p id="rdesc16"></p>
@@ -271,7 +271,7 @@
                         </div>
                         <div id="17" class="card">
                             <div class="card">
-                                <img id="rimg17"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg17" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname17"><b></b></h4>
                                     <p id="rdesc17"></p>
@@ -285,7 +285,7 @@
                         </div>
                         <div id="18" class="card">
                             <div class="card">
-                                <img id="rimg18"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg18" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname18"><b></b></h4>
                                     <p id="rdesc18"></p>
@@ -299,7 +299,7 @@
                         </div>
                         <div id="19" class="card">
                             <div class="card">
-                                <img id="rimg19"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg19" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname19"><b></b></h4>
                                     <p id="rdesc19"></p>
@@ -313,7 +313,7 @@
                         </div>
                         <div id="20" class="card">
                             <div class="card">
-                                <img id="rimg20"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg20" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname20"><b></b></h4>
                                     <p id="rdesc20"></p>
@@ -327,7 +327,7 @@
                         </div>
                         <div id="21" class="card">
                             <div class="card">
-                                <img id="rimg21"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg21" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname21"><b></b></h4>
                                     <p id="rdesc21"></p>
@@ -341,7 +341,7 @@
                         </div>
                         <div id="22" class="card">
                             <div class="card">
-                                <img id="rimg22"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg22" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname22"><b></b></h4>
                                     <p id="rdesc22"></p>
@@ -355,7 +355,7 @@
                         </div>
                         <div id="23" class="card">
                             <div class="card">
-                                <img id="rimg23"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg23" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname23"><b></b></h4>
                                     <p id="rdesc23"></p>
@@ -369,7 +369,7 @@
                         </div>
                         <div id="24" class="card">
                             <div class="card">
-                                <img id="rimg24"  class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
+                                <img id="rimg24" class="card__image" src="images/noimage.jpg" alt="Avatar" style="width:100%">
                                 <div class="card__content">
                                     <h4 id="rname24"><b></b></h4>
                                     <p id="rdesc24"></p>
@@ -404,9 +404,9 @@
 
                 <!-- Section -->
                 <section id="ingredients">
-                    <header class="major"style="display: flex;">
+                    <header class="major" style="display: flex;">
                         <h2 style=" width: 50%;">Ingredients</h2>
-                        <button class="button" style="width: 50%" onclick="searchEngine2(this)"> Done </button>
+                        <button class="button" style="width: 50%" onclick="searchEngine(this)"> Done </button>
                     </header>
                     <div id="ing" class="ingselected">
 
@@ -429,6 +429,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/searchIngredient.js"></script>
     <script src="assets/js/seachRecipe.js"></script>
+    <script src="assets/js/dietSearchEngine.js"></script>
 </body>
 
 </html>
