@@ -139,7 +139,7 @@ function toList(ingredient) {
     var i = tempArray.indexOf(activeIng);
 
     tempArray.splice(i, 1);
-    console.log(tempArray);
+    //console.log(tempArray);
 
     localStorage.setItem("ingredientArray", JSON.stringify(tempArray));
   });
