@@ -45,100 +45,64 @@ function storeID(element){
 
 function searchEngine(){
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
-    //ingredientArray.sort(function(a, b){return a - b});
+    ingredientArray.sort(function(a, b){return a - b});
     var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
-  
-    var tempArray = [];
-    var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
+    if (ingredientArray === null) return console.log("Please enter some ingredients first!");
 
+    var tempArray = [];
+    var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+
+    if (!(typeof ingredientArray != "undefined" && ingredientArray != null && ingredientArray.length != null && ingredientArray.length > 0)) {
+      for (const recipeID of recipesArray) {
+        document.getElementById(recipeID).style.display = "block";
+      }
+      return alert("Ingredient List is empty! Please add a ingredient!");
+    }
+
+    
     for (const ingredient of ingredientArray) {
-      if (ingredientArray.indexOf(ingredient) == 0) {
+
+      var isFirstIngredient = ingredientArray.indexOf(ingredient) == 0;
+      
+      if (isFirstIngredient) {
         for (const recipe of recipeIngredients) {
           if (recipe.ingredient_id == ingredient) {
             tempArray.push(recipe.recipe_id);
           }
         }
+        tempArray.sort(function(a, b){return a - b});
       }
+      
+      //Pegar elemento do tempArray(que equivale a um recipeID)
+      //Procurar com esse elemento / recipeID na lista do (recipeIngredients) se de facto o elemento do ingredientArray
+      //está no ingredient_id do recipeID
 
-      for (const recipeID of tempArray) {
-        if (!recipeIngredients.find(recipe => recipe.ingredient_id == ingredient)){
-          tempArray.splice(tempArray.indexOf(recipeID), 1);
-        }
-      }
-    }
+      //tempArray = [3,10,11,12,14]
+      //ingredientArray = [8,1,2,3]
 
-    var recipesArray = recipesArray.filter(recipeID => !tempArray.includes(recipeID));
-    for (const recipeID of recipesArray) {
-      document.getElementById(recipeID).style.display = "none";
-    }
-    localStorage.setItem("recipesFilter", JSON.stringify(tempArray));
-    //console.log(tempArray);
-    //console.log(recipesArray);
-}
-
-
-function searchEngine2(){
-  var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
-  var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
-  if (ingredientArray === null) return console.log("Please enter some ingredients first!");
-  if (!(typeof ingredientArray != "undefined" && ingredientArray != null && ingredientArray.length != null && ingredientArray.length > 0)) {
-    return alert("Ingredient List is empty! Please add a ingredient!");
-}
-
-  var tempArray = [];
-  var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
-
-//-------------------------------------------------------------------------------------------------------------------------------------------
-
-  //Block of code to get the recipe id's out of the ingredients selected
-  for (let index = 0; index < ingredientArray.length; index++) {
-
-    if (ingredientArray.indexOf(ingredientArray[index]) == index) {
-
-      for (const recipe of recipeIngredients) {
-
-        //ERRO TA AQUI VIADO, LÊ ESSA PORRA QUANDO ACORDAR
-        if (recipe.ingredient_id == ingredientArray[index]) {
-
-          removeDuplicates(tempArray);
-          tempArray.push(recipe.recipe_id);
-          tempArray.sort(function(a, b){return a - b});
-        }
-      }
-    } 
-
-    var array = removeDuplicates(tempArray);
-    //console.log(array);
-    /*
-    for (const recipeID of array) {
-      if (!recipeIngredients.find(recipe => recipe.ingredient_id == ingredientArray[index])){
-        array.splice(array.indexOf(recipeID), 1);
-      }
-    }*/
-    
-    var displayRecipes = [];
-    //Block of code in charge of checking if recipeID's really include both ingredients in IngredientArray
-    for (const recipeID of array) {
-      if (recipeIngredients.find(recipe => recipe.ingredient_id == ingredientArray[index])){
-
-        displayRecipes.push(recipeID);
+      if (!isFirstIngredient){ // ingredientArray - guarda id's dos ingredientes
+        for (const recipeID of tempArray) {
+          if(recipeIngredients.find(rcp => rcp.recipe_id === recipeID && rcp.ingredient_id === ingredient)){
+            // ignore
+            console.log(recipeID);  
+          } else {
+            tempArray.splice(tempArray.indexOf(recipeID), 1);
+          }
       }
     }
-
-    
+    console.log(tempArray);
   }
-//-------------------------------------------------------------------------------------------------------------------------------------------
 
   //BLOCK of code to make the recipes toggle between hiding/showing
   if (ingredientArray !== null) {
     //hiderecipesArray - saves all recipes that need to be hidden
-    var hiderecipesArray = recipesArray.filter(recipeID => !array.includes(recipeID));
+    var hiderecipesArray = recipesArray.filter(recipeID => !tempArray.includes(recipeID));
     for (const recipeID of hiderecipesArray) {
       document.getElementById(recipeID).style.display = "none";
-    }
+    } 
 
     //showrecipesArray - saves all recipes that need to be shown / displayed
-    var showrecipesArray = recipesArray.filter(recipeID => array.includes(recipeID));
+    var showrecipesArray = recipesArray.filter(recipeID => tempArray.includes(recipeID));
     for (const recipeID of showrecipesArray) {
       document.getElementById(recipeID).style.display = "block";
     }
@@ -149,11 +113,114 @@ function searchEngine2(){
   console.log("%cRecipes to display:\n" + showrecipesArray.length + ") "  + showrecipesArray, 'color: #9CFF67');
 
   //Set the array in the localstorage
-  localStorage.setItem("recipesFilter", JSON.stringify(array));
+  localStorage.setItem("recipesFilter", JSON.stringify(tempArray));
 }
 
-function removeDuplicates(data){
-  let unique = data.reduce(function (a,b) {
+
+function searchEngine2(){
+  var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
+  if (ingredientArray === null) return alert("Ingredient List is empty! Please add a ingredient!");
+  ingredientArray.sort(function(a, b){return a - b});
+  var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
+
+
+
+  var tempArray = [];
+  var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+  var unfilteredArray = [];
+  var filteredArray = [];
+  var finalArray = [];
+
+  if (!(typeof ingredientArray != "undefined" && ingredientArray != null && ingredientArray.length != null && ingredientArray.length > 0)) {
+    for (const recipeID of recipesArray) {
+      document.getElementById(recipeID).style.display = "block";
+    }
+    return alert("Ingredient List is empty! Please add a ingredient!");
+  }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+  //Block of code to get the recipe id's out of the ingredients selected
+  for (let index = 0; index < ingredientArray.length; index++) {
+
+    if (ingredientArray.indexOf(ingredientArray[index]) == index) {
+
+      for (const recipe of recipeIngredients) {
+
+        if (recipe.ingredient_id == ingredientArray[index]) {
+
+          removeDuplicates(tempArray);
+          tempArray.push(recipe.recipe_id);
+          tempArray.sort(function(a, b){return a - b});
+        }
+      }
+    } 
+  }
+
+    unfilteredArray = removeDuplicates(tempArray);
+
+    for(const recipe of unfilteredArray) {
+      const completeRecipe = recipeIngredients.filter(rcp => rcp.recipe_id == recipe);
+      console.log(completeRecipe);
+      filteredArray.push({recipe_id: recipe, ingredients: []});
+
+      console.log(filteredArray);
+
+      const i = filteredArray.map(function(e) { return e.recipe_id; }).indexOf(recipe);
+
+      console.log(i);
+      
+      for (const recipeSlice of completeRecipe) {
+        filteredArray[i].ingredients.push(recipeSlice.ingredient_id);
+      }
+    
+    }
+
+    function containsAll(needles, haystack){ 
+      for(var i = 0; i < needles.length; i++){
+         if($.inArray(needles[i], haystack) == -1) return false;
+      }
+      return true;
+    }
+
+    for (const recipe of filteredArray) {
+      if (!containsAll(ingredientArray, recipe.ingredients)){
+        filteredArray.splice(filteredArray.indexOf(recipe), 1);
+      }
+    }
+ 
+    for (const recipeID of filteredArray) {
+      finalArray.push(recipeID.recipe_id);
+    }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+  //BLOCK of code to make the recipes toggle between hiding/showing
+  if (ingredientArray !== null) {
+    //hiderecipesArray - saves all recipes that need to be hidden
+    var hiderecipesArray = recipesArray.filter(recipeID => !finalArray.includes(recipeID));
+    for (const recipeID of hiderecipesArray) {
+      document.getElementById(recipeID).style.display = "none";
+    } 
+
+    //showrecipesArray - saves all recipes that need to be shown / displayed
+    var showrecipesArray = recipesArray.filter(recipeID => finalArray.includes(recipeID));
+    for (const recipeID of showrecipesArray) {
+      document.getElementById(recipeID).style.display = "block";
+    }
+  }
+
+  //CONSOLE LOGS HANDLING
+  console.log("%cRecipes to hide:\n" + hiderecipesArray.length + ") "  + hiderecipesArray, 'color: #FF8484');
+  console.log("%cRecipes to display:\n" + showrecipesArray.length + ") "  + showrecipesArray, 'color: #9CFF67');
+
+  //Set the array in the localstorage
+  localStorage.setItem("recipesFilter", JSON.stringify(filteredArray));
+}
+
+
+function removeDuplicates(array){
+  let unique = array.reduce(function (a,b) {
     if (a.indexOf(b) < 0) a.push(b);
     return a;
   }, []);
