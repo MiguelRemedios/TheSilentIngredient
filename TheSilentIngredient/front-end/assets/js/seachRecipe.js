@@ -45,7 +45,7 @@ function storeID(element){
 
 function searchEngine(){
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
-    if (ingredientArray === null) return alert("Ingredient List is empty! Please add a ingredient!");
+    if (ingredientArray === null) return ListEmpty();
     ingredientArray.sort(function(a, b){return a - b});
     var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
 
@@ -57,7 +57,7 @@ function searchEngine(){
         document.getElementById(recipeID).style.display = "block";
       }
       document.getElementById('sel3').value=0;
-      return alert("Ingredient List is empty! Please add a ingredient!");
+      return ListEmpty();
     }
 
     
@@ -116,7 +116,7 @@ function searchEngine(){
 
 function searchEngine2(){
   var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
-  if (ingredientArray === null) return alert("Ingredient List is empty! Please add a ingredient!");
+  if (ingredientArray === null) return ListEmpty();
   ingredientArray.sort(function(a, b){return a - b});
   var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
 
@@ -131,7 +131,7 @@ function searchEngine2(){
       document.getElementById(recipeID).style.display = "block";
     }
     document.getElementById('sel3').value=0;
-    return alert("Ingredient List is empty! Please add a ingredient!");
+    return ListEmpty();
   }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------
@@ -230,5 +230,20 @@ fetch("http://localhost:8080/api/v1/recipe-ingredient")
     localStorage.setItem("recipeIngredients", JSON.stringify(recipeIngs));
 });
 
+function ListEmpty() {
+  if(!(document.getElementById('abc'))){
+  var x = document.createElement("div");
+  x.setAttribute("id", "abc");
+  x.innerText = "List is empty, please add ingredients!";
+  x.classList.add("errorHandle");
+  document.getElementById("ingredients").append(x);
+  }
+
+}
+
+function removeEmpty(){
+  var myobj = document.getElementById("abc");
+  myobj.remove();
+}
 
 recipes();
