@@ -153,6 +153,8 @@ function toList(ingredient) {
 window.addEventListener('load', function() {
   var ingredientStoredLocallyIndexes = JSON.parse(localStorage.getItem("ingredientArray"));  
   var ingredients = JSON.parse(localStorage.getItem("ingredients"));
+
+  if (ingredientStoredLocallyIndexes === null) return;
   ingredientStoredLocallyIndexes.forEach(index => toList(ingredients[index-1]));
 })
 
