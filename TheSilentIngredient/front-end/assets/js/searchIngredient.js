@@ -126,6 +126,7 @@ function autocomplete(inp, arr) {
 
 function toList(ingredient) {
   var x = document.createElement("div");
+  x.setAttribute("id", "diva");
   x.innerText = ingredient;
   x.classList.add("diving");
 
@@ -152,10 +153,8 @@ function toList(ingredient) {
 window.addEventListener('load', function() {
   var ingredientStoredLocallyIndexes = JSON.parse(localStorage.getItem("ingredientArray"));  
   var ingredients = JSON.parse(localStorage.getItem("ingredients"));
-  ingredientStoredLocallyIndexes.forEach(index => toList(ingredients[index]));
+  ingredientStoredLocallyIndexes.forEach(index => toList(ingredients[index-1]));
 })
-
-
 
 let dataObject;
 fetch("http://localhost:8080/api/v1/ingredient")
