@@ -35,6 +35,7 @@ function autocomplete(inp, arr) {
         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
         /*execute a function when someone clicks on the item value (DIV element):*/
         b.addEventListener("click", function (e) {
+          removeEmpty();
           var ingredient = e.currentTarget.getElementsByTagName("input")[0]
             .value;
 
