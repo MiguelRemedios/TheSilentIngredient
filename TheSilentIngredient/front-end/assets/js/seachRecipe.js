@@ -45,9 +45,9 @@ function storeID(element){
 
 function searchEngine(){
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
+    if (ingredientArray === null) return ListEmpty();
     ingredientArray.sort(function(a, b){return a - b});
     var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
-    if (ingredientArray === null) return console.log("Please enter some ingredients first!");
 
     var tempArray = [];
     var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
@@ -56,7 +56,8 @@ function searchEngine(){
       for (const recipeID of recipesArray) {
         document.getElementById(recipeID).style.display = "block";
       }
-      return alert("Ingredient List is empty! Please add a ingredient!");
+      document.getElementById('sel3').value=0;
+      return ListEmpty();
     }
 
     
@@ -108,10 +109,6 @@ function searchEngine(){
     }
   }
 
-  //CONSOLE LOGS HANDLING
-  console.log("%cRecipes to hide:\n" + hiderecipesArray.length + ") "  + hiderecipesArray, 'color: #FF8484');
-  console.log("%cRecipes to display:\n" + showrecipesArray.length + ") "  + showrecipesArray, 'color: #9CFF67');
-
   //Set the array in the localstorage
   localStorage.setItem("recipesFilter", JSON.stringify(tempArray));
 }
@@ -119,11 +116,9 @@ function searchEngine(){
 
 function searchEngine2(){
   var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
-  if (ingredientArray === null) return alert("Ingredient List is empty! Please add a ingredient!");
+  if (ingredientArray === null) return ListEmpty();
   ingredientArray.sort(function(a, b){return a - b});
   var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
-
-
 
   var tempArray = [];
   var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
@@ -135,7 +130,8 @@ function searchEngine2(){
     for (const recipeID of recipesArray) {
       document.getElementById(recipeID).style.display = "block";
     }
-    return alert("Ingredient List is empty! Please add a ingredient!");
+    document.getElementById('sel3').value=0;
+    return ListEmpty();
   }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------
@@ -210,10 +206,6 @@ function searchEngine2(){
     }
   }
 
-  //CONSOLE LOGS HANDLING
-  console.log("%cRecipes to hide:\n" + hiderecipesArray.length + ") "  + hiderecipesArray, 'color: #FF8484');
-  console.log("%cRecipes to display:\n" + showrecipesArray.length + ") "  + showrecipesArray, 'color: #9CFF67');
-
   //Set the array in the localstorage
   localStorage.setItem("recipesFilter", JSON.stringify(filteredArray));
 }
@@ -238,5 +230,20 @@ fetch("http://localhost:8080/api/v1/recipe-ingredient")
     localStorage.setItem("recipeIngredients", JSON.stringify(recipeIngs));
 });
 
+function ListEmpty() {
+  if(!(document.getElementById('abc'))){
+  var x = document.createElement("div");
+  x.setAttribute("id", "abc");
+  x.innerText = "List is empty, please add ingredients!";
+  x.classList.add("errorHandle");
+  document.getElementById("ingredients").append(x);
+  }
+
+}
+
+function removeEmpty(){
+  var myobj = document.getElementById("abc");
+  myobj.remove();
+}
 
 recipes();
