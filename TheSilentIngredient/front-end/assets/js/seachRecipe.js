@@ -45,9 +45,9 @@ function storeID(element){
 
 function searchEngine(){
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
+    if (ingredientArray === null) return alert("Ingredient List is empty! Please add a ingredient!");
     ingredientArray.sort(function(a, b){return a - b});
     var recipeIngredients = JSON.parse(localStorage.getItem("recipeIngredients"));
-    if (ingredientArray === null) return console.log("Please enter some ingredients first!");
 
     var tempArray = [];
     var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
