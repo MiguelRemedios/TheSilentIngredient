@@ -35,7 +35,6 @@ function autocomplete(inp, arr) {
         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
         /*execute a function when someone clicks on the item value (DIV element):*/
         b.addEventListener("click", function (e) {
-          removeEmpty();
           var ingredient = e.currentTarget.getElementsByTagName("input")[0]
             .value;
 
@@ -55,6 +54,7 @@ function autocomplete(inp, arr) {
           array.push(ingID);
           localStorage.setItem("ingredientArray", JSON.stringify(array));
 
+          removeEmpty();
           console.log(array);
           toList(ingredient);
           document.getElementById("myInput").value = "";
@@ -146,6 +146,7 @@ function toList(ingredient) {
 
     localStorage.setItem("ingredientArray", JSON.stringify(tempArray));
   });
+  
   x.appendChild(btnDelete);
   //TODO: Adicionar ao x um elemento que seja algo que faça de botão e chame uma funcao que elimina este div
   document.getElementById("ing").appendChild(x);

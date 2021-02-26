@@ -242,8 +242,11 @@ function ListEmpty() {
 }
 
 function removeEmpty(){
+
   var myobj = document.getElementById("abc");
+  if((document.getElementById('abc'))){
   myobj.remove();
+  }
 }
 
 recipes();
