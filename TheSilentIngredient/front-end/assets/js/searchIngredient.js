@@ -1,3 +1,4 @@
+
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
             the text field element and an array of possible autocompleted values:*/
@@ -147,6 +148,14 @@ function toList(ingredient) {
   //TODO: Adicionar ao x um elemento que seja algo que faça de botão e chame uma funcao que elimina este div
   document.getElementById("ing").appendChild(x);
 }
+
+window.addEventListener('load', function() {
+  var ingredientStoredLocallyIndexes = JSON.parse(localStorage.getItem("ingredientArray"));  
+  var ingredients = JSON.parse(localStorage.getItem("ingredients"));
+  ingredientStoredLocallyIndexes.forEach(index => toList(ingredients[index]));
+})
+
+
 
 let dataObject;
 fetch("http://localhost:8080/api/v1/ingredient")
