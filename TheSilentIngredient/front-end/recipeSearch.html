@@ -30,8 +30,9 @@
                         <span>
                             <h1>Results</h1>
                             <div class="sel_tags">
-                                <select id="sel3" onchange="dietEngine()" name="demo-category" id="demo-category">
+                                <select id="sel3" onchange="dietEngine(this)" name="demo-category" id="demo-category">
                                     <option id="option0" value="0">- Diet -</option>
+                                    <option id="option01" value="01">Healthy</option>
                                     <option id="option1" value="1">Vegan</option>
                                     <option id="option2" value="2">Vegeterian</option>
                                     <option id="option3" value="3">Halal</option>
@@ -39,6 +40,11 @@
                                     <option id="option5" value="5">Gluten Free</option>
                                 </select>
                             </div>
+
+                            <!--<div class="healthyrecipes">
+                                <input type="checkbox" id="healthy" value="99" name="healthy" onclick="healthyCheckBox(this)"unchecked>
+                                <label for="healthy">Healthy Recipes</label>
+                            </div>--> 
                         </span>
                     </header>
 
@@ -406,7 +412,7 @@
                 <section id="ingredients">
                     <header class="major" style="display: flex;">
                         <h2 style=" width: 50%;">Ingredients</h2>
-                        <button class="button" style="width: 50%" onclick="searchEngine2(this)"> Done </button>
+                        <button class="button" style="width: 50%" onclick="clearAll()"> Clear </button>
                     </header>
                     <div id="ing" class="ingselected">
 
@@ -414,6 +420,12 @@
 
                 </section>
 
+                <section id="clrbtn">
+
+                    <button class= "clearbtn" style="width: 100%;"  onclick="searchEngine(this)">Done </button> 
+              
+                </section>
+                
                 <!-- Section -->
 
             </div>

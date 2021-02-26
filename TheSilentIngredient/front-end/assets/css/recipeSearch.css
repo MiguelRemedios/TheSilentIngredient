@@ -2,6 +2,43 @@
     box-sizing: border-box;
 }
 
+/* clear button css */
+
+.button {
+    color: black !important;
+    border-radius: 25px;
+    border: 2px solid #f56a6a;
+    font-size: 10px ;
+    margin-top: -2.5px !important;
+    height: 30px !important;
+    margin-left: 100px !important;
+    padding-left: 5.5px !important;
+}
+
+#ingredients .button:hover{
+    background-color: #f56a6a !important ;
+    color: white !important;
+
+}
+
+
+  /* done button css */
+.clearbtn {
+    border-radius: 25px ;
+    color: black !important;   
+    background-color: white;
+    box-shadow: #f56a6a !important;
+    border: 2px solid #f56a6a;
+    
+
+    
+}
+
+#clrbtn :hover{
+    background-color:  #f56a6a;
+    color: white !important;  
+}
+
 /* .column {
     float: left;
     width: 25%;
@@ -134,4 +171,8 @@ input[type=submit] {
     cursor: pointer;
     background-color: white;
     border-bottom: 1px solid #d4d4d4;
+}
+
+.healthyrecipes {
+    margin-top: 30px;
 }
