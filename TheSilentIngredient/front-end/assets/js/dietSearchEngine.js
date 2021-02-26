@@ -120,13 +120,13 @@ function healthyCheckBox(checkbox){
 }
 
 function clearAll(){
-
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
-    ingredientArray.shift();
-
+    //ingredientArray.shift();
     if (!(ingredientArray.length < 0 || ingredientArray === null)) {
-
-        $('#diva').remove();
+        for (let index = 0; index < ingredientArray.length; index++) {
+            $('#diva').remove(); 
+        }
+        ingredientArray = [];
         localStorage.setItem("ingredientArray", JSON.stringify(ingredientArray));
     }
 }
