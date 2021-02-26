@@ -83,7 +83,6 @@ function dietEngine() {
 function healthyCheckBox(checkbox){
     var recipeFilter = JSON.parse(localStorage.getItem("recipesFilter"));
 
-
     var healthyRecipes = [1, 9, 10, 11, 15, 17, 18, 20, 21];
     var showRecipesArray = [];
     var hideRecipesArray = [];
@@ -121,12 +120,18 @@ function healthyCheckBox(checkbox){
 
 function clearAll(){
     var ingredientArray = JSON.parse(localStorage.getItem("ingredientArray"));
-    //ingredientArray.shift();
+    var recipesArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+
     if (!(ingredientArray.length < 0 || ingredientArray === null)) {
         for (let index = 0; index < ingredientArray.length; index++) {
             $('#diva').remove(); 
         }
+        for (const recipeID of recipesArray) {
+            document.getElementById(recipeID).style.display = "block";
+        }
+        document.getElementById('sel3').value=0;
         ingredientArray = [];
+        localStorage.setItem("recipesFilter", JSON.stringify(recipesArray));
         localStorage.setItem("ingredientArray", JSON.stringify(ingredientArray));
     }
 }
