@@ -13,6 +13,8 @@
     height: 30px !important;
     margin-left: 100px !important;
     padding-left: 5.5px !important;
+    outline: none!important;
+    padding-bottom: 30px!important;
 }
 
 #ingredients .button:hover{
@@ -23,18 +25,20 @@
 
 
   /* done button css */
-.clearbtn {
+
+.donebtn {
     border-radius: 25px ;
     color: black !important;   
     background-color: white;
     box-shadow: #f56a6a !important;
     border: 2px solid #f56a6a;
+    outline: none!important;
     
 
     
 }
 
-#clrbtn :hover{
+#donebtn :hover{
     background-color:  #f56a6a;
     color: white !important;  
 }
@@ -121,19 +125,24 @@ a:nth-child(3) {
 } */
 
 .diving {
-    border: solid 2px #f56a6a;
-    border-radius: 6px;
+    border: solid 3px #f56a6a!important;
+    border-radius: 25px;
     height: 30px;
     background-color: white;
-    padding-top: 5px;
+    padding-top: 1px;
     padding-left: 10px;
     margin-bottom: 5px;
+    margin-top: 10px !important;
+    
 }
+
+
 
 .btnListDelete {
     height: 30px;
     float: right;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 input {
