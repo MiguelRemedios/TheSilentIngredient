@@ -1,3 +1,4 @@
+
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
             the text field element and an array of possible autocompleted values:*/
@@ -53,6 +54,7 @@ function autocomplete(inp, arr) {
           array.push(ingID);
           localStorage.setItem("ingredientArray", JSON.stringify(array));
 
+          removeEmpty();
           console.log(array);
           toList(ingredient);
           document.getElementById("myInput").value = "";
@@ -125,6 +127,7 @@ function autocomplete(inp, arr) {
 
 function toList(ingredient) {
   var x = document.createElement("div");
+  x.setAttribute("id", "diva");
   x.innerText = ingredient;
   x.classList.add("diving");
 
@@ -143,10 +146,19 @@ function toList(ingredient) {
 
     localStorage.setItem("ingredientArray", JSON.stringify(tempArray));
   });
+  
   x.appendChild(btnDelete);
   //TODO: Adicionar ao x um elemento que seja algo que faça de botão e chame uma funcao que elimina este div
   document.getElementById("ing").appendChild(x);
 }
+
+window.addEventListener('load', function() {
+  var ingredientStoredLocallyIndexes = JSON.parse(localStorage.getItem("ingredientArray"));  
+  var ingredients = JSON.parse(localStorage.getItem("ingredients"));
+
+  if (ingredientStoredLocallyIndexes === null) return;
+  ingredientStoredLocallyIndexes.forEach(index => toList(ingredients[index-1]));
+})
 
 let dataObject;
 fetch("http://localhost:8080/api/v1/ingredient")
