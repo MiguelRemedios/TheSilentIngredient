@@ -17,6 +17,11 @@ h3 {
   color: #f56a6a;
 }
 
+hr.major {
+    margin: 2.5em 0;
+    margin-top: 45px;
+}
+
 .accordion {
   width: 90%;
   max-width: 1000px;
