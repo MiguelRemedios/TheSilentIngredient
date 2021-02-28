@@ -109,11 +109,6 @@ html, body {
     color:white!important;
     
   }
-
-  #piechart{
-    margin-left: -50px;
-  }
-  
   @media screen and (max-width: 749px) {
   li a{
     padding-right:10px;
@@ -189,7 +184,7 @@ html, body {
     margin-top: 15px!important;
     }
     #header ul{
-      width: 90%;
+      width: 91%!important;
     }
     }
 
@@ -197,22 +192,23 @@ html, body {
       #header ul{
         width: 88.9%;
       }
+
+      #piechart{
+        padding-left: 100px!important;
+      }
     }
     @media  screen and (min-width: 1024px) {
       #header ul{
         width: 90%;
       }
+
+      #piechart{
+        margin-left: 30px!important;
+      }
     }
 
     @media  screen and (min-width: 2560px) {
       #header ul{
-        width: 66.5%;
+        width: 66.5%!important;
       }
-    }
-  
-
-
-
-
-
-    
+    }  

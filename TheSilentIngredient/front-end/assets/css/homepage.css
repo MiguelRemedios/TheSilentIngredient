@@ -181,14 +181,38 @@ li:last-child > a {
   }
 }
 
+ @media  screen and (max-width: 768px){
+  .slideshow-container{
+    padding-left: 150px;
+  }
+  .mySlides1{
+    margin-top: -50px;
+  }
+} 
+
 @media  screen and (min-width: 1440px) {
 #header ul{
-  width: 90%;
+  width: 91%;
 }
 }
 
+@media  screen and (min-width: 2560px) {
+  #header ul{
+    width: 66.5%!important;
+  }
+}
 
-
-
-
-
+@media screen and (max-width: 425px){
+.features{
+   padding-left: 50px;
+}
+.mySlides1{
+  padding-top: 50px;
+}
+.mySlides2{
+  margin-top: -40px;
+}
+.slideshow-container{
+  margin-left: -160px;
+}
+}
