@@ -2,6 +2,47 @@
     box-sizing: border-box;
 }
 
+/* clear button css */
+
+.button {
+    color: black !important;
+    border-radius: 25px;
+    border: 2px solid #f56a6a;
+    font-size: 10px ;
+    margin-top: -2.5px !important;
+    height: 30px !important;
+    margin-left: 100px !important;
+    padding-left: 5.5px !important;
+    outline: none!important;
+    padding-bottom: 30px!important;
+}
+
+#ingredients .button:hover{
+    background-color: #f56a6a !important ;
+    color: white !important;
+
+}
+
+
+  /* done button css */
+
+.donebtn {
+    border-radius: 25px ;
+    color: black !important;   
+    background-color: white;
+    box-shadow: #f56a6a !important;
+    border: 2px solid #f56a6a;
+    outline: none!important;
+    
+
+    
+}
+
+#donebtn :hover{
+    background-color:  #f56a6a;
+    color: white !important;  
+}
+
 /* .column {
     float: left;
     width: 25%;
@@ -84,19 +125,24 @@ a:nth-child(3) {
 } */
 
 .diving {
-    border: solid 2px #f56a6a;
-    border-radius: 6px;
+    border: solid 3px #f56a6a!important;
+    border-radius: 25px;
     height: 30px;
     background-color: white;
-    padding-top: 5px;
+    padding-top: 1px;
     padding-left: 10px;
     margin-bottom: 5px;
+    margin-top: 10px !important;
+    
 }
+
+
 
 .btnListDelete {
     height: 30px;
     float: right;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 input {
@@ -134,4 +180,13 @@ input[type=submit] {
     cursor: pointer;
     background-color: white;
     border-bottom: 1px solid #d4d4d4;
+}
+
+.healthyrecipes {
+    margin-top: 30px;
+}
+
+.errorHandle{
+    margin-top: 20px;
+    font-size: 14px;
 }
