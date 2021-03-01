@@ -109,6 +109,8 @@ function searchEngine(){
     }
   }
 
+  document.getElementById('sel3').value=0;
+  $("#healthy").prop("checked", false);
   //Set the array in the localstorage
   localStorage.setItem("recipesFilter", JSON.stringify(tempArray));
 }
