@@ -1,0 +1,30 @@
+x-x-x-x-x-x-x-x-Functional/Basic Requirements-x-x-x-x-x-x-x-x
+
+1)The user should be able to select from our database of ingredients, according to the ones they have in their kitchen.
+2)The user should be able to see a range of different recipes that use the ingredients they have in their kitchen.
+3)The user should be able to select a checkbox if they want “Healthier recipes”.
+4)The user should be able to select what type of diet they want. (Vegetarian, vegan, halal, etc) or if they are fine with any.
+5)The user should be able to open each recipe individually.
+6)If there are not enough ingredients for a recipe, the website should suggest a range of recipes that will require the least amount of extra ingredients, and list the quantities needed of each.
+
+
+x-x-x-x-x-x-x-x-Non-functional Requirements-x-x-x-x-x-x-x-x
+
+1)Interface - Should be intuitive and easy to use.
+2)Server-side optimization for faster performance/smooth user experience.
+3)Scalability - an algorithm with a low time complexity.
+4)Maintainability - good quality code, easy to change
+5)Deployment- The website should be in a deployable form.
+6)Platform Compatibility: Optimized for web apps on a computer or smartphone.
+
+x-x-x-x-x-x-x-x-User-Interface Requirements-x-x-x-x-x-x-x-x
+
+1)Website should involve colours that not too vibrant or bright but pleasant to the eye for better viewing experiences.
+2)The interface should have simple English and not involve any technical jargon.
+3)The user interface should be able to work properly on most regularly  used laptop resolutions
+4)The user interface must have a responsive ingredient search bar.
+5)The user interface must provide organised results.
+6)The user interface should allow the user to select diets easily in an organised way
+7) The user interface should display information regarding a recipe that can be understood easily.
+8)The website should have buttons which simplify navigation
+9)The button with text on the website should be distinguishable from other texts on web page with well designed interaction styles
