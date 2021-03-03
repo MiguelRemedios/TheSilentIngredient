@@ -5,8 +5,6 @@ x-x-x-x-x-x-x-x-Functional/Basic Requirements-x-x-x-x-x-x-x-x
 3)The user should be able to select a checkbox if they want “Healthier recipes”.
 4)The user should be able to select what type of diet they want. (Vegetarian, vegan, halal, etc) or if they are fine with any.
 5)The user should be able to open each recipe individually.
-6)If there are not enough ingredients for a recipe, the website should suggest a range of recipes that will require the least amount of extra ingredients, and list the quantities needed of each.
-
 
 x-x-x-x-x-x-x-x-Non-functional Requirements-x-x-x-x-x-x-x-x
 
