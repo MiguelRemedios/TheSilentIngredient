@@ -12,7 +12,7 @@ public class DietConfig {
 	//						TABLE ALREADY COMPLETED!
 	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
 	//					(ANY CHANGE TEXT IN THE GROUP CHAT)
-	/*@Bean
+	@Bean
 	CommandLineRunner commandLineRunner2(DietRepository repository) {
 		return args -> {
 			Diet halal = new Diet("Halal", "Muslim belief diet");
@@ -28,5 +28,5 @@ public class DietConfig {
 			repository.saveAll(List.of(halal, Vegan, Vegetarian, lactoseFree, glutenFree));
 		};
 
-	}*/
+	}
 }
