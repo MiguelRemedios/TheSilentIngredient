@@ -12,7 +12,7 @@ public class RecipeConfig {
 	//						TABLE ALREADY COMPLETED!
 	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
 	//				  (ANY CHANGE TEXT IN THE GROUP CHAT)
-	/*@Bean
+	@Bean
 	CommandLineRunner commandLineRunner(RecipeRepository repository) {
 		return args -> {
 			
@@ -208,5 +208,5 @@ public class RecipeConfig {
 									   	NDCandiedBacon,NDBeerMilkshake)); //ND
 		};
 
-	}*/
+	}
 }
