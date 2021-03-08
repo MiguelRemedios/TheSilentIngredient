@@ -12,7 +12,7 @@ public class RecipeStepConfig {
 	//						TABLE ALREADY COMPLETED!
 	//			DO NOT UNMARK THIS WITHOUT LETTING THE GROUP KNOW
 	//				  (ANY CHANGE TEXT IN THE GROUP CHAT)
-	/*@Bean
+	@Bean
 	CommandLineRunner RecipeStepCR(RecipeStepRepository repository) {
 		return args -> {
 			
@@ -273,5 +273,5 @@ public class RecipeStepConfig {
 					stp187,stp188,stp189));	
 		};
 		
-	}*/
+	}
 }
