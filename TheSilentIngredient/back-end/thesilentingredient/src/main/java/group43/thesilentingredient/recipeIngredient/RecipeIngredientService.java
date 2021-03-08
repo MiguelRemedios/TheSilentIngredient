@@ -27,7 +27,8 @@ public class RecipeIngredientService {
     }
 
 	public void addIngredientToRecipe(RecipeIngredient recipeIngredient) {
-		Optional<RecipeIngredient> recipeIngredientOptional = recipeIngredientRepository.repeatIngredient(recipeIngredient.getRecipe_id(), recipeIngredient.getIngredient_id());
+		Optional<RecipeIngredient> recipeIngredientOptional = recipeIngredientRepository.
+				repeatIngredient(recipeIngredient.getRecipe_id(), recipeIngredient.getIngredient_id());
 		if (recipeIngredientOptional.isPresent()) {
 			throw new IllegalStateException("Recipe taken!");
 		}
@@ -45,23 +46,33 @@ public class RecipeIngredientService {
         recipeIngredientRepository.deleteById(recipe_id);
     }
     @Transactional        
-    public void updateRecipeIngredient(Long id, Integer ingredient_id, Integer recipe_id, Double quantity, String measurement) {
-        RecipeIngredient recipeIngredient = recipeIngredientRepository.findById(id).orElseThrow(() -> new IllegalStateException("Recipe with ID " + id + " does not exist!"));
+    public void updateRecipeIngredient(Long id, Integer ingredient_id, Integer recipe_id, 
+    		Double quantity, String measurement) {
+        RecipeIngredient recipeIngredient = recipeIngredientRepository.findById(id)
+        		.orElseThrow(() -> new IllegalStateException
+        				("Recipe Ingredient with ID " + id + " does not exist!"));
 
-        if (ingredient_id != null && ingredient_id > 0 && !Objects.equals(recipeIngredient.getIngredient_id(), ingredient_id)) { //If the name is not the same as the current
+        if (ingredient_id != null &&
+        		ingredient_id > 0 &&
+        		!Objects.equals(recipeIngredient.getIngredient_id(), ingredient_id)) { //If the name is not the same as the current
             recipeIngredient.setIngredient_id(ingredient_id);
         }
 
-        if (recipe_id != null && recipe_id > 0 && !Objects.equals(recipeIngredient.getRecipe_id(), recipe_id)) { //If the name is not the same as the current
+        if (recipe_id != null && 
+        		recipe_id > 0 && 
+        		!Objects.equals(recipeIngredient.getRecipe_id(), recipe_id)) { //If the name is not the same as the current
             recipeIngredient.setRecipe_id(recipe_id);
         }
         
-        if (quantity != null && quantity > 0 && !Objects.equals(recipeIngredient.getRecipe_id(), quantity)) { //If the name is not the same as the current
+        if (quantity != null && 
+        		quantity > 0 && 
+        		!Objects.equals(recipeIngredient.getQuantity(), quantity)) { //If the name is not the same as the current
             recipeIngredient.setQuantity(quantity);
         }
         
-        if (measurement != null && measurement.length() > 0 && !Objects.equals(recipeIngredient.getMeasurement(), measurement)) { //If the name is not the same as the current
-        
+        if (measurement != null && 
+        		measurement.length() > 0 && 
+        		!Objects.equals(recipeIngredient.getMeasurement(), measurement)) { //If the name is not the same as the current
             recipeIngredient.setMeasurement(measurement);
         }
     }
