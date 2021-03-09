@@ -48,12 +48,13 @@ public class RecipeIngredientController {
         recipeIngredientService.deleteRecipeIngredient(recipe_id);
     }
     
-    @PutMapping(path = "{recipeId}")
-    public void updateRecipe(@PathVariable("recipeId") Long id,
+    @PutMapping(path = "{id}")
+    public void updateRecipe(@PathVariable("id") Long id,
             @RequestParam(required = false) Integer ingredient_id,
             @RequestParam(required = false) Integer recipe_id,
             @RequestParam(required = false) Double quantity,
-            @RequestParam(required = false) String measurement) {
+            @RequestParam(required = false) String measurement) 
+    {
         recipeIngredientService.updateRecipeIngredient(id, ingredient_id, recipe_id, quantity, measurement);
     }
 }

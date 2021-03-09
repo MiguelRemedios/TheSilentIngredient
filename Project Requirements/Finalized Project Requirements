@@ -5,6 +5,9 @@ x-x-x-x-x-x-x-x-Functional/Basic Requirements-x-x-x-x-x-x-x-x
 3)The user should be able to select a checkbox if they want “Healthier recipes”.
 4)The user should be able to select what type of diet they want. (Vegetarian, vegan, halal, etc) or if they are fine with any.
 5)The user should be able to open each recipe individually.
+6)The user should be able to get predictive options on the ingredient search bar.
+7)The user should be able to use a navigation bar with buttons to allow navigation around the website.
+8)The user should be able to access an FAQ page which aids in website navigation (Frequently Asked Questions).
 
 x-x-x-x-x-x-x-x-Non-functional Requirements-x-x-x-x-x-x-x-x
 
@@ -13,17 +16,14 @@ x-x-x-x-x-x-x-x-Non-functional Requirements-x-x-x-x-x-x-x-x
 3)Scalability - an algorithm with a low time complexity.
 4)Maintainability - good quality code, easy to change
 5)Deployment- The website should be in a deployable form.
-6)Platform Compatibility: Optimized for web apps on a computer or smartphone.
+6)Platform Compatibility: Optimized for computers or handheld devices.
 
 x-x-x-x-x-x-x-x-User-Interface Requirements-x-x-x-x-x-x-x-x
 
-1)Website should involve colours that not too vibrant or bright but pleasant to the eye for better viewing experiences.
+1)Website should involve colours that are not too vibrant or bright but pleasant to the eye for better viewing experiences.
 2)The interface should have simple English and not involve any technical jargon.
-3)The user interface should be able to work properly on most regularly  used laptop resolutions
-4)The user interface must have a responsive ingredient search bar.
-5)The user interface must provide organised results.
-6)The user interface should allow the user to select diets easily in an organised way
-7)The user interface should display information regarding a recipe that can be understood easily.
-8)The website should have buttons which simplify navigation
-9)The user interace should include smooth transitions, allowing the user to have a smooth experience flow.
-10)The user interface must have a user's navigation help guide (FAQ).
+3)The user interface should be able to scale information properly based on most used resolutions
+4)The user interface must provide organised results before/after filter.
+5)The user interface should display information in an organized manner such as nutrient values in a chart so it can be understood easily.
+6)The user interface should have reactive buttons, when you hover over a button, it should react and change color.
+7)The user interace should include smooth transitions, allowing the user to have a smooth experience flow.
