@@ -14,7 +14,8 @@ h3 {
   text-align: center;
   margin: 2rem 0;
   font-size: 1.3rem;
-  color: #f56a6a;
+  color: #E35152;
+  color: hsl(360, 72%, 60%)	
 }
 
 hr.major {
@@ -73,7 +74,6 @@ hr.major {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: 50px;
-  width: 150;
 }
 
 @media(max-width:767px) {

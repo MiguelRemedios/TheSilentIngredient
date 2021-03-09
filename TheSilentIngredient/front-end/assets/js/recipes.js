@@ -85,7 +85,7 @@ function ingredientName(id, i) {
   xmlhttp.send();
 }
 
-function ingredientNutrition(id) {
+/*function ingredientNutrition(id) {
   var xmlhttp = new XMLHttpRequest();
   var ingID = 0;
   var amount = 0;
@@ -113,7 +113,7 @@ function ingredientNutrition(id) {
   }
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe-ingredient/' + id, true);
   xmlhttp.send();
-}
+}*/
 
 /*function ingredientNutrition(id, i, quantity){
   var xmlhttp = new XMLHttpRequest();
