@@ -17,8 +17,6 @@ function recipeInfo(recipeid) {
       recipeingredients(recipeid);
       recipesteps(recipeid);
 
-      ingredientNutrition(recipeid);
-
     }
   };
   xmlhttp.open("GET", 'http://localhost:8080/api/v1/recipe/' + recipeid, true);
